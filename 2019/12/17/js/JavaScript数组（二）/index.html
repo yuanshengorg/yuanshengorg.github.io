@@ -69,6 +69,14 @@
         
     
         
+        <a title="github" href="https://yuanshengorg.github.com" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
     
         
     
@@ -158,7 +166,7 @@
 </div>
         <div class="title-list">
     <form onkeydown="if(event.keyCode==13){return false;}">
-        <input class="search" type="text" placeholder="Search..." autocomplete="off"id="local-search-input" >
+        <input class="search" type="text" placeholder="以 in: 开头进行全文搜索" autocomplete="off"id="local-search-input" >
         <i class="cross"></i>
         <span>
             <label for="tagswitch">Tags:</label>
@@ -195,6 +203,10 @@
     <div class="clearfix"></div>
 </div>
 
+    
+    <div id="local-search-result">
+
+    </div>
     
     <nav id="title-list-nav">
         
@@ -494,23 +506,11 @@ console.log(a); // 1</code></pre>
 <p>以上。</p>
 
       
-       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源 </span>
+       
     </div>
 </article>
 
 
-
-<div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>JavaScript 数组（二）</p>
-    
-    <p><span class="copy-title">本文作者:</span><a  title="半根竹子">半根竹子</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-12-17, 19:27:36</p>
-    <p><span class="copy-title">最后更新:</span>2019-12-17, 19:52:09</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/12/17/js/JavaScript%E6%95%B0%E7%BB%84%EF%BC%88%E4%BA%8C%EF%BC%89/" title="JavaScript 数组（二）">http://yoursite.com/2019/12/17/js/JavaScript%E6%95%B0%E7%BB%84%EF%BC%88%E4%BA%8C%EF%BC%89/</a>
-    <p>
-        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
-    </p>
-</div>
 
 
 
@@ -523,7 +523,7 @@ console.log(a); // 1</code></pre>
 
     </div>
     <div class="copyright">
-        <p class="footer-entry">©2016-2019 Yelog</p>
+        <p class="footer-entry">©2009-2019 半根竹子</p>
 <p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
 
     </div>
@@ -589,39 +589,39 @@ console.log(a); // 1</code></pre>
     
     
     .nav {
-        width: 542px;
+        width: 582px;
     }
     .nav.fullscreen {
-        margin-left: -542px;
+        margin-left: -582px;
     }
     .nav-left {
-        width: 120px;
+        width: 160px;
     }
     
     
     @media screen and (max-width: 1468px) {
         .nav {
-            width: 492px;
+            width: 532px;
         }
         .nav.fullscreen {
-            margin-left: -492px;
+            margin-left: -532px;
         }
         .nav-left {
-            width: 100px;
+            width: 140px;
         }
     }
     
     
     @media screen and (max-width: 1024px) {
         .nav {
-            width: 492px;
-            margin-left: -492px
+            width: 532px;
+            margin-left: -532px
         }
         .nav.fullscreen {
             margin-left: 0;
         }
         .nav .hide-list.fullscreen {
-            left: 492px
+            left: 532px
         }
     }
     
@@ -641,7 +641,7 @@ console.log(a); // 1</code></pre>
     
     
     .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
-        color: #5e5e5f;
+        color: #ccc;
     }
     
     

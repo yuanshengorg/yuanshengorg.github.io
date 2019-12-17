@@ -498,7 +498,7 @@ div.ac > ul > li:before,
   font-size: 24px;
   line-height: 42px;
   color: #fff;
-  background: #2a2935;
+  background: #666;
   overflow: hidden;
 }
 .full-toc .full .min:before {
@@ -535,7 +535,7 @@ div.ac > ul > li:before,
   font-size: 24px;
   line-height: 42px;
   color: #fff;
-  background: #2a2935;
+  background: #666;
   overflow: hidden;
 }
 .full-toc .post-toc-menu-icons:before {
@@ -551,7 +551,7 @@ div.ac > ul > li:before,
   bottom: 0;
   right: -322px;
   z-index: 20;
-  background: rgba(250,250,250,0.9);
+  background: rgba(250,250,250,0.95);
   border-top: 1px solid #e5e8ec;
   border-left: 1px solid #e5e8ec;
   border-radius: 10px 0 0 0;
@@ -579,7 +579,8 @@ div.ac > ul > li:before,
   line-height: 1.6;
 }
 .full-toc .post-toc .post-toc-content ol li {
-  font-size: 0.9em;
+  margin: 5px 0;
+  font-size: 0.98em;
   color: #7d8b99;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -635,8 +636,8 @@ div.ac > ul > li:before,
 .nav-left {
   width: 120px;
   height: 100%;
-  background: #2a2935;
-  box-shadow: inset -15px 0 15px -15px #222;
+  background: #3f3f3f;
+  box-shadow: inset -15px 0 15px -15px #161616;
   float: left;
   position: relative;
   -webkit-user-select: none;
@@ -648,7 +649,7 @@ div.ac > ul > li:before,
 .nav-left .avatar {
   width: 100px;
   height: 100px;
-  margin: 55px auto 15px;
+  margin: 55px auto 20px;
   border-radius: 50%;
   box-shadow: 0 0 0px 4px #fff, 0 0 4px 4px #eee;
   background-repeat: no-repeat;
@@ -662,7 +663,7 @@ div.ac > ul > li:before,
 .nav-left .author {
   text-align: center;
   height: 27px;
-  color: #fff;
+  color: #f6d300;
 }
 .nav-left .more-menus {
   display: none;
@@ -715,7 +716,7 @@ div.ac > ul > li:before,
   content: "\e6ce";
 }
 .nav-left ul {
-  margin: 0;
+  margin: 25px 0 0 0;
   padding: 0;
   font-size: 15px;
   border-top: 1px solid #fff;
@@ -847,7 +848,7 @@ div.ac > ul > li:before,
   margin-top: 12px;
   padding: 20px 0 0 20px;
   color: #383636;
-  font-size: 18px;
+  font-size: 14px;
   font-family: inherit;
   background: inherit;
   border: none;
@@ -862,9 +863,9 @@ div.ac > ul > li:before,
   right: 10px;
 }
 .nav-right .title-list form span #tagswitch:checked +#tagsWitchIcon:before {
-  border-color: #64bd63;
-  box-shadow: inset 0 0 0 0.16rem #64bd63;
-  background-color: #64bd63;
+  border-color: #009688;
+  box-shadow: inset 0 0 0 0.16rem #009688;
+  background-color: #009688;
   -webkit-transition: border 0.4s, box-shadow 0.4s, background-color 1.2s;
   transition: border 0.4s, box-shadow 0.4s, background-color 1.2s;
 }
@@ -877,7 +878,7 @@ div.ac > ul > li:before,
   top: 10px;
   -webkit-transform: translateY(-50%);
   border-radius: 100%;
-  background-color: #91c0f1;
+  background-color: #009688;
   box-shadow: 0 1px 1px rgba(0,0,0,0.4);
   -webkit-transition: left 0.2s;
   transition: left 0.2s;
@@ -902,7 +903,7 @@ div.ac > ul > li:before,
   top: 10px;
   -webkit-transform: translateY(-50%);
   border-radius: 100%;
-  background-color: #91c0f1;
+  background-color: #009688;
   -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.4);
   box-shadow: 0 1px 1px rgba(0,0,0,0.4);
   -webkit-transition: left 0.2s;
@@ -1064,7 +1065,7 @@ div.ac > ul > li:before,
   left: 12px;
   z-index: 1;
   font-size: 18px;
-  color: #309e85;
+  color: #009688;
 }
 .nav-right .title-list nav a#top:before,
 .nav-right .title-list #local-search-result a#top:before {
@@ -1446,7 +1447,8 @@ div.ac > ul > li:before,
   font-size: 1.8em;
   border-bottom: 0px;
   line-height: 31px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
+  color: #009688;
 }
 .post .pjax article .toc-ref {
   display: none;
@@ -1704,6 +1706,13 @@ h6 {
 }
 h1 {
   font-size: 1.8em;
+  color: #009688;
+}
+h2 {
+  color: #33caa6;
+}
+h3 {
+  color: #bf1827;
 }
 .nav {
   width: 542px;
@@ -1719,6 +1728,7 @@ h1 {
   margin-left: 0;
 }
 .hide-list {
+  display: none;
   width: 20px;
   height: 40px;
   position: absolute;
@@ -1738,7 +1748,7 @@ h1 {
   width: 20px;
   height: 40px;
   border-radius: 0 100px 100px 0;
-  background-color: #42b983;
+  background-color: #bf1827;
   cursor: pointer;
   margin-left: -20px;
   transition: margin-left 0.5s cubic-bezier(0.77, 0, 0.175, 1);
@@ -1836,7 +1846,7 @@ img.pswp__img {
     font-size: 16px;
   }
   .nav-right {
-    width: 390px;
+    width: 370px;
   }
   .nav-right .title-list form span #tagswitch:checked +#tagsWitchIcon:after {
     top: 9px;
