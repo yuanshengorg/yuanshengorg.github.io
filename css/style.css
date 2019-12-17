@@ -663,7 +663,7 @@ div.ac > ul > li:before,
 .nav-left .author {
   text-align: center;
   height: 27px;
-  color: #f6d300;
+  color: #47c3a5;
 }
 .nav-left .more-menus {
   display: none;
@@ -1570,7 +1570,7 @@ div.ac > ul > li:before,
   background-color: #009688;
 }
 .post .pjax article :not(pre) > code {
-  color: #bf1827;
+  color: #009688;
   font-family: sans-serif;
 }
 .post .pjax article pre.mermaid {
@@ -1709,10 +1709,10 @@ h1 {
   color: #009688;
 }
 h2 {
-  color: #33caa6;
+  color: #008e80;
 }
 h3 {
-  color: #bf1827;
+  color: #33caa6;
 }
 .nav {
   width: 542px;
