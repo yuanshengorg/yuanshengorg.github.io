@@ -544,12 +544,12 @@ div.ac > ul > li:before,
   content: "\e9ba";
 }
 .full-toc .post-toc {
-  width: 200px;
+  width: 320px;
   padding-top: 10px;
   position: fixed;
   top: 106px;
   bottom: 0;
-  right: -200px;
+  right: -322px;
   z-index: 20;
   background: rgba(250,250,250,0.9);
   border-top: 1px solid #e5e8ec;
@@ -579,7 +579,7 @@ div.ac > ul > li:before,
   line-height: 1.6;
 }
 .full-toc .post-toc .post-toc-content ol li {
-  font-size: 1em;
+  font-size: 0.9em;
   color: #7d8b99;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -717,7 +717,7 @@ div.ac > ul > li:before,
 .nav-left ul {
   margin: 0;
   padding: 0;
-  font-size: 17px;
+  font-size: 15px;
   border-top: 1px solid #fff;
   list-style: none;
   overflow-y: auto;
@@ -1008,7 +1008,7 @@ div.ac > ul > li:before,
   background: #7b5d5f;
 }
 .nav-right .title-list .tags-list li a.color5:before {
-  border-right-color: #7b5d5f;
+  border-right-color: #ccc;
 }
 .nav-right .title-list nav,
 .nav-right .title-list #local-search-result {
@@ -1052,7 +1052,7 @@ div.ac > ul > li:before,
 .nav-right .title-list nav a,
 .nav-right .title-list #local-search-result a {
   display: block;
-  height: 32px;
+  height: 38px;
   color: inherit;
   position: relative;
 }
@@ -1094,7 +1094,7 @@ div.ac > ul > li:before,
 }
 .nav-right .title-list nav a .post-date,
 .nav-right .title-list #local-search-result a .post-date {
-  font-size: 15px;
+  font-size: 14px;
   margin: 8px 0;
   padding-right: 3px;
   color: #9aa4af;
