@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>自定义 vs code 命令快捷键 | 半根竹子</title>
-  <meta name="keywords" content=" vscode ">
-  <meta name="description" content="自定义 vs code 命令快捷键 | 半根竹子">
+  <title>hexo创建博客 | 半根竹子</title>
+  <meta name="keywords" content=" 博客 , hexo ">
+  <meta name="description" content="hexo创建博客 | 半根竹子">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="1、光标移动到行尾&#x2F;行首当软件自动补全时，我们常常会需要将光标移动到行尾，可以使用 end 键，或者自定义一个更方便的键，比如：Ctrl + ; 。    键 命令 我的修改    END cursorEnd   光标移动到行尾 &#x2F;   HOME cursorHome   光标移动到行首 Ctrl + Shift + ;   无 cursorLineEnd   光标移动到行尾 Ctrl + ;">
 <meta property="og:type" content="article">
@@ -250,9 +250,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-tools/vscode自定义快捷键盘" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-tools/hexo创建博客" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">自定义 vs code 命令快捷键</h1>
+        <h1 class="article-title">hexo创建博客</h1>
     
     <div class="article-meta">
         
@@ -267,14 +267,16 @@
         
         <span class="tag">
             
-            <a class="color2">vscode</a>
+            <a class="color3">博客</a>
+            
+            <a class="color5">hexo</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-12-17 19:26:58'>2019-12-17 19:27</time>
+        创建时间:<time class="date" title='更新时间: 2019-12-18 00:19:47'>2019-12-17 14:26</time>
         
     </div>
     <div class="article-meta">
@@ -285,7 +287,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、光标移动到行尾-行首"><span class="toc-text">1、光标移动到行尾&#x2F;行首</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、选择当前单词"><span class="toc-text">2、选择当前单词</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、光标移动到下-上一个单词"><span class="toc-text">3、光标移动到下&#x2F;上一个单词</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4、不使用方向键上下移动"><span class="toc-text">4、不使用方向键上下移动</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#环境"><span class="toc-text">环境</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#node-js-和-npm"><span class="toc-text">node.js 和 npm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#hexo"><span class="toc-text">hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#git"><span class="toc-text">git</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#创建-hexo"><span class="toc-text">创建 hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#写文章"><span class="toc-text">写文章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文章预定义参数"><span class="toc-text">文章预定义参数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#搭建到-github"><span class="toc-text">搭建到 github</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#访问地址"><span class="toc-text">访问地址</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#增-改文章"><span class="toc-text">增&#x2F;改文章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#更多命令"><span class="toc-text">更多命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他"><span class="toc-text">其他</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -301,108 +303,68 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="1、光标移动到行尾-行首"><a href="#1、光标移动到行尾-行首" class="headerlink" title="1、光标移动到行尾/行首"></a>1、光标移动到行尾/行首</h3><p>当软件自动补全时，我们常常会需要将光标移动到行尾，可以使用 <code>end</code> 键，或者自定义一个更方便的键，比如：<code>Ctrl + ;</code> 。</p>
-<table>
-<thead>
-<tr>
-<th>键</th>
-<th>命令</th>
-<th>我的修改</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>END</td>
-<td>cursorEnd   光标移动到行尾</td>
-<td>/</td>
-</tr>
-<tr>
-<td>HOME</td>
-<td>cursorHome   光标移动到行首</td>
-<td>Ctrl + Shift + ;</td>
-</tr>
-<tr>
-<td>无</td>
-<td>cursorLineEnd   光标移动到行尾</td>
-<td>Ctrl + ;</td>
-</tr>
-<tr>
-<td>无</td>
-<td>cursorLineStart   光标移动到行首</td>
-<td>/</td>
-</tr>
-</tbody></table>
-<h3 id="2、选择当前单词"><a href="#2、选择当前单词" class="headerlink" title="2、选择当前单词"></a>2、选择当前单词</h3><p>连续按展开选择，第一次选中当前单词，第二次选择当前行；继续选择当前块；只按一次的话，就是选择当前单词。</p>
-<table>
-<thead>
-<tr>
-<th>键</th>
-<th>命令</th>
-<th>我的修改</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Shift + Alt + Right</td>
-<td>展开选择</td>
-<td>Alt + I</td>
-</tr>
-<tr>
-<td>Shift + Alt + Left</td>
-<td>收起选择</td>
-<td>Alt + O</td>
-</tr>
-</tbody></table>
-<h3 id="3、光标移动到下-上一个单词"><a href="#3、光标移动到下-上一个单词" class="headerlink" title="3、光标移动到下/上一个单词"></a>3、光标移动到下/上一个单词</h3><p>我们需要将光标跳转到下一个单词或者上一个单词。</p>
-<table>
-<thead>
-<tr>
-<th>键</th>
-<th>命令</th>
-<th>我的修改</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Ctrl + Right</td>
-<td>cursorWordEndRight   光标移动到右边单词结尾</td>
-<td>Alt + ;</td>
-</tr>
-<tr>
-<td>Ctrl + Left</td>
-<td>cursorWordStartLeft   光标移动到左边单词开关</td>
-<td>Alt + L</td>
-</tr>
-</tbody></table>
-<h3 id="4、不使用方向键上下移动"><a href="#4、不使用方向键上下移动" class="headerlink" title="4、不使用方向键上下移动"></a>4、不使用方向键上下移动</h3><p>我们要将光标上下移动时，使用上、下按键也是不方便，所以 vim 中使用了 <code>h j k l</code> ；</p>
-<table>
-<thead>
-<tr>
-<th>键</th>
-<th>命令</th>
-<th>我的修改</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>DOWN</td>
-<td>cursorDown   向下移动光标</td>
-<td>Alt + J</td>
-</tr>
-<tr>
-<td>UP</td>
-<td>cursorUp   向上移动光标</td>
-<td>Alt + K</td>
-</tr>
-<tr>
-<td>LEFT</td>
-<td>cursorLeft   向左移动光标</td>
-<td>/</td>
-</tr>
-<tr>
-<td>RIGTH</td>
-<td>cursorRight   向右移动光标</td>
-<td>/</td>
-</tr>
-</tbody></table>
-<p><img src="http://mdimg.95408.com/201912111130_513.png?imageView2/2/w/1200/h/1200" alt=""></p>
-<pre><code>![1575993392487](D:\Markdown\css-js-blog\assets\1575993392487.png)</code></pre><p>以上。</p>
+        <p><img src="http://mdimg.95408.com/201912180011_408.png?imageView2/2/w/1200/h/1200" alt=""></p>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><h3 id="node-js-和-npm"><a href="#node-js-和-npm" class="headerlink" title="node.js 和 npm"></a>node.js 和 npm</h3><p>Hexo是基于nodejs的静态博客，首先需要安装nodejs，并且需要nodejs中的重要工具：<code>npm</code> ；</p>
+<p>查看 nodejs 版本：<code>node -V</code> ；</p>
+<h3 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h3><p>有了nodejs，其他就简单了！安装hexo： <code>npm install -g hexo</code> ；</p>
+<p>查看 hexo 版本： <code>hexo -v</code> ；</p>
+<h3 id="git"><a href="#git" class="headerlink" title="git"></a>git</h3><p>你也可以安装一个必备的代码管理工具：<code>git</code> ；这样我们就可以使用 <code>git bash</code> 这个工具了；</p>
+<p>查看 git 版本： <code>git version</code> ；</p>
+<h2 id="创建-hexo"><a href="#创建-hexo" class="headerlink" title="创建 hexo"></a>创建 hexo</h2><p>我们在本地创建一个文件夹 <code>d\hexo</code> 做为博客的目录；</p>
+<p>只需3步，完成博客的搭建：</p>
+<p>1、在 <code>d\hexo</code>目录下，执行以下命令，创建 hexo 完成；</p>
+<pre><code class="git">hexo init</code></pre>
+<p>2、开始书写文章：</p>
+<pre><code class="git">hexo new &#39;我的第一篇hexo博客文章&#39;</code></pre>
+<p>3、运行本地博客服务器：</p>
+<pre><code class="git">$ hexo s
+    INFO  Start processing
+    INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.</code></pre>
+<p>此时，我们在浏览器当中输入：<code>http://local:4000</code> 即可查看网站。</p>
+<h2 id="写文章"><a href="#写文章" class="headerlink" title="写文章"></a>写文章</h2><p>使用以下命令创建文章，我们就可以通过 <code>D:\hexo\source\_posts</code> 查看创建的文件，开始创作即可。</p>
+<pre><code class="git">$ hexo new [layout] &lt;title&gt;</code></pre>
+<p>或者直接将md文章放入到 <code>D:\hexo\source\_posts</code> 目录下；</p>
+<h2 id="文章预定义参数"><a href="#文章预定义参数" class="headerlink" title="文章预定义参数"></a>文章预定义参数</h2><p>我们在md文章形状，使用yaml定义标题、分类、标签、日期等等，可以自己增减。</p>
+<pre><code class="yaml">---
+title: 文章标题
+date： 日期
+categories: 分类
+tags: 标签
+---</code></pre>
+<p><a href="https://hexo.io/zh-cn/docs/front-matter" target="_blank" rel="noopener">官方文档：更多预先定义的参数</a></p>
+<p>如果是有子分类：</p>
+<pre><code class="yaml">categories: [父分类， 子分类]</code></pre>
+<p>如果是有多个标签：</p>
+<pre><code class="yaml">tags: [标签1， 标签2]</code></pre>
+<h2 id="搭建到-github"><a href="#搭建到-github" class="headerlink" title="搭建到 github"></a>搭建到 github</h2><p>1、创建 github 账号，并创建 ssh （参考：<a href="https://yuanshengorg.github.io/2019/12/17/tools/git%E5%92%8Cgithub/#SSH-%E6%8E%A8%E9%80%81" target="_blank" rel="noopener">git和github：SSH</a>）； </p>
+<p>2、在自己的账号下，新建一个repo：<code>New repository</code> （github右上角 + 号——New repository）；</p>
+<p>3、项目名称（Repository name）为：<code>你的名称.github.io</code> ，如 <code>yuansheng.github.io</code>；</p>
+<p><img src="http://mdimg.95408.com/201912172352_728.png?imageView2/2/w/1200/h/1200" alt=""></p>
+<p>4、回到本地文件夹：<code>d/hexo</code> ，修改文件： <code>_config.yml</code> ：</p>
+<pre><code class="git">deploy:
+  type: git
+  repo: https://github.com/yuansheng/yuansheng.github.io.git
+  branch: master</code></pre>
+<p>repo 请修改为你创建的地址。</p>
+<p>5、安装工具：hexo-deployer-git</p>
+<pre><code class="git">npm install hexo-deployer-git --save</code></pre>
+<p>6、回到命令行工具运行：</p>
+<pre><code class="git">hexo clean // 清除之前生成的文件
+hexo generate   // 生成新的静态文件
+hexo depoly   // 部署网站</code></pre>
+<p>执行 <code>hexo depoly</code> 时，第一次可能会需要注册 github.com 的账号及密码；</p>
+<h2 id="访问地址"><a href="#访问地址" class="headerlink" title="访问地址"></a>访问地址</h2><p>输入 <code>yuansheng.github.io</code> ，即你设置的项目文件名，即可访问网站；</p>
+<p>你也可以绑定自己的域名，如 <code>www.yuanblogname.com</code>；</p>
+<h2 id="增-改文章"><a href="#增-改文章" class="headerlink" title="增/改文章"></a>增/改文章</h2><p>上面的三个命令 <code>hexo clean / generate / depoly</code> 可简写为：</p>
+<pre><code class="git">hexo clean
+hexo g
+hexo d</code></pre>
+<p>以后每次在文件夹中增加、修改了 md 文章后，执行这三个命令即可；</p>
+<p>所有在本地电脑上修改的文档，远程博客也就修改了。</p>
+<h2 id="更多命令"><a href="#更多命令" class="headerlink" title="更多命令"></a>更多命令</h2><p><a href="https://hexo.io/zh-cn/docs/commands" target="_blank" rel="noopener">hexo官方文档：指令</a></p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p><a href="https://www.cnblogs.com/visugar/p/6821777.html" target="_blank" rel="noopener">hexo从零开始到搭建完整</a></p>
+<p><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">官方文档：中文</a></p>
+<p>以上。</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源 </span>
@@ -412,12 +374,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>自定义 vs code 命令快捷键</p>
+    <p><span class="copy-title">文章标题:</span>hexo创建博客</p>
     
     <p><span class="copy-title">本文作者:</span><a  title="半根竹子">半根竹子</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-12-17, 19:27:36</p>
-    <p><span class="copy-title">最后更新:</span>2019-12-17, 19:26:58</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/12/17/tools/vscode%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9B%98/" title="自定义 vs code 命令快捷键">http://yoursite.com/2019/12/17/tools/vscode%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9B%98/</a>
+    <p><span class="copy-title">发布时间:</span>2019-12-17, 14:26:53</p>
+    <p><span class="copy-title">最后更新:</span>2019-12-18, 00:19:47</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/12/17/tools/hexo%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/" title="hexo创建博客">http://yoursite.com/2019/12/17/tools/hexo%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
