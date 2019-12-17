@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>自定义 vs code 命令快捷键 | 半根竹子</title>
+  <title>python/redis | 半根竹子</title>
   <meta name="keywords" content="">
-  <meta name="description" content="自定义 vs code 命令快捷键 | 半根竹子">
+  <meta name="description" content="python/redis | 半根竹子">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="天天生鲜 dailyfresh 进入虚拟环境py_django，创建项目dailyfresh D:\tiantian&gt;workon py_django (py_django) D:\tiantian&gt;django-admin startproject dailyfresh (py_django) D:\tiantian&gt;cd dailyfresh创建4个应用：用户、商品、购物车、">
 <meta property="og:type" content="article">
@@ -289,25 +289,19 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-vscode自定义快捷键盘" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-python/redis" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">自定义 vs code 命令快捷键</h1>
+        <h1 class="article-title">python/redis</h1>
     
     <div class="article-meta">
         
         
-        
-        <span class="book">
-            
-                <a  data-rel="效率工具">效率工具</a>
-            
-        </span>
         
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-12-11 11:46:08'>2019-02-11 11:28</time>
+        创建时间:<time class="date" title='更新时间: 2019-10-18 16:30:20'>2019-12-17 17:20</time>
         
     </div>
     <div class="article-meta">
@@ -318,7 +312,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、光标移动到行尾-行首"><span class="toc-text">1、光标移动到行尾&#x2F;行首</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、选择当前单词"><span class="toc-text">2、选择当前单词</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、光标移动到下-上一个单词"><span class="toc-text">3、光标移动到下&#x2F;上一个单词</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4、不使用方向键上下移动"><span class="toc-text">4、不使用方向键上下移动</span></a></li></ol>
+        
     
 <style>
     .left-col .switch-btn,
@@ -334,108 +328,22 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="1、光标移动到行尾-行首"><a href="#1、光标移动到行尾-行首" class="headerlink" title="1、光标移动到行尾/行首"></a>1、光标移动到行尾/行首</h3><p>当软件自动补全时，我们常常会需要将光标移动到行尾，可以使用 <code>end</code> 键，或者自定义一个更方便的键，比如：<code>Ctrl + ;</code> 。</p>
-<table>
-<thead>
-<tr>
-<th>键</th>
-<th>命令</th>
-<th>我的修改</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>END</td>
-<td>cursorEnd   光标移动到行尾</td>
-<td>/</td>
-</tr>
-<tr>
-<td>HOME</td>
-<td>cursorHome   光标移动到行首</td>
-<td>Ctrl + Shift + ;</td>
-</tr>
-<tr>
-<td>无</td>
-<td>cursorLineEnd   光标移动到行尾</td>
-<td>Ctrl + ;</td>
-</tr>
-<tr>
-<td>无</td>
-<td>cursorLineStart   光标移动到行首</td>
-<td>/</td>
-</tr>
-</tbody></table>
-<h3 id="2、选择当前单词"><a href="#2、选择当前单词" class="headerlink" title="2、选择当前单词"></a>2、选择当前单词</h3><p>连续按展开选择，第一次选中当前单词，第二次选择当前行；继续选择当前块；只按一次的话，就是选择当前单词。</p>
-<table>
-<thead>
-<tr>
-<th>键</th>
-<th>命令</th>
-<th>我的修改</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Shift + Alt + Right</td>
-<td>展开选择</td>
-<td>Alt + I</td>
-</tr>
-<tr>
-<td>Shift + Alt + Left</td>
-<td>收起选择</td>
-<td>Alt + O</td>
-</tr>
-</tbody></table>
-<h3 id="3、光标移动到下-上一个单词"><a href="#3、光标移动到下-上一个单词" class="headerlink" title="3、光标移动到下/上一个单词"></a>3、光标移动到下/上一个单词</h3><p>我们需要将光标跳转到下一个单词或者上一个单词。</p>
-<table>
-<thead>
-<tr>
-<th>键</th>
-<th>命令</th>
-<th>我的修改</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Ctrl + Right</td>
-<td>cursorWordEndRight   光标移动到右边单词结尾</td>
-<td>Alt + ;</td>
-</tr>
-<tr>
-<td>Ctrl + Left</td>
-<td>cursorWordStartLeft   光标移动到左边单词开关</td>
-<td>Alt + L</td>
-</tr>
-</tbody></table>
-<h3 id="4、不使用方向键上下移动"><a href="#4、不使用方向键上下移动" class="headerlink" title="4、不使用方向键上下移动"></a>4、不使用方向键上下移动</h3><p>我们要将光标上下移动时，使用上、下按键也是不方便，所以 vim 中使用了 <code>h j k l</code> ；</p>
-<table>
-<thead>
-<tr>
-<th>键</th>
-<th>命令</th>
-<th>我的修改</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>DOWN</td>
-<td>cursorDown   向下移动光标</td>
-<td>Alt + J</td>
-</tr>
-<tr>
-<td>UP</td>
-<td>cursorUp   向上移动光标</td>
-<td>Alt + K</td>
-</tr>
-<tr>
-<td>LEFT</td>
-<td>cursorLeft   向左移动光标</td>
-<td>/</td>
-</tr>
-<tr>
-<td>RIGTH</td>
-<td>cursorRight   向右移动光标</td>
-<td>/</td>
-</tr>
-</tbody></table>
-<p><img src="http://mdimg.95408.com/201912111130_513.png?imageView2/2/w/1200/h/1200" alt=""></p>
-<pre><code>![1575993392487](D:\Markdown\css-js-blog\assets\1575993392487.png)</code></pre><p>以上。</p>
+        <p>redis</p>
+<p>win版本github下载：<a href="https://github.com/ServiceStack/redis-windows/tree/master/downloads" target="_blank" rel="noopener">https://github.com/ServiceStack/redis-windows/tree/master/downloads</a></p>
+<p>解压至 <code>c:\redis</code> ，运行：</p>
+<pre><code>redis-server redis.windows.conf
+指定模式：
+redis-cli.exe -h 127.0.0.1 -p 6379 -a 123456</code></pre><p>可以将c:\redis加入系统环境变量，运行可以简写为：</p>
+<pre><code>redis-server</code></pre><p>Django与Celery（win10下）</p>
+<p><a href="https://www.jianshu.com/p/f9af57a772ff" target="_blank" rel="noopener">https://www.jianshu.com/p/f9af57a772ff</a></p>
+<p>Celery3.1.24 兼容python3.7问题</p>
+<p><a href="https://blog.csdn.net/hebaojing/article/details/100015886" target="_blank" rel="noopener">https://blog.csdn.net/hebaojing/article/details/100015886</a></p>
+<blockquote>
+<p>  celery3.1.25  celery3.1中的变量asyn，在python3.7中是关键字，直到celery4，没有对变量async改名。换句话说即使celery4与python3.7配合使用，仍然会出现这个问题。</p>
+<p>  因此需要将将python降级成python3.6版本</p>
+</blockquote>
+<p>python下的redis版本过高：AttributeError: ‘str’ object has no attribute ‘items’，重装：</p>
+<pre><code>pip install redis==2.10.6</code></pre><p>在win10下，可以在同一个文件中完成。</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源 </span>
@@ -445,12 +353,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>自定义 vs code 命令快捷键</p>
+    <p><span class="copy-title">文章标题:</span>python/redis</p>
     
     <p><span class="copy-title">本文作者:</span><a  title="半根竹子">半根竹子</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-02-11, 11:28:00</p>
-    <p><span class="copy-title">最后更新:</span>2019-12-11, 11:46:08</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/02/11/vscode%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9B%98/" title="自定义 vs code 命令快捷键">http://yoursite.com/2019/02/11/vscode%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9B%98/</a>
+    <p><span class="copy-title">发布时间:</span>2019-12-17, 17:20:05</p>
+    <p><span class="copy-title">最后更新:</span>2019-10-18, 16:30:20</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/12/17/python/redis/" title="python/redis">http://yoursite.com/2019/12/17/python/redis/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>

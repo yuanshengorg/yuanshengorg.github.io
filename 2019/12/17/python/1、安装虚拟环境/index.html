@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>自定义 vs code 命令快捷键 | 半根竹子</title>
+  <title>python/1、安装虚拟环境 | 半根竹子</title>
   <meta name="keywords" content="">
-  <meta name="description" content="自定义 vs code 命令快捷键 | 半根竹子">
+  <meta name="description" content="python/1、安装虚拟环境 | 半根竹子">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="天天生鲜 dailyfresh 进入虚拟环境py_django，创建项目dailyfresh D:\tiantian&gt;workon py_django (py_django) D:\tiantian&gt;django-admin startproject dailyfresh (py_django) D:\tiantian&gt;cd dailyfresh创建4个应用：用户、商品、购物车、">
 <meta property="og:type" content="article">
@@ -289,25 +289,19 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-vscode自定义快捷键盘" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-python/1、安装虚拟环境" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">自定义 vs code 命令快捷键</h1>
+        <h1 class="article-title">python/1、安装虚拟环境</h1>
     
     <div class="article-meta">
         
         
-        
-        <span class="book">
-            
-                <a  data-rel="效率工具">效率工具</a>
-            
-        </span>
         
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-12-11 11:46:08'>2019-02-11 11:28</time>
+        创建时间:<time class="date" title='更新时间: 2019-12-16 17:53:55'>2019-12-17 17:20</time>
         
     </div>
     <div class="article-meta">
@@ -318,7 +312,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、光标移动到行尾-行首"><span class="toc-text">1、光标移动到行尾&#x2F;行首</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、选择当前单词"><span class="toc-text">2、选择当前单词</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、光标移动到下-上一个单词"><span class="toc-text">3、光标移动到下&#x2F;上一个单词</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4、不使用方向键上下移动"><span class="toc-text">4、不使用方向键上下移动</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装虚拟环境"><span class="toc-text">安装虚拟环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#创建虚拟环境"><span class="toc-text">创建虚拟环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#虚拟环境操作命令"><span class="toc-text">虚拟环境操作命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Django"><span class="toc-text">安装Django</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#创建项目及应用"><span class="toc-text">创建项目及应用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PyCharm打开项目及设置"><span class="toc-text">PyCharm打开项目及设置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PyCharm安装应用"><span class="toc-text">PyCharm安装应用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#启动应用"><span class="toc-text">启动应用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#It-worked"><span class="toc-text">It worked !</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -334,108 +328,54 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="1、光标移动到行尾-行首"><a href="#1、光标移动到行尾-行首" class="headerlink" title="1、光标移动到行尾/行首"></a>1、光标移动到行尾/行首</h3><p>当软件自动补全时，我们常常会需要将光标移动到行尾，可以使用 <code>end</code> 键，或者自定义一个更方便的键，比如：<code>Ctrl + ;</code> 。</p>
-<table>
-<thead>
-<tr>
-<th>键</th>
-<th>命令</th>
-<th>我的修改</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>END</td>
-<td>cursorEnd   光标移动到行尾</td>
-<td>/</td>
-</tr>
-<tr>
-<td>HOME</td>
-<td>cursorHome   光标移动到行首</td>
-<td>Ctrl + Shift + ;</td>
-</tr>
-<tr>
-<td>无</td>
-<td>cursorLineEnd   光标移动到行尾</td>
-<td>Ctrl + ;</td>
-</tr>
-<tr>
-<td>无</td>
-<td>cursorLineStart   光标移动到行首</td>
-<td>/</td>
-</tr>
-</tbody></table>
-<h3 id="2、选择当前单词"><a href="#2、选择当前单词" class="headerlink" title="2、选择当前单词"></a>2、选择当前单词</h3><p>连续按展开选择，第一次选中当前单词，第二次选择当前行；继续选择当前块；只按一次的话，就是选择当前单词。</p>
-<table>
-<thead>
-<tr>
-<th>键</th>
-<th>命令</th>
-<th>我的修改</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Shift + Alt + Right</td>
-<td>展开选择</td>
-<td>Alt + I</td>
-</tr>
-<tr>
-<td>Shift + Alt + Left</td>
-<td>收起选择</td>
-<td>Alt + O</td>
-</tr>
-</tbody></table>
-<h3 id="3、光标移动到下-上一个单词"><a href="#3、光标移动到下-上一个单词" class="headerlink" title="3、光标移动到下/上一个单词"></a>3、光标移动到下/上一个单词</h3><p>我们需要将光标跳转到下一个单词或者上一个单词。</p>
-<table>
-<thead>
-<tr>
-<th>键</th>
-<th>命令</th>
-<th>我的修改</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Ctrl + Right</td>
-<td>cursorWordEndRight   光标移动到右边单词结尾</td>
-<td>Alt + ;</td>
-</tr>
-<tr>
-<td>Ctrl + Left</td>
-<td>cursorWordStartLeft   光标移动到左边单词开关</td>
-<td>Alt + L</td>
-</tr>
-</tbody></table>
-<h3 id="4、不使用方向键上下移动"><a href="#4、不使用方向键上下移动" class="headerlink" title="4、不使用方向键上下移动"></a>4、不使用方向键上下移动</h3><p>我们要将光标上下移动时，使用上、下按键也是不方便，所以 vim 中使用了 <code>h j k l</code> ；</p>
-<table>
-<thead>
-<tr>
-<th>键</th>
-<th>命令</th>
-<th>我的修改</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>DOWN</td>
-<td>cursorDown   向下移动光标</td>
-<td>Alt + J</td>
-</tr>
-<tr>
-<td>UP</td>
-<td>cursorUp   向上移动光标</td>
-<td>Alt + K</td>
-</tr>
-<tr>
-<td>LEFT</td>
-<td>cursorLeft   向左移动光标</td>
-<td>/</td>
-</tr>
-<tr>
-<td>RIGTH</td>
-<td>cursorRight   向右移动光标</td>
-<td>/</td>
-</tr>
-</tbody></table>
-<p><img src="http://mdimg.95408.com/201912111130_513.png?imageView2/2/w/1200/h/1200" alt=""></p>
-<pre><code>![1575993392487](D:\Markdown\css-js-blog\assets\1575993392487.png)</code></pre><p>以上。</p>
+        <p>1、安装虚拟环境</p>
+<h2 id="安装虚拟环境"><a href="#安装虚拟环境" class="headerlink" title="安装虚拟环境"></a>安装虚拟环境</h2><pre><code>(sudo) pip install virtualenv
+(sudo) pip install virtualenvwrapper</code></pre><p>如图：</p>
+<p><img src="C:%5CUsers%5Cyuan%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1570589326641.png" alt="1570589326641"></p>
+<pre><code>Requirement already satisfied: virtualenv in c:\users\yuan\appdata\local\programs\python\python36\lib\site-packages (from virtualenvwrapper) (16.7.5)
+Collecting virtualenv-clone (from virtualenvwrapper)</code></pre><h2 id="创建虚拟环境"><a href="#创建虚拟环境" class="headerlink" title="创建虚拟环境"></a>创建虚拟环境</h2><pre><code>mkvirtualenv -p python3 py_django</code></pre><p>如下：</p>
+<pre><code>d:\virtualenv&gt;mkvirtualenv py_django
+Using base prefix &#39;c:\\users\\yuan\\appdata\\local\\programs\\python\\python36&#39;
+New python executable in C:\Users\yuan\Envs\py_django\Scripts\python.exe
+Installing setuptools, pip, wheel...
+done.
+
+(py_django) d:\virtualenv&gt;</code></pre><p>此时，创建了一个新的虚拟环境<code>py_django</code>，win地址：</p>
+<pre><code>C:\Users\yuan\Envs\py_django</code></pre><p>Linux地址：</p>
+<pre><code>~/.virtualenvs/py_django</code></pre><h2 id="虚拟环境操作命令"><a href="#虚拟环境操作命令" class="headerlink" title="虚拟环境操作命令"></a>虚拟环境操作命令</h2><p>查看已经安装的虚拟环境：</p>
+<pre><code>workon 两次tab键</code></pre><p>使用/进入虚拟环境：进入虚拟环境后，会在命令行前缀上加上（py_django）</p>
+<pre><code>workon py_django</code></pre><p>退出虚拟环境：</p>
+<pre><code>deactivate</code></pre><p>删除虚拟环境：(需要先退出虚拟环境)</p>
+<pre><code>先退出：deactivate
+再删除：rmvirtualenv py3_django</code></pre><h2 id="安装Django"><a href="#安装Django" class="headerlink" title="安装Django"></a>安装Django</h2><p>1、要在哪一个虚拟环境中安装包，需要先进入此虚拟环境；</p>
+<p>2、不要使用sudo命令 (==1.8.2可省去)</p>
+<pre><code>pip install django==1.8.2</code></pre><p>此时，Django安装在了虚拟环境py_django下，win地址：</p>
+<pre><code>C:\Users\yuan\Envs\py_django\Lib\site-packages</code></pre><p>Linux地址：</p>
+<pre><code>~/.virtualenvs/py3_django/lib/python3.5/site-packages</code></pre><p>如图：</p>
+<p><img src="C:%5CUsers%5Cyuan%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1570590323629.png" alt="1570590323629"></p>
+<h2 id="创建项目及应用"><a href="#创建项目及应用" class="headerlink" title="创建项目及应用"></a>创建项目及应用</h2><p>创建项目：</p>
+<pre><code>cd python # 进入要创建文件夹的自定义目录
+django-admin startproject BookManager</code></pre><p><img src="D:%5CMarkdown%5CPython%5CDjango%5Cassets%5C1570591799872.png" alt="1570591799872"></p>
+<p>创建应用：</p>
+<pre><code>cd BookManager/ # 进入项目文件
+python manage.py startapp Book</code></pre><p><img src="D:%5CMarkdown%5CPython%5CDjango%5Cassets%5C1570591877119.png" alt="1570591877119"></p>
+<p>如图：</p>
+<p><img src="D:%5CMarkdown%5CPython%5CDjango%5Cassets%5C1570591716149.png" alt="1570591716149"></p>
+<h2 id="PyCharm打开项目及设置"><a href="#PyCharm打开项目及设置" class="headerlink" title="PyCharm打开项目及设置"></a>PyCharm打开项目及设置</h2><p>打开BookManager项目：</p>
+<p><img src="D:%5CMarkdown%5CPython%5CDjango%5Cassets%5C1570592037350.png" alt="1570592037350"></p>
+<p>创建完成后，项目及应用的所有文件及文件夹：</p>
+<p><img src="D:%5CMarkdown%5CPython%5CDjango%5Cassets%5C1570592085008.png" alt="1570592085008"></p>
+<p>将项目设置为使用虚拟环境 <code>py_django</code> ：</p>
+<p><img src="D:%5CMarkdown%5CPython%5CDjango%5Cassets%5C1570592381960.png" alt="1570592381960"></p>
+<h2 id="PyCharm安装应用"><a href="#PyCharm安装应用" class="headerlink" title="PyCharm安装应用"></a>PyCharm安装应用</h2><p>在项目文件夹 <code>settings.py</code> 中加入应用 <code>Book</code> ：</p>
+<p><img src="D:%5CMarkdown%5CPython%5CDjango%5Cassets%5C1570592930513.png" alt="1570592930513"></p>
+<h2 id="启动应用"><a href="#启动应用" class="headerlink" title="启动应用"></a>启动应用</h2><p>在 PyCharm 命令行 Terminal 输入（或者在系统中输入命令）：</p>
+<pre><code>python manage.py runserver</code></pre><p>注意：系统中输入命令需要进入到项目文件下（如 <code>d:\python\BookManager</code>）才能找到 <code>manage.py</code> 文件</p>
+<p><img src="D:%5CMarkdown%5CPython%5CDjango%5Cassets%5C1570592762643.png" alt="1570592762643"></p>
+<p>浏览器中打开地址：</p>
+<pre><code>http://127.0.0.1:8000/</code></pre><p>如图：</p>
+<p><img src="D:%5CMarkdown%5CPython%5CDjango%5Cassets%5C1570592618221.png" alt="1570592618221"></p>
+<h2 id="It-worked"><a href="#It-worked" class="headerlink" title="It worked !"></a>It worked !</h2><p>完成。</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源 </span>
@@ -445,12 +385,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>自定义 vs code 命令快捷键</p>
+    <p><span class="copy-title">文章标题:</span>python/1、安装虚拟环境</p>
     
     <p><span class="copy-title">本文作者:</span><a  title="半根竹子">半根竹子</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-02-11, 11:28:00</p>
-    <p><span class="copy-title">最后更新:</span>2019-12-11, 11:46:08</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/02/11/vscode%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9B%98/" title="自定义 vs code 命令快捷键">http://yoursite.com/2019/02/11/vscode%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9B%98/</a>
+    <p><span class="copy-title">发布时间:</span>2019-12-17, 17:20:05</p>
+    <p><span class="copy-title">最后更新:</span>2019-12-16, 17:53:55</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/12/17/python/1%E3%80%81%E5%AE%89%E8%A3%85%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/" title="python/1、安装虚拟环境">http://yoursite.com/2019/12/17/python/1%E3%80%81%E5%AE%89%E8%A3%85%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
