@@ -4,16 +4,16 @@
   
     
     <entry>
-      <title>test测试</title>
-      <link href="/2019/12/18/python/test%E6%B5%8B%E8%AF%95/"/>
-      <url>/2019/12/18/python/test%E6%B5%8B%E8%AF%95/</url>
+      <title>Markdown语法CSS表现测试</title>
+      <link href="/2019/12/18/tools/Markdown%E8%AF%AD%E6%B3%95CSS%E8%A1%A8%E7%8E%B0%E6%B5%8B%E8%AF%95/"/>
+      <url>/2019/12/18/tools/Markdown%E8%AF%AD%E6%B3%95CSS%E8%A1%A8%E7%8E%B0%E6%B5%8B%E8%AF%95/</url>
       
-        <content type="html"><![CDATA[<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><p><code>python</code></p><blockquote><p>  一个块</p></blockquote><pre><code class="python">代码块</code></pre><p>本地图片：</p><p><img src="C:%5CUsers%5Cyuan%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1576653324353.png" alt="1576653324353"></p><p>表格：</p><table><thead><tr><th>标题</th><th>标题2</th><th>标题2</th></tr></thead><tbody><tr><td>一</td><td>二</td><td>三</td></tr><tr><td>hello</td><td>python</td><td>js</td></tr><tr><td>css</td><td>html</td><td>less</td></tr></tbody></table><ul><li><input checked="" disabled="" type="checkbox"> <p>打勾</p></li><li><input disabled="" type="checkbox"> <p>不打勾</p><p>[链接引用]: <a href="https://yuanshengorg.github.io/" target="_blank" rel="noopener">https://yuanshengorg.github.io/</a>    “标题文字”</p></li></ul><hr><p>[TOC]</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><p>下载： <code>$ npm install hexo-cli -g</code> 。</p><p>列表： <code>1.</code></p><ol><li>脚踏实地、开拓进取</li><li>脚踏实地、开拓进取</li><li>脚踏实地、开拓进取</li></ol><p>列表： <code>-</code></p><ul><li>脚踏实地、开拓进取</li><li>脚踏实地、开拓进取</li><li>脚踏实地、开拓进取</li></ul><p>链接：<code>[]()</code></p><p><a href="http://www.halfbamboo.com" target="_blank" rel="noopener">半根竹子的官方网站</a></p><p>块引用： <code>&gt;</code></p><blockquote><p>  回归20年，背靠<code>祖国</code>、面向世界的澳门特区迎来一次次发展机遇；脚踏实地、开拓进取的澳门创业者站上更为广阔的发展舞台。</p></blockquote><p>水平分割线：<code>------</code></p><hr><p>代码块： </p><pre><code class="js">fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];fruits.forEach(function(v) {    console.log(v);});   // 注释</code></pre><p>图片：</p><p><img src="http://mdimg.95408.com/20191218121717.png" alt="图片说明文字"></p><p>表格：</p><table><thead><tr><th>标题</th><th>标题2</th><th>标题2</th></tr></thead><tbody><tr><td>一</td><td>二</td><td>三</td></tr><tr><td>hello,hello,hello</td><td>python,python,python</td><td>js,js,js</td></tr><tr><td>css,css,css</td><td>html,html,html</td><td>node,node,node</td></tr></tbody></table>]]></content>
       
       
       <categories>
           
-          <category> python </category>
+          <category> 工具 </category>
           
       </categories>
       
