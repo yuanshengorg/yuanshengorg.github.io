@@ -4,31 +4,6 @@
   
     
     <entry>
-      <title>Hexo的一些折腾教程</title>
-      <link href="/2019/12/18/tools/Hexo%E7%9A%84%E4%B8%80%E4%BA%9B%E6%8A%98%E8%85%BE%E6%95%99%E7%A8%8B/"/>
-      <url>/2019/12/18/tools/Hexo%E7%9A%84%E4%B8%80%E4%BA%9B%E6%8A%98%E8%85%BE%E6%95%99%E7%A8%8B/</url>
-      
-        <content type="html"><![CDATA[<h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><p><a href="https://purewhitewu.github.io/2017/04/29/minify-code-using-gulp/" target="_blank" rel="noopener">压缩 hexo 博客的 html、css、js 等资源</a></p><p><a href="https://segmentfault.com/a/1190000009544924#articleHeader8" target="_blank" rel="noopener">hexo的next主题个性化配置教程</a></p><ul><li>在右上角或者左上角实现fork me on github</li><li>添加RSS</li><li>添加动态背景</li><li>实现点击出现桃心效果</li><li>修改文章内链接文本样式</li><li>修改文章底部的那个带#号的标签</li><li>在每篇文章末尾统一添加“本文结束”标记</li><li>修改作者头像并旋转</li><li>博文压缩</li><li>修改``代码块自定义样式</li><li>侧边栏社交小图标设置</li><li>主页文章添加阴影效果</li><li>在网站底部加上访问量</li><li>添加热度</li><li>网站底部字数统计</li><li>添加 README.md 文件</li><li>设置网站的图标Favicon</li><li>实现统计功能</li><li>添加顶部加载条</li><li>在文章底部增加版权信息</li><li>添加网易云跟帖(跟帖关闭，已失效，改为来必力)</li><li>隐藏网页底部powered By Hexo / 强力驱动</li><li>修改网页底部的桃心</li><li>文章加密访问</li><li>添加jiathis分享</li><li>博文置顶</li><li>修改字体大小</li><li>修改打赏字体不闪动</li><li>侧边栏推荐阅读</li><li>自定义鼠标样式</li><li>为博客加上萌萌的宠物</li><li>DaoVoice 在线联系</li><li>点击爆炸效果</li></ul><p><a href="https://blog.csdn.net/lewky_liu/article/details/82432003" target="_blank" rel="noopener">Hexo瞎折腾系列(5) - 使用hexo-neat插件压缩页面静态资源</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 工具 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>自定义 vs code 命令快捷键</title>
       <link href="/2019/12/17/tools/vscode%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9B%98/"/>
       <url>/2019/12/17/tools/vscode%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9B%98/</url>
@@ -147,9 +122,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> 博客 </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
