@@ -1448,7 +1448,7 @@ div.ac > ul > li:before,
   border-bottom: 0px;
   line-height: 31px;
   margin-bottom: 25px;
-  color: #009688;
+  color: #168b6f;
 }
 .post .pjax article .toc-ref {
   display: none;
@@ -1570,7 +1570,10 @@ div.ac > ul > li:before,
   background-color: #009688;
 }
 .post .pjax article :not(pre) > code {
-  color: #009688;
+  padding: 2px 6px;
+  background-color: #f1f4f4;
+  border-radius: 4px;
+  color: #168b6f;
   font-family: sans-serif;
 }
 .post .pjax article pre.mermaid {
@@ -1578,7 +1581,7 @@ div.ac > ul > li:before,
   text-align: center;
 }
 .post .pjax article pre > code {
-  font-size: 15px;
+  font-size: 18px;
   border-radius: 3px;
 /* 滚动条 */
 }
@@ -1706,13 +1709,26 @@ h6 {
 }
 h1 {
   font-size: 1.8em;
-  color: #009688;
+  color: #333;
 }
 h2 {
-  color: #008e80;
+  color: #333;
+}
+h2:before {
+  content: "\e905";
+  font-family: 'icomoon' !important;
+  color: #168b6f;
+  margin-right: 10px;
 }
 h3 {
-  color: #33caa6;
+  color: #168b6f;
+  font-weight: 500;
+}
+h3:before {
+  content: "\f02d";
+  font-family: 'icomoon' !important;
+  color: #999;
+  margin-right: 10px;
 }
 .nav {
   width: 542px;
