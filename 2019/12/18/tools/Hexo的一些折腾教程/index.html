@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>自定义 vs code 命令快捷键 | 半根竹子</title>
-  <meta name="keywords" content=" vscode ">
-  <meta name="description" content="自定义 vs code 命令快捷键 | 半根竹子">
+  <title>Hexo的一些折腾教程 | 半根竹子</title>
+  <meta name="keywords" content=" hexo ">
+  <meta name="description" content="Hexo的一些折腾教程 | 半根竹子">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="Hexo压缩 hexo 博客的 html、css、js 等资源 hexo的next主题个性化配置教程  在右上角或者左上角实现fork me on github 添加RSS 添加动态背景 实现点击出现桃心效果 修改文章内链接文本样式 修改文章底部的那个带#号的标签 在每篇文章末尾统一添加“本文结束”标记 修改作者头像并旋转 博文压缩 修改&#96;&#96;代码块自定义样式 侧边栏社交小图标设置 主页文章添加阴影">
 <meta property="og:type" content="article">
@@ -268,9 +268,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-tools/vscode自定义快捷键盘" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-tools/Hexo的一些折腾教程" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">自定义 vs code 命令快捷键</h1>
+        <h1 class="article-title">Hexo的一些折腾教程</h1>
     
     <div class="article-meta">
         
@@ -285,14 +285,14 @@
         
         <span class="tag">
             
-            <a class="color2">vscode</a>
+            <a class="color5">hexo</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-12-17 19:26:58'>2019-12-17 19:27</time>
+        创建时间:<time class="date" title='更新时间: 2019-12-18 14:15:41'>2019-12-18 14:15</time>
         
     </div>
     <div class="article-meta">
@@ -303,7 +303,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、光标移动到行尾-行首"><span class="toc-text">1、光标移动到行尾&#x2F;行首</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、选择当前单词"><span class="toc-text">2、选择当前单词</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、光标移动到下-上一个单词"><span class="toc-text">3、光标移动到下&#x2F;上一个单词</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4、不使用方向键上下移动"><span class="toc-text">4、不使用方向键上下移动</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo"><span class="toc-text">Hexo</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -319,108 +319,44 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="1、光标移动到行尾-行首"><a href="#1、光标移动到行尾-行首" class="headerlink" title="1、光标移动到行尾/行首"></a>1、光标移动到行尾/行首</h3><p>当软件自动补全时，我们常常会需要将光标移动到行尾，可以使用 <code>end</code> 键，或者自定义一个更方便的键，比如：<code>Ctrl + ;</code> 。</p>
-<table>
-<thead>
-<tr>
-<th>键</th>
-<th>命令</th>
-<th>我的修改</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>END</td>
-<td>cursorEnd   光标移动到行尾</td>
-<td>/</td>
-</tr>
-<tr>
-<td>HOME</td>
-<td>cursorHome   光标移动到行首</td>
-<td>Ctrl + Shift + ;</td>
-</tr>
-<tr>
-<td>无</td>
-<td>cursorLineEnd   光标移动到行尾</td>
-<td>Ctrl + ;</td>
-</tr>
-<tr>
-<td>无</td>
-<td>cursorLineStart   光标移动到行首</td>
-<td>/</td>
-</tr>
-</tbody></table>
-<h3 id="2、选择当前单词"><a href="#2、选择当前单词" class="headerlink" title="2、选择当前单词"></a>2、选择当前单词</h3><p>连续按展开选择，第一次选中当前单词，第二次选择当前行；继续选择当前块；只按一次的话，就是选择当前单词。</p>
-<table>
-<thead>
-<tr>
-<th>键</th>
-<th>命令</th>
-<th>我的修改</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Shift + Alt + Right</td>
-<td>展开选择</td>
-<td>Alt + I</td>
-</tr>
-<tr>
-<td>Shift + Alt + Left</td>
-<td>收起选择</td>
-<td>Alt + O</td>
-</tr>
-</tbody></table>
-<h3 id="3、光标移动到下-上一个单词"><a href="#3、光标移动到下-上一个单词" class="headerlink" title="3、光标移动到下/上一个单词"></a>3、光标移动到下/上一个单词</h3><p>我们需要将光标跳转到下一个单词或者上一个单词。</p>
-<table>
-<thead>
-<tr>
-<th>键</th>
-<th>命令</th>
-<th>我的修改</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Ctrl + Right</td>
-<td>cursorWordEndRight   光标移动到右边单词结尾</td>
-<td>Alt + ;</td>
-</tr>
-<tr>
-<td>Ctrl + Left</td>
-<td>cursorWordStartLeft   光标移动到左边单词开关</td>
-<td>Alt + L</td>
-</tr>
-</tbody></table>
-<h3 id="4、不使用方向键上下移动"><a href="#4、不使用方向键上下移动" class="headerlink" title="4、不使用方向键上下移动"></a>4、不使用方向键上下移动</h3><p>我们要将光标上下移动时，使用上、下按键也是不方便，所以 vim 中使用了 <code>h j k l</code> ；</p>
-<table>
-<thead>
-<tr>
-<th>键</th>
-<th>命令</th>
-<th>我的修改</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>DOWN</td>
-<td>cursorDown   向下移动光标</td>
-<td>Alt + J</td>
-</tr>
-<tr>
-<td>UP</td>
-<td>cursorUp   向上移动光标</td>
-<td>Alt + K</td>
-</tr>
-<tr>
-<td>LEFT</td>
-<td>cursorLeft   向左移动光标</td>
-<td>/</td>
-</tr>
-<tr>
-<td>RIGTH</td>
-<td>cursorRight   向右移动光标</td>
-<td>/</td>
-</tr>
-</tbody></table>
-<p><img src="http://mdimg.95408.com/201912111130_513.png?imageView2/2/w/1200/h/1200" alt=""></p>
-<pre><code>![1575993392487](D:\Markdown\css-js-blog\assets\1575993392487.png)</code></pre><p>以上。</p>
+        <h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><p><a href="https://purewhitewu.github.io/2017/04/29/minify-code-using-gulp/" target="_blank" rel="noopener">压缩 hexo 博客的 html、css、js 等资源</a></p>
+<p><a href="https://segmentfault.com/a/1190000009544924#articleHeader8" target="_blank" rel="noopener">hexo的next主题个性化配置教程</a></p>
+<ul>
+<li>在右上角或者左上角实现fork me on github</li>
+<li>添加RSS</li>
+<li>添加动态背景</li>
+<li>实现点击出现桃心效果</li>
+<li>修改文章内链接文本样式</li>
+<li>修改文章底部的那个带#号的标签</li>
+<li>在每篇文章末尾统一添加“本文结束”标记</li>
+<li>修改作者头像并旋转</li>
+<li>博文压缩</li>
+<li>修改``代码块自定义样式</li>
+<li>侧边栏社交小图标设置</li>
+<li>主页文章添加阴影效果</li>
+<li>在网站底部加上访问量</li>
+<li>添加热度</li>
+<li>网站底部字数统计</li>
+<li>添加 README.md 文件</li>
+<li>设置网站的图标Favicon</li>
+<li>实现统计功能</li>
+<li>添加顶部加载条</li>
+<li>在文章底部增加版权信息</li>
+<li>添加网易云跟帖(跟帖关闭，已失效，改为来必力)</li>
+<li>隐藏网页底部powered By Hexo / 强力驱动</li>
+<li>修改网页底部的桃心</li>
+<li>文章加密访问</li>
+<li>添加jiathis分享</li>
+<li>博文置顶</li>
+<li>修改字体大小</li>
+<li>修改打赏字体不闪动</li>
+<li>侧边栏推荐阅读</li>
+<li>自定义鼠标样式</li>
+<li>为博客加上萌萌的宠物</li>
+<li>DaoVoice 在线联系</li>
+<li>点击爆炸效果</li>
+</ul>
+<p><a href="https://blog.csdn.net/lewky_liu/article/details/82432003" target="_blank" rel="noopener">Hexo瞎折腾系列(5) - 使用hexo-neat插件压缩页面静态资源</a></p>
 
       
        
