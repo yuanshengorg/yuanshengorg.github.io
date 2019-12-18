@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Hexo折腾记录更新</title>
+      <link href="/2019/12/18/tools/Hexo%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95%E6%9B%B4%E6%96%B0/"/>
+      <url>/2019/12/18/tools/Hexo%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95%E6%9B%B4%E6%96%B0/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>   更新中 …</p></blockquote><hr><h2 id="增加域名，备份git仓库"><a href="#增加域名，备份git仓库" class="headerlink" title="增加域名，备份git仓库"></a>增加域名，备份git仓库</h2><blockquote><p>  20191218</p></blockquote><ul><li>绑定独立域名： <code>halfbamboo.com</code> ；</li><li>新修改的文件备份到 <code>git</code> 仓库： <a href="https://github.com/yuanshengorg/myHexoBlog" target="_blank" rel="noopener">myHexoBlog</a>；</li></ul><hr><h2 id="修改主题及压缩css-js"><a href="#修改主题及压缩css-js" class="headerlink" title="修改主题及压缩css/js"></a>修改主题及压缩css/js</h2><blockquote><p>  20191218</p></blockquote><ul><li>修改博客主题的CSS样式；</li><li>增加 pulyfile.js 压缩 html/css/js；（放弃）</li><li>增加 hexo-neat 插件压缩 css/js；（html未能压缩）</li></ul><p><img src="http://mdimg.95408.com/201912182118_637.png?imageView2/2/w/1200/h/1200" alt="修改后的3-hexo主题"></p><hr><h2 id="搭建hexo博客"><a href="#搭建hexo博客" class="headerlink" title="搭建hexo博客"></a>搭建hexo博客</h2><blockquote><p>  20191217</p></blockquote><ul><li>本地创建hexo博客：<code>d:/hexo</code> ；</li><li>更换主题：<code>hexo-theme-3-hexo</code> ；</li><li>上传至 <code>github.com</code> ： <a href="https://github.com/yuanshengorg/yuanshengorg.github.io" target="_blank" rel="noopener">yuanshengorg.github.io</a> ；</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 博客 </tag>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Markdown语法CSS表现测试</title>
       <link href="/2019/12/18/tools/Markdown%E8%AF%AD%E6%B3%95CSS%E8%A1%A8%E7%8E%B0%E6%B5%8B%E8%AF%95/"/>
       <url>/2019/12/18/tools/Markdown%E8%AF%AD%E6%B3%95CSS%E8%A1%A8%E7%8E%B0%E6%B5%8B%E8%AF%95/</url>
