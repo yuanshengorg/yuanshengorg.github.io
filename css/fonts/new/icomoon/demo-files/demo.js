@@ -1,30 +1,3 @@
-if (!('boxShadow' in document.body.style)) {
-    document.body.setAttribute('class', 'noBoxShadow');
-}
-
-document.body.addEventListener("click", function(e) {
-    var target = e.target;
-    if (target.tagName === "INPUT" &&
-        target.getAttribute('class').indexOf('liga') === -1) {
-        target.select();
-    }
-});
-
-(function() {
-    var fontSize = document.getElementById('fontSize'),
-        testDrive = document.getElementById('testDrive'),
-        testText = document.getElementById('testText');
-    function updateTest() {
-        testDrive.innerHTML = testText.value || String.fromCharCode(160);
-        if (window.icomoonLiga) {
-            window.icomoonLiga(testDrive);
-        }
-    }
-    function updateSize() {
-        testDrive.style.fontSize = fontSize.value + 'px';
-    }
-    fontSize.addEventListener('change', updateSize, false);
-    testText.addEventListener('input', updateTest, false);
-    testText.addEventListener('change', updateTest, false);
-    updateSize();
-}());
+// build time:Wed Dec 18 2019 13:08:21 GMT+0800 (GMT+08:00)
+if(!("boxShadow"in document.body.style)){document.body.setAttribute("class","noBoxShadow")}document.body.addEventListener("click",function(e){var t=e.target;if(t.tagName==="INPUT"&&t.getAttribute("class").indexOf("liga")===-1){t.select()}});(function(){var e=document.getElementById("fontSize"),t=document.getElementById("testDrive"),n=document.getElementById("testText");function o(){t.innerHTML=n.value||String.fromCharCode(160);if(window.icomoonLiga){window.icomoonLiga(t)}}function i(){t.style.fontSize=e.value+"px"}e.addEventListener("change",i,false);n.addEventListener("input",o,false);n.addEventListener("change",o,false);i()})();
+//rebuild by neat 
