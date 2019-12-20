@@ -1,3 +1,3 @@
-// build time:Fri Dec 20 2019 00:55:49 GMT+0800 (GMT+08:00)
+// build time:Fri Dec 20 2019 17:16:39 GMT+0800 (GMT+08:00)
 if(!("boxShadow"in document.body.style)){document.body.setAttribute("class","noBoxShadow")}document.body.addEventListener("click",function(e){var t=e.target;if(t.tagName==="INPUT"&&t.getAttribute("class").indexOf("liga")===-1){t.select()}});(function(){var e=document.getElementById("fontSize"),t=document.getElementById("testDrive"),n=document.getElementById("testText");function o(){t.innerHTML=n.value||String.fromCharCode(160);if(window.icomoonLiga){window.icomoonLiga(t)}}function i(){t.style.fontSize=e.value+"px"}e.addEventListener("change",i,false);n.addEventListener("input",o,false);n.addEventListener("change",o,false);i()})();
 //rebuild by neat 
