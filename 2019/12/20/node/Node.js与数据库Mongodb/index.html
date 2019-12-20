@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>JavaScript 数组（二） | 半根竹子</title>
-  <meta name="keywords" content=" js ">
-  <meta name="description" content="JavaScript 数组（二） | 半根竹子">
+  <title>Node.js与数据库Mongodb | 半根竹子</title>
+  <meta name="keywords" content=" Mongodb ">
+  <meta name="description" content="Node.js与数据库Mongodb | 半根竹子">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="MongoDB常用命令下载：  下载地址：https:&#x2F;&#x2F;www.mongodb.com&#x2F;download-center&#x2F;community  系统环境变量：  将MongoDB的路径 C:\Program Files\MongoDB\Server\4.1\bin 加入系统环境变量。  启动&#x2F;停止：  启动： net start mongodb  停止： net stop mongodb  注意：">
 <meta property="og:type" content="article">
@@ -366,9 +366,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-js/JavaScript数组（二）" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-node/Node.js与数据库Mongodb" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">JavaScript 数组（二）</h1>
+        <h1 class="article-title">Node.js与数据库Mongodb</h1>
     
     <div class="article-meta">
         
@@ -376,21 +376,21 @@
         
         <span class="book">
             
-                <a  data-rel="JavaScript">JavaScript</a>
+                <a  data-rel="node">node</a>
             
         </span>
         
         
         <span class="tag">
             
-            <a class="color3">js</a>
+            <a class="color3">Mongodb</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-12-17 19:52:09'>2019-12-17 19:27</time>
+        创建时间:<time class="date" title='更新时间: 2019-12-21 01:02:26'>2019-12-20 19:38</time>
         
     </div>
     <div class="article-meta">
@@ -401,7 +401,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、遍历数组"><span class="toc-text">一、遍历数组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、for循环遍历数组"><span class="toc-text">1、for循环遍历数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、for-in-遍历数组"><span class="toc-text">2、for in 遍历数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、forEach-遍历数组"><span class="toc-text">3、forEach() 遍历数组</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、数组迭代"><span class="toc-text">二、数组迭代</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、filter-筛选数组"><span class="toc-text">1、filter() 筛选数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、some-查找满足条件的元素是否存在"><span class="toc-text">2、some() 查找满足条件的元素是否存在</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、forEach-和-some-的区别"><span class="toc-text">3、forEach() 和 some() 的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4、indexOf"><span class="toc-text">4、indexOf()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5、lastIndexOf"><span class="toc-text">5、lastIndexOf()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6、find"><span class="toc-text">6、find()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7、findIndex"><span class="toc-text">7、findIndex()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8、map"><span class="toc-text">8、map()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9、reduce-reduceRight"><span class="toc-text">9、reduce() reduceRight()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10、every"><span class="toc-text">10、every()</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、数组排序"><span class="toc-text">三、数组排序</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、reverse-反转数组"><span class="toc-text">1、reverse() 反转数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、sort-以字母方式排序"><span class="toc-text">2、sort() 以字母方式排序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、sort-以数字方式排序"><span class="toc-text">3、sort() 以数字方式排序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4、sort-随机排序"><span class="toc-text">4、sort() 随机排序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5、sort-查找最高-最低数组值"><span class="toc-text">5、sort() 查找最高&#x2F;最低数组值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6、Math-max-apply-查找最高数组值"><span class="toc-text">6、Math.max.apply() 查找最高数组值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7、Math-min-apply-查找最低数组值"><span class="toc-text">7、Math.min.apply() 查找最低数组值</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#MongoDB"><span class="toc-text">MongoDB</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#常用命令"><span class="toc-text">常用命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MongoDB-Compass-可视化"><span class="toc-text">MongoDB Compass 可视化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据库、集合、文档、字段"><span class="toc-text">数据库、集合、文档、字段</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Node-js与MongoDB"><span class="toc-text">Node.js与MongoDB</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Mongoose模块"><span class="toc-text">Mongoose模块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Node-js连接MongoDB"><span class="toc-text">Node.js连接MongoDB</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建集合"><span class="toc-text">创建集合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建文档"><span class="toc-text">创建文档</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#导入数据"><span class="toc-text">导入数据</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#增删改查"><span class="toc-text">增删改查</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#查询文档"><span class="toc-text">查询文档</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#find"><span class="toc-text">find()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#findOne"><span class="toc-text">findOne()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#查询之前导入的数据"><span class="toc-text">查询之前导入的数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#查询符号使用"><span class="toc-text">查询符号使用</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#删除文档"><span class="toc-text">删除文档</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#findOneAndDelete"><span class="toc-text">findOneAndDelete</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#deleteMany"><span class="toc-text">deleteMany</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#更新文档"><span class="toc-text">更新文档</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#updateOne"><span class="toc-text">updateOne</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#updateMany"><span class="toc-text">updateMany</span></a></li></ol></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -417,197 +417,249 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="一、遍历数组"><a href="#一、遍历数组" class="headerlink" title="一、遍历数组"></a>一、遍历数组</h2><h3 id="1、for循环遍历数组"><a href="#1、for循环遍历数组" class="headerlink" title="1、for循环遍历数组"></a>1、for循环遍历数组</h3><pre><code class="js">fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
-for (var i = 0; i &lt; fruits.length; i++) {
-    console.log(fruits[i]);
-}
-// Banana
-// Orange
-// Apple
-// Mango  </code></pre>
-<h3 id="2、for-in-遍历数组"><a href="#2、for-in-遍历数组" class="headerlink" title="2、for in 遍历数组"></a>2、for in 遍历数组</h3><pre><code class="js">fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
-for (i in fruits) {
-    console.log(fruits[i]);
-}
-// Banana
-// Orange
-// Apple
-// Mango  </code></pre>
-<h3 id="3、forEach-遍历数组"><a href="#3、forEach-遍历数组" class="headerlink" title="3、forEach() 遍历数组"></a>3、forEach() 遍历数组</h3><pre><code class="js">fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
-fruits.forEach(function(v) {
-    console.log(v);
-});
-// Banana
-// Orange
-// Apple
-// Mango  
-fruits.forEach(v =&gt; {
-    console.log(v);
-});
-// Banana
-// Orange
-// Apple
-// Mango  </code></pre>
-<p>数组元素和元素索引</p>
-<pre><code class="js">var arr = [1, 2, 3];
-arr.forEach(function(value, index, array) {
-    console.log(&#39;数组元素&#39; + value);
-    console.log(&#39;数组元素索引号&#39; + index);
-})
-// 数组元素1
-// 数组元素索引号0
-// 数组元素2
-// 数组元素索引号1
-// 数组元素3
-// 数组元素索引号2</code></pre>
-<p>求数组的和</p>
-<pre><code class="js">var sum = 0;
-var arr = [1, 2, 3];
-arr.forEach(function(value, index, array) {
-    sum += value;
-})
-console.log(sum); // 6</code></pre>
-<h2 id="二、数组迭代"><a href="#二、数组迭代" class="headerlink" title="二、数组迭代"></a>二、数组迭代</h2><h3 id="1、filter-筛选数组"><a href="#1、filter-筛选数组" class="headerlink" title="1、filter() 筛选数组"></a>1、filter() 筛选数组</h3><p>返回一个新数组，接受 3 个参数：项目值、项目索引、数组本身</p>
-<p>返回大于50的元素组成的一个新数组</p>
-<pre><code class="js">var arr = [12, 66, 4, 88, 3, 7];
-var newArr = arr.filter(function(value) {
-    return value &gt;= 50;
-})
-console.log(newArr); // [66, 88]</code></pre>
-<p>返回偶数元素组成的一个新数组</p>
-<pre><code class="js">var arr = [12, 66, 4, 88, 3, 7];
-var newArr2 = arr.filter(function(value) {
-    return value % 2 === 0;
-})
-console.log(newArr2); // [12, 66, 4, 88]</code></pre>
-<h3 id="2、some-查找满足条件的元素是否存在"><a href="#2、some-查找满足条件的元素是否存在" class="headerlink" title="2、some() 查找满足条件的元素是否存在"></a>2、some() 查找满足条件的元素是否存在</h3><p>filter() 查找满足条件的元素 返回一个 <code>新数组</code> </p>
-<p>some() 查找满足条件的元素是否存在 返回一个 <code>布尔值</code> </p>
-<p>接受 3 个参数： <code>项目值</code> 、 <code>项目索引</code> 、 <code>数组本身</code> </p>
-<p>sonme() 如果查找到第一个满足条件的元素就终止循环，效率更高</p>
-<pre><code class="js">var arr = [10, 30, 4];
-var flag = arr.some(function(value) {
-    return value &lt; 3;
-});
-console.log(flag); // false
+        <h2 id="MongoDB"><a href="#MongoDB" class="headerlink" title="MongoDB"></a>MongoDB</h2><h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><p><strong>下载：</strong></p>
+<blockquote>
+<p>下载地址：<a href="https://www.mongodb.com/download-center/community" target="_blank" rel="noopener">https://www.mongodb.com/download-center/community</a></p>
+</blockquote>
+<p><strong>系统环境变量：</strong></p>
+<blockquote>
+<p>将MongoDB的路径 <code>C:\Program Files\MongoDB\Server\4.1\bin</code> 加入系统环境变量。</p>
+</blockquote>
+<p><strong>启动/停止：</strong></p>
+<blockquote>
+<p>启动： <code>net start mongodb</code> </p>
+<p>停止： <code>net stop mongodb</code> </p>
+<p>注意：以管理员身份运行命令提示行</p>
+</blockquote>
+<p><strong>导入数据：</strong></p>
+<blockquote>
+<p>mongoimport –d 数据库名称 –c 集合名称 –file 要导入的数据文件 (注意：是 - - file)</p>
+<p>mongoimport - d playground - c users–file. / user.json</p>
+</blockquote>
+<p><a href="https://www.jianshu.com/p/775088bb8f92" target="_blank" rel="noopener">使用Mongoose查询数据库一直为空数组？</a></p>
+<h3 id="MongoDB-Compass-可视化"><a href="#MongoDB-Compass-可视化" class="headerlink" title="MongoDB Compass 可视化"></a>MongoDB Compass 可视化</h3><p><img src="http://mdimg.95408.com/201912202251_415.png" alt=""></p>
+<h3 id="数据库、集合、文档、字段"><a href="#数据库、集合、文档、字段" class="headerlink" title="数据库、集合、文档、字段"></a>数据库、集合、文档、字段</h3><p>在一个数据库软件中可以包含多个数据仓库，在每个数据仓库中可以包含多个数据集合，每个数据集合中可以包含多条文档（具体的数据）。</p>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>术语</strong></th>
+<th align="center"><strong>解释说明</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">database    数据库</td>
+<td align="center">mongoDB数据库软件中可以建立多个数据库</td>
+</tr>
+<tr>
+<td align="center">collection    集合</td>
+<td align="center">一组数据的集合，可以理解为JavaScript中的数组</td>
+</tr>
+<tr>
+<td align="center">document    文档</td>
+<td align="center">一条具体的数据，可以理解为JavaScript中的对象</td>
+</tr>
+<tr>
+<td align="center">field    字段</td>
+<td align="center">文档中的属性名称，可以理解为JavaScript中的对象属性</td>
+</tr>
+</tbody></table>
+<h2 id="Node-js与MongoDB"><a href="#Node-js与MongoDB" class="headerlink" title="Node.js与MongoDB"></a>Node.js与MongoDB</h2><p>使用Node.js操作MongoDB数据库。</p>
+<h3 id="Mongoose模块"><a href="#Mongoose模块" class="headerlink" title="Mongoose模块"></a>Mongoose模块</h3><ul>
+<li>使用Node.js操作MongoDB数据库需要依赖Node.js第三方包mongoose；</li>
+<li>使用 <code>npm install mongoose</code> ；</li>
+</ul>
+<h3 id="Node-js连接MongoDB"><a href="#Node-js连接MongoDB" class="headerlink" title="Node.js连接MongoDB"></a>Node.js连接MongoDB</h3><ul>
+<li>在MongoDB中<strong>不需要显式创建数据库</strong>，如果正在使用的数据库不存在，<strong>MongoDB</strong>会自动创建；</li>
+</ul>
+<pre><code class="js">// 1.js
+const mongoose = require(&#39;mongoose&#39;);
+mongoose.connect(&#39;mongodb://localhost/playground&#39;, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+    })
+    .then(() =&gt; console.log(&#39;数据库连接成功&#39;))
+    .catch(err =&gt; console.log(err))
 
-var arr1 = [&#39;red&#39;, &#39;pink&#39;, &#39;blue&#39;];
-var flag1 = arr1.some(function(value) {
-    return value == &#39;pink&#39;;
+// D:\doc\1220&gt;node 1.js
+// 数据库连接成功</code></pre>
+<h3 id="创建集合"><a href="#创建集合" class="headerlink" title="创建集合"></a>创建集合</h3><ul>
+<li>一个集合就是一个数据库表单，如excel中的表单；</li>
+<li>创建集合分为两步，一是对<strong>对集合设定规则</strong>，二是<strong>创建集合</strong>；</li>
+</ul>
+<pre><code class="js">const mongoose = require(&#39;mongoose&#39;);
+mongoose.connect(&#39;mongodb://localhost/playground&#39;, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+    })
+    .then(() =&gt; console.log(&#39;数据库连接成功&#39;))
+    .catch(err =&gt; console.log(err))
+// 创建集合规则
+// 返回构造函数
+const courseSchema = new mongoose.Schema({
+    name: String,
+    author: String,
+    isPublished: Boolean
 });
-console.log(flag1); // true</code></pre>
-<h3 id="3、forEach-和-some-的区别"><a href="#3、forEach-和-some-的区别" class="headerlink" title="3、forEach() 和 some() 的区别"></a>3、forEach() 和 some() 的区别</h3><p>如果查询数组中唯一的元素, 用some方法更合适</p>
-<p>在 some 里面 遇到 return true 就是终止遍历 迭代效率更高</p>
-<p>在forEach 里面 return 不会终止迭代</p>
-<pre><code class="js">var arr = [&#39;red&#39;, &#39;green&#39;, &#39;blue&#39;, &#39;pink&#39;];
-arr.some(function(value) {
-    if (value == &#39;green&#39;) {
-        console.log(&#39;找到了该元素&#39;);
-        // 在 some 里面 return true 就终止遍历 迭代效率更高
-        return true;
+// 使用集合规则创建集合
+// 创建的集合名为：courses
+// 参1：集合名称； 参2：集合规则
+const Course = mongoose.model(&#39;Course&#39;, courseSchema);
+
+// 创建集合的文档
+const course = new Course({
+    name: &#39;Node.js&#39;,
+    author: &#39;JavaScript&#39;,
+    isPublished: true
+})
+// 保存，将创建的文档插入到数据库
+course.save();</code></pre>
+<h3 id="创建文档"><a href="#创建文档" class="headerlink" title="创建文档"></a>创建文档</h3><p>创建文档实际就是向集合中插入数据。</p>
+<ul>
+<li>只创建了集合，数据库并没有自动创建；</li>
+<li>只有创建了一个文档，并将文件插入到集合中，集合才会自动创建；</li>
+</ul>
+<p><img src="http://mdimg.95408.com/201912202254_525.png" alt="Compass查看数据"></p>
+<p>上一个代码中展示了一种创建数据的方式，以下是另外一种：</p>
+<pre><code class="js">// 创建集合
+const Course = mongoose.model(&#39;Course&#39;, courseSchema);
+
+// 向集合中插入数据
+Course.create({
+    &#39;name&#39;: &#39;Django&#39;,
+    &#39;author&#39;: &#39;Python&#39;,
+    &#39;isPublished&#39;: true
+}, (err, result) =&gt; {
+    console.log(err);
+    console.log(result);
+});</code></pre>
+<p><img src="http://mdimg.95408.com/201912202255_890.png" alt=""></p>
+<p>也支持异步函数的方式：</p>
+<pre><code class="js">Course.create({
+        &#39;name&#39;: &#39;Django&#39;,
+        &#39;author&#39;: &#39;Python&#39;,
+        &#39;isPublished&#39;: true
+    })
+    .then(result =&gt; {
+        console.log(result);
+    })</code></pre>
+<h3 id="导入数据"><a href="#导入数据" class="headerlink" title="导入数据"></a>导入数据</h3><pre><code class="js">mongoimport - d playground - c users--file. / user.json</code></pre>
+<p><img src="http://mdimg.95408.com/201912202255_2.png" alt="图片错误：应是users"></p>
+<h2 id="增删改查"><a href="#增删改查" class="headerlink" title="增删改查"></a>增删改查</h2><h3 id="查询文档"><a href="#查询文档" class="headerlink" title="查询文档"></a>查询文档</h3><h4 id="find"><a href="#find" class="headerlink" title="find()"></a>find()</h4><p>find()不管查询的数据多少，都返回文档（一个数组）；</p>
+<pre><code class="js">//  根据条件查找文档（条件为空则查找所有文档）
+Course.find().then(result =&gt; console.log(result))
+// 返回文档集合
+[{
+    _id: 5 c0917ed37ec9b03c07cf95f,
+    name: &#39;张三&#39;,
+    email: &#39;zhangsan@qq.cn‘
+}, {
+    _id: 5 c09dea28acfb814980ff827,
+    name: &#39;Javascript&#39;,
+    email: &#39;zhangsan@qq.cn‘
+}]</code></pre>
+<h4 id="findOne"><a href="#findOne" class="headerlink" title="findOne()"></a>findOne()</h4><p>findOne() 返回单一的对象；</p>
+<pre><code class="js">//  根据条件查找文档
+Course.findOne({
+            name: 张三 &#39;}).then(result =&gt; console.log(result))
+            // 返回文档
+            {
+                _id: 5 c0917ed37ec9b03c07cf95f,
+                name: &#39;张三&#39;,
+                author: &#39;zhangsan@qq.cn‘
+            }</code></pre>
+<h4 id="查询之前导入的数据"><a href="#查询之前导入的数据" class="headerlink" title="查询之前导入的数据"></a>查询之前导入的数据</h4><pre><code class="js">const mongoose = require(&#39;mongoose&#39;);
+mongoose.connect(&#39;mongodb://localhost/playground&#39;, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+    })
+    .then(() =&gt; console.log(&#39;数据库连接成功&#39;))
+    .catch(err =&gt; console.log(err))
+
+// 创建集合规则
+const userSchema = new mongoose.Schema({
+    name: String,
+    age: Number,
+    email: String,
+    password: String,
+    hobbies: [String],
+});
+// 创建集合
+const User = mongoose.model(&#39;User&#39;, userSchema);
+
+// 查询所有
+User.find().then(result =&gt; console.log(result));</code></pre>
+<h4 id="查询符号使用"><a href="#查询符号使用" class="headerlink" title="查询符号使用"></a>查询符号使用</h4><p><img src="http://mdimg.95408.com/201912202359_364.png" alt=""></p>
+<pre><code class="js">// 年龄大于20 小于50
+User.find({
+    age: {
+        $gt: 20,
+        $lt: 50
     }
-    console.log(11);
-    // 11
-    // 找到了该元素
+}).then(result =&gt; console.log(result));
+
+// 爱好在敲代码中的数据
+User.find({
+    hobbies: {
+        $in: [&#39;敲代码&#39;]
+    }
+}).then(result =&gt; console.log(result));
+
+// 只查找name email字段的数据 加-表示不显示的字段，_id字段默认显示
+User.find().select(&#39;name email -_id&#39;).then(result =&gt; console.log(result));
+
+// 按年龄字段进行排序 加-为降序
+User.find().sort(&#39;age&#39;).then((result) =&gt; {
+    console.log(result)
 });
 
-var arr = [&#39;red&#39;, &#39;green&#39;, &#39;blue&#39;, &#39;pink&#39;];
-// 1. forEach迭代 遍历
-arr.forEach(function(value) {
-    if (value == &#39;green&#39;) {
-        console.log(&#39;找到了该元素&#39;);
-        // 在forEach 里面 return 不会终止迭代
-        return true;
-    }
-    console.log(11);
-})
-// 11
-// 找到了该元素
-// 11
-// 11</code></pre>
-<h3 id="4、indexOf"><a href="#4、indexOf" class="headerlink" title="4、indexOf()"></a>4、indexOf()</h3><p>在数组中搜索元素值并返回其位置</p>
-<pre><code class="js">var fruits = [&quot;Apple&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
-var a = fruits.indexOf(&quot;Apple&quot;); // 0</code></pre>
-<h3 id="5、lastIndexOf"><a href="#5、lastIndexOf" class="headerlink" title="5、lastIndexOf()"></a>5、lastIndexOf()</h3><p>在数组中搜索元素值并返回其位置，从数组结尾开始搜索</p>
-<pre><code class="js">var fruits = [&quot;Apple&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
-var a = fruits.lastIndexOf(&quot;Apple&quot;); // 2</code></pre>
-<h3 id="6、find"><a href="#6、find" class="headerlink" title="6、find()"></a>6、find()</h3><p>返回通过测试函数的第一个数组元素的值</p>
-<pre><code class="js">var numbers = [4, 9, 16, 25, 29];
-var first = numbers.find(function(value) {
-    return value &gt; 18;
-})
-console.log(first); // 25 第一个比18大的值</code></pre>
-<h3 id="7、findIndex"><a href="#7、findIndex" class="headerlink" title="7、findIndex()"></a>7、findIndex()</h3><p>返回通过测试函数的第一个数组元素的索引</p>
-<pre><code class="js">var numbers = [4, 9, 16, 25, 29];
-var first = numbers.findIndex(function(value) {
-    return value &gt; 18;
-})
-console.log(first); // 3 第一个比18大的值的索引号是3</code></pre>
-<h3 id="8、map"><a href="#8、map" class="headerlink" title="8、map()"></a>8、map()</h3><p>对每个数组元素执行函数来创建新数组，不会更改原始数组。</p>
-<pre><code class="js">var numbers = [1, 2, 3];
-var first = numbers.map(function(value) {
-    return value * 2;
-})
-console.log(first); // [2, 4, 6] 将每个数组值乘以2</code></pre>
-<h3 id="9、reduce-reduceRight"><a href="#9、reduce-reduceRight" class="headerlink" title="9、reduce() reduceRight()"></a>9、reduce() reduceRight()</h3><p>在每个数组元素上运行函数，以生成（减少它）单个值</p>
-<p>reduceRight() 方法在数组中从左到右工作</p>
-<pre><code class="js">var numbers = [1, 2, 3];
-var first = numbers.reduce(function(total, value) {
-    return total + value;
-})
-console.log(first); // 6 总和为6</code></pre>
-<h3 id="10、every"><a href="#10、every" class="headerlink" title="10、every()"></a>10、every()</h3><p>检查所有数组值是否通过测试，返回布尔值</p>
-<pre><code class="js">var numbers = [4, 9, 16, 25, 29];
-var first = numbers.every(function(value) {
-    return value &gt; 18;
-})
-console.log(first); // false(并非所有元素都大于18)</code></pre>
-<h2 id="三、数组排序"><a href="#三、数组排序" class="headerlink" title="三、数组排序"></a>三、数组排序</h2><h3 id="1、reverse-反转数组"><a href="#1、reverse-反转数组" class="headerlink" title="1、reverse() 反转数组"></a>1、reverse() 反转数组</h3><pre><code class="js">var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
-fruits.reverse(); // Mango,Apple,Orange,Banana</code></pre>
-<h3 id="2、sort-以字母方式排序"><a href="#2、sort-以字母方式排序" class="headerlink" title="2、sort() 以字母方式排序"></a>2、sort() 以字母方式排序</h3><pre><code class="js">var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
-fruits.sort(); // Apple,Banana,Mango,Orange</code></pre>
-<h3 id="3、sort-以数字方式排序"><a href="#3、sort-以数字方式排序" class="headerlink" title="3、sort() 以数字方式排序"></a>3、sort() 以数字方式排序</h3><p>如果数字按照字符串来排序，则 “25” 大于 “100”，因为 “2” 大于 “1”。</p>
-<pre><code class="js">var points = [40, 100, 1, 5, 25, 10];
-points.sort(function(a, b) {
-    return a - b
-}); // 1,5,10,25,40,100</code></pre>
-<p>通过一个比值函数，对数组进行降序排序。</p>
-<pre><code class="js">var points = [40, 100, 1, 5, 25, 10];
-points.sort(function(a, b) {
-    return b - a
-}); // 100,40,25,10,5,1</code></pre>
-<h3 id="4、sort-随机排序"><a href="#4、sort-随机排序" class="headerlink" title="4、sort() 随机排序"></a>4、sort() 随机排序</h3><pre><code class="js">var points = [40, 100, 1, 5, 25, 10];
-points.sort(function(a, b) {
-    return 0.5 - Math.random()
-});
-// 40,10,5,100,1,25  随机生成排序
-// 5,40,100,25,1,10</code></pre>
-<h3 id="5、sort-查找最高-最低数组值"><a href="#5、sort-查找最高-最低数组值" class="headerlink" title="5、sort() 查找最高/最低数组值"></a>5、sort() 查找最高/最低数组值</h3><p>升序排序</p>
-<pre><code class="js">var points = [40, 100, 1, 5, 25, 10];
-points.sort(function(a, b) {
-    return a - b
-});
-// 现在 points[0] 包含最低值
-// 而 points[points.length-1] 包含最高值</code></pre>
-<p>降序排序</p>
-<pre><code class="js">var points = [40, 100, 1, 5, 25, 10];
-points.sort(function(a, b) {
-    return b - a
-});
-// 现在 points[0] 包含最高值
-// 而 points[points.length-1] 包含最低值</code></pre>
-<h3 id="6、Math-max-apply-查找最高数组值"><a href="#6、Math-max-apply-查找最高数组值" class="headerlink" title="6、Math.max.apply() 查找最高数组值"></a>6、Math.max.apply() 查找最高数组值</h3><p>apply() 第二个参数须是数组，与 <code>Math.max</code> 相结合使用。</p>
-<p><code>Math.max.apply([1, 2, 3])</code> 等于 <code>Math.max(1, 2, 3)</code> .</p>
-<pre><code class="js">var points = [40, 100, 1, 5, 25, 10];
-var a = Math.max.apply(Math, points)
-var a = Math.max.apply(null, points) // null 也可以
-console.log(a); // 100</code></pre>
-<h3 id="7、Math-min-apply-查找最低数组值"><a href="#7、Math-min-apply-查找最低数组值" class="headerlink" title="7、Math.min.apply() 查找最低数组值"></a>7、Math.min.apply() 查找最低数组值</h3><p><code>Math.max.apply([1, 2, 3])</code> 等于 <code>Math.max(1, 2, 3)</code> 。</p>
-<pre><code class="js">var points = [40, 100, 1, 5, 25, 10];
-var a = Math.min.apply(Math, points)
-console.log(a); // 1</code></pre>
-<p><img src="http://mdimg.95408.com/20191213144049.png" alt="20191213144049"></p>
-<p><img src="http://mdimg.95408.com/201912130047_162.png?imageView2/2/w/1200/h/1200" alt=""></p>
-<p>以上。</p>
+// skip 跳过2条，limit 限制显示2条
+User.find().skip(2).limit(2).then(result =&gt; {
+    console.log(result)
+});</code></pre>
+<h3 id="删除文档"><a href="#删除文档" class="headerlink" title="删除文档"></a>删除文档</h3><h4 id="findOneAndDelete"><a href="#findOneAndDelete" class="headerlink" title="findOneAndDelete"></a>findOneAndDelete</h4><ul>
+<li>查找一条文档并删除；</li>
+<li>返回删除的文档</li>
+<li>如果查到了多个文档，删除第一条</li>
+</ul>
+<pre><code class="js">// 删除单个
+User.findOneAndDelete({
+        _id: &#39;5c09f267aeb04b22f8460968&#39;
+    })
+    .then(result =&gt; console.log(result));
+// 删除了指定_id的‘王五’的数据</code></pre>
+<h4 id="deleteMany"><a href="#deleteMany" class="headerlink" title="deleteMany"></a>deleteMany</h4><ul>
+<li>为空时，删除所有！！！很危险！！！</li>
+<li>返回删除数据条数</li>
+</ul>
+<pre><code class="js">// 删除多个
+User.deleteMany({}).then(result =&gt; console.log(result))</code></pre>
+<h3 id="更新文档"><a href="#更新文档" class="headerlink" title="更新文档"></a>更新文档</h3><h4 id="updateOne"><a href="#updateOne" class="headerlink" title="updateOne"></a>updateOne</h4><pre><code class="js">// 更新单个
+User.updateOne({
+    查询条件
+}, {
+    要修改的值
+}).then(result =&gt; console.log(result))
+// 将李四这个文档的年龄改成8
+User.updateOne({
+        &#39;name&#39;: &#39;李四&#39;
+    }, {
+        &#39;age&#39;: 8
+    })
+    .then(result =&gt; console.log(result));</code></pre>
+<h4 id="updateMany"><a href="#updateMany" class="headerlink" title="updateMany"></a>updateMany</h4><ul>
+<li>查询条件为空，更改全部文档数据！！！危险！！！</li>
+</ul>
+<pre><code class="js">// 更新多个
+User.updateMany({
+    查询条件
+}, {
+    要更改的值
+}).then(result =&gt; console.log(result))
+// 将所有数据的年龄改成8
+User.updateMany({}, {
+        &#39;age&#39;: 8
+    })
+    .then(result =&gt; console.log(result));</code></pre>
 
       
        
