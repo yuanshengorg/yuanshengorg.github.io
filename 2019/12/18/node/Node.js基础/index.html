@@ -6,27 +6,25 @@
   <meta name="keywords" content=" js , Node.js ">
   <meta name="description" content="Node.js基础 | 半根竹子">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="HTML新增1.1、语义化标签 header   —  头部标签 nav        —  导航标签 article —   内容标签 section —   块级标签 aside     —   侧边栏标签 footer   —   尾部标签     在 IE9 浏览器中，需要把语义化标签都转换为块级元素语义化标签；   在移动端支持比较友好；  1.2、多媒体音频标签1.2.1、audio">
+<meta name="description" content="2D转换 transform2D 转换是改变标签在二维平面上的位置和形状  移动： translate 旋转： rotate 缩放： scale  translate 移动 translate 最大的优点就是不影响其他元素的位置 translate 中的100%单位，是相对于本身的宽度和高度来进行计算的  transform: translate(x, y) transform: translat">
 <meta property="og:type" content="article">
-<meta property="og:title" content="(1)HTML5+Css3基础">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;19&#x2F;css&#x2F;(1)HTML5+Css3%E5%9F%BA%E7%A1%80&#x2F;index.html">
+<meta property="og:title" content="(2)Css3动画、2D、3D">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;19&#x2F;css&#x2F;(2)Css3%E5%8A%A8%E7%94%BB%E3%80%812D%E3%80%813D&#x2F;index.html">
 <meta property="og:site_name" content="半根竹子">
-<meta property="og:description" content="HTML新增1.1、语义化标签 header   —  头部标签 nav        —  导航标签 article —   内容标签 section —   块级标签 aside     —   侧边栏标签 footer   —   尾部标签     在 IE9 浏览器中，需要把语义化标签都转换为块级元素语义化标签；   在移动端支持比较友好；  1.2、多媒体音频标签1.2.1、audio">
+<meta property="og:description" content="2D转换 transform2D 转换是改变标签在二维平面上的位置和形状  移动： translate 旋转： rotate 缩放： scale  translate 移动 translate 最大的优点就是不影响其他元素的位置 translate 中的100%单位，是相对于本身的宽度和高度来进行计算的  transform: translate(x, y) transform: translat">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191818_942.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191820_561.png?null">
-<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191824_8.png?null">
-<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191826_338.png?null">
-<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191830_587.png?null">
-<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191838_395.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191916_205.png?null">
-<meta property="article:published_time" content="2019-12-19T10:12:11.282Z">
-<meta property="article:modified_time" content="2019-12-19T14:01:12.168Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;web_2019121903.gif">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;web_2019121902.gif">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;2019121901.gif">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;web_2019121905.gif">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;web_2019121906.gif">
+<meta property="article:published_time" content="2019-12-19T14:01:32.478Z">
+<meta property="article:modified_time" content="2019-12-19T16:53:26.768Z">
 <meta property="article:author" content="半根竹子">
 <meta property="article:tag" content="Css3">
 <meta property="article:tag" content="HTML5">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191818_942.png">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;web_2019121903.gif">
 
 
 <link rel="icon" href="http://mdimg.95408.com/20191218121717.png">
@@ -37,6 +35,9 @@
 
 <link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
 <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<link href="//cdn.bootcss.com/photoswipe/4.1.2/photoswipe.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/photoswipe/4.1.2/default-skin/default-skin.min.css" rel="stylesheet">
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="/js/jquery.autocomplete.min.js?v=1.0.1" ></script>
@@ -96,14 +97,6 @@
         
     
         
-        <a title="weibo" href="http://www.95408.com" target="_blank">
-            
-                <svg class="iconfont-svg" aria-hidden="true">
-                    <use xlink:href="#icon-weibo"></use>
-                </svg>
-            
-        </a>
-        
     
         
     
@@ -133,6 +126,14 @@
     
         
             
+            <li><div data-rel="css">css<small>(2)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
             <li><div data-rel="node">node<small>(3)</small></div>
                 
             </li>
@@ -150,14 +151,6 @@
         
             
             <li><div data-rel="工具">工具<small>(5)</small></div>
-                
-            </li>
-            
-        
-    
-        
-            
-            <li><div data-rel="css">css<small>(2)</small></div>
                 
             </li>
             
@@ -208,6 +201,14 @@
     <div class="tags-list">
     
     <li class="article-tag-list-item">
+        <a class="color5">Css3</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">HTML5</a>
+    </li>
+    
+    <li class="article-tag-list-item">
         <a class="color3">js</a>
     </li>
     
@@ -221,14 +222,6 @@
     
     <li class="article-tag-list-item">
         <a class="color5">hexo</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color5">Css3</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color1">HTML5</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -257,12 +250,44 @@
     
     <nav id="title-list-nav">
         
+        <a  class="css "
+           href="/2019/12/19/css/(1)HTML5+Css3%E5%9F%BA%E7%A1%80/"
+           data-tag="Css3,HTML5"
+           data-author="" >
+            <span class="post-title" title="(1)HTML5+Css3基础">(1)HTML5+Css3基础</span>
+            <span class="post-date" title="2019-12-19 18:12:11">2019/12/19</span>
+        </a>
+        
         <a  class="node "
            href="/2019/12/18/node/Node.js%E5%9F%BA%E7%A1%80/"
            data-tag="js,Node.js"
            data-author="" >
             <span class="post-title" title="Node.js基础">Node.js基础</span>
             <span class="post-date" title="2019-12-18 22:25:55">2019/12/18</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/19/css/(2)Css3%E5%8A%A8%E7%94%BB%E3%80%812D%E3%80%813D/"
+           data-tag="Css3,HTML5"
+           data-author="" >
+            <span class="post-title" title="(2)Css3动画、2D、3D">(2)Css3动画、2D、3D</span>
+            <span class="post-date" title="2019-12-19 22:01:32">2019/12/19</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/18/node/Node.js%E6%A8%A1%E5%9D%97%EF%BC%9Afs%E3%80%81path%E3%80%81gulp/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js模块：fs、path、gulp">Node.js模块：fs、path、gulp</span>
+            <span class="post-date" title="2019-12-18 23:32:58">2019/12/18</span>
+        </a>
+        
+        <a  class="JavaScript "
+           href="/2019/12/17/js/JavaScript%E6%95%B0%E7%BB%84%EF%BC%88%E4%B8%80%EF%BC%89/"
+           data-tag="js"
+           data-author="" >
+            <span class="post-title" title="JavaScript 数组（一）">JavaScript 数组（一）</span>
+            <span class="post-date" title="2019-12-17 19:27:36">2019/12/17</span>
         </a>
         
         <a  class="JavaScript "
@@ -281,28 +306,12 @@
             <span class="post-date" title="2019-12-18 21:02:11">2019/12/18</span>
         </a>
         
-        <a  class="css "
-           href="/2019/12/19/css/(2)Css3%E5%8A%A8%E7%94%BB%E3%80%812D%E3%80%813D/"
-           data-tag="Css3,HTML5"
-           data-author="" >
-            <span class="post-title" title="(2)Css3动画、2D、3D">(2)Css3动画、2D、3D</span>
-            <span class="post-date" title="2019-12-19 22:01:32">2019/12/19</span>
-        </a>
-        
         <a  class="工具 "
            href="/2019/12/18/tools/Markdown%E8%AF%AD%E6%B3%95CSS%E8%A1%A8%E7%8E%B0%E6%B5%8B%E8%AF%95/"
            data-tag="markdown"
            data-author="" >
             <span class="post-title" title="Markdown语法CSS表现测试">Markdown语法CSS表现测试</span>
             <span class="post-date" title="2019-12-18 15:18:41">2019/12/18</span>
-        </a>
-        
-        <a  class="css "
-           href="/2019/12/19/css/(1)HTML5+Css3%E5%9F%BA%E7%A1%80/"
-           data-tag="Css3,HTML5"
-           data-author="" >
-            <span class="post-title" title="(1)HTML5+Css3基础">(1)HTML5+Css3基础</span>
-            <span class="post-date" title="2019-12-19 18:12:11">2019/12/19</span>
         </a>
         
         <a  class="工具 "
@@ -319,22 +328,6 @@
            data-author="" >
             <span class="post-title" title="自定义 vs code 命令快捷键">自定义 vs code 命令快捷键</span>
             <span class="post-date" title="2019-12-17 19:27:36">2019/12/17</span>
-        </a>
-        
-        <a  class="JavaScript "
-           href="/2019/12/17/js/JavaScript%E6%95%B0%E7%BB%84%EF%BC%88%E4%B8%80%EF%BC%89/"
-           data-tag="js"
-           data-author="" >
-            <span class="post-title" title="JavaScript 数组（一）">JavaScript 数组（一）</span>
-            <span class="post-date" title="2019-12-17 19:27:36">2019/12/17</span>
-        </a>
-        
-        <a  class="node "
-           href="/2019/12/18/node/Node.js%E6%A8%A1%E5%9D%97%EF%BC%9Afs%E3%80%81path%E3%80%81gulp/"
-           data-tag="Node.js"
-           data-author="" >
-            <span class="post-title" title="Node.js模块：fs、path、gulp">Node.js模块：fs、path、gulp</span>
-            <span class="post-date" title="2019-12-18 23:32:58">2019/12/18</span>
         </a>
         
         <a  class="工具 "
@@ -504,8 +497,6 @@ npm install 模块名称 -g</code></pre>
 
 
 
-    
-
 
 
 
@@ -532,13 +523,16 @@ npm install 模块名称 -g</code></pre>
 </body>
 <script src="/js/jquery.pjax.js?v=1.0.1" ></script>
 
+<script src="//cdn.bootcss.com/photoswipe/4.1.2/photoswipe.min.js"></script>
+<script src="//cdn.bootcss.com/photoswipe/4.1.2/photoswipe-ui-default.min.js"></script>
+
 <script src="/js/script.js?v=1.0.1" ></script>
 <script>
-    var img_resize = '';
+    var img_resize = 'photoSwipe';
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#js','#Node.js','#博客','#hexo','#Css3','#HTML5','#markdown','#vscode','#git','#github',],
+            'data': ['#Css3','#HTML5','#js','#Node.js','#博客','#hexo','#markdown','#vscode','#git','#github',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');
@@ -546,7 +540,7 @@ npm install 模块名称 -g</code></pre>
     function initArticle() {
         /*渲染对应的表格样式*/
         
-            $(".post .pjax table").addClass("green_title");
+            $(".post .pjax table").addClass("green");
         
 
         /*渲染打赏样式*/
@@ -561,6 +555,254 @@ npm install 模块名称 -g</code></pre>
         /*代码高亮，行号对齐*/
         $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
 
+        
+
+        // PhotoSwipe
+        $('article').each(function(i){
+            $(this).find('img').each(function(){
+                if ($(this).closest('figure').hasClass('article-gallery-img')) {
+                    return;
+                }
+                var alt = this.alt;
+                $(this)
+                    .wrap('<figure class="article-gallery-img" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"></figure>')
+                    .wrap('<a href="' + this.src + '" title="' + alt + '"></a>');
+                $(this).after('<div class="img_alt"><span>' + (alt || '') + '</span></div>');
+            });
+        });
+
+        var pswpElement = document.querySelectorAll('.pswp')[0];
+        if (pswpElement) {
+            var gallerySelector = '.article-gallery, article';
+
+            var initPhotoSwipeFromDOM = function(gallerySelector) {
+
+                // parse slide data (url, title, size ...) from DOM elements
+                // (children of gallerySelector)
+                var parseThumbnailElements = function(el) {
+                    var thumbElements = $(el).find('figure.article-gallery-img').toArray(),
+                        numNodes = thumbElements.length,
+                        items = [],
+                        figureEl,
+                        linkEl,
+                        size,
+                        imgEl,
+                        item;
+
+                    for (var i = 0; i < numNodes; i++) {
+
+                        figureEl = thumbElements[i]; // <figure> element
+
+                        // include only element nodes
+                        if (figureEl.nodeType !== 1) {
+                            continue;
+                        }
+
+                        linkEl = figureEl.children[0]; // <a> element
+                        imgEl = linkEl.children[0]; // <img>
+
+                        size = linkEl.getAttribute('data-size');
+                        size = size && size.split('x');
+
+                        // create slide object
+                        item = {
+                            src: linkEl.getAttribute('href'),
+                            w: size && parseInt(size[0], 10) || imgEl.width,
+                            h: size && parseInt(size[1], 10) || imgEl.height
+                        };
+
+                        if (figureEl.children.length > 1) {
+                            // <figcaption> content
+                            item.title = figureEl.children[1].innerHTML;
+                        }
+
+                        if (linkEl.children.length > 0) {
+                            // <img> thumbnail element, retrieving thumbnail url
+                            item.msrc = linkEl.children[0].getAttribute('src');
+                        }
+
+                        item.el = figureEl; // save link to element for getThumbBoundsFn
+                        items.push(item);
+                    }
+
+                    return items;
+                };
+
+                // find nearest parent element
+                var closest = function closest(el, fn) {
+                    return el && (fn(el) ? el : closest(el.parentNode, fn));
+                };
+
+                // triggers when user clicks on thumbnail
+                var onThumbnailsClick = function(e) {
+                    e = e || window.event;
+
+                    var eTarget = e.target || e.srcElement;
+
+                    // find root element of slide
+                    var clickedListItem = closest(eTarget, function(el) {
+                        return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
+                    });
+
+                    if (!clickedListItem) {
+                        return;
+                    }
+
+                    if (e.preventDefault) {
+                        e.preventDefault();
+                    } else {
+                        e.returnValue = false;
+                    }
+
+                    // find index of clicked item by looping through all child nodes
+                    // alternatively, you may define index via data- attribute
+                    var clickedGallery = $(clickedListItem).closest(gallerySelector)[0],
+                        childNodes = $(clickedGallery).find('figure.article-gallery-img').toArray(),
+                        numChildNodes = childNodes.length,
+                        nodeIndex = 0,
+                        index;
+
+                    for (var i = 0; i < numChildNodes; i++) {
+                        if (childNodes[i].nodeType !== 1) {
+                            continue;
+                        }
+
+                        if (childNodes[i] === clickedListItem) {
+                            index = nodeIndex;
+                            break;
+                        }
+                        nodeIndex++;
+                    }
+
+
+
+                    if (index >= 0) {
+                        // open PhotoSwipe if valid index found
+                        openPhotoSwipe(index, clickedGallery);
+                    }
+                    return false;
+                };
+
+                // parse picture index and gallery index from URL (#&pid=1&gid=2)
+                var photoswipeParseHash = function() {
+                    var hash = window.location.hash.substring(1),
+                        params = {};
+
+                    if (hash.length < 5) {
+                        return params;
+                    }
+
+                    var vars = hash.split('&');
+                    for (var i = 0; i < vars.length; i++) {
+                        if (!vars[i]) {
+                            continue;
+                        }
+                        var pair = vars[i].split('=');
+                        if (pair.length < 2) {
+                            continue;
+                        }
+                        params[pair[0]] = pair[1];
+                    }
+
+                    if (params.gid) {
+                        params.gid = parseInt(params.gid, 10);
+                    }
+
+                    return params;
+                };
+
+                var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
+                    var pswpElement = document.querySelectorAll('.pswp')[0],
+                        gallery,
+                        options,
+                        items;
+
+                    items = parseThumbnailElements(galleryElement);
+
+                    // define options (if needed)
+                    options = {
+
+                        // define gallery index (for URL)
+                        galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+
+                        getThumbBoundsFn: function(index) {
+                            // See Options -> getThumbBoundsFn section of documentation for more info
+                            var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
+                                pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+                                rect = thumbnail.getBoundingClientRect();
+
+                            return {
+                                x: rect.left,
+                                y: rect.top + pageYScroll,
+                                w: rect.width
+                            };
+                        }
+                    };
+
+                    // PhotoSwipe opened from URL
+                    if (fromURL) {
+                        if (options.galleryPIDs) {
+                            // parse real index when custom PIDs are used
+                            // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
+                            for (var j = 0; j < items.length; j++) {
+                                if (items[j].pid == index) {
+                                    options.index = j;
+                                    break;
+                                }
+                            }
+                        } else {
+                            // in URL indexes start from 1
+                            options.index = parseInt(index, 10) - 1;
+                        }
+                    } else {
+                        options.index = parseInt(index, 10);
+                    }
+
+                    // exit if index not found
+                    if (isNaN(options.index)) {
+                        return;
+                    }
+
+                    if (disableAnimation) {
+                        options.showAnimationDuration = 0;
+                    }
+
+                    // Pass data to PhotoSwipe and initialize it
+                    gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+
+                    gallery.listen('imageLoadComplete', function(index, item) {
+                        var linkEl = item.el.children[0];
+                        var img = item.container.children[0];
+                        if (!linkEl.getAttribute('data-size')) {
+                            linkEl.setAttribute('data-size', img.naturalWidth + 'x' + img.naturalHeight);
+                            item.w = img.naturalWidth;
+                            item.h = img.naturalHeight;
+                            gallery.invalidateCurrItems();
+                            gallery.updateSize(true);
+                        }
+                    });
+
+                    gallery.init();
+                };
+
+                // loop through all gallery elements and bind events
+                var galleryElements = document.querySelectorAll(gallerySelector);
+
+                for (var i = 0, l = galleryElements.length; i < l; i++) {
+                    galleryElements[i].setAttribute('data-pswp-uid', i + 1);
+                    galleryElements[i].onclick = onThumbnailsClick;
+                }
+
+                // Parse URL and open gallery if it contains #&pid=3&gid=1
+                var hashData = photoswipeParseHash();
+                if (hashData.pid && hashData.gid) {
+                    openPhotoSwipe(hashData.pid, galleryElements[hashData.gid - 1], true, true);
+                }
+            };
+
+            // execute above function
+            initPhotoSwipeFromDOM(gallerySelector);
+        }
         
         
     }
@@ -641,6 +883,24 @@ npm install 模块名称 -g</code></pre>
 
     /*列表样式*/
     
+    .post .pjax article .article-entry>ol, .post .pjax article .article-entry>ul, .post .pjax article>ol, .post .pjax article>ul{
+        border: #e2dede solid 1px;
+        border-radius: 10px;
+        padding: 10px 32px 10px 56px;
+    }
+    .post .pjax article .article-entry li>ol, .post .pjax article .article-entry li>ul,.post .pjax article li>ol, .post .pjax article li>ul{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .post .pjax article .article-entry>ol>li, .post .pjax article .article-entry>ul>li,.post .pjax article>ol>li, .post .pjax article>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    .post .pjax article .article-entry li>ol>li, .post .pjax article .article-entry li>ul>li,.post .pjax article li>ol>li, .post .pjax article li>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    
 
     /* 背景图样式 */
     
@@ -656,6 +916,68 @@ npm install 模块名称 -g</code></pre>
     
 </style>
 
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 
 
 

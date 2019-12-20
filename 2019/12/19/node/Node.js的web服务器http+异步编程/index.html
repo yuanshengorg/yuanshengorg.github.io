@@ -6,27 +6,25 @@
   <meta name="keywords" content=" Node.js ">
   <meta name="description" content="Node.js的web服务器、http、路由、异步编程 | 半根竹子">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="HTML新增1.1、语义化标签 header   —  头部标签 nav        —  导航标签 article —   内容标签 section —   块级标签 aside     —   侧边栏标签 footer   —   尾部标签     在 IE9 浏览器中，需要把语义化标签都转换为块级元素语义化标签；   在移动端支持比较友好；  1.2、多媒体音频标签1.2.1、audio">
+<meta name="description" content="2D转换 transform2D 转换是改变标签在二维平面上的位置和形状  移动： translate 旋转： rotate 缩放： scale  translate 移动 translate 最大的优点就是不影响其他元素的位置 translate 中的100%单位，是相对于本身的宽度和高度来进行计算的  transform: translate(x, y) transform: translat">
 <meta property="og:type" content="article">
-<meta property="og:title" content="(1)HTML5+Css3基础">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;19&#x2F;css&#x2F;(1)HTML5+Css3%E5%9F%BA%E7%A1%80&#x2F;index.html">
+<meta property="og:title" content="(2)Css3动画、2D、3D">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;19&#x2F;css&#x2F;(2)Css3%E5%8A%A8%E7%94%BB%E3%80%812D%E3%80%813D&#x2F;index.html">
 <meta property="og:site_name" content="半根竹子">
-<meta property="og:description" content="HTML新增1.1、语义化标签 header   —  头部标签 nav        —  导航标签 article —   内容标签 section —   块级标签 aside     —   侧边栏标签 footer   —   尾部标签     在 IE9 浏览器中，需要把语义化标签都转换为块级元素语义化标签；   在移动端支持比较友好；  1.2、多媒体音频标签1.2.1、audio">
+<meta property="og:description" content="2D转换 transform2D 转换是改变标签在二维平面上的位置和形状  移动： translate 旋转： rotate 缩放： scale  translate 移动 translate 最大的优点就是不影响其他元素的位置 translate 中的100%单位，是相对于本身的宽度和高度来进行计算的  transform: translate(x, y) transform: translat">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191818_942.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191820_561.png?null">
-<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191824_8.png?null">
-<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191826_338.png?null">
-<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191830_587.png?null">
-<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191838_395.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191916_205.png?null">
-<meta property="article:published_time" content="2019-12-19T10:12:11.282Z">
-<meta property="article:modified_time" content="2019-12-19T14:01:12.168Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;web_2019121903.gif">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;web_2019121902.gif">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;2019121901.gif">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;web_2019121905.gif">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;web_2019121906.gif">
+<meta property="article:published_time" content="2019-12-19T14:01:32.478Z">
+<meta property="article:modified_time" content="2019-12-19T16:53:26.768Z">
 <meta property="article:author" content="半根竹子">
 <meta property="article:tag" content="Css3">
 <meta property="article:tag" content="HTML5">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191818_942.png">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;web_2019121903.gif">
 
 
 <link rel="icon" href="http://mdimg.95408.com/20191218121717.png">
@@ -37,6 +35,9 @@
 
 <link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
 <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<link href="//cdn.bootcss.com/photoswipe/4.1.2/photoswipe.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/photoswipe/4.1.2/default-skin/default-skin.min.css" rel="stylesheet">
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="/js/jquery.autocomplete.min.js?v=1.0.1" ></script>
@@ -96,14 +97,6 @@
         
     
         
-        <a title="weibo" href="http://www.95408.com" target="_blank">
-            
-                <svg class="iconfont-svg" aria-hidden="true">
-                    <use xlink:href="#icon-weibo"></use>
-                </svg>
-            
-        </a>
-        
     
         
     
@@ -133,6 +126,14 @@
     
         
             
+            <li><div data-rel="css">css<small>(2)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
             <li><div data-rel="node">node<small>(3)</small></div>
                 
             </li>
@@ -150,14 +151,6 @@
         
             
             <li><div data-rel="工具">工具<small>(5)</small></div>
-                
-            </li>
-            
-        
-    
-        
-            
-            <li><div data-rel="css">css<small>(2)</small></div>
                 
             </li>
             
@@ -208,6 +201,14 @@
     <div class="tags-list">
     
     <li class="article-tag-list-item">
+        <a class="color5">Css3</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">HTML5</a>
+    </li>
+    
+    <li class="article-tag-list-item">
         <a class="color3">js</a>
     </li>
     
@@ -221,14 +222,6 @@
     
     <li class="article-tag-list-item">
         <a class="color5">hexo</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color5">Css3</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color1">HTML5</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -257,12 +250,44 @@
     
     <nav id="title-list-nav">
         
+        <a  class="css "
+           href="/2019/12/19/css/(1)HTML5+Css3%E5%9F%BA%E7%A1%80/"
+           data-tag="Css3,HTML5"
+           data-author="" >
+            <span class="post-title" title="(1)HTML5+Css3基础">(1)HTML5+Css3基础</span>
+            <span class="post-date" title="2019-12-19 18:12:11">2019/12/19</span>
+        </a>
+        
         <a  class="node "
            href="/2019/12/18/node/Node.js%E5%9F%BA%E7%A1%80/"
            data-tag="js,Node.js"
            data-author="" >
             <span class="post-title" title="Node.js基础">Node.js基础</span>
             <span class="post-date" title="2019-12-18 22:25:55">2019/12/18</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/19/css/(2)Css3%E5%8A%A8%E7%94%BB%E3%80%812D%E3%80%813D/"
+           data-tag="Css3,HTML5"
+           data-author="" >
+            <span class="post-title" title="(2)Css3动画、2D、3D">(2)Css3动画、2D、3D</span>
+            <span class="post-date" title="2019-12-19 22:01:32">2019/12/19</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/18/node/Node.js%E6%A8%A1%E5%9D%97%EF%BC%9Afs%E3%80%81path%E3%80%81gulp/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js模块：fs、path、gulp">Node.js模块：fs、path、gulp</span>
+            <span class="post-date" title="2019-12-18 23:32:58">2019/12/18</span>
+        </a>
+        
+        <a  class="JavaScript "
+           href="/2019/12/17/js/JavaScript%E6%95%B0%E7%BB%84%EF%BC%88%E4%B8%80%EF%BC%89/"
+           data-tag="js"
+           data-author="" >
+            <span class="post-title" title="JavaScript 数组（一）">JavaScript 数组（一）</span>
+            <span class="post-date" title="2019-12-17 19:27:36">2019/12/17</span>
         </a>
         
         <a  class="JavaScript "
@@ -281,28 +306,12 @@
             <span class="post-date" title="2019-12-18 21:02:11">2019/12/18</span>
         </a>
         
-        <a  class="css "
-           href="/2019/12/19/css/(2)Css3%E5%8A%A8%E7%94%BB%E3%80%812D%E3%80%813D/"
-           data-tag="Css3,HTML5"
-           data-author="" >
-            <span class="post-title" title="(2)Css3动画、2D、3D">(2)Css3动画、2D、3D</span>
-            <span class="post-date" title="2019-12-19 22:01:32">2019/12/19</span>
-        </a>
-        
         <a  class="工具 "
            href="/2019/12/18/tools/Markdown%E8%AF%AD%E6%B3%95CSS%E8%A1%A8%E7%8E%B0%E6%B5%8B%E8%AF%95/"
            data-tag="markdown"
            data-author="" >
             <span class="post-title" title="Markdown语法CSS表现测试">Markdown语法CSS表现测试</span>
             <span class="post-date" title="2019-12-18 15:18:41">2019/12/18</span>
-        </a>
-        
-        <a  class="css "
-           href="/2019/12/19/css/(1)HTML5+Css3%E5%9F%BA%E7%A1%80/"
-           data-tag="Css3,HTML5"
-           data-author="" >
-            <span class="post-title" title="(1)HTML5+Css3基础">(1)HTML5+Css3基础</span>
-            <span class="post-date" title="2019-12-19 18:12:11">2019/12/19</span>
         </a>
         
         <a  class="工具 "
@@ -319,22 +328,6 @@
            data-author="" >
             <span class="post-title" title="自定义 vs code 命令快捷键">自定义 vs code 命令快捷键</span>
             <span class="post-date" title="2019-12-17 19:27:36">2019/12/17</span>
-        </a>
-        
-        <a  class="JavaScript "
-           href="/2019/12/17/js/JavaScript%E6%95%B0%E7%BB%84%EF%BC%88%E4%B8%80%EF%BC%89/"
-           data-tag="js"
-           data-author="" >
-            <span class="post-title" title="JavaScript 数组（一）">JavaScript 数组（一）</span>
-            <span class="post-date" title="2019-12-17 19:27:36">2019/12/17</span>
-        </a>
-        
-        <a  class="node "
-           href="/2019/12/18/node/Node.js%E6%A8%A1%E5%9D%97%EF%BC%9Afs%E3%80%81path%E3%80%81gulp/"
-           data-tag="Node.js"
-           data-author="" >
-            <span class="post-title" title="Node.js模块：fs、path、gulp">Node.js模块：fs、path、gulp</span>
-            <span class="post-date" title="2019-12-18 23:32:58">2019/12/18</span>
         </a>
         
         <a  class="工具 "
@@ -389,7 +382,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-12-20 17:15:12'>2019-12-19 14:55</time>
+        创建时间:<time class="date" title='更新时间: 2019-12-20 18:41:31'>2019-12-19 14:55</time>
         
     </div>
     <div class="article-meta">
@@ -400,7 +393,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTTP协议"><span class="toc-text">HTTP协议</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#web-服务器模块-http"><span class="toc-text">web 服务器模块 http</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#请求报文"><span class="toc-text">请求报文</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#req-method"><span class="toc-text">req.method</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#req-url"><span class="toc-text">req.url</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#req-headers"><span class="toc-text">req.headers</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#响应报文"><span class="toc-text">响应报文</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HTTP-响应状态码"><span class="toc-text">HTTP 响应状态码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#res-writeHead"><span class="toc-text">res.writeHead</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTTP请求和响应"><span class="toc-text">HTTP请求和响应</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#请求参数"><span class="toc-text">请求参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#GET请求参数"><span class="toc-text">GET请求参数</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#url-parse-query"><span class="toc-text">url.parse( ).query</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#url-parse-pathname"><span class="toc-text">url.parse( ).pathname</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#get请求响应页面"><span class="toc-text">get请求响应页面</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#POST请求参数"><span class="toc-text">POST请求参数</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#form-html"><span class="toc-text">form.html</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#提交表单"><span class="toc-text">提交表单</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#app-js"><span class="toc-text">app.js</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#路由"><span class="toc-text">路由</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#判断为get请求的路由"><span class="toc-text">判断为get请求的路由</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#静态资源"><span class="toc-text">静态资源</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#读取静态-html文件"><span class="toc-text">读取静态.html文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#请求根目录至首页文件"><span class="toc-text">请求根目录至首页文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#指定返回资源的类型-mime"><span class="toc-text">指定返回资源的类型 mime</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#异步API"><span class="toc-text">异步API</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#同步API-和-异步API"><span class="toc-text">同步API 和 异步API</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Node-js-异步API-回调函数"><span class="toc-text">Node.js 异步API (回调函数)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Promise"><span class="toc-text">Promise</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#异步函数-async"><span class="toc-text">异步函数 async</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#async-关键字"><span class="toc-text">async 关键字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#await-关键字"><span class="toc-text">await 关键字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#顺序读取3个文件"><span class="toc-text">顺序读取3个文件</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-HTTP协议"><span class="toc-text">1. HTTP协议</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-web-服务器模块-http"><span class="toc-text">1.1 web 服务器模块 http</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-请求报文"><span class="toc-text">1.2 请求报文</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-req-method"><span class="toc-text">1.3 req.method</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-req-url"><span class="toc-text">1.4 req.url</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-5-req-headers"><span class="toc-text">1.5 req.headers</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-6-响应报文"><span class="toc-text">1.6 响应报文</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-7-HTTP-响应状态码"><span class="toc-text">1.7 HTTP 响应状态码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-8-res-writeHead"><span class="toc-text">1.8 res.writeHead</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-HTTP请求和响应"><span class="toc-text">2. HTTP请求和响应</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-请求参数"><span class="toc-text">2.1 请求参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-GET请求参数"><span class="toc-text">2.2 GET请求参数</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-1-url-parse-query"><span class="toc-text">2.2.1 url.parse( ).query</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-2-url-parse-pathname"><span class="toc-text">2.2.2 url.parse( ).pathname</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-3-get请求响应页面"><span class="toc-text">2.2.3 get请求响应页面</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-POST请求参数"><span class="toc-text">2.3 POST请求参数</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-1-form-html"><span class="toc-text">2.3.1 form.html</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-2-提交表单"><span class="toc-text">2.3.2 提交表单</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-3-app-js"><span class="toc-text">2.3.3 app.js</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-路由"><span class="toc-text">3. 路由</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-判断为get请求的路由"><span class="toc-text">3.1 判断为get请求的路由</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-静态资源"><span class="toc-text">4. 静态资源</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-读取静态-html文件"><span class="toc-text">4.1 读取静态.html文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-请求根目录至首页文件"><span class="toc-text">4.2 请求根目录至首页文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-指定返回资源的类型-mime"><span class="toc-text">4.3 指定返回资源的类型 mime</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-异步API"><span class="toc-text">5. 异步API</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1-同步API-和-异步API"><span class="toc-text">5.1 同步API 和 异步API</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-Node-js-异步API-回调函数"><span class="toc-text">5.2 Node.js 异步API (回调函数)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-3-Promise"><span class="toc-text">5.3 Promise</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-异步函数-async"><span class="toc-text">6. 异步函数 async</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#6-1-async-关键字"><span class="toc-text">6.1 async 关键字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-2-await-关键字"><span class="toc-text">6.2 await 关键字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-3-顺序读取3个文件"><span class="toc-text">6.3 顺序读取3个文件</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -416,7 +409,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="HTTP协议"><a href="#HTTP协议" class="headerlink" title="HTTP协议"></a>HTTP协议</h2><h3 id="web-服务器模块-http"><a href="#web-服务器模块-http" class="headerlink" title="web 服务器模块 http"></a>web 服务器模块 http</h3><ul>
+        <h2 id="1-HTTP协议"><a href="#1-HTTP协议" class="headerlink" title="1. HTTP协议"></a>1. HTTP协议</h2><h3 id="1-1-web-服务器模块-http"><a href="#1-1-web-服务器模块-http" class="headerlink" title="1.1 web 服务器模块 http"></a>1.1 web 服务器模块 http</h3><ul>
 <li>创建一个服务器对象app，绑定一个端口号：3000；</li>
 <li>通过后台运行 <code>node app.js</code> ，就创建了一个web服务器；</li>
 <li>浏览器请求这个服务器的地址： <code>localhost:3000</code> 时，服务器就响应一段数据（<code>res.end</code> ）给浏览器；</li>
@@ -445,12 +438,12 @@ console.log(&#39;web服务器启动成功，请访问：localhost:3000&#39;);</c
 <li>服务器端对浏览器客户端响应的事情；</li>
 <li>服务器端响应给客户端具体的数据：html文件</li>
 </ul>
-<h3 id="请求报文"><a href="#请求报文" class="headerlink" title="请求报文"></a>请求报文</h3><p>请求方式：</p>
+<h3 id="1-2-请求报文"><a href="#1-2-请求报文" class="headerlink" title="1.2 请求报文"></a>1.2 请求报文</h3><p>请求方式：</p>
 <ul>
 <li>GET 请求数据</li>
 <li>POST 发送数据</li>
 </ul>
-<h3 id="req-method"><a href="#req-method" class="headerlink" title="req.method"></a>req.method</h3><p>req.method 获取请求的方式</p>
+<h3 id="1-3-req-method"><a href="#1-3-req-method" class="headerlink" title="1.3 req.method"></a>1.3 req.method</h3><p>req.method 获取请求的方式</p>
 <p>浏览器端通过post或get向服务器端发送数据：</p>
 <pre><code class="html">// 表单数据通过post请求发送给localhost:3000服务器
 &lt;form method=&quot;post&quot; action=&quot;http://localhost:3000&quot;&gt;
@@ -475,7 +468,7 @@ app.on(&#39;request&#39;, (req, res) =&gt; {
 app.listen(3000);
 // 在node后台输出的文字
 console.log(&#39;web服务器启动成功，请访问：localhost:3000&#39;);</code></pre>
-<h3 id="req-url"><a href="#req-url" class="headerlink" title="req.url"></a>req.url</h3><p>req.url 客户端请求的url地址</p>
+<h3 id="1-4-req-url"><a href="#1-4-req-url" class="headerlink" title="1.4 req.url"></a>1.4 req.url</h3><p>req.url 客户端请求的url地址</p>
 <pre><code class="js">// 引用http系统模块
 const http = require(&#39;http&#39;);
 // 创建web服务器
@@ -495,18 +488,18 @@ app.on(&#39;request&#39;, (req, res) =&gt; {
 app.listen(3000);
 // 在node后台输出的文字
 console.log(&#39;web服务器启动成功，请访问：localhost:3000&#39;);</code></pre>
-<h3 id="req-headers"><a href="#req-headers" class="headerlink" title="req.headers"></a>req.headers</h3><p>客户端请求的报文信息</p>
+<h3 id="1-5-req-headers"><a href="#1-5-req-headers" class="headerlink" title="1.5 req.headers"></a>1.5 req.headers</h3><p>客户端请求的报文信息</p>
 <pre><code class="js">app.on(&#39;request&#39;, (req, res) =&gt; {
     // 获取请求报文信息中accept中的值
     console.log(req.headers[&#39;accept&#39;]);
 })</code></pre>
-<h3 id="响应报文"><a href="#响应报文" class="headerlink" title="响应报文"></a>响应报文</h3><h3 id="HTTP-响应状态码"><a href="#HTTP-响应状态码" class="headerlink" title="HTTP 响应状态码"></a>HTTP 响应状态码</h3><ul>
+<h3 id="1-6-响应报文"><a href="#1-6-响应报文" class="headerlink" title="1.6 响应报文"></a>1.6 响应报文</h3><h3 id="1-7-HTTP-响应状态码"><a href="#1-7-HTTP-响应状态码" class="headerlink" title="1.7 HTTP 响应状态码"></a>1.7 HTTP 响应状态码</h3><ul>
 <li>200</li>
 <li>404</li>
 <li>500</li>
 <li>400</li>
 </ul>
-<h3 id="res-writeHead"><a href="#res-writeHead" class="headerlink" title="res.writeHead"></a>res.writeHead</h3><p>书写服务器端给客户端响应的数据</p>
+<h3 id="1-8-res-writeHead"><a href="#1-8-res-writeHead" class="headerlink" title="1.8 res.writeHead"></a>1.8 res.writeHead</h3><p>书写服务器端给客户端响应的数据</p>
 <pre><code class="js">app.on(&#39;request&#39;, (req, res) =&gt; {
     res.writeHead(400);
 })</code></pre>
@@ -525,8 +518,8 @@ console.log(&#39;web服务器启动成功，请访问：localhost:3000&#39;);</c
         res.end(&#39;404&#39;)
     }
 })</code></pre>
-<h2 id="HTTP请求和响应"><a href="#HTTP请求和响应" class="headerlink" title="HTTP请求和响应"></a>HTTP请求和响应</h2><h3 id="请求参数"><a href="#请求参数" class="headerlink" title="请求参数"></a>请求参数</h3><p>客户端向服务器端发送请求时，有时需要携带一些客户信息，客户信息需要通过请求参数的形式传递到服务器端，比如登录操作。</p>
-<h3 id="GET请求参数"><a href="#GET请求参数" class="headerlink" title="GET请求参数"></a>GET请求参数</h3><ul>
+<h2 id="2-HTTP请求和响应"><a href="#2-HTTP请求和响应" class="headerlink" title="2. HTTP请求和响应"></a>2. HTTP请求和响应</h2><h3 id="2-1-请求参数"><a href="#2-1-请求参数" class="headerlink" title="2.1 请求参数"></a>2.1 请求参数</h3><p>客户端向服务器端发送请求时，有时需要携带一些客户信息，客户信息需要通过请求参数的形式传递到服务器端，比如登录操作。</p>
+<h3 id="2-2-GET请求参数"><a href="#2-2-GET请求参数" class="headerlink" title="2.2 GET请求参数"></a>2.2 GET请求参数</h3><ul>
 <li>参数被放置在浏览器地址栏中，例如：<a href="http://localhost:3000/**?name=zhangsan&amp;age=20" target="_blank" rel="noopener">http://localhost:3000/**?name=zhangsan&amp;age=20</a>**</li>
 <li>参数获取需要借助系统模块url<ul>
 <li>之前我们直接使用了<code>req.url</code>获得了所有的请求参数，如<code>/index?name=zhangsan&amp;qq=123456</code>；</li>
@@ -534,7 +527,7 @@ console.log(&#39;web服务器启动成功，请访问：localhost:3000&#39;);</c
 </ul>
 </li>
 </ul>
-<h4 id="url-parse-query"><a href="#url-parse-query" class="headerlink" title="url.parse( ).query"></a>url.parse( ).query</h4><pre><code class="js">// 引入系统模块url
+<h4 id="2-2-1-url-parse-query"><a href="#2-2-1-url-parse-query" class="headerlink" title="2.2.1 url.parse( ).query"></a>2.2.1 url.parse( ).query</h4><pre><code class="js">// 引入系统模块url
 const url = require(&#39;url&#39;);
 
 app.on(&#39;request&#39;, (req, res) =&gt; {
@@ -549,14 +542,14 @@ app.on(&#39;request&#39;, (req, res) =&gt; {
     console.log(params.name);   // params.name获取：zhangsan
     console.log(params.qq);   // params.qq获取：123455
 })</code></pre>
-<h4 id="url-parse-pathname"><a href="#url-parse-pathname" class="headerlink" title="url.parse( ).pathname"></a>url.parse( ).pathname</h4><p><code>url.parse().pathname</code> 包含的是url地址的<code>/index</code>部分，前面通过url的路由没有提取get参数；</p>
+<h4 id="2-2-2-url-parse-pathname"><a href="#2-2-2-url-parse-pathname" class="headerlink" title="2.2.2 url.parse( ).pathname"></a>2.2.2 url.parse( ).pathname</h4><p><code>url.parse().pathname</code> 包含的是url地址的<code>/index</code>部分，前面通过url的路由没有提取get参数；</p>
 <pre><code class="js">    let query = url.parse(req.url, true).query;
     // query:  { name: &#39;zhangsan&#39;, qq: &#39;123455&#39; }
     let pathname = url.parse(req.url, true).pathname;
     // pathname:  /index
     // 等同于：
     let { query, pathname } = url.parse(req.url, true);</code></pre>
-<h4 id="get请求响应页面"><a href="#get请求响应页面" class="headerlink" title="get请求响应页面"></a>get请求响应页面</h4><p>通过get请求地址响应不同页面</p>
+<h4 id="2-2-3-get请求响应页面"><a href="#2-2-3-get请求响应页面" class="headerlink" title="2.2.3 get请求响应页面"></a>2.2.3 get请求响应页面</h4><p>通过get请求地址响应不同页面</p>
 <p>修改去除url中的get参数（原来：if (req.url == ‘/index’)，如果url中有参数就无法识别）</p>
 <pre><code class="js">app.on(&#39;request&#39;, (req, res) =&gt; {
     let { query, pathname } = url.parse(req.url, true);
@@ -575,12 +568,12 @@ app.on(&#39;request&#39;, (req, res) =&gt; {
     }
 })</code></pre>
 <p><img src="http://mdimg.95408.com/201912201246_963.png" alt="url中带get参数"></p>
-<h3 id="POST请求参数"><a href="#POST请求参数" class="headerlink" title="POST请求参数"></a>POST请求参数</h3><ul>
+<h3 id="2-3-POST请求参数"><a href="#2-3-POST请求参数" class="headerlink" title="2.3 POST请求参数"></a>2.3 POST请求参数</h3><ul>
 <li>参数被放置在请求体中进行传输</li>
 <li>获取POST参数需要使用data事件和end事件</li>
 <li>使用querystring</li>
 </ul>
-<h4 id="form-html"><a href="#form-html" class="headerlink" title="form.html"></a>form.html</h4><p><code>form.html</code>： html表单通过post参数向服务器传递数据：</p>
+<h4 id="2-3-1-form-html"><a href="#2-3-1-form-html" class="headerlink" title="2.3.1 form.html"></a>2.3.1 form.html</h4><p><code>form.html</code>： html表单通过post参数向服务器传递数据：</p>
 <pre><code class="html">&lt;body&gt;
     &lt;form method=&quot;post&quot; action=&quot;http://localhost:3000&quot;&gt;
         &lt;input type=&quot;text&quot; name=&quot;usename&quot;&gt;
@@ -588,9 +581,9 @@ app.on(&#39;request&#39;, (req, res) =&gt; {
         &lt;input type=&quot;submit&quot; name=&quot;&quot;&gt;
     &lt;/form&gt;
 &lt;/body&gt;</code></pre>
-<h4 id="提交表单"><a href="#提交表单" class="headerlink" title="提交表单"></a>提交表单</h4><p>使用表单提交数据：</p>
+<h4 id="2-3-2-提交表单"><a href="#2-3-2-提交表单" class="headerlink" title="2.3.2 提交表单"></a>2.3.2 提交表单</h4><p>使用表单提交数据：</p>
 <p><img src="http://mdimg.95408.com/201912201313_858.png?null" alt=""></p>
-<h4 id="app-js"><a href="#app-js" class="headerlink" title="app.js"></a>app.js</h4><p><code>app.js</code>：服务器开启<code>nodemon app.js</code>后，接收来自form.html传递的post数据：</p>
+<h4 id="2-3-3-app-js"><a href="#2-3-3-app-js" class="headerlink" title="2.3.3 app.js"></a>2.3.3 app.js</h4><p><code>app.js</code>：服务器开启<code>nodemon app.js</code>后，接收来自form.html传递的post数据：</p>
 <blockquote>
 <p>  <code>console.log(postParams);</code> // usename=zhangsan&amp;password=123456；</p>
 <p>  <code>console.log(querystring.parse(postParams));</code>   // { usename: ‘zhangsan’, password: ‘123456’ }；</p>
@@ -626,7 +619,7 @@ app.on(&#39;request&#39;, (req, res) =&gt; {
 app.listen(3000);
 // 在node后台输出的文字
 console.log(&#39;web服务器启动成功，请访问：localhost:3000&#39;);</code></pre>
-<h2 id="路由"><a href="#路由" class="headerlink" title="路由"></a>路由</h2><p>之前，我们在浏览器输入<code>localhost:3000/index</code>，需要响应到<code>index</code>页面上的内容；</p>
+<h2 id="3-路由"><a href="#3-路由" class="headerlink" title="3. 路由"></a>3. 路由</h2><p>之前，我们在浏览器输入<code>localhost:3000/index</code>，需要响应到<code>index</code>页面上的内容；</p>
 <p>输入<code>localhost:3000/list</code>，需要响应到<code>list</code>上的数据；</p>
 <blockquote>
 <p>路由是指客户端请求地址与服务器端程序代码的对应关系。简单的说，就是请求什么响应什么。</p>
@@ -645,7 +638,7 @@ console.log(&#39;web服务器启动成功，请访问：localhost:3000&#39;);</c
     }
 })</code></pre>
 <p>以上是简单的路由代码，但没有体现客户端的get、post请求判断；</p>
-<h4 id="判断为get请求的路由"><a href="#判断为get请求的路由" class="headerlink" title="判断为get请求的路由"></a>判断为get请求的路由</h4><pre><code class="js">const http = require(&#39;http&#39;);
+<h4 id="3-1-判断为get请求的路由"><a href="#3-1-判断为get请求的路由" class="headerlink" title="3.1 判断为get请求的路由"></a>3.1 判断为get请求的路由</h4><pre><code class="js">const http = require(&#39;http&#39;);
 const url = require(&#39;url&#39;);
 const app = http.createServer();
 
@@ -677,7 +670,7 @@ app.on(&#39;request&#39;, (req, res) =&gt; {
 app.listen(3000);
 console.log(&#39;服务器启动成功&#39;);</code></pre>
 <p><img src="http://mdimg.95408.com/201912201346_522.png?null" alt=""></p>
-<h2 id="静态资源"><a href="#静态资源" class="headerlink" title="静态资源"></a>静态资源</h2><p>将客户端浏览器请求的路径，转换为服务器实现静态文件路径：</p>
+<h2 id="4-静态资源"><a href="#4-静态资源" class="headerlink" title="4. 静态资源"></a>4. 静态资源</h2><p>将客户端浏览器请求的路径，转换为服务器实现静态文件路径：</p>
 <pre><code class="js">const http = require(&#39;http&#39;);
 const url = require(&#39;url&#39;);
 const path = require(&#39;path&#39;);
@@ -699,7 +692,7 @@ app.listen(3000);
 console.log(&#39;服务器启动成功&#39;);</code></pre>
 <p><img src="http://mdimg.95408.com/201912201407_769.png" alt=""></p>
 <p>我们通过拼接得到了文件的绝对路径<code>d:\doc\1218\route\public\index</code>，可以通过<code>fs</code>模块读取，响应给客户端：</p>
-<h3 id="读取静态-html文件"><a href="#读取静态-html文件" class="headerlink" title="读取静态.html文件"></a>读取静态.html文件</h3><ul>
+<h3 id="4-1-读取静态-html文件"><a href="#4-1-读取静态-html文件" class="headerlink" title="4.1 读取静态.html文件"></a>4.1 读取静态.html文件</h3><ul>
 <li>客户端发送请求<code>localhost:3000/index</code>，得到请求路径<code>/index</code>；</li>
 <li>服务器端<code>path.join()</code>拼接出服务器本地绝对地址<code>d:\doc\1218\route\public\index</code>；</li>
 <li>在绝对地址下有对应的 <code>index.html</code>文件时，通过<code>fs.readFile</code>读取后响应给客户端；</li>
@@ -722,9 +715,9 @@ app.on(&#39;request&#39;, (req, res) =&gt; {
     })
 })</code></pre>
 <p><img src="http://mdimg.95408.com/201912201435_163.png?null" alt=""></p>
-<h3 id="请求根目录至首页文件"><a href="#请求根目录至首页文件" class="headerlink" title="请求根目录至首页文件"></a>请求根目录至首页文件</h3><p>当客户请求根目录<code>localhost:3000</code>时，跳转到<code>localhost:3000/index</code>：</p>
+<h3 id="4-2-请求根目录至首页文件"><a href="#4-2-请求根目录至首页文件" class="headerlink" title="4.2 请求根目录至首页文件"></a>4.2 请求根目录至首页文件</h3><p>当客户请求根目录<code>localhost:3000</code>时，跳转到<code>localhost:3000/index</code>：</p>
 <pre><code class="js">pathname = pathname == &#39;/&#39; ? &#39;/index&#39; : pathname;</code></pre>
-<h3 id="指定返回资源的类型-mime"><a href="#指定返回资源的类型-mime" class="headerlink" title="指定返回资源的类型 mime"></a>指定返回资源的类型 mime</h3><pre><code class="js">const mime = require(&#39;mime&#39;);
+<h3 id="4-3-指定返回资源的类型-mime"><a href="#4-3-指定返回资源的类型-mime" class="headerlink" title="4.3 指定返回资源的类型 mime"></a>4.3 指定返回资源的类型 mime</h3><pre><code class="js">const mime = require(&#39;mime&#39;);
 
 app.on(&#39;request&#39;, (req, res) =&gt; {
     let pathname = url.parse(req.url).pathname;
@@ -746,7 +739,7 @@ app.on(&#39;request&#39;, (req, res) =&gt; {
     })
 })</code></pre>
 <p><img src="http://mdimg.95408.com/201912201449_374.png?null" alt=""></p>
-<h2 id="异步API"><a href="#异步API" class="headerlink" title="异步API"></a>异步API</h2><h3 id="同步API-和-异步API"><a href="#同步API-和-异步API" class="headerlink" title="同步API 和 异步API"></a>同步API 和 异步API</h3><p>同步API：只有当前API执行完成后，才能继续执行下一个API；</p>
+<h2 id="5-异步API"><a href="#5-异步API" class="headerlink" title="5. 异步API"></a>5. 异步API</h2><h3 id="5-1-同步API-和-异步API"><a href="#5-1-同步API-和-异步API" class="headerlink" title="5.1 同步API 和 异步API"></a>5.1 同步API 和 异步API</h3><p>同步API：只有当前API执行完成后，才能继续执行下一个API；</p>
 <pre><code class="js">console.log(&#39;1&#39;); 
 console.log(&#39;2&#39;);
 console.log(&#39;3&#39;);</code></pre>
@@ -792,7 +785,7 @@ console.log(&#39;代码结束执行&#39;);
     // 代码结束执行
     // 0秒后执行的代码
     // 2秒后执行的代码</code></pre>
-<h3 id="Node-js-异步API-回调函数"><a href="#Node-js-异步API-回调函数" class="headerlink" title="Node.js 异步API (回调函数)"></a>Node.js 异步API (回调函数)</h3><p>我们之前读取文件、服务器请求等都是通过回调函数来实现的；</p>
+<h3 id="5-2-Node-js-异步API-回调函数"><a href="#5-2-Node-js-异步API-回调函数" class="headerlink" title="5.2 Node.js 异步API (回调函数)"></a>5.2 Node.js 异步API (回调函数)</h3><p>我们之前读取文件、服务器请求等都是通过回调函数来实现的；</p>
 <p>要得到读取完成后文件的数据，在回调函数中获取；</p>
 <pre><code class="js">fs.readFile(&#39;./demo.txt&#39;, (err, result) =&gt; {
     res.end(result);
@@ -804,7 +797,7 @@ app.on(&#39;request&#39;, (req, res) =&gt; {
 });</code></pre>
 <p><strong>回调地狱</strong></p>
 <p>如果有多层回调函数，需要一层一层的嵌套，影响代码维护；</p>
-<h3 id="Promise"><a href="#Promise" class="headerlink" title="Promise"></a>Promise</h3><p>Promise解决Node.js异步编程中回调地狱的问题；</p>
+<h3 id="5-3-Promise"><a href="#5-3-Promise" class="headerlink" title="5.3 Promise"></a>5.3 Promise</h3><p>Promise解决Node.js异步编程中回调地狱的问题；</p>
 <pre><code class="js">const fs = require(&#39;fs&#39;);
 
 function p1() {
@@ -839,7 +832,7 @@ p1().then((r1) =&gt; {
     console.log(result3);
 })</code></pre>
 <p><img src="http://mdimg.95408.com/201912201630_672.png?null" alt=""></p>
-<h2 id="异步函数-async"><a href="#异步函数-async" class="headerlink" title="异步函数 async"></a>异步函数 async</h2><pre><code class="js">const fn = async () =&gt; {};
+<h2 id="6-异步函数-async"><a href="#6-异步函数-async" class="headerlink" title="6. 异步函数 async"></a>6. 异步函数 async</h2><pre><code class="js">const fn = async () =&gt; {};
 async function fn () {}</code></pre>
 <p>让我们将异步代码写成同步的形式，让代码不再有回调函数嵌套，使代码变得清晰明了。</p>
 <pre><code class="js">async function fn() {
@@ -855,7 +848,7 @@ fn().then(function (data) {
     console.log(err);   // 错误信息txt  
     // throw替代了reject 用catch获取
 })</code></pre>
-<h3 id="async-关键字"><a href="#async-关键字" class="headerlink" title="async 关键字"></a>async 关键字</h3><ol>
+<h3 id="6-1-async-关键字"><a href="#6-1-async-关键字" class="headerlink" title="6.1 async 关键字"></a>6.1 async 关键字</h3><ol>
 <li>普通函数定义前加async关键字 普通函数变成异步函数</li>
 <li>异步函数默认返回promise对象</li>
 <li>在异步函数内部使用return关键字进行结果返回 结果会被包裹的promise对象中 return关键字代替了resolve方法</li>
@@ -863,7 +856,7 @@ fn().then(function (data) {
 <li>调用异步函数再链式调用then方法获取异步函数执行结果</li>
 <li>调用异步函数再链式调用catch方法获取异步函数执行的错误信息</li>
 </ol>
-<h3 id="await-关键字"><a href="#await-关键字" class="headerlink" title="await 关键字"></a>await 关键字</h3><ol>
+<h3 id="6-2-await-关键字"><a href="#6-2-await-关键字" class="headerlink" title="6.2 await 关键字"></a>6.2 await 关键字</h3><ol>
 <li>await关键字只能出现在异步函数中</li>
 <li>await promise await后面只能写promise对象 写其他类型的API是不不可以的</li>
 <li>await关键字可是暂停异步函数向下执行 直到promise返回结果</li>
@@ -892,7 +885,7 @@ run();
 // 1.txx
 // 2.txt
 // 3.txt</code></pre>
-<h3 id="顺序读取3个文件"><a href="#顺序读取3个文件" class="headerlink" title="顺序读取3个文件"></a>顺序读取3个文件</h3><ul>
+<h3 id="6-3-顺序读取3个文件"><a href="#6-3-顺序读取3个文件" class="headerlink" title="6.3 顺序读取3个文件"></a>6.3 顺序读取3个文件</h3><ul>
 <li>使用async异步函数的方法按顺序读取3个文件：</li>
 <li>const readFile = promisify(fs.readFile)   // 调用promisify方法改造了现有的异步API，让其返回promise对象；</li>
 <li>从而支持异步函数语法；</li>
@@ -930,8 +923,6 @@ run();
 
 
 
-    
-
 
 
 
@@ -958,13 +949,16 @@ run();
 </body>
 <script src="/js/jquery.pjax.js?v=1.0.1" ></script>
 
+<script src="//cdn.bootcss.com/photoswipe/4.1.2/photoswipe.min.js"></script>
+<script src="//cdn.bootcss.com/photoswipe/4.1.2/photoswipe-ui-default.min.js"></script>
+
 <script src="/js/script.js?v=1.0.1" ></script>
 <script>
-    var img_resize = '';
+    var img_resize = 'photoSwipe';
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#js','#Node.js','#博客','#hexo','#Css3','#HTML5','#markdown','#vscode','#git','#github',],
+            'data': ['#Css3','#HTML5','#js','#Node.js','#博客','#hexo','#markdown','#vscode','#git','#github',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');
@@ -972,7 +966,7 @@ run();
     function initArticle() {
         /*渲染对应的表格样式*/
         
-            $(".post .pjax table").addClass("green_title");
+            $(".post .pjax table").addClass("green");
         
 
         /*渲染打赏样式*/
@@ -987,6 +981,254 @@ run();
         /*代码高亮，行号对齐*/
         $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
 
+        
+
+        // PhotoSwipe
+        $('article').each(function(i){
+            $(this).find('img').each(function(){
+                if ($(this).closest('figure').hasClass('article-gallery-img')) {
+                    return;
+                }
+                var alt = this.alt;
+                $(this)
+                    .wrap('<figure class="article-gallery-img" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"></figure>')
+                    .wrap('<a href="' + this.src + '" title="' + alt + '"></a>');
+                $(this).after('<div class="img_alt"><span>' + (alt || '') + '</span></div>');
+            });
+        });
+
+        var pswpElement = document.querySelectorAll('.pswp')[0];
+        if (pswpElement) {
+            var gallerySelector = '.article-gallery, article';
+
+            var initPhotoSwipeFromDOM = function(gallerySelector) {
+
+                // parse slide data (url, title, size ...) from DOM elements
+                // (children of gallerySelector)
+                var parseThumbnailElements = function(el) {
+                    var thumbElements = $(el).find('figure.article-gallery-img').toArray(),
+                        numNodes = thumbElements.length,
+                        items = [],
+                        figureEl,
+                        linkEl,
+                        size,
+                        imgEl,
+                        item;
+
+                    for (var i = 0; i < numNodes; i++) {
+
+                        figureEl = thumbElements[i]; // <figure> element
+
+                        // include only element nodes
+                        if (figureEl.nodeType !== 1) {
+                            continue;
+                        }
+
+                        linkEl = figureEl.children[0]; // <a> element
+                        imgEl = linkEl.children[0]; // <img>
+
+                        size = linkEl.getAttribute('data-size');
+                        size = size && size.split('x');
+
+                        // create slide object
+                        item = {
+                            src: linkEl.getAttribute('href'),
+                            w: size && parseInt(size[0], 10) || imgEl.width,
+                            h: size && parseInt(size[1], 10) || imgEl.height
+                        };
+
+                        if (figureEl.children.length > 1) {
+                            // <figcaption> content
+                            item.title = figureEl.children[1].innerHTML;
+                        }
+
+                        if (linkEl.children.length > 0) {
+                            // <img> thumbnail element, retrieving thumbnail url
+                            item.msrc = linkEl.children[0].getAttribute('src');
+                        }
+
+                        item.el = figureEl; // save link to element for getThumbBoundsFn
+                        items.push(item);
+                    }
+
+                    return items;
+                };
+
+                // find nearest parent element
+                var closest = function closest(el, fn) {
+                    return el && (fn(el) ? el : closest(el.parentNode, fn));
+                };
+
+                // triggers when user clicks on thumbnail
+                var onThumbnailsClick = function(e) {
+                    e = e || window.event;
+
+                    var eTarget = e.target || e.srcElement;
+
+                    // find root element of slide
+                    var clickedListItem = closest(eTarget, function(el) {
+                        return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
+                    });
+
+                    if (!clickedListItem) {
+                        return;
+                    }
+
+                    if (e.preventDefault) {
+                        e.preventDefault();
+                    } else {
+                        e.returnValue = false;
+                    }
+
+                    // find index of clicked item by looping through all child nodes
+                    // alternatively, you may define index via data- attribute
+                    var clickedGallery = $(clickedListItem).closest(gallerySelector)[0],
+                        childNodes = $(clickedGallery).find('figure.article-gallery-img').toArray(),
+                        numChildNodes = childNodes.length,
+                        nodeIndex = 0,
+                        index;
+
+                    for (var i = 0; i < numChildNodes; i++) {
+                        if (childNodes[i].nodeType !== 1) {
+                            continue;
+                        }
+
+                        if (childNodes[i] === clickedListItem) {
+                            index = nodeIndex;
+                            break;
+                        }
+                        nodeIndex++;
+                    }
+
+
+
+                    if (index >= 0) {
+                        // open PhotoSwipe if valid index found
+                        openPhotoSwipe(index, clickedGallery);
+                    }
+                    return false;
+                };
+
+                // parse picture index and gallery index from URL (#&pid=1&gid=2)
+                var photoswipeParseHash = function() {
+                    var hash = window.location.hash.substring(1),
+                        params = {};
+
+                    if (hash.length < 5) {
+                        return params;
+                    }
+
+                    var vars = hash.split('&');
+                    for (var i = 0; i < vars.length; i++) {
+                        if (!vars[i]) {
+                            continue;
+                        }
+                        var pair = vars[i].split('=');
+                        if (pair.length < 2) {
+                            continue;
+                        }
+                        params[pair[0]] = pair[1];
+                    }
+
+                    if (params.gid) {
+                        params.gid = parseInt(params.gid, 10);
+                    }
+
+                    return params;
+                };
+
+                var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
+                    var pswpElement = document.querySelectorAll('.pswp')[0],
+                        gallery,
+                        options,
+                        items;
+
+                    items = parseThumbnailElements(galleryElement);
+
+                    // define options (if needed)
+                    options = {
+
+                        // define gallery index (for URL)
+                        galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+
+                        getThumbBoundsFn: function(index) {
+                            // See Options -> getThumbBoundsFn section of documentation for more info
+                            var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
+                                pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+                                rect = thumbnail.getBoundingClientRect();
+
+                            return {
+                                x: rect.left,
+                                y: rect.top + pageYScroll,
+                                w: rect.width
+                            };
+                        }
+                    };
+
+                    // PhotoSwipe opened from URL
+                    if (fromURL) {
+                        if (options.galleryPIDs) {
+                            // parse real index when custom PIDs are used
+                            // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
+                            for (var j = 0; j < items.length; j++) {
+                                if (items[j].pid == index) {
+                                    options.index = j;
+                                    break;
+                                }
+                            }
+                        } else {
+                            // in URL indexes start from 1
+                            options.index = parseInt(index, 10) - 1;
+                        }
+                    } else {
+                        options.index = parseInt(index, 10);
+                    }
+
+                    // exit if index not found
+                    if (isNaN(options.index)) {
+                        return;
+                    }
+
+                    if (disableAnimation) {
+                        options.showAnimationDuration = 0;
+                    }
+
+                    // Pass data to PhotoSwipe and initialize it
+                    gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+
+                    gallery.listen('imageLoadComplete', function(index, item) {
+                        var linkEl = item.el.children[0];
+                        var img = item.container.children[0];
+                        if (!linkEl.getAttribute('data-size')) {
+                            linkEl.setAttribute('data-size', img.naturalWidth + 'x' + img.naturalHeight);
+                            item.w = img.naturalWidth;
+                            item.h = img.naturalHeight;
+                            gallery.invalidateCurrItems();
+                            gallery.updateSize(true);
+                        }
+                    });
+
+                    gallery.init();
+                };
+
+                // loop through all gallery elements and bind events
+                var galleryElements = document.querySelectorAll(gallerySelector);
+
+                for (var i = 0, l = galleryElements.length; i < l; i++) {
+                    galleryElements[i].setAttribute('data-pswp-uid', i + 1);
+                    galleryElements[i].onclick = onThumbnailsClick;
+                }
+
+                // Parse URL and open gallery if it contains #&pid=3&gid=1
+                var hashData = photoswipeParseHash();
+                if (hashData.pid && hashData.gid) {
+                    openPhotoSwipe(hashData.pid, galleryElements[hashData.gid - 1], true, true);
+                }
+            };
+
+            // execute above function
+            initPhotoSwipeFromDOM(gallerySelector);
+        }
         
         
     }
@@ -1067,6 +1309,24 @@ run();
 
     /*列表样式*/
     
+    .post .pjax article .article-entry>ol, .post .pjax article .article-entry>ul, .post .pjax article>ol, .post .pjax article>ul{
+        border: #e2dede solid 1px;
+        border-radius: 10px;
+        padding: 10px 32px 10px 56px;
+    }
+    .post .pjax article .article-entry li>ol, .post .pjax article .article-entry li>ul,.post .pjax article li>ol, .post .pjax article li>ul{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .post .pjax article .article-entry>ol>li, .post .pjax article .article-entry>ul>li,.post .pjax article>ol>li, .post .pjax article>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    .post .pjax article .article-entry li>ol>li, .post .pjax article .article-entry li>ul>li,.post .pjax article li>ol>li, .post .pjax article li>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    
 
     /* 背景图样式 */
     
@@ -1082,6 +1342,68 @@ run();
     
 </style>
 
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 
 
 
