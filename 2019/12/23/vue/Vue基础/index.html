@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Vue基础 | 半根竹子</title>
+  <meta name="keywords" content=" js , vue ">
+  <meta name="description" content="Vue基础 | 半根竹子">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="HTML新增1.1、语义化标签 header   —  头部标签 nav        —  导航标签 article —   内容标签 section —   块级标签 aside     —   侧边栏标签 footer   —   尾部标签     在 IE9 浏览器中，需要把语义化标签都转换为块级元素语义化标签；   在移动端支持比较友好；  1.2、多媒体音频标签1.2.1、audio">
+<meta property="og:type" content="article">
+<meta property="og:title" content="(1)HTML5+Css3基础">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;23&#x2F;css&#x2F;(1)HTML5+Css3%E5%9F%BA%E7%A1%80&#x2F;index.html">
+<meta property="og:site_name" content="半根竹子">
+<meta property="og:description" content="HTML新增1.1、语义化标签 header   —  头部标签 nav        —  导航标签 article —   内容标签 section —   块级标签 aside     —   侧边栏标签 footer   —   尾部标签     在 IE9 浏览器中，需要把语义化标签都转换为块级元素语义化标签；   在移动端支持比较友好；  1.2、多媒体音频标签1.2.1、audio">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191818_942.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191820_561.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191824_8.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191826_338.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191830_587.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191838_395.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191916_205.png?null">
+<meta property="article:published_time" content="2019-12-23T04:59:32.480Z">
+<meta property="article:modified_time" content="2019-12-23T04:59:33.660Z">
+<meta property="article:author" content="半根竹子">
+<meta property="article:tag" content="Css3">
+<meta property="article:tag" content="HTML5">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191818_942.png">
+
+
+<link rel="icon" href="http://mdimg.95408.com/20191218121717.png">
+
+<link href="/css/style.css?v=1.0.1" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-dark.css?v=1.0.1" rel="stylesheet">
+
+<link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="/js/jquery.autocomplete.min.js?v=1.0.1" ></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.0.1" ></script>
+
+<meta name="generator" content="Hexo 4.1.1"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="false">
+  <input class="theme_blog_path" value="">
+</div>
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="http://mdimg.95408.com/20191218121717.png" />
+</a>
+<div class="author">
+    <span>半根竹子</span>
+</div>
+
+<div class="icon">
+    
+        
+    
+        
+        <a title="github" href="https://github.com/yuanshengorg" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active">全部文章<small>(16)</small></div></li>
+    
+        
+            
+            <li><div data-rel="css">css<small>(2)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="JavaScript">JavaScript<small>(2)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="node">node<small>(6)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="vue">vue<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="工具">工具<small>(5)</small></div>
+                
+            </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="16">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="back-title-list"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <form onkeydown="if(event.keyCode==13){return false;}">
+        <input class="search" type="text" placeholder="以 in: 开头进行全文搜索" autocomplete="off"id="local-search-input" >
+        <i class="cross"></i>
+        <span>
+            <label for="tagswitch">Tags:</label>
+            <input id="tagswitch" type="checkbox" style="display: none" />
+            <i id="tagsWitchIcon"></i>
+        </span>
+    </form>
+    <div class="tags-list">
+    
+    <li class="article-tag-list-item">
+        <a class="color5">Css3</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">HTML5</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">js</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">Node.js</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">vue</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">博客</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">hexo</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">Mongodb</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">markdown</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">vscode</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">git</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">github</a>
+    </li>
+    
+    <div class="clearfix"></div>
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        <a  class="css "
+           href="/2019/12/23/css/(2)Css3%E5%8A%A8%E7%94%BB%E3%80%812D%E3%80%813D/"
+           data-tag="Css3,HTML5"
+           data-author="" >
+            <span class="post-title" title="(2)Css3动画、2D、3D">(2)Css3动画、2D、3D</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="JavaScript "
+           href="/2019/12/23/js/JavaScript%E6%95%B0%E7%BB%84%EF%BC%88%E4%B8%80%EF%BC%89/"
+           data-tag="js"
+           data-author="" >
+            <span class="post-title" title="JavaScript 数组（一）">JavaScript 数组（一）</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/23/css/(1)HTML5+Css3%E5%9F%BA%E7%A1%80/"
+           data-tag="Css3,HTML5"
+           data-author="" >
+            <span class="post-title" title="(1)HTML5+Css3基础">(1)HTML5+Css3基础</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="JavaScript "
+           href="/2019/12/23/js/JavaScript%E6%95%B0%E7%BB%84%EF%BC%88%E4%BA%8C%EF%BC%89/"
+           data-tag="js"
+           data-author="" >
+            <span class="post-title" title="JavaScript 数组（二）">JavaScript 数组（二）</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/23/node/Node.js%EF%BC%881%EF%BC%89%EF%BC%9A%E5%9F%BA%E7%A1%80/"
+           data-tag="js,Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js基础">Node.js基础</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/23/node/Node.js%EF%BC%882%EF%BC%89%EF%BC%9Afs%E3%80%81path%E3%80%81gulp%E6%A8%A1%E5%9D%97/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js模块：fs、path、gulp">Node.js模块：fs、path、gulp</span>
+            <span class="post-date" title="2019-12-23 12:59:31">2019/12/23</span>
+        </a>
+        
+        <a  class="vue "
+           href="/2019/12/23/vue/Vue%E5%9F%BA%E7%A1%80/"
+           data-tag="js,vue"
+           data-author="" >
+            <span class="post-title" title="Vue基础">Vue基础</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/Hexo%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95%E6%9B%B4%E6%96%B0/"
+           data-tag="博客,hexo"
+           data-author="" >
+            <span class="post-title" title="Hexo折腾记录更新">Hexo折腾记录更新</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/23/node/Node.js%EF%BC%886%EF%BC%89%EF%BC%9AExpress%E6%A1%86%E6%9E%B6/"
+           data-tag="Mongodb"
+           data-author="" >
+            <span class="post-title" title="Node.js：Express框架">Node.js：Express框架</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/Markdown%E8%AF%AD%E6%B3%95CSS%E8%A1%A8%E7%8E%B0%E6%B5%8B%E8%AF%95/"
+           data-tag="markdown"
+           data-author="" >
+            <span class="post-title" title="Markdown语法CSS表现测试">Markdown语法CSS表现测试</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/vscode%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9B%98/"
+           data-tag="vscode"
+           data-author="" >
+            <span class="post-title" title="自定义 vs code 命令快捷键">自定义 vs code 命令快捷键</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/hexo%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/"
+           data-tag="博客,hexo"
+           data-author="" >
+            <span class="post-title" title="hexo创建博客">hexo创建博客</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/23/node/Node.js%EF%BC%883%EF%BC%89%EF%BC%9Aweb%E6%9C%8D%E5%8A%A1%E5%99%A8%E3%80%81http%E3%80%81async%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js的web服务器、http、路由、异步编程">Node.js的web服务器、http、路由、异步编程</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/23/node/Node.js%EF%BC%884%EF%BC%89%EF%BC%9AMongodb%E6%95%B0%E6%8D%AE%E5%BA%93/"
+           data-tag="Mongodb"
+           data-author="" >
+            <span class="post-title" title="Node.js与数据库Mongodb">Node.js与数据库Mongodb</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/23/node/Node.js%EF%BC%885%EF%BC%89%EF%BC%9Aart-Template%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E/"
+           data-tag="Mongodb"
+           data-author="" >
+            <span class="post-title" title="Node.js：art-Template模板引擎">Node.js：art-Template模板引擎</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/git%E5%92%8Cgithub/"
+           data-tag="git,github"
+           data-author="" >
+            <span class="post-title" title="git和github">git和github</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+    </nav>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div class="post">
+    <div class="pjax">
+        <article id="post-vue/Vue基础" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">Vue基础</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            
+                <a  data-rel="vue">vue</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color3">js</a>
+            
+            <a class="color4">vue</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2019-12-23 13:20:06'>2019-12-23 12:59</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Vue"><span class="toc-text">Vue</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vue-模板语法"><span class="toc-text">Vue 模板语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#差值表达式-v-cloak"><span class="toc-text">差值表达式 v-cloak</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#指令"><span class="toc-text">指令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#更多指令："><span class="toc-text">更多指令：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#v-text"><span class="toc-text">v-text</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#v-html"><span class="toc-text">v-html</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#v-pre"><span class="toc-text">v-pre</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数据响应式-和-v-once"><span class="toc-text">数据响应式 和 v-once</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#v-once"><span class="toc-text">v-once</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#v-model-双向数据绑定"><span class="toc-text">v-model 双向数据绑定</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MVVM-设计思想"><span class="toc-text">MVVM 设计思想</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#事件绑定"><span class="toc-text">事件绑定</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#v-on-处理事件"><span class="toc-text">v-on 处理事件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#事件函数调用"><span class="toc-text">事件函数调用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#事件修饰符-stop-prevent"><span class="toc-text">事件修饰符 stop prevent</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#stop阻止冒泡"><span class="toc-text">.stop阻止冒泡</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#prevent-阻止默认行为"><span class="toc-text">.prevent 阻止默认行为</span></a></li></ol></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h2><h2 id="Vue-模板语法"><a href="#Vue-模板语法" class="headerlink" title="Vue 模板语法"></a>Vue 模板语法</h2><ul>
+<li>原生js拼接字符串</li>
+<li>前端模板引擎（art-template）缺：没有专门提供事件机制</li>
+<li>Vue模板语法</li>
+</ul>
+<p>差值表达式<br>指令<br>事件绑定<br>属性绑定<br>样式绑定<br>分支循环结构</p>
+<h3 id="差值表达式-v-cloak"><a href="#差值表达式-v-cloak" class="headerlink" title="差值表达式 v-cloak"></a>差值表达式 v-cloak</h3><p><strong>什么是指令？</strong></p>
+<p>指令的本质就是自定义属性；以 <code>v-</code> 开头；</p>
+<p><strong>闪动</strong>：html页面被刷新时，会先显示 <code>大括号</code> ，再显示数据；</p>
+<p><strong>v-clack</strong>：先通过样式隐藏内容，然后在内存中进行值的替换，替换完成之后再显示最终的结果；</p>
+<pre><code class="html">&lt;style&gt;
+    [v-cloak] {
+        display: none;
+    }
+&lt;/style&gt;
+
+&lt;body&gt;
+    &lt;div v-cloak&gt; {{msg}} &lt;/div&gt;
+&lt;/body&gt;</code></pre>
+<h3 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h3><h4 id="更多指令："><a href="#更多指令：" class="headerlink" title="更多指令："></a>更多指令：</h4><blockquote>
+<p>官网：<a href="https://cn.vuejs.org/v2/api/" target="_blank" rel="noopener">vuejs.org</a></p>
+</blockquote>
+<p><strong>数据绑定指令：</strong></p>
+<p>v-text、v-html、v-pre</p>
+<h4 id="v-text"><a href="#v-text" class="headerlink" title="v-text"></a>v-text</h4><p>没有闪动问题；</p>
+<pre><code class="html">&lt;div v-text=&#39;msg&#39;&gt;&lt;/div&gt;</code></pre>
+<h4 id="v-html"><a href="#v-html" class="headerlink" title="v-html"></a>v-html</h4><p>永不用在用户提交的内容上，只适合本网站内部数据；</p>
+<pre><code class="html">&lt;div v-html=&#39;msg1&#39;&gt;&lt;/div&gt;</code></pre>
+<h4 id="v-pre"><a href="#v-pre" class="headerlink" title="v-pre"></a>v-pre</h4><p>显示原始信息，路过Vue编译过程</p>
+<pre><code class="html">// 直接显示出{{msg}}这个字符串，而不是msg数据的内容
+&lt;div v-pre&gt;
+    {{msg}}
+&lt;/div&gt;</code></pre>
+<h4 id="数据响应式-和-v-once"><a href="#数据响应式-和-v-once" class="headerlink" title="数据响应式 和 v-once"></a>数据响应式 和 v-once</h4><p>数据响应式：数据的变化导致页面内容的变化；</p>
+<p>数据绑定：将数据填充到标签中；</p>
+<p>v-once：只编译一次，显示内容之后不再有响应式的功能；</p>
+<h4 id="v-once"><a href="#v-once" class="headerlink" title="v-once"></a>v-once</h4><p>如果显示的信息后续不需要再修改，可以使用v-once；可以提高性能；</p>
+<pre><code class="html">&lt;div v-once&gt;
+    {{info}} // info数据只编译一次，不能再改
+&lt;/div&gt;</code></pre>
+<h4 id="v-model-双向数据绑定"><a href="#v-model-双向数据绑定" class="headerlink" title="v-model 双向数据绑定"></a>v-model 双向数据绑定</h4><p>数据改变，页面内容改变；</p>
+<p>页面内容改变，数据改变；</p>
+<pre><code class="html">&lt;div&gt;{{msg}}&lt;/div&gt;
+&lt;input type=&#39;text&#39; v-model=&#39;msg&#39; /&gt;</code></pre>
+<h3 id="MVVM-设计思想"><a href="#MVVM-设计思想" class="headerlink" title="MVVM 设计思想"></a>MVVM 设计思想</h3><p>M    ——model</p>
+<p>V    ——view</p>
+<p>VM    ——view-model</p>
+<p>页面input改变数据，通过<strong>事件监听</strong>DOM Listeners改变数据库Model；</p>
+<p>数据通过<strong>数据绑定</strong>Data Bindings传递到View；</p>
+<h3 id="事件绑定"><a href="#事件绑定" class="headerlink" title="事件绑定"></a>事件绑定</h3><h4 id="v-on-处理事件"><a href="#v-on-处理事件" class="headerlink" title="v-on 处理事件"></a>v-on 处理事件</h4><pre><code class="html">v-on:click=&#39;num++&#39;
+@click=&#39;num++&#39;</code></pre>
+<p>点击加1：</p>
+<pre><code class="html">&lt;div id=&#39;app&#39;&gt;
+    &lt;div&gt;{{num}}&lt;/div&gt; // num=1
+    &lt;button v-on:click=&#39;num++&#39;&gt;点击加1&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+<h4 id="事件函数调用"><a href="#事件函数调用" class="headerlink" title="事件函数调用"></a>事件函数调用</h4><p>事件绑定-参数传递</p>
+<p>如果事件直接绑定函数名称，默认会传递事件对象作为事件函数的第一个参数；</p>
+<p>如果事件绑定函数调用，那么事件对象必须作为最后一个参数显示传递，名称为：event；</p>
+<pre><code class="html">&lt;div id=&#39;app&#39;&gt;
+    &lt;div&gt;{{num}}&lt;/div&gt; // num=1
+    &lt;button @:click=&#39;handle&#39;&gt;点击加1&lt;/button&gt;
+    &lt;button @:click=&#39;handle(11, 22, $envnt)&#39;&gt;点击加1&lt;/button&gt;
+    // 可以传参数，事件对象放在最后一个
+&lt;/div&gt;
+
+&lt;script&gt;
+    var vm = new Vue({
+        el: &#39;#app&#39;,
+        data: {
+            num: 0
+        },
+        methods: {
+            handle: function(a, b.event) {
+                //this是Vue的实例对象
+                console.log(this === vm);
+                console.log(a, b);
+                console.log(event.target.innerHTML)
+                this.num++;
+            }
+        }
+    })
+&lt;/script&gt;</code></pre>
+<h4 id="事件修饰符-stop-prevent"><a href="#事件修饰符-stop-prevent" class="headerlink" title="事件修饰符 stop prevent"></a>事件修饰符 stop prevent</h4><h4 id="stop阻止冒泡"><a href="#stop阻止冒泡" class="headerlink" title=".stop阻止冒泡"></a>.stop阻止冒泡</h4><pre><code class="html">&lt;a v-on:click.stop=&#39;handle&#39;&gt;跳转&lt;/a&gt;</code></pre>
+<h4 id="prevent-阻止默认行为"><a href="#prevent-阻止默认行为" class="headerlink" title=".prevent 阻止默认行为"></a>.prevent 阻止默认行为</h4><pre><code class="html">&lt;a v-on:click.prvevnet=&#39;handle&#39;&gt;跳转&lt;/a&gt;</code></pre>
+
+      
+       
+    </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">©2009-2019 半根竹子.</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full"><span class="min "></span></button>
+<button class="post-toc-menu"><span class="post-toc-menu-icons"></span></button>
+<div class="post-toc"><span class="post-toc-title">目录</span>
+    <div class="post-toc-content">
+
+    </div>
+</div>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+<div class="acParent"></div>
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.0.1" ></script>
+
+<script src="/js/script.js?v=1.0.1" ></script>
+<script>
+    var img_resize = 'default';
+    /*作者、标签的自动补全*/
+    $(function () {
+        $('.search').AutoComplete({
+            'data': ['#Css3','#HTML5','#js','#Node.js','#vue','#博客','#hexo','#Mongodb','#markdown','#vscode','#git','#github',],
+            'itemHeight': 20,
+            'width': 418
+        }).AutoComplete('show');
+    })
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $(".post .pjax table").addClass("green");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 582px;
+    }
+    .nav.fullscreen {
+        margin-left: -582px;
+    }
+    .nav-left {
+        width: 160px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 532px;
+        }
+        .nav.fullscreen {
+            margin-left: -532px;
+        }
+        .nav-left {
+            width: 140px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 532px;
+            margin-left: -532px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+        .nav .hide-list.fullscreen {
+            left: 532px
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #ccc;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>

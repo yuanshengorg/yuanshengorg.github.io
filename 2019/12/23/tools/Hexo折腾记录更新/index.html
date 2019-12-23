@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Hexo折腾记录更新 | 半根竹子</title>
+  <meta name="keywords" content=" 博客 , hexo ">
+  <meta name="description" content="Hexo折腾记录更新 | 半根竹子">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="HTML新增1.1、语义化标签 header   —  头部标签 nav        —  导航标签 article —   内容标签 section —   块级标签 aside     —   侧边栏标签 footer   —   尾部标签     在 IE9 浏览器中，需要把语义化标签都转换为块级元素语义化标签；   在移动端支持比较友好；  1.2、多媒体音频标签1.2.1、audio">
+<meta property="og:type" content="article">
+<meta property="og:title" content="(1)HTML5+Css3基础">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;23&#x2F;css&#x2F;(1)HTML5+Css3%E5%9F%BA%E7%A1%80&#x2F;index.html">
+<meta property="og:site_name" content="半根竹子">
+<meta property="og:description" content="HTML新增1.1、语义化标签 header   —  头部标签 nav        —  导航标签 article —   内容标签 section —   块级标签 aside     —   侧边栏标签 footer   —   尾部标签     在 IE9 浏览器中，需要把语义化标签都转换为块级元素语义化标签；   在移动端支持比较友好；  1.2、多媒体音频标签1.2.1、audio">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191818_942.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191820_561.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191824_8.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191826_338.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191830_587.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191838_395.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191916_205.png?null">
+<meta property="article:published_time" content="2019-12-23T04:59:32.480Z">
+<meta property="article:modified_time" content="2019-12-23T04:59:33.660Z">
+<meta property="article:author" content="半根竹子">
+<meta property="article:tag" content="Css3">
+<meta property="article:tag" content="HTML5">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912191818_942.png">
+
+
+<link rel="icon" href="http://mdimg.95408.com/20191218121717.png">
+
+<link href="/css/style.css?v=1.0.1" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-dark.css?v=1.0.1" rel="stylesheet">
+
+<link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="/js/jquery.autocomplete.min.js?v=1.0.1" ></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.0.1" ></script>
+
+<meta name="generator" content="Hexo 4.1.1"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="false">
+  <input class="theme_blog_path" value="">
+</div>
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="http://mdimg.95408.com/20191218121717.png" />
+</a>
+<div class="author">
+    <span>半根竹子</span>
+</div>
+
+<div class="icon">
+    
+        
+    
+        
+        <a title="github" href="https://github.com/yuanshengorg" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active">全部文章<small>(16)</small></div></li>
+    
+        
+            
+            <li><div data-rel="css">css<small>(2)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="JavaScript">JavaScript<small>(2)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="node">node<small>(6)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="vue">vue<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="工具">工具<small>(5)</small></div>
+                
+            </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="16">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="back-title-list"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <form onkeydown="if(event.keyCode==13){return false;}">
+        <input class="search" type="text" placeholder="以 in: 开头进行全文搜索" autocomplete="off"id="local-search-input" >
+        <i class="cross"></i>
+        <span>
+            <label for="tagswitch">Tags:</label>
+            <input id="tagswitch" type="checkbox" style="display: none" />
+            <i id="tagsWitchIcon"></i>
+        </span>
+    </form>
+    <div class="tags-list">
+    
+    <li class="article-tag-list-item">
+        <a class="color5">Css3</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">HTML5</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">js</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">Node.js</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">vue</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">博客</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">hexo</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">Mongodb</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">markdown</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">vscode</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">git</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">github</a>
+    </li>
+    
+    <div class="clearfix"></div>
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        <a  class="css "
+           href="/2019/12/23/css/(2)Css3%E5%8A%A8%E7%94%BB%E3%80%812D%E3%80%813D/"
+           data-tag="Css3,HTML5"
+           data-author="" >
+            <span class="post-title" title="(2)Css3动画、2D、3D">(2)Css3动画、2D、3D</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="JavaScript "
+           href="/2019/12/23/js/JavaScript%E6%95%B0%E7%BB%84%EF%BC%88%E4%B8%80%EF%BC%89/"
+           data-tag="js"
+           data-author="" >
+            <span class="post-title" title="JavaScript 数组（一）">JavaScript 数组（一）</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/23/css/(1)HTML5+Css3%E5%9F%BA%E7%A1%80/"
+           data-tag="Css3,HTML5"
+           data-author="" >
+            <span class="post-title" title="(1)HTML5+Css3基础">(1)HTML5+Css3基础</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="JavaScript "
+           href="/2019/12/23/js/JavaScript%E6%95%B0%E7%BB%84%EF%BC%88%E4%BA%8C%EF%BC%89/"
+           data-tag="js"
+           data-author="" >
+            <span class="post-title" title="JavaScript 数组（二）">JavaScript 数组（二）</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/23/node/Node.js%EF%BC%881%EF%BC%89%EF%BC%9A%E5%9F%BA%E7%A1%80/"
+           data-tag="js,Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js基础">Node.js基础</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/23/node/Node.js%EF%BC%882%EF%BC%89%EF%BC%9Afs%E3%80%81path%E3%80%81gulp%E6%A8%A1%E5%9D%97/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js模块：fs、path、gulp">Node.js模块：fs、path、gulp</span>
+            <span class="post-date" title="2019-12-23 12:59:31">2019/12/23</span>
+        </a>
+        
+        <a  class="vue "
+           href="/2019/12/23/vue/Vue%E5%9F%BA%E7%A1%80/"
+           data-tag="js,vue"
+           data-author="" >
+            <span class="post-title" title="Vue基础">Vue基础</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/Hexo%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95%E6%9B%B4%E6%96%B0/"
+           data-tag="博客,hexo"
+           data-author="" >
+            <span class="post-title" title="Hexo折腾记录更新">Hexo折腾记录更新</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/23/node/Node.js%EF%BC%886%EF%BC%89%EF%BC%9AExpress%E6%A1%86%E6%9E%B6/"
+           data-tag="Mongodb"
+           data-author="" >
+            <span class="post-title" title="Node.js：Express框架">Node.js：Express框架</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/Markdown%E8%AF%AD%E6%B3%95CSS%E8%A1%A8%E7%8E%B0%E6%B5%8B%E8%AF%95/"
+           data-tag="markdown"
+           data-author="" >
+            <span class="post-title" title="Markdown语法CSS表现测试">Markdown语法CSS表现测试</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/vscode%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9B%98/"
+           data-tag="vscode"
+           data-author="" >
+            <span class="post-title" title="自定义 vs code 命令快捷键">自定义 vs code 命令快捷键</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/hexo%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/"
+           data-tag="博客,hexo"
+           data-author="" >
+            <span class="post-title" title="hexo创建博客">hexo创建博客</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/23/node/Node.js%EF%BC%883%EF%BC%89%EF%BC%9Aweb%E6%9C%8D%E5%8A%A1%E5%99%A8%E3%80%81http%E3%80%81async%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js的web服务器、http、路由、异步编程">Node.js的web服务器、http、路由、异步编程</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/23/node/Node.js%EF%BC%884%EF%BC%89%EF%BC%9AMongodb%E6%95%B0%E6%8D%AE%E5%BA%93/"
+           data-tag="Mongodb"
+           data-author="" >
+            <span class="post-title" title="Node.js与数据库Mongodb">Node.js与数据库Mongodb</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/23/node/Node.js%EF%BC%885%EF%BC%89%EF%BC%9Aart-Template%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E/"
+           data-tag="Mongodb"
+           data-author="" >
+            <span class="post-title" title="Node.js：art-Template模板引擎">Node.js：art-Template模板引擎</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/git%E5%92%8Cgithub/"
+           data-tag="git,github"
+           data-author="" >
+            <span class="post-title" title="git和github">git和github</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+    </nav>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div class="post">
+    <div class="pjax">
+        <article id="post-tools/Hexo折腾记录更新" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">Hexo折腾记录更新</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            
+                <a  data-rel="工具">工具</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color3">博客</a>
+            
+            <a class="color5">hexo</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2019-12-23 13:28:07'>2019-12-23 12:59</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#不能出现双大括号"><span class="toc-text">不能出现双大括号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#增加域名，备份git仓库"><span class="toc-text">增加域名，备份git仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#修改主题及压缩css-js"><span class="toc-text">修改主题及压缩css&#x2F;js</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#搭建hexo博客"><span class="toc-text">搭建hexo博客</span></a></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>   更新中 …</p>
+</blockquote>
+<hr>
+<h2 id="不能出现双大括号"><a href="#不能出现双大括号" class="headerlink" title="不能出现双大括号"></a>不能出现双大括号</h2><blockquote>
+<p>  20191223</p>
+</blockquote>
+<p>不能生成markdown格式：</p>
+<pre><code class="git">D:\hexo&gt;hexo s
+ (line number probably different from source)</code></pre>
+<p>原因：不在在非代码块之外显示：</p>
+<pre><code class="js">{{ }}</code></pre>
+<hr>
+<h2 id="增加域名，备份git仓库"><a href="#增加域名，备份git仓库" class="headerlink" title="增加域名，备份git仓库"></a>增加域名，备份git仓库</h2><blockquote>
+<p>  20191218</p>
+</blockquote>
+<ul>
+<li>绑定独立域名： <code>halfbamboo.com</code> ；</li>
+<li>文件备份到 <code>git</code> 仓库；</li>
+</ul>
+<hr>
+<h2 id="修改主题及压缩css-js"><a href="#修改主题及压缩css-js" class="headerlink" title="修改主题及压缩css/js"></a>修改主题及压缩css/js</h2><blockquote>
+<p>  20191218</p>
+</blockquote>
+<ul>
+<li>修改博客主题的CSS样式；</li>
+<li>增加 pulyfile.js 压缩 html/css/js；（放弃）</li>
+<li>增加 hexo-neat 插件压缩 css/js；（html未能压缩）</li>
+</ul>
+<p><img src="http://mdimg.95408.com/201912182118_637.png?imageView2/2/w/1200/h/1200" alt="修改后的3-hexo主题"></p>
+<hr>
+<h2 id="搭建hexo博客"><a href="#搭建hexo博客" class="headerlink" title="搭建hexo博客"></a>搭建hexo博客</h2><blockquote>
+<p>  20191217</p>
+</blockquote>
+<ul>
+<li>本地创建hexo博客：<code>d:/hexo</code> ；</li>
+<li>更换主题：<code>hexo-theme-3-hexo</code> ；</li>
+<li>上传至 ` github.com；</li>
+</ul>
+
+      
+       
+    </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">©2009-2019 半根竹子.</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full"><span class="min "></span></button>
+<button class="post-toc-menu"><span class="post-toc-menu-icons"></span></button>
+<div class="post-toc"><span class="post-toc-title">目录</span>
+    <div class="post-toc-content">
+
+    </div>
+</div>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+<div class="acParent"></div>
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.0.1" ></script>
+
+<script src="/js/script.js?v=1.0.1" ></script>
+<script>
+    var img_resize = 'default';
+    /*作者、标签的自动补全*/
+    $(function () {
+        $('.search').AutoComplete({
+            'data': ['#Css3','#HTML5','#js','#Node.js','#vue','#博客','#hexo','#Mongodb','#markdown','#vscode','#git','#github',],
+            'itemHeight': 20,
+            'width': 418
+        }).AutoComplete('show');
+    })
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $(".post .pjax table").addClass("green");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 582px;
+    }
+    .nav.fullscreen {
+        margin-left: -582px;
+    }
+    .nav-left {
+        width: 160px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 532px;
+        }
+        .nav.fullscreen {
+            margin-left: -532px;
+        }
+        .nav-left {
+            width: 140px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 532px;
+            margin-left: -532px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+        .nav .hide-list.fullscreen {
+            left: 532px
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #ccc;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
