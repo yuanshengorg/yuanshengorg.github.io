@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Hexo折腾记录更新 | 半根竹子</title>
-  <meta name="keywords" content=" 博客 , hexo ">
-  <meta name="description" content="Hexo折腾记录更新 | 半根竹子">
+  <title>CSS移动布局基础、流式布局 | 半根竹子</title>
+  <meta name="keywords" content=" Css3 ">
+  <meta name="description" content="CSS移动布局基础、流式布局 | 半根竹子">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="flex布局速查父项常见属性  flex-direction：设置主轴的方向    row； row-reverse； column； column-reverse；    justify-content：设置主轴上的子元素排列方式    fles-start； flex-end； center； space-around； space-between；    flex-wrap：设置子元素是否换">
 <meta property="og:type" content="article">
@@ -438,9 +438,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-tools/Hexo折腾记录更新" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-css/CSS移动布局基础、流式布局" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Hexo折腾记录更新</h1>
+        <h1 class="article-title">CSS移动布局基础、流式布局</h1>
     
     <div class="article-meta">
         
@@ -448,23 +448,21 @@
         
         <span class="book">
             
-                <a  data-rel="工具">工具</a>
+                <a  data-rel="css">css</a>
             
         </span>
         
         
         <span class="tag">
             
-            <a class="color3">博客</a>
-            
-            <a class="color5">hexo</a>
+            <a class="color5">Css3</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-12-25 20:10:05'>2019-12-23 12:59</time>
+        创建时间:<time class="date" title='更新时间: 2019-12-26 23:42:12'>2019-12-26 19:15</time>
         
     </div>
     <div class="article-meta">
@@ -475,7 +473,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#不能出现双大括号"><span class="toc-text">不能出现双大括号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#增加域名，备份git仓库"><span class="toc-text">增加域名，备份git仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#修改主题及压缩css-js"><span class="toc-text">修改主题及压缩css&#x2F;js</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#搭建hexo博客"><span class="toc-text">搭建hexo博客</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#视口-viewport"><span class="toc-text">视口 viewport</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#理想视口-ideal-viewport"><span class="toc-text">理想视口 ideal viewport</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#meta标签"><span class="toc-text">meta标签</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二倍图"><span class="toc-text">二倍图</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#物理像素-amp-物理像素比"><span class="toc-text">物理像素&amp;物理像素比</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二倍图-图片"><span class="toc-text">二倍图 图片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二倍图-背景-background-size"><span class="toc-text">二倍图 背景 background-size</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#移动端开发选择"><span class="toc-text">移动端开发选择</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#移动端-PC端"><span class="toc-text">移动端+PC端</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#响应式"><span class="toc-text">响应式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#移动端技术"><span class="toc-text">移动端技术</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#移动端公共样式"><span class="toc-text">移动端公共样式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CSS3盒子模型box-sizing"><span class="toc-text">CSS3盒子模型box-sizing</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#移动端特殊样式"><span class="toc-text">移动端特殊样式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#移动端布局"><span class="toc-text">移动端布局</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#移动端单独制作"><span class="toc-text">移动端单独制作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#响应式-1"><span class="toc-text">响应式</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -491,47 +489,129 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<p>更新中 …</p>
-</blockquote>
-<hr>
-<h2 id="不能出现双大括号"><a href="#不能出现双大括号" class="headerlink" title="不能出现双大括号"></a>不能出现双大括号</h2><blockquote>
-<p>20191223</p>
-</blockquote>
-<p>不能生成markdown格式：</p>
-<pre><code class="git">D:\hexo&gt;hexo s
- (line number probably different from source)</code></pre>
-<p>原因：不在在非代码块之外显示：</p>
-<pre><code class="js">{
-    {}
+        <h2 id="视口-viewport"><a href="#视口-viewport" class="headerlink" title="视口 viewport"></a>视口 viewport</h2><h3 id="理想视口-ideal-viewport"><a href="#理想视口-ideal-viewport" class="headerlink" title="理想视口 ideal viewport"></a>理想视口 ideal viewport</h3><p>视口（viewport）就是浏览器显示页面内容的屏幕区域。 视口可以分为布局视口、视觉视口和理想视口。</p>
+<ul>
+<li>布局视口 layout viewport</li>
+<li>视觉视口 visual viewport</li>
+<li>理想视口 ideal viewport<ul>
+<li>meta视口标签的主要目的：布局视口的宽度应该与理想视口的宽度一致，简单理解就是设备有多宽，我们布局的视口就多宽；</li>
+<li>我们开发最终会用理想视口，而理想视口就是将布局视口的宽度修改为视觉视口；</li>
+</ul>
+</li>
+</ul>
+<h3 id="meta标签"><a href="#meta标签" class="headerlink" title="meta标签"></a>meta标签</h3><pre><code class="html">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no&quot;&gt;</code></pre>
+<p><img src="http://mdimg.95408.com/201912261921_804.png?null" alt=""></p>
+<h2 id="二倍图"><a href="#二倍图" class="headerlink" title="二倍图"></a>二倍图</h2><h3 id="物理像素-amp-物理像素比"><a href="#物理像素-amp-物理像素比" class="headerlink" title="物理像素&amp;物理像素比"></a>物理像素&amp;物理像素比</h3><p>1、iphone 6/7/8 的物理像素宽度：750px，但我们制作一个375px宽度的盒子，就填充满了；</p>
+<p>2、那是因为iphone的<strong>物理像素比</strong>为2，即1px能显示2个物理像素；</p>
+<p><img src="http://mdimg.95408.com/201912261940_282.png?null" alt=""></p>
+<pre><code class="html">&lt;style&gt;
+
+    - {
+
+        margin: 0;
+        padding: 0;
+    }
+
+    div {
+        width: 375px;
+        height: 375px;
+        background-color: pink;
+    }
+&lt;/style&gt;
+
+&lt;div&gt;div&lt;/div&gt;</code></pre>
+<h3 id="二倍图-图片"><a href="#二倍图-图片" class="headerlink" title="二倍图 图片"></a>二倍图 图片</h3><p>1、我们制作一个50px的图标，因为手机的常用物理像素比为 2，那么在iphone上就会放大变成100px，图片会变模糊；</p>
+<p>2、那我们直接使用一张100px的图片，缩小至50px；</p>
+<p>3、当在移动端放大2倍时，还是正常清晰度；</p>
+<p><img src="http://mdimg.95408.com/201912261953_668.png?null" alt=""></p>
+<pre><code class="html">&lt;style&gt;
+    img:nth-child(2) {
+        width: 50px;
+        height: 50px;
+    }
+&lt;/style&gt;
+
+&lt;!-- 模糊的 --&gt;
+&lt;img src=&quot;images/apple50.jpg&quot; alt=&quot;&quot;&gt;
+&lt;!-- 采取2倍图 --&gt;
+&lt;img src=&quot;images/apple100.jpg&quot; alt=&quot;&quot;&gt;</code></pre>
+<h3 id="二倍图-背景-background-size"><a href="#二倍图-背景-background-size" class="headerlink" title="二倍图 背景 background-size"></a>二倍图 背景 background-size</h3><pre><code class="css">background-size: 背景图片宽度 背景图片高度;
+
+* 单位： 长度|百分比|cover|contain； - cover把背景图像扩展至足够大，以使背景图像完全覆盖背景区域； - contain把图像图像扩展至最大尺寸，以使其宽度和高度完全适应内容区域；
+</code></pre>
+<p>同上例，图片能用二倍图，CSS3 中我们也可以使用 <code>background-size</code> 缩放背景图：</p>
+<p><img src="http://mdimg.95408.com/201912262038_528.png?null" alt=""></p>
+<pre><code class="html">&lt;style&gt;
+    .px50 {
+        width: 50px;
+        height: 50px;
+        background: url(images/apple50.jpg) no-repeat;
+    }
+
+    .px100 {
+        width: 50px;
+        height: 50px;
+        background: url(images/apple100.jpg) no-repeat;
+        background-size: 50px 50px;
+    }
+&lt;/style&gt;
+
+&lt;div class=&quot;px50&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;px100&quot;&gt;&lt;/div&gt;</code></pre>
+<h2 id="移动端开发选择"><a href="#移动端开发选择" class="headerlink" title="移动端开发选择"></a>移动端开发选择</h2><h3 id="移动端-PC端"><a href="#移动端-PC端" class="headerlink" title="移动端+PC端"></a>移动端+PC端</h3><p>PC端和移动端为两套网站，pc端是pc端的样式，移动端在写一套，专门针对移动端适配的一套网站；</p>
+<h3 id="响应式"><a href="#响应式" class="headerlink" title="响应式"></a>响应式</h3><p>响应式网站：即pc和移动端共用一套网站，只不过在不同屏幕下，样式会自动适配；</p>
+<h2 id="移动端技术"><a href="#移动端技术" class="headerlink" title="移动端技术"></a>移动端技术</h2><h3 id="移动端公共样式"><a href="#移动端公共样式" class="headerlink" title="移动端公共样式"></a>移动端公共样式</h3><p>移动端 CSS 初始化推荐使用 <code>normalize.css</code> </p>
+<pre><code class="html">官网地址： http://necolas.github.io/normalize.css/</code></pre>
+<p><a href="http://mdimg.95408.com/web_normalize.css" target="_blank" rel="noopener">本地备份</a></p>
+<h3 id="CSS3盒子模型box-sizing"><a href="#CSS3盒子模型box-sizing" class="headerlink" title="CSS3盒子模型box-sizing"></a>CSS3盒子模型box-sizing</h3><p>CSS3盒子模型， padding 和 border 不会撑大盒子；</p>
+<pre><code class="css">box-sizing: border-box;</code></pre>
+<p><img src="http://mdimg.95408.com/201912262045_716.png?null" alt=""></p>
+<pre><code class="html">&lt;style&gt;
+    div:nth-child(1) {
+        /* 传统盒子模型 = width + border + padding */
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        padding: 10px;
+        border: 10px solid red;
+    }
+
+    div:nth-child(2) {
+        /* box-sizing: border-box; 有了这句话就让盒子变成CSS3盒子模型 */
+        /* padding 和 border 不会再撑大盒子了 */
+        box-sizing: border-box;
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        border: 10px solid blue;
+    }
+&lt;/style&gt;</code></pre>
+<h3 id="移动端特殊样式"><a href="#移动端特殊样式" class="headerlink" title="移动端特殊样式"></a>移动端特殊样式</h3><pre><code class="css">/*CSS3盒子模型*/
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+
+/*点击高亮我们需要清除清除  设置为transparent 完成透明*/
+-webkit-tap-highlight-color: transparent;
+
+/*在移动端浏览器默认的外观在iOS上加上这个属性才能给按钮和输入框自定义样式*/
+-webkit-appearance: none;
+
+/*禁用长按页面时的弹出菜单*/
+img,
+a {
+    -webkit-touch-callout: none;
 }</code></pre>
-<hr>
-<h2 id="增加域名，备份git仓库"><a href="#增加域名，备份git仓库" class="headerlink" title="增加域名，备份git仓库"></a>增加域名，备份git仓库</h2><blockquote>
-<p>20191218</p>
-</blockquote>
-<ul>
-<li>绑定独立域名： <code>halfbamboo.com</code> ；</li>
-<li>文件备份到 <code>git</code> 仓库；</li>
+<h2 id="移动端布局"><a href="#移动端布局" class="headerlink" title="移动端布局"></a>移动端布局</h2><h3 id="移动端单独制作"><a href="#移动端单独制作" class="headerlink" title="移动端单独制作"></a>移动端单独制作</h3><ul>
+<li>流式布局（百分比布局）</li>
+<li>flex 弹性布局（强烈推荐）</li>
+<li>less+rem+媒体查询布局</li>
+<li>混合布局</li>
 </ul>
-<hr>
-<h2 id="修改主题及压缩css-js"><a href="#修改主题及压缩css-js" class="headerlink" title="修改主题及压缩css/js"></a>修改主题及压缩css/js</h2><blockquote>
-<p>20191218</p>
-</blockquote>
-<ul>
-<li>修改博客主题的CSS样式；</li>
-<li>增加 pulyfile.js 压缩 html/css/js；（放弃）</li>
-<li>增加 hexo-neat 插件压缩 css/js；（html未能压缩）</li>
+<h3 id="响应式-1"><a href="#响应式-1" class="headerlink" title="响应式"></a>响应式</h3><ul>
+<li>媒体查询</li>
+<li>bootstarp</li>
 </ul>
-<p><img src="http://mdimg.95408.com/201912182118_637.png?imageView2/2/w/1200/h/1200" alt="修改后的3-hexo主题"></p>
-<hr>
-<h2 id="搭建hexo博客"><a href="#搭建hexo博客" class="headerlink" title="搭建hexo博客"></a>搭建hexo博客</h2><blockquote>
-<p>20191217</p>
-</blockquote>
-<ul>
-<li>本地创建hexo博客： <code>d:/hexo</code> ；</li>
-<li>更换主题： <code>hexo-theme-3-hexo</code> ；</li>
-<li>上传至 ` github.com；</li>
-</ul>
+<p>以上。</p>
 
       
        
