@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>JavaScript 数组（二） | 半根竹子</title>
-  <meta name="keywords" content=" js ">
-  <meta name="description" content="JavaScript 数组（二） | 半根竹子">
+  <title>CSS移动布局之rem布局 | 半根竹子</title>
+  <meta name="keywords" content=" Css3 ">
+  <meta name="description" content="CSS移动布局之rem布局 | 半根竹子">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="响应式开发使用媒体查询针对不同宽度的设备进行布局和样式的设置，从而适配不同设备的目的。 响应式布局容器  响应式需要一个父级做为布局容器，来配合子级元素来实现变化效果；  在不同屏幕下，通过媒体查询来改变这个布局容器的大小，再改变里面子元素的排列方式和大小，从而实现不同屏幕下，看到不同的页面布局和样式变化。  超小屏幕（手机，小于 768px）：设置宽度为 100%  小屏幕（平板，大于等于 76">
 <meta property="og:type" content="article">
@@ -451,9 +451,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-js/JavaScript数组（二）" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-css/CSS移动布局之" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">JavaScript 数组（二）</h1>
+        <h1 class="article-title">CSS移动布局之rem布局</h1>
     
     <div class="article-meta">
         
@@ -461,21 +461,21 @@
         
         <span class="book">
             
-                <a  data-rel="JavaScript">JavaScript</a>
+                <a  data-rel="css">css</a>
             
         </span>
         
         
         <span class="tag">
             
-            <a class="color3">js</a>
+            <a class="color5">Css3</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-12-25 20:09:39'>2019-12-23 12:59</time>
+        创建时间:<time class="date" title='更新时间: 2019-12-27 23:15:38'>2019-12-27 12:48</time>
         
     </div>
     <div class="article-meta">
@@ -486,7 +486,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、遍历数组"><span class="toc-text">一、遍历数组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、for循环遍历数组"><span class="toc-text">1、for循环遍历数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、for-in-遍历数组"><span class="toc-text">2、for in 遍历数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、forEach-遍历数组"><span class="toc-text">3、forEach() 遍历数组</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、数组迭代"><span class="toc-text">二、数组迭代</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、filter-筛选数组"><span class="toc-text">1、filter() 筛选数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、some-查找满足条件的元素是否存在"><span class="toc-text">2、some() 查找满足条件的元素是否存在</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、forEach-和-some-的区别"><span class="toc-text">3、forEach() 和 some() 的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4、indexOf"><span class="toc-text">4、indexOf()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5、lastIndexOf"><span class="toc-text">5、lastIndexOf()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6、find"><span class="toc-text">6、find()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7、findIndex"><span class="toc-text">7、findIndex()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8、map"><span class="toc-text">8、map()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9、reduce-reduceRight"><span class="toc-text">9、reduce() reduceRight()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10、every"><span class="toc-text">10、every()</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、数组排序"><span class="toc-text">三、数组排序</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、reverse-反转数组"><span class="toc-text">1、reverse() 反转数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、sort-以字母方式排序"><span class="toc-text">2、sort() 以字母方式排序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、sort-以数字方式排序"><span class="toc-text">3、sort() 以数字方式排序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4、sort-随机排序"><span class="toc-text">4、sort() 随机排序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5、sort-查找最高-最低数组值"><span class="toc-text">5、sort() 查找最高&#x2F;最低数组值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6、Math-max-apply-查找最高数组值"><span class="toc-text">6、Math.max.apply() 查找最高数组值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7、Math-min-apply-查找最低数组值"><span class="toc-text">7、Math.min.apply() 查找最低数组值</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#rem-基础"><span class="toc-text">rem 基础</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#media-媒体查询"><span class="toc-text">@media 媒体查询</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#mediatype-媒体类型"><span class="toc-text">mediatype  媒体类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#and-not-only-关键字"><span class="toc-text">and  not  only 关键字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#media-feature-媒体特性"><span class="toc-text">media feature 媒体特性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#例：根据屏幕宽度-改变颜色"><span class="toc-text">例：根据屏幕宽度 改变颜色</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#例：媒体查询-rem效果"><span class="toc-text">例：媒体查询 + rem效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#例：媒体查询-引入资源"><span class="toc-text">例：媒体查询 引入资源</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Less"><span class="toc-text">Less</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Less-变量"><span class="toc-text">Less 变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#VS-插件-Easy-LESS"><span class="toc-text">VS 插件 Easy LESS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Less-嵌套"><span class="toc-text">Less 嵌套</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Less-运算"><span class="toc-text">Less 运算</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -502,196 +502,232 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="一、遍历数组"><a href="#一、遍历数组" class="headerlink" title="一、遍历数组"></a>一、遍历数组</h2><h3 id="1、for循环遍历数组"><a href="#1、for循环遍历数组" class="headerlink" title="1、for循环遍历数组"></a>1、for循环遍历数组</h3><pre><code class="js">fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
-for (var i = 0; i &lt; fruits.length; i++) {
-    console.log(fruits[i]);
-}
-// Banana
-// Orange
-// Apple
-// Mango  </code></pre>
-<h3 id="2、for-in-遍历数组"><a href="#2、for-in-遍历数组" class="headerlink" title="2、for in 遍历数组"></a>2、for in 遍历数组</h3><pre><code class="js">fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
-for (i in fruits) {
-    console.log(fruits[i]);
-}
-// Banana
-// Orange
-// Apple
-// Mango  </code></pre>
-<h3 id="3、forEach-遍历数组"><a href="#3、forEach-遍历数组" class="headerlink" title="3、forEach() 遍历数组"></a>3、forEach() 遍历数组</h3><pre><code class="js">fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
-fruits.forEach(function(v) {
-    console.log(v);
-});
-// Banana
-// Orange
-// Apple
-// Mango  
-fruits.forEach(v =&gt; {
-    console.log(v);
-});
-// Banana
-// Orange
-// Apple
-// Mango  </code></pre>
-<p>数组元素和元素索引</p>
-<pre><code class="js">var arr = [1, 2, 3];
-arr.forEach(function(value, index, array) {
-    console.log(&#39;数组元素&#39; + value);
-    console.log(&#39;数组元素索引号&#39; + index);
-})
-// 数组元素1
-// 数组元素索引号0
-// 数组元素2
-// 数组元素索引号1
-// 数组元素3
-// 数组元素索引号2</code></pre>
-<p>求数组的和</p>
-<pre><code class="js">var sum = 0;
-var arr = [1, 2, 3];
-arr.forEach(function(value, index, array) {
-    sum += value;
-})
-console.log(sum); // 6</code></pre>
-<h2 id="二、数组迭代"><a href="#二、数组迭代" class="headerlink" title="二、数组迭代"></a>二、数组迭代</h2><h3 id="1、filter-筛选数组"><a href="#1、filter-筛选数组" class="headerlink" title="1、filter() 筛选数组"></a>1、filter() 筛选数组</h3><p>返回一个新数组，接受 3 个参数：项目值、项目索引、数组本身</p>
-<p>返回大于50的元素组成的一个新数组</p>
-<pre><code class="js">var arr = [12, 66, 4, 88, 3, 7];
-var newArr = arr.filter(function(value) {
-    return value &gt;= 50;
-})
-console.log(newArr); // [66, 88]</code></pre>
-<p>返回偶数元素组成的一个新数组</p>
-<pre><code class="js">var arr = [12, 66, 4, 88, 3, 7];
-var newArr2 = arr.filter(function(value) {
-    return value % 2 === 0;
-})
-console.log(newArr2); // [12, 66, 4, 88]</code></pre>
-<h3 id="2、some-查找满足条件的元素是否存在"><a href="#2、some-查找满足条件的元素是否存在" class="headerlink" title="2、some() 查找满足条件的元素是否存在"></a>2、some() 查找满足条件的元素是否存在</h3><p>filter() 查找满足条件的元素 返回一个 <code>新数组</code> </p>
-<p>some() 查找满足条件的元素是否存在 返回一个 <code>布尔值</code> </p>
-<p>接受 3 个参数： <code>项目值</code> 、 <code>项目索引</code> 、 <code>数组本身</code> </p>
-<p>sonme() 如果查找到第一个满足条件的元素就终止循环，效率更高</p>
-<pre><code class="js">var arr = [10, 30, 4];
-var flag = arr.some(function(value) {
-    return value &lt; 3;
-});
-console.log(flag); // false
-
-var arr1 = [&#39;red&#39;, &#39;pink&#39;, &#39;blue&#39;];
-var flag1 = arr1.some(function(value) {
-    return value == &#39;pink&#39;;
-});
-console.log(flag1); // true</code></pre>
-<h3 id="3、forEach-和-some-的区别"><a href="#3、forEach-和-some-的区别" class="headerlink" title="3、forEach() 和 some() 的区别"></a>3、forEach() 和 some() 的区别</h3><p>如果查询数组中唯一的元素, 用some方法更合适</p>
-<p>在 some 里面 遇到 return true 就是终止遍历 迭代效率更高</p>
-<p>在forEach 里面 return 不会终止迭代</p>
-<pre><code class="js">var arr = [&#39;red&#39;, &#39;green&#39;, &#39;blue&#39;, &#39;pink&#39;];
-arr.some(function(value) {
-    if (value == &#39;green&#39;) {
-        console.log(&#39;找到了该元素&#39;);
-        // 在 some 里面 return true 就终止遍历 迭代效率更高
-        return true;
+        <h2 id="rem-基础"><a href="#rem-基础" class="headerlink" title="rem 基础"></a>rem 基础</h2><ul>
+<li>em：相对于父元素的字体大小；</li>
+<li>rem： (root em) 相对于html元素的字体大小；</li>
+<li>rem优势：父元素文字大小可能不一致， 但只有一个html，可以控制整个页面的元素大小；</li>
+</ul>
+<blockquote>
+<p>  html 字体这 10px，div 为 20rem = 200px，span为 10rem = 100px：</p>
+</blockquote>
+<p><img src="http://mdimg.95408.com/201912271258_392.png?null" alt=""></p>
+<pre><code class="html">&lt;style&gt;
+    html {
+        font-size: 10px;
     }
-    console.log(11);
-    // 11
-    // 找到了该元素
-});
-
-var arr = [&#39;red&#39;, &#39;green&#39;, &#39;blue&#39;, &#39;pink&#39;];
-// 1. forEach迭代 遍历
-arr.forEach(function(value) {
-    if (value == &#39;green&#39;) {
-        console.log(&#39;找到了该元素&#39;);
-        // 在forEach 里面 return 不会终止迭代
-        return true;
+    div {
+        width: 20rem;
+        height: 20rem;
+        border: 1px solid red;
     }
-    console.log(11);
-})
-// 11
-// 找到了该元素
-// 11
-// 11</code></pre>
-<h3 id="4、indexOf"><a href="#4、indexOf" class="headerlink" title="4、indexOf()"></a>4、indexOf()</h3><p>在数组中搜索元素值并返回其位置</p>
-<pre><code class="js">var fruits = [&quot;Apple&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
-var a = fruits.indexOf(&quot;Apple&quot;); // 0</code></pre>
-<h3 id="5、lastIndexOf"><a href="#5、lastIndexOf" class="headerlink" title="5、lastIndexOf()"></a>5、lastIndexOf()</h3><p>在数组中搜索元素值并返回其位置，从数组结尾开始搜索</p>
-<pre><code class="js">var fruits = [&quot;Apple&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
-var a = fruits.lastIndexOf(&quot;Apple&quot;); // 2</code></pre>
-<h3 id="6、find"><a href="#6、find" class="headerlink" title="6、find()"></a>6、find()</h3><p>返回通过测试函数的第一个数组元素的值</p>
-<pre><code class="js">var numbers = [4, 9, 16, 25, 29];
-var first = numbers.find(function(value) {
-    return value &gt; 18;
-})
-console.log(first); // 25 第一个比18大的值</code></pre>
-<h3 id="7、findIndex"><a href="#7、findIndex" class="headerlink" title="7、findIndex()"></a>7、findIndex()</h3><p>返回通过测试函数的第一个数组元素的索引</p>
-<pre><code class="js">var numbers = [4, 9, 16, 25, 29];
-var first = numbers.findIndex(function(value) {
-    return value &gt; 18;
-})
-console.log(first); // 3 第一个比18大的值的索引号是3</code></pre>
-<h3 id="8、map"><a href="#8、map" class="headerlink" title="8、map()"></a>8、map()</h3><p>对每个数组元素执行函数来创建新数组，不会更改原始数组。</p>
-<pre><code class="js">var numbers = [1, 2, 3];
-var first = numbers.map(function(value) {
-    return value * 2;
-})
-console.log(first); // [2, 4, 6] 将每个数组值乘以2</code></pre>
-<h3 id="9、reduce-reduceRight"><a href="#9、reduce-reduceRight" class="headerlink" title="9、reduce() reduceRight()"></a>9、reduce() reduceRight()</h3><p>在每个数组元素上运行函数，以生成（减少它）单个值</p>
-<p>reduceRight() 方法在数组中从左到右工作</p>
-<pre><code class="js">var numbers = [1, 2, 3];
-var first = numbers.reduce(function(total, value) {
-    return total + value;
-})
-console.log(first); // 6 总和为6</code></pre>
-<h3 id="10、every"><a href="#10、every" class="headerlink" title="10、every()"></a>10、every()</h3><p>检查所有数组值是否通过测试，返回布尔值</p>
-<pre><code class="js">var numbers = [4, 9, 16, 25, 29];
-var first = numbers.every(function(value) {
-    return value &gt; 18;
-})
-console.log(first); // false(并非所有元素都大于18)</code></pre>
-<h2 id="三、数组排序"><a href="#三、数组排序" class="headerlink" title="三、数组排序"></a>三、数组排序</h2><h3 id="1、reverse-反转数组"><a href="#1、reverse-反转数组" class="headerlink" title="1、reverse() 反转数组"></a>1、reverse() 反转数组</h3><pre><code class="js">var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
-fruits.reverse(); // Mango,Apple,Orange,Banana</code></pre>
-<h3 id="2、sort-以字母方式排序"><a href="#2、sort-以字母方式排序" class="headerlink" title="2、sort() 以字母方式排序"></a>2、sort() 以字母方式排序</h3><pre><code class="js">var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
-fruits.sort(); // Apple,Banana,Mango,Orange</code></pre>
-<h3 id="3、sort-以数字方式排序"><a href="#3、sort-以数字方式排序" class="headerlink" title="3、sort() 以数字方式排序"></a>3、sort() 以数字方式排序</h3><p>如果数字按照字符串来排序，则 “25” 大于 “100”，因为 “2” 大于 “1”。</p>
-<pre><code class="js">var points = [40, 100, 1, 5, 25, 10];
-points.sort(function(a, b) {
-    return a - b
-}); // 1,5,10,25,40,100</code></pre>
-<p>通过一个比值函数，对数组进行降序排序。</p>
-<pre><code class="js">var points = [40, 100, 1, 5, 25, 10];
-points.sort(function(a, b) {
-    return b - a
-}); // 100,40,25,10,5,1</code></pre>
-<h3 id="4、sort-随机排序"><a href="#4、sort-随机排序" class="headerlink" title="4、sort() 随机排序"></a>4、sort() 随机排序</h3><pre><code class="js">var points = [40, 100, 1, 5, 25, 10];
-points.sort(function(a, b) {
-    return 0.5 - Math.random()
-});
-// 40,10,5,100,1,25  随机生成排序
-// 5,40,100,25,1,10</code></pre>
-<h3 id="5、sort-查找最高-最低数组值"><a href="#5、sort-查找最高-最低数组值" class="headerlink" title="5、sort() 查找最高/最低数组值"></a>5、sort() 查找最高/最低数组值</h3><p>升序排序</p>
-<pre><code class="js">var points = [40, 100, 1, 5, 25, 10];
-points.sort(function(a, b) {
-    return a - b
-});
-// 现在 points[0] 包含最低值
-// 而 points[points.length-1] 包含最高值</code></pre>
-<p>降序排序</p>
-<pre><code class="js">var points = [40, 100, 1, 5, 25, 10];
-points.sort(function(a, b) {
-    return b - a
-});
-// 现在 points[0] 包含最高值
-// 而 points[points.length-1] 包含最低值</code></pre>
-<h3 id="6、Math-max-apply-查找最高数组值"><a href="#6、Math-max-apply-查找最高数组值" class="headerlink" title="6、Math.max.apply() 查找最高数组值"></a>6、Math.max.apply() 查找最高数组值</h3><p>apply() 第二个参数须是数组，与 <code>Math.max</code> 相结合使用。</p>
-<p><code>Math.max.apply([1, 2, 3])</code> 等于 <code>Math.max(1, 2, 3)</code> .</p>
-<pre><code class="js">var points = [40, 100, 1, 5, 25, 10];
-var a = Math.max.apply(Math, points)
-var a = Math.max.apply(null, points) // null 也可以
-console.log(a); // 100</code></pre>
-<h3 id="7、Math-min-apply-查找最低数组值"><a href="#7、Math-min-apply-查找最低数组值" class="headerlink" title="7、Math.min.apply() 查找最低数组值"></a>7、Math.min.apply() 查找最低数组值</h3><p><code>Math.max.apply([1, 2, 3])</code> 等于 <code>Math.max(1, 2, 3)</code> 。</p>
-<pre><code class="js">var points = [40, 100, 1, 5, 25, 10];
-var a = Math.min.apply(Math, points)
-console.log(a); // 1</code></pre>
-<p><img src="http://mdimg.95408.com/20191213144049.png" alt="20191213144049"></p>
-<p><img src="http://mdimg.95408.com/201912130047_162.png?imageView2/2/w/1200/h/1200" alt=""></p>
+    span {
+        display: block;
+        width: 10rem;
+        height: 10rem;
+        background-color: aquamarine;
+    }
+&lt;/style&gt;
+
+&lt;div&gt;
+    &lt;span&gt;1&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+<h2 id="media-媒体查询"><a href="#media-媒体查询" class="headerlink" title="@media 媒体查询"></a>@media 媒体查询</h2><ul>
+<li>媒体查询（Media Query）是CSS3新语法；</li>
+<li>使用 @media查询，可以针对不同的媒体类型定义不同的样式；<ul>
+<li>@media开头</li>
+<li>mediatype  媒体类型</li>
+<li>and  not  only 关键字 </li>
+<li>media feature 媒体特性（小括号包含）</li>
+</ul>
+</li>
+</ul>
+<h3 id="mediatype-媒体类型"><a href="#mediatype-媒体类型" class="headerlink" title="mediatype  媒体类型"></a>mediatype  媒体类型</h3><ul>
+<li>all   用于所有设备</li>
+<li>print   用于打印机和打印预览</li>
+<li>scree   用于电脑屏幕、平板、智能手机</li>
+</ul>
+<h3 id="and-not-only-关键字"><a href="#and-not-only-关键字" class="headerlink" title="and  not  only 关键字"></a>and  not  only 关键字</h3><ul>
+<li>and：可以将多个媒体特性连接到一起，相当于“且”的意思；</li>
+<li>not：排除某个媒体类型，相当于“非”的意思，可以省略；</li>
+<li>only：指定某个特定的媒体类型，可以省略；</li>
+</ul>
+<h3 id="media-feature-媒体特性"><a href="#media-feature-媒体特性" class="headerlink" title="media feature 媒体特性"></a>media feature 媒体特性</h3><ul>
+<li>width   输出设备中 <strong>可见区域</strong> 宽度；</li>
+<li>min-width   输出设备中 <strong>最小</strong> 宽度；</li>
+<li>max-width   输出设备中 <strong>最大</strong> 宽度；</li>
+</ul>
+<h3 id="例：根据屏幕宽度-改变颜色"><a href="#例：根据屏幕宽度-改变颜色" class="headerlink" title="例：根据屏幕宽度 改变颜色"></a>例：根据屏幕宽度 改变颜色</h3><blockquote>
+<p>  根据不同屏幕宽度，改变body的颜色：</p>
+</blockquote>
+<p><img src="http://mdimg.95408.com/web_2019122702.gif" alt=""></p>
+<pre><code class="css">/* max-width 最大宽度539 = 小于等于539时 显示的颜色 */
+@media screen and (max-width: 539px) {
+    body {
+        background-color: #333;
+    }
+}
+/* min-width 最小宽度540 = 大于等于540时 显示的颜色 */
+@media screen and (min-width: 540px) {
+    body {
+        background-color: #666;
+    }
+}
+/* min-width 最小宽度970 = 大于等于970时 显示的颜色 */
+/* 后面的查询会覆盖前面的，当超过970时显示 */
+@media screen and (min-width: 970px) {
+    body {
+        background-color: #fff;
+    }
+}</code></pre>
+<h3 id="例：媒体查询-rem效果"><a href="#例：媒体查询-rem效果" class="headerlink" title="例：媒体查询 + rem效果"></a>例：媒体查询 + rem效果</h3><ul>
+<li>在不同屏幕大小下，html 中的 字体大小 不同；</li>
+<li>div 和 字体 使用 <code>rem</code> 单位；</li>
+<li>实现：不同屏幕大小下，div 和 字体大小发生变化；</li>
+</ul>
+<p><img src="http://mdimg.95408.com/web_2019122703.gif" alt=""></p>
+<pre><code class="html">&lt;style&gt;
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    /* 当html写固定时，div大小就固定了 */
+    /* html {
+    font-size: 50px;
+    } */
+
+    /* 通过媒体查询，随着屏幕变化，改变html的值 */
+    /* 小于等于319px时 */
+    @media screen and (max-width: 319px) {
+        html {
+            font-size: 20px;
+        }
+    }
+    /* 大于等于320px时 */
+    @media screen and (min-width: 320px) {
+        html {
+            font-size: 50px;
+        }
+    }      
+    /* 大于等于640px时 */
+    @media screen and (min-width: 640px) {
+        html {
+            font-size: 80px;
+        }
+    }
+    div {
+        /* 宽度：html字体 1rem */
+        height: 1rem;
+        /* 字体大小：html字体 0.5rem */
+        font-size: 0.5rem;
+        color: #fff;
+        line-height: 1rem;
+        text-align: center;
+        background-color: green;
+    }
+&lt;/style&gt;
+&lt;div&gt;Bamboo&lt;/div&gt;</code></pre>
+<h3 id="例：媒体查询-引入资源"><a href="#例：媒体查询-引入资源" class="headerlink" title="例：媒体查询 引入资源"></a>例：媒体查询 引入资源</h3><ul>
+<li>引入资源：针对于不同的屏幕尺寸 调用不同的css文件；</li>
+<li>屏幕大于等于 640px ，div 一行显示2个；</li>
+<li>屏幕小于 640px时，div 一行显示1个；</li>
+</ul>
+<p><img src="http://mdimg.95408.com/web_2019122704.gif" alt=""></p>
+<pre><code class="html">&lt;link rel=&quot;stylesheet&quot; href=&quot;style320.css&quot; media=&quot;screen and (min-width: 320px)&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;style640.css&quot; media=&quot;screen and (min-width: 640px)&quot;&gt;
+&lt;div&gt;1&lt;/div&gt;
+&lt;div&gt;2&lt;/div&gt;</code></pre>
+<p>css资源文件：</p>
+<pre><code class="css">/* style320.css */
+div {
+    width: 100%;
+    height: 100px;
+}
+div:nth-child(1) {
+    background-color: pink;
+}
+div:nth-child(2) {
+    background-color: purple;
+}
+
+/* style640.css */
+div {
+    float: left;
+    width: 50%;
+    height: 100px;
+}
+div:nth-child(1) {
+    background-color: pink;
+}
+div:nth-child(2) {
+    background-color: purple;
+}</code></pre>
+<h2 id="Less"><a href="#Less" class="headerlink" title="Less"></a>Less</h2><ul>
+<li>Less（LeanerStyle Sheets）是一门 CSS扩展语言；</li>
+<li>Less是一门 CSS 预处理语言，它扩展了CSS的动态特性；</li>
+<li>常见的CSS预处理器：Sass、Less、Stylus；</li>
+<li>Less中文网址：<a href="http://lesscss.cn/" target="_blank" rel="noopener">lesscss.cn</a>；</li>
+</ul>
+<p><strong>安装：</strong></p>
+<pre><code class="bash">npm install -g less</code></pre>
+<h3 id="Less-变量"><a href="#Less-变量" class="headerlink" title="Less 变量"></a>Less 变量</h3><pre><code class="less">@变量名:值;
+@color: pink;</code></pre>
+<ul>
+<li>变量名区分大小写；</li>
+<li>@color  和  @Color 是两个不同的变量</li>
+</ul>
+<pre><code class="less">// 定义一个粉色的变量
+@color: pink; 
+// 定义了一个 字体为14像素的变量
+@font14: 14px;
+div {
+    color: @color;
+    font-size: @font14;
+}
+a {
+    font-size: @font14;
+}</code></pre>
+<h3 id="VS-插件-Easy-LESS"><a href="#VS-插件-Easy-LESS" class="headerlink" title="VS 插件 Easy LESS"></a>VS 插件 Easy LESS</h3><ul>
+<li>Easy LESS 插件用来把 less 文件编译为 css 文件；</li>
+<li>只要保存一下 Less 文件，会自动生成 CSS 文件；</li>
+</ul>
+<h3 id="Less-嵌套"><a href="#Less-嵌套" class="headerlink" title="Less 嵌套"></a>Less 嵌套</h3><ul>
+<li>嵌套：子元素样式嵌套在父元素中；</li>
+<li>交集、伪类、伪元素选择器，利用 <code>&amp;</code> 进行连接；</li>
+</ul>
+<pre><code class="less">// nav的子元素logo的样式嵌套在nav元素当中
+// 伪元素/伪类前面加 &amp; 
+.nav {
+    .logo {
+        color: green;
+    }
+    &amp;::before {
+        content: &quot;&quot;;
+    }
+}
+
+a{
+  font-size: 12px;
+  &amp;:hover{
+      color:red;
+  }
+}
+</code></pre>
+<h3 id="Less-运算"><a href="#Less-运算" class="headerlink" title="Less 运算"></a>Less 运算</h3><ul>
+<li>任何数字、颜色或者变量都可以参与运算；</li>
+<li>Less提供了加（+）、减（-）、乘（*）、除（/）算术运算；</li>
+<li>运算符中间左右有个空格隔开 1px + 5；</li>
+<li>两个值之间只有一个值有单位，则运算结果就取该单位；</li>
+<li>两个值都有单位，取第一个值的单位 ；</li>
+</ul>
+<pre><code class="less">/* Less 里面写 */
+@witdh: 10px + 5;
+div {
+    border: @witdh solid red;
+}
+/* 生成的css */
+div {
+  border: 15px solid red;
+}</code></pre>
 <p>以上。</p>
 
       
