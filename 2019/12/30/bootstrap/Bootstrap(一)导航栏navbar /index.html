@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap(一)导航栏navbar | 半根竹子</title>
+  <meta name="keywords" content=" Css , bootstrap ">
+  <meta name="description" content="Bootstrap(一)导航栏navbar | 半根竹子">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="表格、表单、列表   表格 table 表格可以让数据显示的非常的规整，可读性非常好； 不是用来布局，常见显示、展示表格式数据； 特别是后台展示数据的时候表格运用是否熟练就显得很重要； 表格不要纠结于外观，用CSS表达；  创建表格 table、tr、tdw3school 基本的三对HTML标签，分别为 table 、 tr 、 td ，他们是创建表格的基本标签，缺一不可； 一个表格 &lt;t">
+<meta property="og:type" content="article">
+<meta property="og:title" content="html+css（二）表格、列表和表单">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;30&#x2F;css&#x2F;html+css%EF%BC%88%E4%BA%8C%EF%BC%89%E8%A1%A8%E6%A0%BC&#x2F;index.html">
+<meta property="og:site_name" content="半根竹子">
+<meta property="og:description" content="表格、表单、列表   表格 table 表格可以让数据显示的非常的规整，可读性非常好； 不是用来布局，常见显示、展示表格式数据； 特别是后台展示数据的时候表格运用是否熟练就显得很重要； 表格不要纠结于外观，用CSS表达；  创建表格 table、tr、tdw3school 基本的三对HTML标签，分别为 table 、 tr 、 td ，他们是创建表格的基本标签，缺一不可； 一个表格 &lt;t">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912302312_919.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912302331_813.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912302334_428.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912302347_304.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912310001_303.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912310006_234.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912310028_712.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912310055_261.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912310059_791.png?null">
+<meta property="article:published_time" content="2019-12-30T15:09:44.685Z">
+<meta property="article:modified_time" content="2019-12-30T17:32:54.838Z">
+<meta property="article:author" content="HalfBamboo">
+<meta property="article:tag" content="html+css">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912302312_919.png?null">
+
+
+<link rel="icon" href="http://mdimg.95408.com/20191218121717.png">
+
+<link href="/css/style.css?v=1.0.1" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-dark.css?v=1.0.1" rel="stylesheet">
+
+<link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="/js/jquery.autocomplete.min.js?v=1.0.1" ></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.0.1" ></script>
+
+<meta name="generator" content="Hexo 4.1.1"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="false">
+  <input class="theme_blog_path" value="">
+</div>
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="http://mdimg.95408.com/20191218121717.png" />
+</a>
+<div class="author">
+    <!-- <span>HalfBamboo</span> -->
+    <span>Bamboo</span>
+</div>
+
+<div class="icon">
+    
+        
+    
+        
+        <a title="github" href="https://github.com/yuanshengorg" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active">全部文章</div></li>
+    
+        
+            
+            <li><div data-rel="bootstrap">bootstrap</div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="css">css</div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="JavaScript">JavaScript</div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="node">node</div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="工具">工具</div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="vue">vue</div>
+                
+            </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="25">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="back-title-list"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <form onkeydown="if(event.keyCode==13){return false;}">
+        <input class="search" type="text" placeholder="以 in: 开头进行全文搜索" autocomplete="off"id="local-search-input" >
+        <i class="cross"></i>
+        <span>
+            <label for="tagswitch">Tags:</label>
+            <input id="tagswitch" type="checkbox" style="display: none" />
+            <i id="tagsWitchIcon"></i>
+        </span>
+    </form>
+    <div class="tags-list">
+    
+    <li class="article-tag-list-item">
+        <a class="color4">Css</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">bootstrap</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">Css3</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">HTML5</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">html+css</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">js</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">Node.js</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">博客</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">hexo</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">markdown</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">vue</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">Mongodb</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">git</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">github</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">vscode</a>
+    </li>
+    
+    <div class="clearfix"></div>
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        <a  class="bootstrap "
+           href="/2019/12/30/bootstrap/Bootstrap(%E4%B8%80)%E5%AF%BC%E8%88%AA%E6%A0%8Fnavbar%20/"
+           data-tag="Css,bootstrap"
+           data-author="" >
+            <span class="post-title" title="Bootstrap(一)导航栏navbar">Bootstrap(一)导航栏navbar</span>
+            <span class="post-date" title="2019-12-30 15:19:48">2019/12/30</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/26/css/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%B8%80%EF%BC%89%E5%9F%BA%E7%A1%80%E3%80%81%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80/"
+           data-tag="Css3"
+           data-author="" >
+            <span class="post-title" title="CSS移动布局（一）基础、流式布局">CSS移动布局（一）基础、流式布局</span>
+            <span class="post-date" title="2019-12-26 19:15:43">2019/12/26</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/27/css/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%B8%89%EF%BC%89rem%E5%B8%83%E5%B1%80%E5%92%8C%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2/"
+           data-tag="Css3"
+           data-author="" >
+            <span class="post-title" title="CSS移动布局（三）rem布局和媒体查询">CSS移动布局（三）rem布局和媒体查询</span>
+            <span class="post-date" title="2019-12-27 12:48:53">2019/12/27</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/23/css/HTML5+Css3%EF%BC%88%E4%B8%80%EF%BC%89%E5%9F%BA%E7%A1%80/"
+           data-tag="Css3,HTML5"
+           data-author="" >
+            <span class="post-title" title="HTML5+Css3（一）基础">HTML5+Css3（一）基础</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/23/css/HTML5+Css3%EF%BC%88%E4%BA%8C%EF%BC%89CSS3%E5%8A%A8%E7%94%BB%E3%80%812D%E3%80%813D/"
+           data-tag="Css3,HTML5"
+           data-author="" >
+            <span class="post-title" title="HTML5+Css3（二）CSS3动画、2D、3D">HTML5+Css3（二）CSS3动画、2D、3D</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/30/css/html+css%EF%BC%88%E4%B8%80%EF%BC%89html%E6%A0%87%E7%AD%BE/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（一）html标签">html+css（一）html标签</span>
+            <span class="post-date" title="2019-12-30 22:09:33">2019/12/30</span>
+        </a>
+        
+        <a  class="JavaScript "
+           href="/2019/12/23/js/JavaScript%E6%95%B0%E7%BB%84%EF%BC%88%E4%B8%80%EF%BC%89/"
+           data-tag="js"
+           data-author="" >
+            <span class="post-title" title="JavaScript 数组（一）">JavaScript 数组（一）</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="JavaScript "
+           href="/2019/12/23/js/JavaScript%E6%95%B0%E7%BB%84%EF%BC%88%E4%BA%8C%EF%BC%89/"
+           data-tag="js"
+           data-author="" >
+            <span class="post-title" title="JavaScript 数组（二）">JavaScript 数组（二）</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/01/node/Node.js%EF%BC%881%EF%BC%89%E5%9F%BA%E7%A1%80/"
+           data-tag="js,Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（1）基础">Node.js（1）基础</span>
+            <span class="post-date" title="2019-12-01 00:00:00">2019/12/01</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/07/node/Untitled/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（7）博客项目">Node.js（7）博客项目</span>
+            <span class="post-date" title="2019-12-07 00:00:00">2019/12/07</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/Hexo%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95%E6%9B%B4%E6%96%B0/"
+           data-tag="博客,hexo"
+           data-author="" >
+            <span class="post-title" title="Hexo折腾记录更新">Hexo折腾记录更新</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/Markdown%E8%AF%AD%E6%B3%95CSS%E8%A1%A8%E7%8E%B0%E6%B5%8B%E8%AF%95/"
+           data-tag="markdown"
+           data-author="" >
+            <span class="post-title" title="Markdown语法CSS表现测试">Markdown语法CSS表现测试</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/02/node/Node.js%EF%BC%882%EF%BC%89fs%E3%80%81path%E3%80%81gulp%E6%A8%A1%E5%9D%97/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（2）fs、path、gulp模块">Node.js（2）fs、path、gulp模块</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="vue "
+           href="/2019/12/23/vue/Vue%E5%9F%BA%E7%A1%80/"
+           data-tag="js,vue"
+           data-author="" >
+            <span class="post-title" title="Vue基础">Vue基础</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/26/css/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%BA%8C%EF%BC%89flex%E5%B8%83%E5%B1%80%EF%BC%88%E5%9B%BE%E7%A4%BA%EF%BC%89/"
+           data-tag="Css3"
+           data-author="" >
+            <span class="post-title" title="CSS移动布局（二）flex布局（图示）">CSS移动布局（二）flex布局（图示）</span>
+            <span class="post-date" title="2019-12-26 20:56:43">2019/12/26</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/27/css/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E5%9B%9B%EF%BC%89%E5%93%8D%E5%BA%94%E5%BC%8Fbootstrap/"
+           data-tag="bootstrap"
+           data-author="" >
+            <span class="post-title" title="CSS移动布局（四）响应式bootstrap">CSS移动布局（四）响应式bootstrap</span>
+            <span class="post-date" title="2019-12-27 23:15:43">2019/12/27</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/30/css/html+css%EF%BC%88%E4%BA%8C%EF%BC%89%E8%A1%A8%E6%A0%BC/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（二）表格、列表和表单">html+css（二）表格、列表和表单</span>
+            <span class="post-date" title="2019-12-30 23:09:44">2019/12/30</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/05/node/Node.js%EF%BC%885%EF%BC%89art-Template%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（5）art-Template模板引擎">Node.js（5）art-Template模板引擎</span>
+            <span class="post-date" title="2019-12-05 00:00:00">2019/12/05</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/04/node/Node.js%EF%BC%884%EF%BC%89Mongodb%E6%95%B0%E6%8D%AE%E5%BA%93/"
+           data-tag="Mongodb"
+           data-author="" >
+            <span class="post-title" title="Node.js（4）Mongodb数据库">Node.js（4）Mongodb数据库</span>
+            <span class="post-date" title="2019-12-04 00:00:00">2019/12/04</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/git%E5%92%8Cgithub/"
+           data-tag="git,github"
+           data-author="" >
+            <span class="post-title" title="git和github">git和github</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="bootstrap "
+           href="/2019/12/30/bootstrap/Bootstrap(%E4%BA%8C)%E8%BD%AE%E6%92%AD%E5%9B%BEcarousel/"
+           data-tag="Css,bootstrap"
+           data-author="" >
+            <span class="post-title" title="Bootstrap(二)轮播图carousel">Bootstrap(二)轮播图carousel</span>
+            <span class="post-date" title="2019-12-30 19:04:11">2019/12/30</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/vscode%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9B%98/"
+           data-tag="vscode"
+           data-author="" >
+            <span class="post-title" title="自定义 vs code 命令快捷键">自定义 vs code 命令快捷键</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/hexo%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/"
+           data-tag="博客,hexo"
+           data-author="" >
+            <span class="post-title" title="hexo创建博客">hexo创建博客</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/03/node/Node.js%EF%BC%883%EF%BC%89web%E6%9C%8D%E5%8A%A1%E5%99%A8%E3%80%81http%E3%80%81async%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（3）web服务器、http、async异步编程">Node.js（3）web服务器、http、async异步编程</span>
+            <span class="post-date" title="2019-12-03 00:00:00">2019/12/03</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/06/node/Node.js%EF%BC%886%EF%BC%89Express%E6%A1%86%E6%9E%B6/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（6）Express框架">Node.js（6）Express框架</span>
+            <span class="post-date" title="2019-12-06 00:00:00">2019/12/06</span>
+        </a>
+        
+    </nav>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div class="post">
+    <div class="pjax">
+        <article id="post-bootstrap/Bootstrap(一)导航栏navbar " class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">Bootstrap(一)导航栏navbar</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            
+                <a  data-rel="bootstrap">bootstrap</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color4">Css</a>
+            
+            <a class="color5">bootstrap</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2019-12-30 22:04:54'>2019-12-30 15:19</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#导航栏-navbar"><span class="toc-text">导航栏 navbar</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#结构"><span class="toc-text">结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#示例"><span class="toc-text">示例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#修改"><span class="toc-text">修改</span></a></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-4 i,
+    .toc-level-4 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="导航栏-navbar"><a href="#导航栏-navbar" class="headerlink" title="导航栏 navbar"></a>导航栏 navbar</h3><ul>
+<li>依赖 JavaScript 插件：窗口变窄，只显示logo和汉堡菜单；</li>
+<li>使用 <code>&lt;nav&gt;</code> 元素，或者<code>&lt;div role=&quot;navigation&quot;&gt;</code> 让辅助设备知道是一个导航；</li>
+<li><code>.navbar-brand</code> 已经被设置了 padding 和高度 height；</li>
+<li>表单放置于 <code>.navbar-form</code> 之内可以呈现很好的垂直对齐，并在较窄的视口（viewport）中呈现折叠状态；</li>
+<li>不包含在 <code>&lt;form&gt;</code> 中的 <code>&lt;button&gt;</code> 元素，加上 <code>.navbar-btn</code> 后，可以让它在导航条里垂直居中；</li>
+<li>文本包裹在 <code>&lt;p class=&quot;navbar-text&quot;&gt;&lt;/p&gt;</code>中；</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>0</th>
+<th>class</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>nav class=”navbar navbar-default”</td>
+<td>导航条</td>
+</tr>
+<tr>
+<td>2</td>
+<td>div class=”container-fluid” 或 “container”</td>
+<td>版心</td>
+</tr>
+<tr>
+<td>3</td>
+<td>div class=”navbar-header”</td>
+<td>包裹logo和汉堡菜单</td>
+</tr>
+<tr>
+<td>4</td>
+<td>a class=”navbar-brand”</td>
+<td>包裹标志文字或者img</td>
+</tr>
+<tr>
+<td>5</td>
+<td>div class=”collapse navbar-collapse”</td>
+<td>包裹菜单ul&gt;li&gt;a链接</td>
+</tr>
+<tr>
+<td>6</td>
+<td>form class=”navbar-form”</td>
+<td>包裹表单</td>
+</tr>
+<tr>
+<td>7</td>
+<td>button class=”navbar-btn”</td>
+<td>包裹按钮</td>
+</tr>
+<tr>
+<td>8</td>
+<td>ul class=”navbar-right”</td>
+<td>菜单向左、向右排列</td>
+</tr>
+<tr>
+<td>9</td>
+<td>a class=”navbar-link”</td>
+<td>链接显示默认颜色和反色设置</td>
+</tr>
+<tr>
+<td>10</td>
+<td>p class=”navbar-text”</td>
+<td>p标签内有正确的行距和颜色</td>
+</tr>
+<tr>
+<td>11</td>
+<td>nav class=”avbar-fixed-top”</td>
+<td>让导航条固定在顶部</td>
+</tr>
+<tr>
+<td>12</td>
+<td>nav class=”navbar-fixed-bottom”</td>
+<td>让导航条固定在底部</td>
+</tr>
+<tr>
+<td>13</td>
+<td>nav class=”navbar-static-top</td>
+<td>静止在顶部</td>
+</tr>
+<tr>
+<td>14</td>
+<td>nav class=”navbar-inverse”</td>
+<td>反色的导航条</td>
+</tr>
+</tbody></table>
+<h3 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h3><pre><code class="html">&lt;div class=&quot;navbar navbar-default&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;!-- 标志头部 --&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;!-- 品牌logo文字或图片 --&gt;
+            &lt;div class=&quot;navbar-brand&quot;&gt;Logo&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- 菜单选项 --&gt;
+        &lt;div class=&quot;collapse navbar-collapse&quot;&gt;
+            &lt;!-- 菜单链接 --&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><pre><code class="html">&lt;!-- navbar 导航条 --&gt;
+&lt;!-- navbar-default 默认导航条 --&gt;
+&lt;nav class=&quot;navbar navbar-default&quot;&gt;
+    &lt;!-- container 按版心居中 --&gt;
+    &lt;!-- container-fluid 100%版心 --&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;!-- navbar-header 将logo部分分组 更好的移动展示 --&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;!-- 汉堡菜单显示 --&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#bs-example-navbar-collapse-1&quot; aria-expanded=&quot;false&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;!-- logo --&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;
+                &lt;!-- logo a标签中直接写文字或者加img --&gt;
+                &lt;img src=&quot;./img/logo.png&quot; alt=&quot;&quot; class=&quot;center-block&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+
+        &lt;!-- 可折叠部分 链接 表单 按钮等 --&gt;
+        &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;bs-example-navbar-collapse-1&quot;&gt;
+            &lt;!-- 菜单链接 --&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;!-- 单个链接 --&gt;
+                &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;首页&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;关于我们&lt;/a&gt;&lt;/li&gt;
+
+                &lt;!-- 下拉菜单 --&gt;
+                &lt;li class=&quot;dropdown&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;下拉菜单 &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                    &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;下拉菜单1&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;下拉菜单2&lt;/a&gt;&lt;/li&gt;
+                        &lt;!-- 分隔线 --&gt;
+                        &lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;下拉菜单3&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+
+            &lt;!-- 表单 --&gt;
+            &lt;form class=&quot;navbar-form navbar-left&quot;&gt;
+                &lt;div class=&quot;form-group&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search&quot;&gt;
+                &lt;/div&gt;
+                &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;提交&lt;/button&gt;
+            &lt;/form&gt;
+
+            &lt;!-- 按钮 --&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn-primary navbar-btn&quot;&gt;登陆&lt;/button&gt;
+
+            &lt;!-- 右侧菜单链接 --&gt;
+            &lt;!-- hidden-sm 在小屏时隐藏，其他屏按官方的：大中屏正常显示 超小屏蔽显示汉堡菜单 --&gt;
+            &lt;ul class=&quot;nav navbar-nav navbar-right hidden-sm&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+
+        &lt;/div&gt;
+        &lt;!-- 可折叠部分结束 --&gt;
+    &lt;/div&gt;
+    &lt;!-- container结束 --&gt;
+&lt;/nav&gt;</code></pre>
+<h3 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h3><ul>
+<li>navbar-brand 有加 -15px 的 padding，去除 container 盒子的paddding；</li>
+<li>navbar-brand 有加四周各15px 的 margin ；</li>
+<li>navbar-brand 中加 img，img 会有 左右各 10px 的 margin；</li>
+</ul>
+<p><img src="http://mdimg.95408.com/201912302204_576.png" alt=""></p>
+<pre><code class="css">/* 自定义 */
+
+/* 标志img大小 */
+.navbar img {
+    width: 70px;
+    height: 70px;
+    margin: 0;
+}
+
+/* navbar-brand */
+.navbar-brand {
+    width: 90px;
+    height: 70px;
+    padding: 0;
+}
+
+/* 修改导航栏高度 */
+.navbar-nav&gt;li&gt;a {
+    font-size: 18px;
+    padding-top: 25px;
+    height: 70px;
+}
+
+/* 表单 按钮 汉堡区 */
+.navbar-form, .navbar-btn, .navbar-toggle {
+    margin-top: 18px;
+}</code></pre>
+<p>以上。</p>
+
+      
+       
+    </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">©2009-2019 半根竹子.</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full"><span class="min "></span></button>
+<button class="post-toc-menu"><span class="post-toc-menu-icons"></span></button>
+<div class="post-toc"><span class="post-toc-title">目录</span>
+    <div class="post-toc-content">
+
+    </div>
+</div>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+<div class="acParent"></div>
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.0.1" ></script>
+
+<script src="/js/script.js?v=1.0.1" ></script>
+<script>
+    var img_resize = 'default';
+    /*作者、标签的自动补全*/
+    $(function () {
+        $('.search').AutoComplete({
+            'data': ['#Css','#bootstrap','#Css3','#HTML5','#html+css','#js','#Node.js','#博客','#hexo','#markdown','#vue','#Mongodb','#git','#github','#vscode',],
+            'itemHeight': 20,
+            'width': 418
+        }).AutoComplete('show');
+    })
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $(".post .pjax table").addClass("green");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+        .nav .hide-list.fullscreen {
+            left: 492px
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #ccc;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>

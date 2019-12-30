@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>html+css（一）html标签 | 半根竹子</title>
+  <meta name="keywords" content=" html+css ">
+  <meta name="description" content="html+css（一）html标签 | 半根竹子">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="表格、表单、列表   表格 table 表格可以让数据显示的非常的规整，可读性非常好； 不是用来布局，常见显示、展示表格式数据； 特别是后台展示数据的时候表格运用是否熟练就显得很重要； 表格不要纠结于外观，用CSS表达；  创建表格 table、tr、tdw3school 基本的三对HTML标签，分别为 table 、 tr 、 td ，他们是创建表格的基本标签，缺一不可； 一个表格 &lt;t">
+<meta property="og:type" content="article">
+<meta property="og:title" content="html+css（二）表格、列表和表单">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;30&#x2F;css&#x2F;html+css%EF%BC%88%E4%BA%8C%EF%BC%89%E8%A1%A8%E6%A0%BC&#x2F;index.html">
+<meta property="og:site_name" content="半根竹子">
+<meta property="og:description" content="表格、表单、列表   表格 table 表格可以让数据显示的非常的规整，可读性非常好； 不是用来布局，常见显示、展示表格式数据； 特别是后台展示数据的时候表格运用是否熟练就显得很重要； 表格不要纠结于外观，用CSS表达；  创建表格 table、tr、tdw3school 基本的三对HTML标签，分别为 table 、 tr 、 td ，他们是创建表格的基本标签，缺一不可； 一个表格 &lt;t">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912302312_919.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912302331_813.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912302334_428.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912302347_304.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912310001_303.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912310006_234.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912310028_712.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912310055_261.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912310059_791.png?null">
+<meta property="article:published_time" content="2019-12-30T15:09:44.685Z">
+<meta property="article:modified_time" content="2019-12-30T17:32:54.838Z">
+<meta property="article:author" content="HalfBamboo">
+<meta property="article:tag" content="html+css">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912302312_919.png?null">
+
+
+<link rel="icon" href="http://mdimg.95408.com/20191218121717.png">
+
+<link href="/css/style.css?v=1.0.1" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-dark.css?v=1.0.1" rel="stylesheet">
+
+<link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="/js/jquery.autocomplete.min.js?v=1.0.1" ></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.0.1" ></script>
+
+<meta name="generator" content="Hexo 4.1.1"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="false">
+  <input class="theme_blog_path" value="">
+</div>
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="http://mdimg.95408.com/20191218121717.png" />
+</a>
+<div class="author">
+    <!-- <span>HalfBamboo</span> -->
+    <span>Bamboo</span>
+</div>
+
+<div class="icon">
+    
+        
+    
+        
+        <a title="github" href="https://github.com/yuanshengorg" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active">全部文章</div></li>
+    
+        
+            
+            <li><div data-rel="bootstrap">bootstrap</div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="css">css</div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="JavaScript">JavaScript</div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="node">node</div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="工具">工具</div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="vue">vue</div>
+                
+            </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="25">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="back-title-list"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <form onkeydown="if(event.keyCode==13){return false;}">
+        <input class="search" type="text" placeholder="以 in: 开头进行全文搜索" autocomplete="off"id="local-search-input" >
+        <i class="cross"></i>
+        <span>
+            <label for="tagswitch">Tags:</label>
+            <input id="tagswitch" type="checkbox" style="display: none" />
+            <i id="tagsWitchIcon"></i>
+        </span>
+    </form>
+    <div class="tags-list">
+    
+    <li class="article-tag-list-item">
+        <a class="color4">Css</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">bootstrap</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">Css3</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">HTML5</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">html+css</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">js</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">Node.js</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">博客</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">hexo</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">markdown</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">vue</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">Mongodb</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">git</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">github</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">vscode</a>
+    </li>
+    
+    <div class="clearfix"></div>
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        <a  class="bootstrap "
+           href="/2019/12/30/bootstrap/Bootstrap(%E4%B8%80)%E5%AF%BC%E8%88%AA%E6%A0%8Fnavbar%20/"
+           data-tag="Css,bootstrap"
+           data-author="" >
+            <span class="post-title" title="Bootstrap(一)导航栏navbar">Bootstrap(一)导航栏navbar</span>
+            <span class="post-date" title="2019-12-30 15:19:48">2019/12/30</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/26/css/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%B8%80%EF%BC%89%E5%9F%BA%E7%A1%80%E3%80%81%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80/"
+           data-tag="Css3"
+           data-author="" >
+            <span class="post-title" title="CSS移动布局（一）基础、流式布局">CSS移动布局（一）基础、流式布局</span>
+            <span class="post-date" title="2019-12-26 19:15:43">2019/12/26</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/27/css/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%B8%89%EF%BC%89rem%E5%B8%83%E5%B1%80%E5%92%8C%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2/"
+           data-tag="Css3"
+           data-author="" >
+            <span class="post-title" title="CSS移动布局（三）rem布局和媒体查询">CSS移动布局（三）rem布局和媒体查询</span>
+            <span class="post-date" title="2019-12-27 12:48:53">2019/12/27</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/23/css/HTML5+Css3%EF%BC%88%E4%B8%80%EF%BC%89%E5%9F%BA%E7%A1%80/"
+           data-tag="Css3,HTML5"
+           data-author="" >
+            <span class="post-title" title="HTML5+Css3（一）基础">HTML5+Css3（一）基础</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/23/css/HTML5+Css3%EF%BC%88%E4%BA%8C%EF%BC%89CSS3%E5%8A%A8%E7%94%BB%E3%80%812D%E3%80%813D/"
+           data-tag="Css3,HTML5"
+           data-author="" >
+            <span class="post-title" title="HTML5+Css3（二）CSS3动画、2D、3D">HTML5+Css3（二）CSS3动画、2D、3D</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/30/css/html+css%EF%BC%88%E4%B8%80%EF%BC%89html%E6%A0%87%E7%AD%BE/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（一）html标签">html+css（一）html标签</span>
+            <span class="post-date" title="2019-12-30 22:09:33">2019/12/30</span>
+        </a>
+        
+        <a  class="JavaScript "
+           href="/2019/12/23/js/JavaScript%E6%95%B0%E7%BB%84%EF%BC%88%E4%B8%80%EF%BC%89/"
+           data-tag="js"
+           data-author="" >
+            <span class="post-title" title="JavaScript 数组（一）">JavaScript 数组（一）</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="JavaScript "
+           href="/2019/12/23/js/JavaScript%E6%95%B0%E7%BB%84%EF%BC%88%E4%BA%8C%EF%BC%89/"
+           data-tag="js"
+           data-author="" >
+            <span class="post-title" title="JavaScript 数组（二）">JavaScript 数组（二）</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/01/node/Node.js%EF%BC%881%EF%BC%89%E5%9F%BA%E7%A1%80/"
+           data-tag="js,Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（1）基础">Node.js（1）基础</span>
+            <span class="post-date" title="2019-12-01 00:00:00">2019/12/01</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/07/node/Untitled/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（7）博客项目">Node.js（7）博客项目</span>
+            <span class="post-date" title="2019-12-07 00:00:00">2019/12/07</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/Hexo%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95%E6%9B%B4%E6%96%B0/"
+           data-tag="博客,hexo"
+           data-author="" >
+            <span class="post-title" title="Hexo折腾记录更新">Hexo折腾记录更新</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/Markdown%E8%AF%AD%E6%B3%95CSS%E8%A1%A8%E7%8E%B0%E6%B5%8B%E8%AF%95/"
+           data-tag="markdown"
+           data-author="" >
+            <span class="post-title" title="Markdown语法CSS表现测试">Markdown语法CSS表现测试</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/02/node/Node.js%EF%BC%882%EF%BC%89fs%E3%80%81path%E3%80%81gulp%E6%A8%A1%E5%9D%97/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（2）fs、path、gulp模块">Node.js（2）fs、path、gulp模块</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="vue "
+           href="/2019/12/23/vue/Vue%E5%9F%BA%E7%A1%80/"
+           data-tag="js,vue"
+           data-author="" >
+            <span class="post-title" title="Vue基础">Vue基础</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/26/css/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%BA%8C%EF%BC%89flex%E5%B8%83%E5%B1%80%EF%BC%88%E5%9B%BE%E7%A4%BA%EF%BC%89/"
+           data-tag="Css3"
+           data-author="" >
+            <span class="post-title" title="CSS移动布局（二）flex布局（图示）">CSS移动布局（二）flex布局（图示）</span>
+            <span class="post-date" title="2019-12-26 20:56:43">2019/12/26</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/27/css/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E5%9B%9B%EF%BC%89%E5%93%8D%E5%BA%94%E5%BC%8Fbootstrap/"
+           data-tag="bootstrap"
+           data-author="" >
+            <span class="post-title" title="CSS移动布局（四）响应式bootstrap">CSS移动布局（四）响应式bootstrap</span>
+            <span class="post-date" title="2019-12-27 23:15:43">2019/12/27</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/30/css/html+css%EF%BC%88%E4%BA%8C%EF%BC%89%E8%A1%A8%E6%A0%BC/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（二）表格、列表和表单">html+css（二）表格、列表和表单</span>
+            <span class="post-date" title="2019-12-30 23:09:44">2019/12/30</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/05/node/Node.js%EF%BC%885%EF%BC%89art-Template%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（5）art-Template模板引擎">Node.js（5）art-Template模板引擎</span>
+            <span class="post-date" title="2019-12-05 00:00:00">2019/12/05</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/04/node/Node.js%EF%BC%884%EF%BC%89Mongodb%E6%95%B0%E6%8D%AE%E5%BA%93/"
+           data-tag="Mongodb"
+           data-author="" >
+            <span class="post-title" title="Node.js（4）Mongodb数据库">Node.js（4）Mongodb数据库</span>
+            <span class="post-date" title="2019-12-04 00:00:00">2019/12/04</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/git%E5%92%8Cgithub/"
+           data-tag="git,github"
+           data-author="" >
+            <span class="post-title" title="git和github">git和github</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="bootstrap "
+           href="/2019/12/30/bootstrap/Bootstrap(%E4%BA%8C)%E8%BD%AE%E6%92%AD%E5%9B%BEcarousel/"
+           data-tag="Css,bootstrap"
+           data-author="" >
+            <span class="post-title" title="Bootstrap(二)轮播图carousel">Bootstrap(二)轮播图carousel</span>
+            <span class="post-date" title="2019-12-30 19:04:11">2019/12/30</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/vscode%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9B%98/"
+           data-tag="vscode"
+           data-author="" >
+            <span class="post-title" title="自定义 vs code 命令快捷键">自定义 vs code 命令快捷键</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/hexo%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/"
+           data-tag="博客,hexo"
+           data-author="" >
+            <span class="post-title" title="hexo创建博客">hexo创建博客</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/03/node/Node.js%EF%BC%883%EF%BC%89web%E6%9C%8D%E5%8A%A1%E5%99%A8%E3%80%81http%E3%80%81async%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（3）web服务器、http、async异步编程">Node.js（3）web服务器、http、async异步编程</span>
+            <span class="post-date" title="2019-12-03 00:00:00">2019/12/03</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/06/node/Node.js%EF%BC%886%EF%BC%89Express%E6%A1%86%E6%9E%B6/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（6）Express框架">Node.js（6）Express框架</span>
+            <span class="post-date" title="2019-12-06 00:00:00">2019/12/06</span>
+        </a>
+        
+    </nav>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div class="post">
+    <div class="pjax">
+        <article id="post-css/html+css（一）html标签" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">html+css（一）html标签</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            
+                <a  data-rel="css">css</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color4">html+css</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2019-12-31 01:45:26'>2019-12-30 22:09</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#html"><span class="toc-text">html</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#html骨架"><span class="toc-text">html骨架</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#标签"><span class="toc-text">标签</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#DOCTYPE"><span class="toc-text">DOCTYPE</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lang"><span class="toc-text">lang</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#字符集"><span class="toc-text">字符集</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#常用标签"><span class="toc-text">常用标签</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#标题标签h"><span class="toc-text">标题标签h</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#段落标签-p"><span class="toc-text">段落标签 p</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#水平线标签-hr"><span class="toc-text">水平线标签 hr</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#换行标签-br"><span class="toc-text">换行标签 br</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#div-和-span"><span class="toc-text">div 和 span</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文本格式化标签"><span class="toc-text">文本格式化标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#标签属性"><span class="toc-text">标签属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#图像标签-img"><span class="toc-text">图像标签 img</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#链接-a"><span class="toc-text">链接 a</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#注释"><span class="toc-text">注释</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#路径"><span class="toc-text">路径</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#相对路径"><span class="toc-text">相对路径</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#绝对路径"><span class="toc-text">绝对路径</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他"><span class="toc-text">其他</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#锚点定位"><span class="toc-text">锚点定位</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#base标签"><span class="toc-text">base标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#预格式化文本标签"><span class="toc-text">预格式化文本标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#特殊字符"><span class="toc-text">特殊字符</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-4 i,
+    .toc-level-4 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="html"><a href="#html" class="headerlink" title="html"></a>html</h2><h3 id="html骨架"><a href="#html骨架" class="headerlink" title="html骨架"></a>html骨架</h3><table>
+<thead>
+<tr>
+<th>标签名</th>
+<th align="center">定义</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><html></html></td>
+<td align="center">HTML标签</td>
+<td align="left">页面中最大的标签，我们成为  根标签</td>
+</tr>
+<tr>
+<td><head></head></td>
+<td align="center">文档的头部</td>
+<td align="left">注意在head标签中我们必须要设置的标签是title</td>
+</tr>
+<tr>
+<td><titile></title></td>
+<td align="center">文档的标题</td>
+<td align="left">让页面拥有一个属于自己的网页标题</td>
+</tr>
+<tr>
+<td><body></body></td>
+<td align="center">文档的主体</td>
+<td align="left">元素包含文档的所有内容，页面内容 基本都是放到body里面的</td>
+</tr>
+</tbody></table>
+<p>约定：</p>
+<p>HTML标签名、类名、标签属性和大部分属性值统一用小写；</p>
+<pre><code class="html">&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    ……
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<h2 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h2><p>带有“&lt; &gt;”符号的元素被称为HTML标签；</p>
+<p>双标签</p>
+<pre><code class="html">&lt;body&gt; 双标签 &lt;/body&gt;</code></pre>
+<p>单标签</p>
+<pre><code class="html">&lt;br /&gt;</code></pre>
+<p>嵌套关系</p>
+<pre><code class="html">&lt;head&gt;
+    &lt;title&gt; &lt;/title&gt;
+&lt;/head&gt;</code></pre>
+<p>并列关系</p>
+<pre><code class="html">&lt;head&gt;&lt;/head&gt;
+&lt;body&gt;&lt;/body&gt;</code></pre>
+<h3 id="DOCTYPE"><a href="#DOCTYPE" class="headerlink" title="DOCTYPE"></a>DOCTYPE</h3><p>告知浏览器文档使用哪种 HTML 或 XHTML 规范；</p>
+<pre><code class="html">&lt;!DOCTYPE html&gt;</code></pre>
+<h3 id="lang"><a href="#lang" class="headerlink" title="lang"></a>lang</h3><p>指定html 语言种类；en 英语、zh-CN 中文；</p>
+<pre><code class="html">&lt;html lang=&quot;zh-CN&quot;&gt;</code></pre>
+<h3 id="字符集"><a href="#字符集" class="headerlink" title="字符集"></a>字符集</h3><p>告知 html 文件是以 UTF-8 编码保存的， 浏览器根据编码去解码对应的html内容；</p>
+<pre><code class="html">&lt;meta charset=&quot;UTF-8&quot;&gt;</code></pre>
+<h2 id="常用标签"><a href="#常用标签" class="headerlink" title="常用标签"></a>常用标签</h2><h3 id="标题标签h"><a href="#标题标签h" class="headerlink" title="标题标签h"></a>标题标签h</h3><pre><code class="html">&lt;h1&gt;&lt;/h1&gt;
+&lt;h2&gt;&lt;/h2&gt;
+&lt;h3&gt;&lt;/h3&gt;
+&lt;h4&gt;&lt;/h4&gt;
+&lt;h5&gt;&lt;/h5&gt;
+&lt;h6&gt;&lt;/h6&gt;</code></pre>
+<h3 id="段落标签-p"><a href="#段落标签-p" class="headerlink" title="段落标签 p"></a>段落标签 p</h3><pre><code class="html">&lt;p&gt; 文本内容 &lt;/p&gt;</code></pre>
+<h3 id="水平线标签-hr"><a href="#水平线标签-hr" class="headerlink" title="水平线标签 hr"></a>水平线标签 hr</h3><pre><code class="html">&lt;hr /&gt; 是一个单标签</code></pre>
+<h3 id="换行标签-br"><a href="#换行标签-br" class="headerlink" title="换行标签 br"></a>换行标签 br</h3><pre><code class="html">&lt;br /&gt;</code></pre>
+<h3 id="div-和-span"><a href="#div-和-span" class="headerlink" title="div 和 span"></a>div 和 span</h3><ul>
+<li>div、span 是没有语义的，是我们网页布局主要的2个盒子；</li>
+<li>div 就是  division  的缩写：分割、分区的意思，其实有很多div 来组合网页；</li>
+</ul>
+<pre><code class="html">&lt;div&gt; 没有语义的div &lt;/div&gt;
+&lt;span&gt; 没有语义的span &lt;/span&gt;</code></pre>
+<h3 id="文本格式化标签"><a href="#文本格式化标签" class="headerlink" title="文本格式化标签"></a>文本格式化标签</h3><ul>
+<li>b  只加粗，strong  除了加粗还有强调的意思，语义更强烈；</li>
+<li>剩下同理；</li>
+</ul>
+<pre><code class="html">&lt;b&gt;&lt;/b&gt; 粗体
+&lt;strong&gt;&lt;/strong&gt; 粗体
+&lt;i&gt;&lt;/i&gt; 斜体
+&lt;em&gt;&lt;/em&gt; 斜体
+&lt;s&gt;&lt;/s&gt; 删除线
+&lt;del&gt;&lt;/del&gt; 删除线
+&lt;u&gt;&lt;/u&gt; 下划线
+&lt;ins&gt;&lt;/ins&gt; 下划线</code></pre>
+<h3 id="标签属性"><a href="#标签属性" class="headerlink" title="标签属性"></a>标签属性</h3><ol>
+<li>标签可以拥有多个属性，必须写在开始标签中，位于标签名后面。</li>
+<li>属性之间不分先后顺序，标签名与属性、属性与属性之间均以空格分开。</li>
+<li>采取  键值对 的格式   key=”value”  的格式  </li>
+</ol>
+<pre><code class="html">&lt;img src=&quot;src就是img标签的一个属性&quot; /&gt;</code></pre>
+<h3 id="图像标签-img"><a href="#图像标签-img" class="headerlink" title="图像标签 img"></a>图像标签 img</h3><pre><code class="html">&lt;img src=&quot;tupian.jpg&quot; alt=&quot;图片不能正常显示就显示alt&quot; /&gt;
+可以加标题、宽度、高度、边框等：
+&lt;img src=&quot;timg.gif&quot; title=&quot;标题文字&quot; width=&quot;600&quot; height=&quot;600&quot; border=&quot;10&quot; /&gt;</code></pre>
+<h3 id="链接-a"><a href="#链接-a" class="headerlink" title="链接 a"></a>链接 a</h3><pre><code class="html">&lt;a href=&quot;跳转目标&quot; target=&quot;目标窗口弹出方式 _self _blank&quot;&gt;文本或图像&lt;/a&gt;
+&lt;a href=&quot;http://www.a.com&quot; target=&quot;_blank&quot;&gt;文本或图像&lt;/a&gt;
+&lt;a href=&quot;demo.html&quot;&gt;文字或图片&lt;/a&gt;</code></pre>
+<h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><p>注释内容前后各一个空格字符，注释位于要注释代码的上面，单独占一行（约定）；</p>
+<pre><code class="html">&lt;!-- 这是div内容的注释文字 --&gt;
+&lt;div&gt;...&lt;/div&gt;</code></pre>
+<h2 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h2><h3 id="相对路径"><a href="#相对路径" class="headerlink" title="相对路径"></a>相对路径</h3><ul>
+<li>相对路径，是从代码所在的这个文件出发， 去寻找我们的目标文件的；</li>
+<li><code>../</code> 上级目录、 <code>../../</code> 上上级目录；</li>
+</ul>
+<pre><code class="html">同级路径：本文件同一目录下的图片
+&lt;img src=&quot;timg.gif&quot; /&gt;
+下级路径：本文件同一目录下images中的图片
+&lt;img src=&quot;images/timg.jpg&quot; /&gt;
+上级路径：本文件上一级目录下images中的图片
+&lt;img src=&quot;../images/timg.gif&quot; /&gt;</code></pre>
+<h3 id="绝对路径"><a href="#绝对路径" class="headerlink" title="绝对路径"></a>绝对路径</h3><pre><code class="html">&lt;!-- 我们不提倡使用这种方法 --&gt;
+&lt;img src=&quot;C:\Users\yuan\Desktop\img\img.jpg&quot; /&gt;
+&lt;!-- 绝对的网络地址 还是可以用的 --&gt;
+&lt;img src=&quot;http://www.a.cn/b/c/img.jpg&quot; /&gt;</code></pre>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="锚点定位"><a href="#锚点定位" class="headerlink" title="锚点定位"></a>锚点定位</h3><pre><code class="html">使用相应的id名标注跳转目标的位置
+&lt;h3 id=&quot;two&quot;&gt;第2集大片&lt;/h3&gt;
+
+创建链接
+&lt;a href=&quot;#two&quot;&gt;点击查看第2集&lt;/a&gt;</code></pre>
+<h3 id="base标签"><a href="#base标签" class="headerlink" title="base标签"></a>base标签</h3><p>base 可以设置整体链接的打开状态；base 写到 <code>head</code> 标签内；</p>
+<pre><code class="html">&lt;head&gt;
+    &lt;base target=&quot;_blank&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;a href=&quot;http://www.baidu.com&quot;&gt;百度&lt;/a&gt;
+&lt;/body&gt;</code></pre>
+<h3 id="预格式化文本标签"><a href="#预格式化文本标签" class="headerlink" title="预格式化文本标签"></a>预格式化文本标签</h3><p>被包围在 <code>pre</code> 标签 元素中的文本通常会保留空格和换行符；</p>
+<pre><code class="html">&lt;pre&gt;
+       标题
+    锄禾日当午，
+    汗滴禾下土。
+    谁知盘中餐，
+    粒粒皆辛苦。
+&lt;/pre&gt;</code></pre>
+<h3 id="特殊字符"><a href="#特殊字符" class="headerlink" title="特殊字符"></a>特殊字符</h3><pre><code class="html">&amp;nbsp;   空格
+&amp;lt;   小于号
+&amp;gt;   大于号
+以 `&amp;` 开头, 以分号 `;` 结尾；</code></pre>
+<p><img src="http://mdimg.95408.com/201912302302_548.png?null" alt=""></p>
+<pre><code class="html">HTML 中不能使用小于号 “&lt;” 和大于号 “&gt;”特殊字符
+浏览器会将它们作为标签解析
+若要正确显示，在 HTML 源代码中使用字符实体；
+
+推荐：
+&lt;a href=&quot;#&quot;&gt;more &amp;gt;&amp;gt;&lt;/a&gt;
+不推荐：
+&lt;a href=&quot;#&quot;&gt;more &gt;&gt; &lt;/a&gt;</code></pre>
+<p>以上。</p>
+
+      
+       
+    </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">©2009-2019 半根竹子.</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full"><span class="min "></span></button>
+<button class="post-toc-menu"><span class="post-toc-menu-icons"></span></button>
+<div class="post-toc"><span class="post-toc-title">目录</span>
+    <div class="post-toc-content">
+
+    </div>
+</div>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+<div class="acParent"></div>
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.0.1" ></script>
+
+<script src="/js/script.js?v=1.0.1" ></script>
+<script>
+    var img_resize = 'default';
+    /*作者、标签的自动补全*/
+    $(function () {
+        $('.search').AutoComplete({
+            'data': ['#Css','#bootstrap','#Css3','#HTML5','#html+css','#js','#Node.js','#博客','#hexo','#markdown','#vue','#Mongodb','#git','#github','#vscode',],
+            'itemHeight': 20,
+            'width': 418
+        }).AutoComplete('show');
+    })
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $(".post .pjax table").addClass("green");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+        .nav .hide-list.fullscreen {
+            left: 492px
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #ccc;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>

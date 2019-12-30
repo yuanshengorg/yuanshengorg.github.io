@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>html+css（二）表格、列表和表单 | 半根竹子</title>
+  <meta name="keywords" content=" html+css ">
+  <meta name="description" content="html+css（二）表格、列表和表单 | 半根竹子">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="表格、表单、列表   表格 table 表格可以让数据显示的非常的规整，可读性非常好； 不是用来布局，常见显示、展示表格式数据； 特别是后台展示数据的时候表格运用是否熟练就显得很重要； 表格不要纠结于外观，用CSS表达；  创建表格 table、tr、tdw3school 基本的三对HTML标签，分别为 table 、 tr 、 td ，他们是创建表格的基本标签，缺一不可； 一个表格 &lt;t">
+<meta property="og:type" content="article">
+<meta property="og:title" content="html+css（二）表格、列表和表单">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;30&#x2F;css&#x2F;html+css%EF%BC%88%E4%BA%8C%EF%BC%89%E8%A1%A8%E6%A0%BC&#x2F;index.html">
+<meta property="og:site_name" content="半根竹子">
+<meta property="og:description" content="表格、表单、列表   表格 table 表格可以让数据显示的非常的规整，可读性非常好； 不是用来布局，常见显示、展示表格式数据； 特别是后台展示数据的时候表格运用是否熟练就显得很重要； 表格不要纠结于外观，用CSS表达；  创建表格 table、tr、tdw3school 基本的三对HTML标签，分别为 table 、 tr 、 td ，他们是创建表格的基本标签，缺一不可； 一个表格 &lt;t">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912302312_919.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912302331_813.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912302334_428.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912302347_304.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912310001_303.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912310006_234.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912310028_712.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912310055_261.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912310059_791.png?null">
+<meta property="article:published_time" content="2019-12-30T15:09:44.685Z">
+<meta property="article:modified_time" content="2019-12-30T17:32:54.838Z">
+<meta property="article:author" content="HalfBamboo">
+<meta property="article:tag" content="html+css">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912302312_919.png?null">
+
+
+<link rel="icon" href="http://mdimg.95408.com/20191218121717.png">
+
+<link href="/css/style.css?v=1.0.1" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-dark.css?v=1.0.1" rel="stylesheet">
+
+<link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="/js/jquery.autocomplete.min.js?v=1.0.1" ></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.0.1" ></script>
+
+<meta name="generator" content="Hexo 4.1.1"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="false">
+  <input class="theme_blog_path" value="">
+</div>
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="http://mdimg.95408.com/20191218121717.png" />
+</a>
+<div class="author">
+    <!-- <span>HalfBamboo</span> -->
+    <span>Bamboo</span>
+</div>
+
+<div class="icon">
+    
+        
+    
+        
+        <a title="github" href="https://github.com/yuanshengorg" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active">全部文章</div></li>
+    
+        
+            
+            <li><div data-rel="bootstrap">bootstrap</div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="css">css</div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="JavaScript">JavaScript</div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="node">node</div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="工具">工具</div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="vue">vue</div>
+                
+            </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="25">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="back-title-list"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <form onkeydown="if(event.keyCode==13){return false;}">
+        <input class="search" type="text" placeholder="以 in: 开头进行全文搜索" autocomplete="off"id="local-search-input" >
+        <i class="cross"></i>
+        <span>
+            <label for="tagswitch">Tags:</label>
+            <input id="tagswitch" type="checkbox" style="display: none" />
+            <i id="tagsWitchIcon"></i>
+        </span>
+    </form>
+    <div class="tags-list">
+    
+    <li class="article-tag-list-item">
+        <a class="color4">Css</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">bootstrap</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">Css3</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">HTML5</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">html+css</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">js</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">Node.js</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">博客</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">hexo</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">markdown</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">vue</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">Mongodb</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">git</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">github</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">vscode</a>
+    </li>
+    
+    <div class="clearfix"></div>
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        <a  class="bootstrap "
+           href="/2019/12/30/bootstrap/Bootstrap(%E4%B8%80)%E5%AF%BC%E8%88%AA%E6%A0%8Fnavbar%20/"
+           data-tag="Css,bootstrap"
+           data-author="" >
+            <span class="post-title" title="Bootstrap(一)导航栏navbar">Bootstrap(一)导航栏navbar</span>
+            <span class="post-date" title="2019-12-30 15:19:48">2019/12/30</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/26/css/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%B8%80%EF%BC%89%E5%9F%BA%E7%A1%80%E3%80%81%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80/"
+           data-tag="Css3"
+           data-author="" >
+            <span class="post-title" title="CSS移动布局（一）基础、流式布局">CSS移动布局（一）基础、流式布局</span>
+            <span class="post-date" title="2019-12-26 19:15:43">2019/12/26</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/27/css/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%B8%89%EF%BC%89rem%E5%B8%83%E5%B1%80%E5%92%8C%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2/"
+           data-tag="Css3"
+           data-author="" >
+            <span class="post-title" title="CSS移动布局（三）rem布局和媒体查询">CSS移动布局（三）rem布局和媒体查询</span>
+            <span class="post-date" title="2019-12-27 12:48:53">2019/12/27</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/23/css/HTML5+Css3%EF%BC%88%E4%B8%80%EF%BC%89%E5%9F%BA%E7%A1%80/"
+           data-tag="Css3,HTML5"
+           data-author="" >
+            <span class="post-title" title="HTML5+Css3（一）基础">HTML5+Css3（一）基础</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/23/css/HTML5+Css3%EF%BC%88%E4%BA%8C%EF%BC%89CSS3%E5%8A%A8%E7%94%BB%E3%80%812D%E3%80%813D/"
+           data-tag="Css3,HTML5"
+           data-author="" >
+            <span class="post-title" title="HTML5+Css3（二）CSS3动画、2D、3D">HTML5+Css3（二）CSS3动画、2D、3D</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/30/css/html+css%EF%BC%88%E4%B8%80%EF%BC%89html%E6%A0%87%E7%AD%BE/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（一）html标签">html+css（一）html标签</span>
+            <span class="post-date" title="2019-12-30 22:09:33">2019/12/30</span>
+        </a>
+        
+        <a  class="JavaScript "
+           href="/2019/12/23/js/JavaScript%E6%95%B0%E7%BB%84%EF%BC%88%E4%B8%80%EF%BC%89/"
+           data-tag="js"
+           data-author="" >
+            <span class="post-title" title="JavaScript 数组（一）">JavaScript 数组（一）</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="JavaScript "
+           href="/2019/12/23/js/JavaScript%E6%95%B0%E7%BB%84%EF%BC%88%E4%BA%8C%EF%BC%89/"
+           data-tag="js"
+           data-author="" >
+            <span class="post-title" title="JavaScript 数组（二）">JavaScript 数组（二）</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/01/node/Node.js%EF%BC%881%EF%BC%89%E5%9F%BA%E7%A1%80/"
+           data-tag="js,Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（1）基础">Node.js（1）基础</span>
+            <span class="post-date" title="2019-12-01 00:00:00">2019/12/01</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/07/node/Untitled/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（7）博客项目">Node.js（7）博客项目</span>
+            <span class="post-date" title="2019-12-07 00:00:00">2019/12/07</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/Hexo%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95%E6%9B%B4%E6%96%B0/"
+           data-tag="博客,hexo"
+           data-author="" >
+            <span class="post-title" title="Hexo折腾记录更新">Hexo折腾记录更新</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/Markdown%E8%AF%AD%E6%B3%95CSS%E8%A1%A8%E7%8E%B0%E6%B5%8B%E8%AF%95/"
+           data-tag="markdown"
+           data-author="" >
+            <span class="post-title" title="Markdown语法CSS表现测试">Markdown语法CSS表现测试</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/02/node/Node.js%EF%BC%882%EF%BC%89fs%E3%80%81path%E3%80%81gulp%E6%A8%A1%E5%9D%97/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（2）fs、path、gulp模块">Node.js（2）fs、path、gulp模块</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="vue "
+           href="/2019/12/23/vue/Vue%E5%9F%BA%E7%A1%80/"
+           data-tag="js,vue"
+           data-author="" >
+            <span class="post-title" title="Vue基础">Vue基础</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/26/css/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%BA%8C%EF%BC%89flex%E5%B8%83%E5%B1%80%EF%BC%88%E5%9B%BE%E7%A4%BA%EF%BC%89/"
+           data-tag="Css3"
+           data-author="" >
+            <span class="post-title" title="CSS移动布局（二）flex布局（图示）">CSS移动布局（二）flex布局（图示）</span>
+            <span class="post-date" title="2019-12-26 20:56:43">2019/12/26</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/27/css/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E5%9B%9B%EF%BC%89%E5%93%8D%E5%BA%94%E5%BC%8Fbootstrap/"
+           data-tag="bootstrap"
+           data-author="" >
+            <span class="post-title" title="CSS移动布局（四）响应式bootstrap">CSS移动布局（四）响应式bootstrap</span>
+            <span class="post-date" title="2019-12-27 23:15:43">2019/12/27</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/30/css/html+css%EF%BC%88%E4%BA%8C%EF%BC%89%E8%A1%A8%E6%A0%BC/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（二）表格、列表和表单">html+css（二）表格、列表和表单</span>
+            <span class="post-date" title="2019-12-30 23:09:44">2019/12/30</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/05/node/Node.js%EF%BC%885%EF%BC%89art-Template%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（5）art-Template模板引擎">Node.js（5）art-Template模板引擎</span>
+            <span class="post-date" title="2019-12-05 00:00:00">2019/12/05</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/04/node/Node.js%EF%BC%884%EF%BC%89Mongodb%E6%95%B0%E6%8D%AE%E5%BA%93/"
+           data-tag="Mongodb"
+           data-author="" >
+            <span class="post-title" title="Node.js（4）Mongodb数据库">Node.js（4）Mongodb数据库</span>
+            <span class="post-date" title="2019-12-04 00:00:00">2019/12/04</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/git%E5%92%8Cgithub/"
+           data-tag="git,github"
+           data-author="" >
+            <span class="post-title" title="git和github">git和github</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="bootstrap "
+           href="/2019/12/30/bootstrap/Bootstrap(%E4%BA%8C)%E8%BD%AE%E6%92%AD%E5%9B%BEcarousel/"
+           data-tag="Css,bootstrap"
+           data-author="" >
+            <span class="post-title" title="Bootstrap(二)轮播图carousel">Bootstrap(二)轮播图carousel</span>
+            <span class="post-date" title="2019-12-30 19:04:11">2019/12/30</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/vscode%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9B%98/"
+           data-tag="vscode"
+           data-author="" >
+            <span class="post-title" title="自定义 vs code 命令快捷键">自定义 vs code 命令快捷键</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/hexo%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/"
+           data-tag="博客,hexo"
+           data-author="" >
+            <span class="post-title" title="hexo创建博客">hexo创建博客</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/03/node/Node.js%EF%BC%883%EF%BC%89web%E6%9C%8D%E5%8A%A1%E5%99%A8%E3%80%81http%E3%80%81async%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（3）web服务器、http、async异步编程">Node.js（3）web服务器、http、async异步编程</span>
+            <span class="post-date" title="2019-12-03 00:00:00">2019/12/03</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/06/node/Node.js%EF%BC%886%EF%BC%89Express%E6%A1%86%E6%9E%B6/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（6）Express框架">Node.js（6）Express框架</span>
+            <span class="post-date" title="2019-12-06 00:00:00">2019/12/06</span>
+        </a>
+        
+    </nav>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div class="post">
+    <div class="pjax">
+        <article id="post-css/html+css（二）表格" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">html+css（二）表格、列表和表单</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            
+                <a  data-rel="css">css</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color4">html+css</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2019-12-31 01:32:54'>2019-12-30 23:09</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#表格-table"><span class="toc-text">表格 table</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#创建表格-table、tr、td"><span class="toc-text">创建表格 table、tr、td</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#表头单元格-th"><span class="toc-text">表头单元格 th</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#表格标题-caption"><span class="toc-text">表格标题 caption</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#合并单元格-rowspan、colspan"><span class="toc-text">合并单元格 rowspan、colspan</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#表达结构-thead、tbody"><span class="toc-text">表达结构 thead、tbody</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#列表-ul、li"><span class="toc-text">列表 ul、li</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#无序列表-ul"><span class="toc-text">无序列表 ul</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#有序列表-ol"><span class="toc-text">有序列表 ol</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自定义列表-dl"><span class="toc-text">自定义列表 dl</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#表单-input"><span class="toc-text">表单 input</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#input-控件"><span class="toc-text">input 控件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-type-属性"><span class="toc-text">1.type 属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-value属性-值"><span class="toc-text">2.value属性   值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-name属性"><span class="toc-text">3.name属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-checked属性"><span class="toc-text">4.checked属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-input-属性小结"><span class="toc-text">5.input 属性小结</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#label-标签"><span class="toc-text">label 标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#textarea控件-文本域"><span class="toc-text">textarea控件(文本域)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#select下拉列表"><span class="toc-text">select下拉列表</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#表单域-form"><span class="toc-text">表单域 form</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#元素属性写法约定"><span class="toc-text">元素属性写法约定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文档"><span class="toc-text">文档</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-4 i,
+    .toc-level-4 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>表格、表单、列表</p>
+</blockquote>
+<p><img src="http://mdimg.95408.com/201912302312_919.png?null" alt="表格、表单、列表"></p>
+<h2 id="表格-table"><a href="#表格-table" class="headerlink" title="表格 table"></a>表格 table</h2><ul>
+<li>表格可以让数据显示的非常的规整，可读性非常好；</li>
+<li>不是用来布局，常见显示、展示表格式数据；</li>
+<li>特别是后台展示数据的时候表格运用是否熟练就显得很重要；</li>
+<li>表格不要纠结于外观，用CSS表达；</li>
+</ul>
+<h3 id="创建表格-table、tr、td"><a href="#创建表格-table、tr、td" class="headerlink" title="创建表格 table、tr、td"></a>创建表格 table、tr、td</h3><p><a href="https://www.w3school.com.cn/tags/tag_table.asp" target="_blank" rel="noopener">w3school</a></p>
+<p>基本的三对HTML标签，分别为 <code>table</code> 、 <code>tr</code> 、 <code>td</code> ，他们是创建表格的基本标签，缺一不可；</p>
+<pre><code class="html">一个表格
+&lt;table&gt;
+    &lt;tr&gt; 表格中的第一行
+        &lt;td&gt;第一行第一格 每个td就是一行中的每一格&lt;/td&gt;
+        &lt;td&gt;第一行第二格 每个td就是一行中的每一格&lt;/td&gt;
+    &lt;/tr&gt;
+
+    &lt;tr&gt; 表格中的第二行
+        &lt;td&gt;第二行第一格 每个td就是一行中的每一格&lt;/td&gt;
+        &lt;td&gt;第二行第二格 每个td就是一行中的每一格&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+<ol>
+<li><code>table</code> 用于定义一个 <code>表格</code> ；</li>
+<li><code>tr</code> 标签用于定义表格中的 <code>行</code> ，必须嵌套在 table标签中；</li>
+<li><code>td</code> （table data）用于定义表格中的 <code>单元格</code> ，必须嵌套在<tr></tr>标签中，用来存储数据；</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>border</td>
+<td>像素值</td>
+<td>表格的边框</td>
+</tr>
+<tr>
+<td>cellpadding</td>
+<td>像素值 默认1</td>
+<td>规定单元格<strong>边框</strong>与<strong>内容</strong>之间的空白</td>
+</tr>
+<tr>
+<td>cellspacing</td>
+<td>像素值 默认2</td>
+<td>规定<strong>单元格</strong>与<strong>单元格之间</strong>的空白</td>
+</tr>
+<tr>
+<td>align</td>
+<td>left   center   right</td>
+<td>不赞成使用。请使用样式代替。</td>
+</tr>
+<tr>
+<td>width</td>
+<td>像素值  百分比</td>
+<td>规定表格的宽度</td>
+</tr>
+<tr>
+<td>height</td>
+<td>像素值  百分比</td>
+<td>规定表格的高度</td>
+</tr>
+</tbody></table>
+<p>三参为0：</p>
+<p>我们经常有个说法，是三参为0，  平时开发的我们这三个参数 border、cellpadding、cellspacing 为 0；</p>
+<p><img src="http://mdimg.95408.com/201912302331_813.png?null" alt=""></p>
+<p>单元格与单元格之间的空白cellspacing：</p>
+<p><img src="http://mdimg.95408.com/201912302334_428.png?null" alt=""></p>
+<pre><code class="html">左：cellspacing=&quot;10&quot;
+右：cellspacing=&quot;0&quot;
+&lt;table width=&quot;500&quot; height=&quot;300&quot; border=&quot;1&quot; cellpadding=&quot;20&quot; cellspacing=&quot;0&quot; align=&quot;center&quot;&gt;
+    &lt;tr&gt;
+        &lt;th&gt;姓名&lt;/th&gt;
+        &lt;th&gt;性别&lt;/th&gt;
+        &lt;th&gt;年龄&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;张三&lt;/td&gt;
+        &lt;td&gt;男&lt;/td&gt;
+        &lt;td&gt;55&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;李四&lt;/td&gt;
+        &lt;td&gt;男&lt;/td&gt;
+        &lt;td&gt;52&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;王五&lt;/td&gt;
+        &lt;td&gt;男&lt;/td&gt;
+        &lt;td&gt;58&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;赵六&lt;/td&gt;
+        &lt;td&gt;男&lt;/td&gt;
+        &lt;td&gt;18&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+<h3 id="表头单元格-th"><a href="#表头单元格-th" class="headerlink" title="表头单元格 th"></a>表头单元格 th</h3><ul>
+<li>表头单元格位于表格的第一行或第一列，并且文本加粗居中；</li>
+<li>只需用表头标签 <code>th</code> 替代相应的单元格标签 <code>td</code> 即可；</li>
+</ul>
+<pre><code class="html">&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;姓名&lt;/th&gt; 表头单元格th
+        &lt;th&gt;性别&lt;/th&gt; 
+        &lt;th&gt;电话&lt;/th&gt; 
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;张三&lt;/td&gt; 普通单元格td
+        &lt;td&gt;男&lt;/td&gt; 
+        &lt;td&gt;28&lt;/td&gt; 
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+<h3 id="表格标题-caption"><a href="#表格标题-caption" class="headerlink" title="表格标题 caption"></a>表格标题 caption</h3><pre><code class="html">&lt;table&gt;
+    &lt;caption&gt;我是表格标题：四大名人年龄表&lt;/caption&gt;
+    &lt;tr&gt;
+        &lt;th&gt;姓名&lt;/th&gt;
+        &lt;th&gt;年龄&lt;/th&gt;
+        &lt;th&gt;性别&lt;/th&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+<ol>
+<li>caption 元素定义<strong>表格标题</strong>，通常这个标题会被居中且显示于表格之上；</li>
+<li>caption 标签必须紧随 table 标签之后；</li>
+<li>这个标签只存在 表格里面才有意义；</li>
+</ol>
+<h3 id="合并单元格-rowspan、colspan"><a href="#合并单元格-rowspan、colspan" class="headerlink" title="合并单元格 rowspan、colspan"></a>合并单元格 rowspan、colspan</h3><p><strong>合并单元格2种方式</strong></p>
+<ul>
+<li>跨行合并：rowspan=”合并单元格的个数”      </li>
+<li>跨列合并：colspan=”合并单元格的个数”</li>
+</ul>
+<p><img src="http://mdimg.95408.com/201912302347_304.png?null" alt=""></p>
+<p><strong>合并单元格顺序</strong></p>
+<ul>
+<li>先上、后下、先左、后右的顺序；</li>
+<li><strong>顺序在前</strong>的 td 上写规则 <code>td rowspan=&quot;跨行合并td数量&quot;</code> 或者 <code>&lt;td colspan=&quot;跨列合并td数量&quot;&gt;</code> ；</li>
+<li>删除<strong>顺序在后</strong>的 td ；</li>
+</ul>
+<p><strong>将普通表格合并</strong></p>
+<p><img src="http://mdimg.95408.com/201912310001_303.png?null" alt=""></p>
+<p><img src="http://mdimg.95408.com/201912310006_234.png?null" alt=""></p>
+<pre><code class="html">&lt;table border=&quot;1&quot; width=&quot;500&quot; height=&quot;240&quot; align=&quot;center&quot; cellspacing=&quot;0&quot;&gt;
+    &lt;caption&gt; 个人简历 &lt;/caption&gt;
+    &lt;tr&gt;
+        &lt;td&gt;张三&lt;/td&gt;
+        &lt;td&gt;男&lt;/td&gt;
+        &lt;td&gt;18&lt;/td&gt;
+        &lt;!-- 将第二行tr的最后一格td合并 --&gt;
+        &lt;td rowspan=&quot;2&quot;&gt;照片&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;身高 180&lt;/td&gt;
+        &lt;td&gt;汉族&lt;/td&gt;
+        &lt;td&gt;已婚&lt;/td&gt;
+        &lt;!-- &lt;td&gt;照片&lt;/td&gt; --&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;个人作品&lt;/td&gt;
+        &lt;!-- 将第三行tr的第二、三、四个格td合并 --&gt;
+        &lt;td colspan=&quot;3&quot;&gt;个人作品&lt;/td&gt;
+        &lt;!-- &lt;td&gt;个人作品&lt;/td&gt; --&gt;
+        &lt;!-- &lt;td&gt;个人作品&lt;/td&gt; --&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;个人简历&lt;/td&gt;
+        &lt;!-- 将第四行tr的第二、三、四个格td合并 --&gt;
+        &lt;td colspan=&quot;3&quot;&gt;个人简历&lt;/td&gt;
+        &lt;!-- &lt;td&gt;个人简历&lt;/td&gt;
+&lt;td&gt;个人简历&lt;/td&gt; --&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+<h3 id="表达结构-thead、tbody"><a href="#表达结构-thead、tbody" class="headerlink" title="表达结构 thead、tbody"></a>表达结构 thead、tbody</h3><ul>
+<li>将表格分成三个部分：题头 <code>thead</code> 、正文 <code>tbody</code> 和脚注 <code>tfoot</code> 来标注， 这样更好的分清表格结构；</li>
+<li>以上标签都是放到table标签中；</li>
+</ul>
+<pre><code class="html">&lt;table border=&quot;1&quot; cellspacing=&quot;0&quot; align=&quot;center&quot; width=&quot;500&quot;&gt;
+    题头 thead
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;姓名&lt;/th&gt;
+            &lt;th&gt;性别&lt;/th&gt;
+            &lt;th&gt;年龄&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    正文 tbody
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;刘德华&lt;/td&gt;
+            &lt;td&gt;男&lt;/td&gt;
+            &lt;td&gt;55&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    脚注 tfoot
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td&gt;信息地址&lt;/td&gt;
+            &lt;td colspan=&quot;2&quot;&gt;湖南长沙&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;</code></pre>
+<h2 id="列表-ul、li"><a href="#列表-ul、li" class="headerlink" title="列表 ul、li"></a>列表 ul、li</h2><p>表格是用来显示数据的，那么列表就是用来布局的；</p>
+<p>列表整齐 、整洁、 有序，跟表格类似，但是他可组合自由度会更高；</p>
+<h3 id="无序列表-ul"><a href="#无序列表-ul" class="headerlink" title="无序列表 ul"></a>无序列表 ul</h3><p>无序列表的各个列表项之间没有顺序级别之分，是并列的。</p>
+<p> 1.ul 中只能嵌套 li，直接在ul签中输入其他标签或者文字的做法是不被允许的<br> 2.li 与 li 之间相当于一个容器，可以容纳所有元素<br> 3. 无序列样式属性让CSS来</p>
+<pre><code class="html">&lt;ul&gt;
+    &lt;li&gt;列表项1&lt;/li&gt;
+    &lt;li&gt;列表项2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+<h3 id="有序列表-ol"><a href="#有序列表-ol" class="headerlink" title="有序列表 ol"></a>有序列表 ol</h3><p>有排列顺序的列表，其各个列表项按照一定的顺序排列定义；</p>
+<pre><code class="html">&lt;ol&gt;
+    &lt;li&gt;列表项1&lt;/li&gt;
+    &lt;li&gt;列表项2&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+<h3 id="自定义列表-dl"><a href="#自定义列表-dl" class="headerlink" title="自定义列表 dl"></a>自定义列表 dl</h3><p>定义列表常用于对术语或名词进行解释和描述，定义列表的列表项前没有任何项目符号。</p>
+<pre><code class="html">&lt;dl&gt;
+    &lt;dt&gt;帮助中心&lt;/dt&gt;
+    &lt;dd&gt;账户管理&lt;/dd&gt;
+    &lt;dd&gt;购物管理&lt;/dd&gt;
+    ...
+    &lt;dt&gt;服务支持&lt;/dt&gt;
+    &lt;dd&gt;售后政策&lt;/dd&gt;
+    &lt;dd&gt;自助服务&lt;/dd&gt;
+    ...
+&lt;/dl&gt;</code></pre>
+<h2 id="表单-input"><a href="#表单-input" class="headerlink" title="表单 input"></a>表单 input</h2><p>表单目的是为了收集用户信息。</p>
+<p>在我们网页中， 我们也需要跟用户进行交互，收集用户资料，此时也需要表单。</p>
+<blockquote>
+<p>在HTML中，一个完整的表单通常由表单域、表单控件（也称为表单元素）、提示信息和3个部分构成。</p>
+</blockquote>
+<p>*<em>表单控件： *</em></p>
+<p>包含了具体的表单功能项，如单行文本输入框、密码输入框、复选框、提交按钮、重置按钮等。</p>
+<p><strong>提示信息：</strong></p>
+<p>一个表单中通常还需要包含一些说明性的文字，提示用户进行填写和操作。</p>
+<p><strong>表单域：</strong>  </p>
+<p>他相当于一个容器，用来容纳所有的表单控件和提示信息，可以通过他定义处理表单数据所用程序的url地址，以及数据提交到服务器的方法。如果不定义表单域，表单中的数据就无法传送到后台服务器。</p>
+<h3 id="input-控件"><a href="#input-控件" class="headerlink" title="input 控件"></a>input 控件</h3><p><a href="https://www.w3school.com.cn/tags/tag_input.asp" target="_blank" rel="noopener">w3school</a></p>
+<pre><code class="html">&lt;input type=&quot;属性值&quot; value=&quot;默认文本值&quot;&gt;</code></pre>
+<ul>
+<li>&lt;input /&gt; 标签为单标签</li>
+<li>type属性设置不同的属性值用来指定不同的控件类型</li>
+</ul>
+<p><img src="http://mdimg.95408.com/201912310028_712.png?null" alt=""></p>
+<h4 id="1-type-属性"><a href="#1-type-属性" class="headerlink" title="1.type 属性"></a>1.type 属性</h4><ul>
+<li>这个属性通过改变值，可以决定了你属于那种input表单。</li>
+<li>比如 type = ‘text’  就表示 文本框 可以做 用户名， 昵称等。</li>
+<li>比如 type = ‘password’  就是表示密码框   用户输入的内容 是不可见的。</li>
+</ul>
+<pre><code class="html">用户名: &lt;input type=&quot;text&quot; /&gt;
+密 码：&lt;input type=&quot;password&quot; /&gt;</code></pre>
+<h4 id="2-value属性-值"><a href="#2-value属性-值" class="headerlink" title="2.value属性   值"></a>2.value属性   值</h4><pre><code class="html">用户名:&lt;input type=&quot;text&quot; name=&quot;username&quot; value=&quot;请输入用户名&quot;&gt;</code></pre>
+<ul>
+<li>value 默认的文本值。 有些表单想刚打开页面就默认显示几个文字，就可以通过这个value 来设置。</li>
+</ul>
+<h4 id="3-name属性"><a href="#3-name属性" class="headerlink" title="3.name属性"></a>3.name属性</h4><pre><code class="html">用户名:&lt;input type=&quot;text&quot; name=“username” /&gt;</code></pre>
+<p>name表单的名字， 这样，后台可以通过这个name属性找到这个表单。  页面中的表单很多，name主要作用就是用于区别不同的表单。</p>
+<ul>
+<li><p>name属性后面的值，是我们自己定义的。</p>
+</li>
+<li><p>radio  如果是一组，我们必须给他们命名相同的名字 name   这样就可以多个选其中的一个啦</p>
+</li>
+</ul>
+<pre><code class="html">&lt;input type=&quot;radio&quot; name=&quot;sex&quot; /&gt;男
+&lt;input type=&quot;radio&quot; name=&quot;sex&quot; /&gt;女</code></pre>
+<ul>
+<li>name属性，我们现在用的较少， 但是，当我们学ajax 和后台的时候，是必须的。</li>
+</ul>
+<h4 id="4-checked属性"><a href="#4-checked属性" class="headerlink" title="4.checked属性"></a>4.checked属性</h4><ul>
+<li>表示默认选中状态，<strong>较常见于单选按钮和复选按钮</strong>。</li>
+</ul>
+<pre><code class="html">性 别:
+&lt;input type=&quot;radio&quot; name=&quot;sex&quot; value=&quot;男&quot; checked=&quot;checked&quot; /&gt;男
+&lt;input type=&quot;radio&quot; name=&quot;sex&quot; value=&quot;女&quot; /&gt;女</code></pre>
+<p>上面这个，表示就默认选中了 男 这个单选按钮</p>
+<h4 id="5-input-属性小结"><a href="#5-input-属性小结" class="headerlink" title="5.input 属性小结"></a>5.input 属性小结</h4><table>
+<thead>
+<tr>
+<th>属性</th>
+<th align="left">说明</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>type</td>
+<td align="left">表单类型</td>
+<td>用来指定不同的控件类型</td>
+</tr>
+<tr>
+<td>value</td>
+<td align="left">表单值</td>
+<td>表单里面默认显示的文本</td>
+</tr>
+<tr>
+<td>name</td>
+<td align="left">表单名字</td>
+<td>页面中的表单很多，name主要作用就是用于区别不同的表单。</td>
+</tr>
+<tr>
+<td>checked</td>
+<td align="left">默认选中</td>
+<td>表示那个单选或者复选按钮一开始就被选中了</td>
+</tr>
+</tbody></table>
+<p><img src="http://mdimg.95408.com/201912310055_261.png?null" alt=""></p>
+<pre><code class="html">&lt;!-- type text  是一个文本框 --&gt;
+用户名： &lt;input type=&quot;text&quot; value=&quot;请输入用户名&quot; name=&quot;username&quot; /&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;!-- type password  是一个密码框 --&gt;
+密码： &lt;input type=&quot;password&quot; name=&quot;pwd&quot; /&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;!-- type radio 单选框 --&gt;
+性别：
+男 &lt;input type=&quot;radio&quot; name=&quot;sex&quot; /&gt;
+女 &lt;input type=&quot;radio&quot; name=&quot;sex&quot; checked=&quot;checked&quot; /&gt;
+未知 &lt;input type=&quot;radio&quot; name=&quot;sex&quot; /&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;!-- type checkbox 复选框 --&gt;
+爱好:
+睡觉 &lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot; checked=&quot;checked&quot; /&gt;
+爬山 &lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot; /&gt;
+篮球 &lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot; /&gt;
+足球 &lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot; /&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;!-- type button/submit/reset 按钮 需要value值 --&gt;
+&lt;input type=&quot;button&quot; value=&quot;获取验证码&quot; /&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;input type=&quot;submit&quot; value=&quot;提交&quot; /&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;input type=&quot;reset&quot; value=&quot;重置&quot; /&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;!-- type image 图片提交按钮 里面必须包含 src 属性 --&gt;
+&lt;input type=&quot;image&quot; src=&quot;images/btn.png&quot; /&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;!-- type file 文件域 上传文件 --&gt;
+上传头像:
+&lt;input type=&quot;file&quot; /&gt;</code></pre>
+<h3 id="label-标签"><a href="#label-标签" class="headerlink" title="label 标签"></a>label 标签</h3><p>label标签主要目的是为了提高用户体验，为用户提高最优秀的服务。</p>
+<p>label 标签为 input 元素定义标注（标签）。</p>
+<p>用于绑定一个表单元素, 当点击label标签的时候, 被绑定的表单元素就会获得输入焦点。</p>
+<p>绑定元素</p>
+<ol>
+<li>第一种用法就是用label直接包括input表单。</li>
+</ol>
+<pre><code class="html">&lt;label&gt;
+    用户名：
+    &lt;input type=&quot;radio&quot; name=&quot;usename&quot; value=&quot;请输入用户名&quot;&gt;
+&lt;/label&gt;</code></pre>
+<p>   适合单个表单选择</p>
+<ol start="2">
+<li>第二种用法 for 属性规定 label 与哪个表单元素绑定。</li>
+</ol>
+<pre><code class="html">&lt;label for=&quot;nc&quot;&gt;昵称：&lt;/label&gt;
+&lt;input type=&quot;text&quot; id=&quot;nc&quot; /&gt;d=&quot;sex&quot;&gt;</code></pre>
+<blockquote>
+<p>当我们鼠标点击 label标签里面的文字时， 光标会定位到指定的表单里面</p>
+</blockquote>
+<h3 id="textarea控件-文本域"><a href="#textarea控件-文本域" class="headerlink" title="textarea控件(文本域)"></a>textarea控件(文本域)</h3><pre><code class="html">&lt;textarea&gt;
+  文本内容
+&lt;/textarea&gt;</code></pre>
+<p>通过textarea控件可以轻松地创建多行文本输入框.</p>
+<p>cols=”每行中的字符数”、rows=”显示的行数”，实际开发不用</p>
+<p><strong>文本框和文本域区别</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">表单</th>
+<th align="center">名称</th>
+<th align="center">区别</th>
+<th align="right">默认值显示</th>
+<th align="right">用于场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">input type=”text”</td>
+<td align="center">文本框</td>
+<td align="center">只能显示一行文本</td>
+<td align="right">单标签，通过value显示默认值</td>
+<td align="right">用户名、昵称、密码等</td>
+</tr>
+<tr>
+<td align="left">textarea</td>
+<td align="center">文本域</td>
+<td align="center">可以显示多行文本</td>
+<td align="right">双标签，默认值写到标签中间</td>
+<td align="right">留言板</td>
+</tr>
+</tbody></table>
+<h3 id="select下拉列表"><a href="#select下拉列表" class="headerlink" title="select下拉列表"></a>select下拉列表</h3><ul>
+<li>如果有多个选项让用户选择，为了节约空间，我们可以使用select控件定义下拉列表；</li>
+<li>select 中至少包含一对 option ；</li>
+<li>在option 中定义selected =” selected “时，当前项即为默认选中项；</li>
+</ul>
+<pre><code class="html">&lt;select&gt;
+    &lt;option selected=&quot; selected&quot;&gt;选项1&lt;/option&gt;
+    &lt;option&gt;选项2&lt;/option&gt;
+    &lt;option&gt;选项3&lt;/option&gt;
+    ...
+&lt;/select&gt;</code></pre>
+<p><img src="http://mdimg.95408.com/201912310059_791.png?null" alt=""></p>
+<pre><code class="html">籍贯：
+&lt;!-- 省份选择 --&gt;
+&lt;select&gt;
+    &lt;option&gt;请选择省份&lt;/option&gt;
+    &lt;!-- selected=&quot;selected&quot; 表示默认选中北京 --&gt;
+    &lt;option selected=&quot;selected&quot;&gt;北京&lt;/option&gt;
+    &lt;option&gt;天津&lt;/option&gt;
+    &lt;option&gt;上海&lt;/option&gt;
+    &lt;option&gt;山东&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;!-- 城市选择 --&gt;
+&lt;select&gt;
+    &lt;option&gt;请选择城市&lt;/option&gt;
+    &lt;option&gt;海淀区&lt;/option&gt;
+    &lt;option&gt;昌平区&lt;/option&gt;
+    &lt;option&gt;通州区&lt;/option&gt;
+    &lt;option&gt;雄安区&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+<h2 id="表单域-form"><a href="#表单域-form" class="headerlink" title="表单域 form"></a>表单域 form</h2><ul>
+<li>收集的用户信息通过form表单域传递给服务器；</li>
+<li>在HTML中，form标签被用于定义表单域，以实现用户信息的收集和传递，form中的所有内容都会被提交给服务器；</li>
+</ul>
+<pre><code class="html">&lt;form action=&quot;url地址&quot; method=&quot;提交方式&quot; name=&quot;表单名称&quot;&gt;
+    各种表单控件
+&lt;/form&gt;</code></pre>
+<p><strong>常用属性：</strong></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th align="left">属性值</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>action</td>
+<td align="left">url地址</td>
+<td>用于指定接收并处理表单数据的服务器程序的url地址。</td>
+</tr>
+<tr>
+<td>method</td>
+<td align="left">get/post</td>
+<td>用于设置表单数据的提交方式，其取值为get或post。</td>
+</tr>
+<tr>
+<td>name</td>
+<td align="left">名称</td>
+<td>用于指定表单的名称，以区分同一个页面中的多个表单。</td>
+</tr>
+</tbody></table>
+<p>将 <code>user</code> 表单通过 <code>post</code> 请求方式向页面 <code>admin/user.html</code> 文件发送数据：</p>
+<pre><code class="html">&lt;form action=&quot;admin/user.html&quot; method=&quot;post&quot; name=&quot;user&quot;&gt;
+    用户名: &lt;input type=&quot;text&quot; name=&quot;username&quot; /&gt; &lt;br /&gt;
+    密码: &lt;input type=&quot;password&quot; name=&quot;pwd&quot; /&gt;&lt;br /&gt;
+    &lt;input type=&quot;submit&quot; /&gt;
+&lt;/form&gt;</code></pre>
+<h3 id="元素属性写法约定"><a href="#元素属性写法约定" class="headerlink" title="元素属性写法约定"></a>元素属性写法约定</h3><ul>
+<li>元素属性值使用双引号语法</li>
+<li>元素属性值可以写上的都写上</li>
+</ul>
+<pre><code class="html">推荐：
+&lt;input type=&quot;text&quot; /&gt;
+&lt;input type=&quot;radio&quot; name=&quot;name&quot; checked=&quot;checked&quot; /&gt;
+不推荐：
+&lt;input type=text /&gt; &lt;input type=&#39;text&#39; /&gt;
+&lt;input type=&quot;radio&quot; name=&quot;name&quot; checked /&gt;</code></pre>
+<h3 id="文档"><a href="#文档" class="headerlink" title="文档"></a>文档</h3><p>W3C :  <a href="http://www.w3school.com.cn/" target="_blank" rel="noopener">http://www.w3school.com.cn/</a></p>
+<p>MDN: <a href="https://developer.mozilla.org/zh-CN/" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/</a></p>
+<p>Todo: <a href="https://www.w3school.com.cn/html/html_forms.asp" target="_blank" rel="noopener">w3school HTML 表单</a></p>
+<p>以上。</p>
+
+      
+       
+    </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">©2009-2019 半根竹子.</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full"><span class="min "></span></button>
+<button class="post-toc-menu"><span class="post-toc-menu-icons"></span></button>
+<div class="post-toc"><span class="post-toc-title">目录</span>
+    <div class="post-toc-content">
+
+    </div>
+</div>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+<div class="acParent"></div>
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.0.1" ></script>
+
+<script src="/js/script.js?v=1.0.1" ></script>
+<script>
+    var img_resize = 'default';
+    /*作者、标签的自动补全*/
+    $(function () {
+        $('.search').AutoComplete({
+            'data': ['#Css','#bootstrap','#Css3','#HTML5','#html+css','#js','#Node.js','#博客','#hexo','#markdown','#vue','#Mongodb','#git','#github','#vscode',],
+            'itemHeight': 20,
+            'width': 418
+        }).AutoComplete('show');
+    })
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $(".post .pjax table").addClass("green");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+        .nav .hide-list.fullscreen {
+            left: 492px
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #ccc;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
