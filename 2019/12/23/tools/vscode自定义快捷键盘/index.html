@@ -6,28 +6,30 @@
   <meta name="keywords" content=" vscode ">
   <meta name="description" content="自定义 vs code 命令快捷键 | 半根竹子">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="表格、表单、列表   表格 table 表格可以让数据显示的非常的规整，可读性非常好； 不是用来布局，常见显示、展示表格式数据； 特别是后台展示数据的时候表格运用是否熟练就显得很重要； 表格不要纠结于外观，用CSS表达；  创建表格 table、tr、tdw3school 基本的三对HTML标签，分别为 table 、 tr 、 td ，他们是创建表格的基本标签，缺一不可； 一个表格 &lt;t">
+<meta name="description" content="盒子模型 box model 盒子模型有元素的内容、边框（border）、内边距（padding）、和外边距（margin）组成 盒子里面的文字和图片等元素是 内容区域 盒子的厚度 我们成为 盒子的边框  盒子内容与边框的距离是内边距 盒子与盒子之间的距离是外边距   边框 border border : border-width || border-style || border-color">
 <meta property="og:type" content="article">
-<meta property="og:title" content="html+css（二）表格、列表和表单">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;30&#x2F;css&#x2F;html+css%EF%BC%88%E4%BA%8C%EF%BC%89%E8%A1%A8%E6%A0%BC&#x2F;index.html">
+<meta property="og:title" content="html+css（五）CSS盒子模型">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;31&#x2F;css&#x2F;html+css%EF%BC%88%E4%BA%94%EF%BC%89CSS%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B&#x2F;index.html">
 <meta property="og:site_name" content="半根竹子">
-<meta property="og:description" content="表格、表单、列表   表格 table 表格可以让数据显示的非常的规整，可读性非常好； 不是用来布局，常见显示、展示表格式数据； 特别是后台展示数据的时候表格运用是否熟练就显得很重要； 表格不要纠结于外观，用CSS表达；  创建表格 table、tr、tdw3school 基本的三对HTML标签，分别为 table 、 tr 、 td ，他们是创建表格的基本标签，缺一不可； 一个表格 &lt;t">
+<meta property="og:description" content="盒子模型 box model 盒子模型有元素的内容、边框（border）、内边距（padding）、和外边距（margin）组成 盒子里面的文字和图片等元素是 内容区域 盒子的厚度 我们成为 盒子的边框  盒子内容与边框的距离是内边距 盒子与盒子之间的距离是外边距   边框 border border : border-width || border-style || border-color">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912302312_919.png?null">
-<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912302331_813.png?null">
-<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912302334_428.png?null">
-<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912302347_304.png?null">
-<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912310001_303.png?null">
-<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912310006_234.png?null">
-<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912310028_712.png?null">
-<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912310055_261.png?null">
-<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912310059_791.png?null">
-<meta property="article:published_time" content="2019-12-30T15:09:44.685Z">
-<meta property="article:modified_time" content="2019-12-30T17:32:54.838Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912311509_411.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912311521_486.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912311559_939.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912311522_325.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912311516_389.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912311603_111.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912311522_905.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912311554_284.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912311530_335.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912311531_644.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912311556_673.png?null">
+<meta property="article:published_time" content="2019-12-31T07:06:25.492Z">
+<meta property="article:modified_time" content="2019-12-31T08:09:38.516Z">
 <meta property="article:author" content="HalfBamboo">
 <meta property="article:tag" content="html+css">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912302312_919.png?null">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;201912311509_411.png?null">
 
 
 <link rel="icon" href="http://mdimg.95408.com/20191218121717.png">
@@ -127,7 +129,7 @@
     
         
             
-            <li><div data-rel="bootstrap">bootstrap</div>
+            <li><div data-rel="css3">css3</div>
                 
             </li>
             
@@ -151,6 +153,14 @@
     
         
             
+            <li><div data-rel="bootstrap">bootstrap</div>
+                
+            </li>
+            
+        
+    
+        
+            
             <li><div data-rel="node">node</div>
                 
             </li>
@@ -159,7 +169,7 @@
     
         
             
-            <li><div data-rel="工具">工具</div>
+            <li><div data-rel="vue">vue</div>
                 
             </li>
             
@@ -167,7 +177,7 @@
     
         
             
-            <li><div data-rel="vue">vue</div>
+            <li><div data-rel="工具">工具</div>
                 
             </li>
             
@@ -183,7 +193,7 @@
     </div>
     <div></div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="25">
+<input type="hidden" id="yelog_site_posts_number" value="28">
 
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -218,14 +228,6 @@
     <div class="tags-list">
     
     <li class="article-tag-list-item">
-        <a class="color4">Css</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color5">bootstrap</a>
-    </li>
-    
-    <li class="article-tag-list-item">
         <a class="color5">Css3</a>
     </li>
     
@@ -242,7 +244,23 @@
     </li>
     
     <li class="article-tag-list-item">
+        <a class="color4">Css</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">bootstrap</a>
+    </li>
+    
+    <li class="article-tag-list-item">
         <a class="color3">Node.js</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">vue</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">markdown</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -254,15 +272,11 @@
     </li>
     
     <li class="article-tag-list-item">
-        <a class="color4">markdown</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color4">vue</a>
-    </li>
-    
-    <li class="article-tag-list-item">
         <a class="color3">Mongodb</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">vscode</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -271,10 +285,6 @@
     
     <li class="article-tag-list-item">
         <a class="color2">github</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color2">vscode</a>
     </li>
     
     <div class="clearfix"></div>
@@ -287,43 +297,27 @@
     
     <nav id="title-list-nav">
         
-        <a  class="bootstrap "
-           href="/2019/12/30/bootstrap/Bootstrap(%E4%B8%80)%E5%AF%BC%E8%88%AA%E6%A0%8Fnavbar%20/"
-           data-tag="Css,bootstrap"
-           data-author="" >
-            <span class="post-title" title="Bootstrap(一)导航栏navbar">Bootstrap(一)导航栏navbar</span>
-            <span class="post-date" title="2019-12-30 15:19:48">2019/12/30</span>
-        </a>
-        
-        <a  class="css "
-           href="/2019/12/26/css/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%B8%80%EF%BC%89%E5%9F%BA%E7%A1%80%E3%80%81%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80/"
-           data-tag="Css3"
-           data-author="" >
-            <span class="post-title" title="CSS移动布局（一）基础、流式布局">CSS移动布局（一）基础、流式布局</span>
-            <span class="post-date" title="2019-12-26 19:15:43">2019/12/26</span>
-        </a>
-        
-        <a  class="css "
-           href="/2019/12/27/css/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%B8%89%EF%BC%89rem%E5%B8%83%E5%B1%80%E5%92%8C%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2/"
+        <a  class="css3 "
+           href="/2019/12/27/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%B8%89%EF%BC%89rem%E5%B8%83%E5%B1%80%E5%92%8C%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2/"
            data-tag="Css3"
            data-author="" >
             <span class="post-title" title="CSS移动布局（三）rem布局和媒体查询">CSS移动布局（三）rem布局和媒体查询</span>
             <span class="post-date" title="2019-12-27 12:48:53">2019/12/27</span>
         </a>
         
-        <a  class="css "
-           href="/2019/12/23/css/HTML5+Css3%EF%BC%88%E4%B8%80%EF%BC%89%E5%9F%BA%E7%A1%80/"
+        <a  class="css3 "
+           href="/2019/12/26/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%B8%80%EF%BC%89%E5%9F%BA%E7%A1%80%E3%80%81%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80/"
+           data-tag="Css3"
+           data-author="" >
+            <span class="post-title" title="CSS移动布局（一）基础、流式布局">CSS移动布局（一）基础、流式布局</span>
+            <span class="post-date" title="2019-12-26 19:15:43">2019/12/26</span>
+        </a>
+        
+        <a  class="css3 "
+           href="/2019/12/23/css3/HTML5+Css3%EF%BC%88%E4%B8%80%EF%BC%89%E5%9F%BA%E7%A1%80/"
            data-tag="Css3,HTML5"
            data-author="" >
             <span class="post-title" title="HTML5+Css3（一）基础">HTML5+Css3（一）基础</span>
-            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
-        </a>
-        
-        <a  class="css "
-           href="/2019/12/23/css/HTML5+Css3%EF%BC%88%E4%BA%8C%EF%BC%89CSS3%E5%8A%A8%E7%94%BB%E3%80%812D%E3%80%813D/"
-           data-tag="Css3,HTML5"
-           data-author="" >
-            <span class="post-title" title="HTML5+Css3（二）CSS3动画、2D、3D">HTML5+Css3（二）CSS3动画、2D、3D</span>
             <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
         </a>
         
@@ -335,12 +329,28 @@
             <span class="post-date" title="2019-12-30 22:09:33">2019/12/30</span>
         </a>
         
+        <a  class="css3 "
+           href="/2019/12/23/css3/HTML5+Css3%EF%BC%88%E4%BA%8C%EF%BC%89CSS3%E5%8A%A8%E7%94%BB%E3%80%812D%E3%80%813D/"
+           data-tag="Css3,HTML5"
+           data-author="" >
+            <span class="post-title" title="HTML5+Css3（二）CSS3动画、2D、3D">HTML5+Css3（二）CSS3动画、2D、3D</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
         <a  class="JavaScript "
            href="/2019/12/23/js/JavaScript%E6%95%B0%E7%BB%84%EF%BC%88%E4%B8%80%EF%BC%89/"
            data-tag="js"
            data-author="" >
             <span class="post-title" title="JavaScript 数组（一）">JavaScript 数组（一）</span>
             <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="bootstrap "
+           href="/2019/12/30/bootstrap/Bootstrap(%E4%BA%8C)%E8%BD%AE%E6%92%AD%E5%9B%BEcarousel/"
+           data-tag="Css,bootstrap"
+           data-author="" >
+            <span class="post-title" title="Bootstrap(二)轮播图carousel">Bootstrap(二)轮播图carousel</span>
+            <span class="post-date" title="2019-12-30 19:04:11">2019/12/30</span>
         </a>
         
         <a  class="JavaScript "
@@ -367,11 +377,19 @@
             <span class="post-date" title="2019-12-07 00:00:00">2019/12/07</span>
         </a>
         
-        <a  class="工具 "
-           href="/2019/12/23/tools/Hexo%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95%E6%9B%B4%E6%96%B0/"
-           data-tag="博客,hexo"
+        <a  class="bootstrap "
+           href="/2019/12/30/bootstrap/Bootstrap(%E4%B8%80)%E5%AF%BC%E8%88%AA%E6%A0%8Fnavbar%20/"
+           data-tag="Css,bootstrap"
            data-author="" >
-            <span class="post-title" title="Hexo折腾记录更新">Hexo折腾记录更新</span>
+            <span class="post-title" title="Bootstrap(一)导航栏navbar">Bootstrap(一)导航栏navbar</span>
+            <span class="post-date" title="2019-12-30 15:19:48">2019/12/30</span>
+        </a>
+        
+        <a  class="vue "
+           href="/2019/12/23/vue/Vue%E5%9F%BA%E7%A1%80/"
+           data-tag="js,vue"
+           data-author="" >
+            <span class="post-title" title="Vue基础">Vue基础</span>
             <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
         </a>
         
@@ -383,32 +401,24 @@
             <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
         </a>
         
-        <a  class="node "
-           href="/2019/12/02/node/Node.js%EF%BC%882%EF%BC%89fs%E3%80%81path%E3%80%81gulp%E6%A8%A1%E5%9D%97/"
-           data-tag="Node.js"
+        <a  class="工具 "
+           href="/2019/12/23/tools/hexo%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/"
+           data-tag="博客,hexo"
            data-author="" >
-            <span class="post-title" title="Node.js（2）fs、path、gulp模块">Node.js（2）fs、path、gulp模块</span>
-            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
-        </a>
-        
-        <a  class="vue "
-           href="/2019/12/23/vue/Vue%E5%9F%BA%E7%A1%80/"
-           data-tag="js,vue"
-           data-author="" >
-            <span class="post-title" title="Vue基础">Vue基础</span>
+            <span class="post-title" title="hexo创建博客">hexo创建博客</span>
             <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
         </a>
         
-        <a  class="css "
-           href="/2019/12/26/css/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%BA%8C%EF%BC%89flex%E5%B8%83%E5%B1%80%EF%BC%88%E5%9B%BE%E7%A4%BA%EF%BC%89/"
+        <a  class="css3 "
+           href="/2019/12/26/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%BA%8C%EF%BC%89flex%E5%B8%83%E5%B1%80%EF%BC%88%E5%9B%BE%E7%A4%BA%EF%BC%89/"
            data-tag="Css3"
            data-author="" >
             <span class="post-title" title="CSS移动布局（二）flex布局（图示）">CSS移动布局（二）flex布局（图示）</span>
             <span class="post-date" title="2019-12-26 20:56:43">2019/12/26</span>
         </a>
         
-        <a  class="css "
-           href="/2019/12/27/css/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E5%9B%9B%EF%BC%89%E5%93%8D%E5%BA%94%E5%BC%8Fbootstrap/"
+        <a  class="css3 "
+           href="/2019/12/27/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E5%9B%9B%EF%BC%89%E5%93%8D%E5%BA%94%E5%BC%8Fbootstrap/"
            data-tag="bootstrap"
            data-author="" >
             <span class="post-title" title="CSS移动布局（四）响应式bootstrap">CSS移动布局（四）响应式bootstrap</span>
@@ -416,11 +426,35 @@
         </a>
         
         <a  class="css "
-           href="/2019/12/30/css/html+css%EF%BC%88%E4%BA%8C%EF%BC%89%E8%A1%A8%E6%A0%BC/"
+           href="/2019/12/31/css/html+css%EF%BC%88%E4%B8%89%EF%BC%89CSS%E9%80%89%E6%8B%A9%E5%99%A8%E3%80%81%E5%AD%97%E4%BD%93%E5%8F%8A%E5%A4%96%E8%A7%82/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（三）CSS选择器、字体及外观">html+css（三）CSS选择器、字体及外观</span>
+            <span class="post-date" title="2019-12-31 12:30:02">2019/12/31</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/30/css/html+css%EF%BC%88%E4%BA%8C%EF%BC%89%E8%A1%A8%E6%A0%BC%E3%80%81%E5%88%97%E8%A1%A8%E5%92%8C%E8%A1%A8%E5%8D%95/"
            data-tag="html+css"
            data-author="" >
             <span class="post-title" title="html+css（二）表格、列表和表单">html+css（二）表格、列表和表单</span>
             <span class="post-date" title="2019-12-30 23:09:44">2019/12/30</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/31/css/html+css%EF%BC%88%E4%BA%94%EF%BC%89CSS%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（五）CSS盒子模型">html+css（五）CSS盒子模型</span>
+            <span class="post-date" title="2019-12-31 15:06:25">2019/12/31</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/31/css/html+css%EF%BC%88%E5%9B%9B%EF%BC%89CSS%E6%98%BE%E7%A4%BA%E6%A8%A1%E5%BC%8F%E3%80%81%E8%A1%8C%E9%AB%98%E3%80%81%E8%83%8C%E6%99%AF%E3%80%81%E7%89%B9%E6%80%A7/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（四）CSS显示模式、行高、背景、特性">html+css（四）CSS显示模式、行高、背景、特性</span>
+            <span class="post-date" title="2019-12-31 14:24:56">2019/12/31</span>
         </a>
         
         <a  class="node "
@@ -440,19 +474,19 @@
         </a>
         
         <a  class="工具 "
-           href="/2019/12/23/tools/git%E5%92%8Cgithub/"
-           data-tag="git,github"
+           href="/2019/12/23/tools/Hexo%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95%E6%9B%B4%E6%96%B0/"
+           data-tag="博客,hexo"
            data-author="" >
-            <span class="post-title" title="git和github">git和github</span>
+            <span class="post-title" title="Hexo折腾记录更新">Hexo折腾记录更新</span>
             <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
         </a>
         
-        <a  class="bootstrap "
-           href="/2019/12/30/bootstrap/Bootstrap(%E4%BA%8C)%E8%BD%AE%E6%92%AD%E5%9B%BEcarousel/"
-           data-tag="Css,bootstrap"
+        <a  class="node "
+           href="/2019/12/02/node/Node.js%EF%BC%882%EF%BC%89fs%E3%80%81path%E3%80%81gulp%E6%A8%A1%E5%9D%97/"
+           data-tag="Node.js"
            data-author="" >
-            <span class="post-title" title="Bootstrap(二)轮播图carousel">Bootstrap(二)轮播图carousel</span>
-            <span class="post-date" title="2019-12-30 19:04:11">2019/12/30</span>
+            <span class="post-title" title="Node.js（2）fs、path、gulp模块">Node.js（2）fs、path、gulp模块</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
         </a>
         
         <a  class="工具 "
@@ -460,14 +494,6 @@
            data-tag="vscode"
            data-author="" >
             <span class="post-title" title="自定义 vs code 命令快捷键">自定义 vs code 命令快捷键</span>
-            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
-        </a>
-        
-        <a  class="工具 "
-           href="/2019/12/23/tools/hexo%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/"
-           data-tag="博客,hexo"
-           data-author="" >
-            <span class="post-title" title="hexo创建博客">hexo创建博客</span>
             <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
         </a>
         
@@ -485,6 +511,14 @@
            data-author="" >
             <span class="post-title" title="Node.js（6）Express框架">Node.js（6）Express框架</span>
             <span class="post-date" title="2019-12-06 00:00:00">2019/12/06</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/git%E5%92%8Cgithub/"
+           data-tag="git,github"
+           data-author="" >
+            <span class="post-title" title="git和github">git和github</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
         </a>
         
     </nav>
@@ -696,7 +730,7 @@
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#Css','#bootstrap','#Css3','#HTML5','#html+css','#js','#Node.js','#博客','#hexo','#markdown','#vue','#Mongodb','#git','#github','#vscode',],
+            'data': ['#Css3','#HTML5','#html+css','#js','#Css','#bootstrap','#Node.js','#vue','#markdown','#博客','#hexo','#Mongodb','#vscode','#git','#github',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');
