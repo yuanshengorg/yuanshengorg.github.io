@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>html+css（八）CSS高级技术 | 半根竹子</title>
+  <meta name="keywords" content=" html+css ">
+  <meta name="description" content="html+css（八）CSS高级技术 | 半根竹子">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="显示与隐藏display 显示 display 设置或检索对象是否及如何显示； display: none 隐藏对象； display：block 除了转换为块级元素之外，同时还有显示元素的意思；   特点： 隐藏之后，不再保留位置； 配合 js 做特效，比如下拉菜单，原先没有，鼠标经过，显示下拉菜单， 应用极为广泛；  visibility 可见性 设置或检索是否显示对象； visibility">
+<meta property="og:type" content="article">
+<meta property="og:title" content="html+css（八）CSS高级技术">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;01&#x2F;02&#x2F;css&#x2F;html+css%EF%BC%88%E5%85%AB%EF%BC%89CSS&#x2F;index.html">
+<meta property="og:site_name" content="半根竹子">
+<meta property="og:description" content="显示与隐藏display 显示 display 设置或检索对象是否及如何显示； display: none 隐藏对象； display：block 除了转换为块级元素之外，同时还有显示元素的意思；   特点： 隐藏之后，不再保留位置； 配合 js 做特效，比如下拉菜单，原先没有，鼠标经过，显示下拉菜单， 应用极为广泛；  visibility 可见性 设置或检索是否显示对象； visibility">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001021530_446.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001021546_540.png?null">
+<meta property="article:published_time" content="2020-01-02T07:13:11.984Z">
+<meta property="article:modified_time" content="2020-01-02T07:48:47.644Z">
+<meta property="article:author" content="HalfBamboo">
+<meta property="article:tag" content="html+css">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001021530_446.png?null">
+
+
+<link rel="icon" href="http://mdimg.95408.com/20191218121717.png">
+
+<link href="/css/style.css?v=1.0.1" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-dark.css?v=1.0.1" rel="stylesheet">
+
+<link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="/js/jquery.autocomplete.min.js?v=1.0.1" ></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.0.1" ></script>
+
+<meta name="generator" content="Hexo 4.1.1"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="false">
+  <input class="theme_blog_path" value="">
+</div>
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="http://mdimg.95408.com/20191218121717.png" />
+</a>
+<div class="author">
+    <!-- <span>HalfBamboo</span> -->
+    <span>Bamboo</span>
+</div>
+
+<div class="icon">
+    
+        
+    
+        
+        <a title="github" href="https://github.com/yuanshengorg" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active">全部文章</div></li>
+    
+        
+            
+            <li><div data-rel="css">css</div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="bootstrap">bootstrap</div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="JavaScript">JavaScript</div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="node">node</div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="工具">工具</div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="vue">vue</div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="css3">css3</div>
+                
+            </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="31">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="back-title-list"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <form onkeydown="if(event.keyCode==13){return false;}">
+        <input class="search" type="text" placeholder="以 in: 开头进行全文搜索" autocomplete="off"id="local-search-input" >
+        <i class="cross"></i>
+        <span>
+            <label for="tagswitch">Tags:</label>
+            <input id="tagswitch" type="checkbox" style="display: none" />
+            <i id="tagsWitchIcon"></i>
+        </span>
+    </form>
+    <div class="tags-list">
+    
+    <li class="article-tag-list-item">
+        <a class="color4">html+css</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">Css</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">bootstrap</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">js</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">Node.js</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">markdown</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">博客</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">hexo</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">vue</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">vscode</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">Css3</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">HTML5</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">git</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">github</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">Mongodb</a>
+    </li>
+    
+    <div class="clearfix"></div>
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        <a  class="css "
+           href="/2019/12/30/css/html+css%EF%BC%88%E4%B8%80%EF%BC%89html%E6%A0%87%E7%AD%BE/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（一）html标签">html+css（一）html标签</span>
+            <span class="post-date" title="2019-12-30 22:09:33">2019/12/30</span>
+        </a>
+        
+        <a  class="bootstrap "
+           href="/2019/12/30/bootstrap/Bootstrap(%E4%BA%8C)%E8%BD%AE%E6%92%AD%E5%9B%BEcarousel/"
+           data-tag="Css,bootstrap"
+           data-author="" >
+            <span class="post-title" title="Bootstrap(二)轮播图carousel">Bootstrap(二)轮播图carousel</span>
+            <span class="post-date" title="2019-12-30 19:04:11">2019/12/30</span>
+        </a>
+        
+        <a  class="css "
+           href="/2020/01/02/css/html+css%EF%BC%88%E5%85%AB%EF%BC%89CSS/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（八）CSS高级技术">html+css（八）CSS高级技术</span>
+            <span class="post-date" title="2020-01-02 15:13:11">2020/01/02</span>
+        </a>
+        
+        <a  class="JavaScript "
+           href="/2019/12/23/js/JavaScript%E6%95%B0%E7%BB%84%EF%BC%88%E4%BA%8C%EF%BC%89/"
+           data-tag="js"
+           data-author="" >
+            <span class="post-title" title="JavaScript 数组（二）">JavaScript 数组（二）</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="bootstrap "
+           href="/2019/12/30/bootstrap/Bootstrap(%E4%B8%80)%E5%AF%BC%E8%88%AA%E6%A0%8Fnavbar%20/"
+           data-tag="Css,bootstrap"
+           data-author="" >
+            <span class="post-title" title="Bootstrap(一)导航栏navbar">Bootstrap(一)导航栏navbar</span>
+            <span class="post-date" title="2019-12-30 15:19:48">2019/12/30</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/01/node/Node.js%EF%BC%881%EF%BC%89%E5%9F%BA%E7%A1%80/"
+           data-tag="js,Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（1）基础">Node.js（1）基础</span>
+            <span class="post-date" title="2019-12-01 00:00:00">2019/12/01</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/02/node/Node.js%EF%BC%882%EF%BC%89fs%E3%80%81path%E3%80%81gulp%E6%A8%A1%E5%9D%97/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（2）fs、path、gulp模块">Node.js（2）fs、path、gulp模块</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="JavaScript "
+           href="/2019/12/23/js/JavaScript%E6%95%B0%E7%BB%84%EF%BC%88%E4%B8%80%EF%BC%89/"
+           data-tag="js"
+           data-author="" >
+            <span class="post-title" title="JavaScript 数组（一）">JavaScript 数组（一）</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/07/node/Untitled/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（7）博客项目">Node.js（7）博客项目</span>
+            <span class="post-date" title="2019-12-07 00:00:00">2019/12/07</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/Markdown%E8%AF%AD%E6%B3%95CSS%E8%A1%A8%E7%8E%B0%E6%B5%8B%E8%AF%95/"
+           data-tag="markdown"
+           data-author="" >
+            <span class="post-title" title="Markdown语法CSS表现测试">Markdown语法CSS表现测试</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/Hexo%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95%E6%9B%B4%E6%96%B0/"
+           data-tag="博客,hexo"
+           data-author="" >
+            <span class="post-title" title="Hexo折腾记录更新">Hexo折腾记录更新</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/hexo%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/"
+           data-tag="博客,hexo"
+           data-author="" >
+            <span class="post-title" title="hexo创建博客">hexo创建博客</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="vue "
+           href="/2019/12/23/vue/Vue%E5%9F%BA%E7%A1%80/"
+           data-tag="js,vue"
+           data-author="" >
+            <span class="post-title" title="Vue基础">Vue基础</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/vscode%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9B%98/"
+           data-tag="vscode"
+           data-author="" >
+            <span class="post-title" title="自定义 vs code 命令快捷键">自定义 vs code 命令快捷键</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="css "
+           href="/2020/01/02/css/html+css%EF%BC%88%E4%B8%83%EF%BC%89CSS%E5%AE%9A%E4%BD%8D/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（七）CSS定位">html+css（七）CSS定位</span>
+            <span class="post-date" title="2020-01-02 12:00:40">2020/01/02</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/31/css/html+css%EF%BC%88%E4%B8%89%EF%BC%89CSS%E9%80%89%E6%8B%A9%E5%99%A8%E3%80%81%E5%AD%97%E4%BD%93%E5%8F%8A%E5%A4%96%E8%A7%82/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（三）CSS选择器、字体及外观">html+css（三）CSS选择器、字体及外观</span>
+            <span class="post-date" title="2019-12-31 12:30:02">2019/12/31</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/31/css/html+css%EF%BC%88%E4%BA%94%EF%BC%89CSS%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（五）CSS盒子模型">html+css（五）CSS盒子模型</span>
+            <span class="post-date" title="2019-12-31 15:06:25">2019/12/31</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/31/css/html+css%EF%BC%88%E5%9B%9B%EF%BC%89CSS%E6%98%BE%E7%A4%BA%E6%A8%A1%E5%BC%8F%E3%80%81%E8%A1%8C%E9%AB%98%E3%80%81%E8%83%8C%E6%99%AF%E3%80%81%E7%89%B9%E6%80%A7/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（四）CSS显示模式、行高、背景、特性">html+css（四）CSS显示模式、行高、背景、特性</span>
+            <span class="post-date" title="2019-12-31 14:24:56">2019/12/31</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/31/css/html+css%EF%BC%88%E5%85%AD%EF%BC%89CSS%E6%B5%AE%E5%8A%A8/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（六）CSS浮动">html+css（六）CSS浮动</span>
+            <span class="post-date" title="2019-12-31 16:40:39">2019/12/31</span>
+        </a>
+        
+        <a  class="css3 "
+           href="/2019/12/26/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%B8%80%EF%BC%89%E5%9F%BA%E7%A1%80%E3%80%81%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80/"
+           data-tag="Css3"
+           data-author="" >
+            <span class="post-title" title="CSS移动布局（一）基础、流式布局">CSS移动布局（一）基础、流式布局</span>
+            <span class="post-date" title="2019-12-26 19:15:43">2019/12/26</span>
+        </a>
+        
+        <a  class="css3 "
+           href="/2019/12/27/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%B8%89%EF%BC%89rem%E5%B8%83%E5%B1%80%E5%92%8C%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2/"
+           data-tag="Css3"
+           data-author="" >
+            <span class="post-title" title="CSS移动布局（三）rem布局和媒体查询">CSS移动布局（三）rem布局和媒体查询</span>
+            <span class="post-date" title="2019-12-27 12:48:53">2019/12/27</span>
+        </a>
+        
+        <a  class="css3 "
+           href="/2019/12/23/css3/HTML5+Css3%EF%BC%88%E4%B8%80%EF%BC%89%E5%9F%BA%E7%A1%80/"
+           data-tag="Css3,HTML5"
+           data-author="" >
+            <span class="post-title" title="HTML5+Css3（一）基础">HTML5+Css3（一）基础</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/05/node/Node.js%EF%BC%885%EF%BC%89art-Template%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（5）art-Template模板引擎">Node.js（5）art-Template模板引擎</span>
+            <span class="post-date" title="2019-12-05 00:00:00">2019/12/05</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/git%E5%92%8Cgithub/"
+           data-tag="git,github"
+           data-author="" >
+            <span class="post-title" title="git和github">git和github</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="css3 "
+           href="/2019/12/23/css3/HTML5+Css3%EF%BC%88%E4%BA%8C%EF%BC%89CSS3%E5%8A%A8%E7%94%BB%E3%80%812D%E3%80%813D/"
+           data-tag="Css3,HTML5"
+           data-author="" >
+            <span class="post-title" title="HTML5+Css3（二）CSS3动画、2D、3D">HTML5+Css3（二）CSS3动画、2D、3D</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/04/node/Node.js%EF%BC%884%EF%BC%89Mongodb%E6%95%B0%E6%8D%AE%E5%BA%93/"
+           data-tag="Mongodb"
+           data-author="" >
+            <span class="post-title" title="Node.js（4）Mongodb数据库">Node.js（4）Mongodb数据库</span>
+            <span class="post-date" title="2019-12-04 00:00:00">2019/12/04</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/30/css/html+css%EF%BC%88%E4%BA%8C%EF%BC%89%E8%A1%A8%E6%A0%BC%E3%80%81%E5%88%97%E8%A1%A8%E5%92%8C%E8%A1%A8%E5%8D%95/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（二）表格、列表和表单">html+css（二）表格、列表和表单</span>
+            <span class="post-date" title="2019-12-30 23:09:44">2019/12/30</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/03/node/Node.js%EF%BC%883%EF%BC%89web%E6%9C%8D%E5%8A%A1%E5%99%A8%E3%80%81http%E3%80%81async%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（3）web服务器、http、async异步编程">Node.js（3）web服务器、http、async异步编程</span>
+            <span class="post-date" title="2019-12-03 00:00:00">2019/12/03</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/06/node/Node.js%EF%BC%886%EF%BC%89Express%E6%A1%86%E6%9E%B6/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（6）Express框架">Node.js（6）Express框架</span>
+            <span class="post-date" title="2019-12-06 00:00:00">2019/12/06</span>
+        </a>
+        
+        <a  class="css3 "
+           href="/2019/12/26/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%BA%8C%EF%BC%89flex%E5%B8%83%E5%B1%80%EF%BC%88%E5%9B%BE%E7%A4%BA%EF%BC%89/"
+           data-tag="Css3"
+           data-author="" >
+            <span class="post-title" title="CSS移动布局（二）flex布局（图示）">CSS移动布局（二）flex布局（图示）</span>
+            <span class="post-date" title="2019-12-26 20:56:43">2019/12/26</span>
+        </a>
+        
+        <a  class="css3 "
+           href="/2019/12/27/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E5%9B%9B%EF%BC%89%E5%93%8D%E5%BA%94%E5%BC%8Fbootstrap/"
+           data-tag="bootstrap"
+           data-author="" >
+            <span class="post-title" title="CSS移动布局（四）响应式bootstrap">CSS移动布局（四）响应式bootstrap</span>
+            <span class="post-date" title="2019-12-27 23:15:43">2019/12/27</span>
+        </a>
+        
+    </nav>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div class="post">
+    <div class="pjax">
+        <article id="post-css/html+css（八）CSS" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">html+css（八）CSS高级技术</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            
+                <a  data-rel="css">css</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color4">html+css</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2020-01-02 15:48:47'>2020-01-02 15:13</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#显示与隐藏"><span class="toc-text">显示与隐藏</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#display-显示"><span class="toc-text">display 显示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#visibility-可见性"><span class="toc-text">visibility 可见性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#overflow-溢出"><span class="toc-text">overflow 溢出</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总结"><span class="toc-text">总结</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#用户界面样式"><span class="toc-text">用户界面样式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#鼠标样式-cursor"><span class="toc-text">鼠标样式 cursor</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#轮廓线-outline"><span class="toc-text">轮廓线 outline</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#防止拖拽文本域-resize"><span class="toc-text">防止拖拽文本域 resize</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总结-1"><span class="toc-text">总结</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#vertical-align-垂直对齐"><span class="toc-text">vertical-align 垂直对齐</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#图片、表单和文字对齐"><span class="toc-text">图片、表单和文字对齐</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#去除图片底侧空白缝隙"><span class="toc-text">去除图片底侧空白缝隙</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#溢出的文字省略号显示-text-overflow"><span class="toc-text">溢出的文字省略号显示 text-overflow</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#white-space-一行显示"><span class="toc-text">white-space 一行显示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#text-overflow-文字溢出"><span class="toc-text">text-overflow 文字溢出</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总结三步曲"><span class="toc-text">总结三步曲</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS精灵技术-sprite"><span class="toc-text">CSS精灵技术 sprite</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#margin-负值"><span class="toc-text">margin 负值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS-三角形"><span class="toc-text">CSS 三角形</span></a></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-4 i,
+    .toc-level-4 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="显示与隐藏"><a href="#显示与隐藏" class="headerlink" title="显示与隐藏"></a>显示与隐藏</h2><h3 id="display-显示"><a href="#display-显示" class="headerlink" title="display 显示"></a>display 显示</h3><ul>
+<li>display 设置或检索对象是否及如何显示；<ul>
+<li><code>display: none</code> 隐藏对象；</li>
+<li><code>display：block</code> 除了转换为块级元素之外，同时还有显示元素的意思；</li>
+</ul>
+</li>
+<li>特点： 隐藏之后，不再保留位置；</li>
+<li>配合 js 做特效，比如下拉菜单，原先没有，鼠标经过，显示下拉菜单， 应用极为广泛；</li>
+</ul>
+<h3 id="visibility-可见性"><a href="#visibility-可见性" class="headerlink" title="visibility 可见性"></a>visibility 可见性</h3><ul>
+<li>设置或检索是否显示对象；<ul>
+<li><code>visibility：visible ;</code>　对象可视</li>
+<li><code>visibility：hidden;</code>　  对象隐藏</li>
+</ul>
+</li>
+<li>特点： 隐藏之后，继续保留原有位置；</li>
+</ul>
+<h3 id="overflow-溢出"><a href="#overflow-溢出" class="headerlink" title="overflow 溢出"></a>overflow 溢出</h3><ul>
+<li>检索或设置当对象的内容超过其指定高度及宽度时如何管理内容；</li>
+<li>实际开发场景：<ul>
+<li>清除浮动</li>
+<li>隐藏超出内容，隐藏掉,  不允许内容超过父盒子。</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>属性值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>visible</strong></td>
+<td>不剪切内容也不添加滚动条</td>
+</tr>
+<tr>
+<td><strong>hidden</strong></td>
+<td>不显示超过对象尺寸的内容，超出的部分隐藏掉</td>
+</tr>
+<tr>
+<td><strong>scroll</strong></td>
+<td>不管超出内容否，总是显示滚动条</td>
+</tr>
+<tr>
+<td><strong>auto</strong></td>
+<td>超出自动显示滚动条，不超出不显示滚动条</td>
+</tr>
+</tbody></table>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>区别</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>display</strong></td>
+<td>隐藏对象，不保留位置</td>
+<td>配合后面js做特效，比如下拉菜单</td>
+</tr>
+<tr>
+<td><strong>visibility</strong></td>
+<td>隐藏对象，保留位置</td>
+<td>使用较少</td>
+</tr>
+<tr>
+<td><strong>overflow</strong></td>
+<td>只是隐藏超出大小的部分</td>
+<td>1. 清除浮动 2. 保证盒子里内容不会超出盒子范围</td>
+</tr>
+</tbody></table>
+<h2 id="用户界面样式"><a href="#用户界面样式" class="headerlink" title="用户界面样式"></a>用户界面样式</h2><p>界面样式， 就是更改一些用户操作样式，以便提高更好的用户体验；</p>
+<h3 id="鼠标样式-cursor"><a href="#鼠标样式-cursor" class="headerlink" title="鼠标样式 cursor"></a>鼠标样式 cursor</h3><p>设置或检索在对象上移动的鼠标指针采用何种系统预定义的光标形状。</p>
+<table>
+<thead>
+<tr>
+<th>属性值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>default</strong></td>
+<td>小白  默认</td>
+</tr>
+<tr>
+<td><strong>pointer</strong></td>
+<td>小手</td>
+</tr>
+<tr>
+<td><strong>move</strong></td>
+<td>移动</td>
+</tr>
+<tr>
+<td><strong>text</strong></td>
+<td>文本</td>
+</tr>
+<tr>
+<td><strong>not-allowed</strong></td>
+<td>禁止</td>
+</tr>
+</tbody></table>
+<pre><code class="html">&lt;ul&gt;
+  &lt;li style=&quot;cursor:default&quot;&gt;我是小白&lt;/li&gt;
+  &lt;li style=&quot;cursor:pointer&quot;&gt;我是小手&lt;/li&gt;
+  &lt;li style=&quot;cursor:move&quot;&gt;我是移动&lt;/li&gt;
+  &lt;li style=&quot;cursor:text&quot;&gt;我是文本&lt;/li&gt;
+  &lt;li style=&quot;cursor:not-allowed&quot;&gt;我是文本&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+<h3 id="轮廓线-outline"><a href="#轮廓线-outline" class="headerlink" title="轮廓线 outline"></a>轮廓线 outline</h3><p>绘制于元素周围的一条线，位于边框边缘的外围，可起到突出元素的作用；</p>
+<p>我们写样式时，一般是去除outline：</p>
+<pre><code class="css">input {
+    outline: none;    
+    /* 或者 */
+    outline: 0;
+}</code></pre>
+<h3 id="防止拖拽文本域-resize"><a href="#防止拖拽文本域-resize" class="headerlink" title="防止拖拽文本域 resize"></a>防止拖拽文本域 resize</h3><ul>
+<li>文件域 <code>textare</code> 可以拖拽右下角，放大缩小；</li>
+<li>实际开发中，我们文本域右下角是不可以拖拽： </li>
+</ul>
+<pre><code class="css">textarea {
+    resize: none;
+}</code></pre>
+<h3 id="总结-1"><a href="#总结-1" class="headerlink" title="总结"></a>总结</h3><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>用途</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>鼠标样式</strong></td>
+<td>更改鼠标样式cursor</td>
+<td>样式很多，重点记住 pointer</td>
+</tr>
+<tr>
+<td><strong>轮廓线</strong></td>
+<td>表单默认outline</td>
+<td>outline 轮廓线，我们一般直接去掉</td>
+</tr>
+<tr>
+<td><strong>防止拖拽</strong></td>
+<td>主要针对文本域resize</td>
+<td>防止用户随意拖拽文本域，造成页面布局混乱</td>
+</tr>
+</tbody></table>
+<h2 id="vertical-align-垂直对齐"><a href="#vertical-align-垂直对齐" class="headerlink" title="vertical-align 垂直对齐"></a>vertical-align 垂直对齐</h2><ul>
+<li>有宽度的块级元素居中对齐，是 <code>margin: 0 auto;</code> ；</li>
+<li>让文字居中对齐，是 <code>text-align: center;</code> ；</li>
+<li>但是我们从来没有讲过有垂直居中的属性；</li>
+<li>vertical-align 垂直对齐，它只针对于<strong>行内元素</strong>或者<strong>行内块元素</strong>；</li>
+</ul>
+<pre><code class="css">vertical-align : baseline |top |middle |bottom </code></pre>
+<ul>
+<li>设置或检索对象内容的垂直对其方式；</li>
+<li>vertical-align 不影响块级元素中的内容对齐，它只针对于<strong>行内元素</strong>或者<strong>行内块元素</strong>；</li>
+<li>特别是行内块元素， <strong>通常用来控制图片/表单与文字的对齐</strong>；</li>
+</ul>
+<h3 id="图片、表单和文字对齐"><a href="#图片、表单和文字对齐" class="headerlink" title="图片、表单和文字对齐"></a>图片、表单和文字对齐</h3><ul>
+<li>可以通过vertical-align 控制图片和文字的垂直关系；</li>
+<li>默认的图片会和文字基线对齐；</li>
+</ul>
+<p><img src="http://mdimg.95408.com/202001021530_446.png?null" alt=""></p>
+<h3 id="去除图片底侧空白缝隙"><a href="#去除图片底侧空白缝隙" class="headerlink" title="去除图片底侧空白缝隙"></a>去除图片底侧空白缝隙</h3><ul>
+<li>一个父盒子由图片撑开时，图片下面会多出缝隙；</li>
+<li>原因：图片或者表单等行内块元素，他的底线会和父级盒子的基线对齐，就是图片底侧会有一个空白缝隙；</li>
+<li><strong>解决方法：</strong>  </li>
+<li>1、给img 添加 <code>vertical-align:middle | top| bottom</code> 等等，让图片不要和基线对齐；<ul>
+<li>163写法：<code>img{vertical-align:top; border:0;}</code>；</li>
+</ul>
+</li>
+<li>2、给img 添加 <code>display：block;</code> 转换为块级元素就不会存在问题了；<ul>
+<li>sina写法：<code>img{border:0; display:block}</code> ；</li>
+</ul>
+</li>
+</ul>
+<h2 id="溢出的文字省略号显示-text-overflow"><a href="#溢出的文字省略号显示-text-overflow" class="headerlink" title="溢出的文字省略号显示 text-overflow"></a>溢出的文字省略号显示 text-overflow</h2><h3 id="white-space-一行显示"><a href="#white-space-一行显示" class="headerlink" title="white-space 一行显示"></a>white-space 一行显示</h3><p>white-space设置或检索对象内文本显示方式。通常我们使用于强制一行显示内容 </p>
+<pre><code>white-space:normal ；默认处理方式
+white-space:nowrap ；　强制在同一行内显示所有文本，直到文本结束或者遭遇br标签对象才换行。</code></pre><h3 id="text-overflow-文字溢出"><a href="#text-overflow-文字溢出" class="headerlink" title="text-overflow 文字溢出"></a>text-overflow 文字溢出</h3><p>设置或检索是否使用一个省略标记（…）标示对象内文本的溢出</p>
+<pre><code>text-overflow : clip ；不显示省略标记（...），而是简单的裁切 
+text-overflow：ellipsis ； 当对象内文本溢出时显示省略标记（...）</code></pre><p><strong>注意</strong>：一定要首先强制一行内显示，再次和overflow属性  搭配使用</p>
+<h3 id="总结三步曲"><a href="#总结三步曲" class="headerlink" title="总结三步曲"></a>总结三步曲</h3><pre><code class="css">/* 1. 先强制一行内显示文本 */
+white-space: nowrap;
+/* 2. 超出的部分隐藏 */
+overflow: hidden;
+/* 3. 文字用省略号替代超出的部分 */
+text-overflow: ellipsis;</code></pre>
+<h2 id="CSS精灵技术-sprite"><a href="#CSS精灵技术-sprite" class="headerlink" title="CSS精灵技术 sprite"></a>CSS精灵技术 sprite</h2><ul>
+<li>为了有效地减少服务器接受和发送请求的次数，提高页面的加载速度；</li>
+<li>出现了CSS精灵技术（也称CSS Sprites、CSS雪碧）；</li>
+<li>CSS 精灵：<ul>
+<li>是将网页中的一些背景图像整合到一张大图中（精灵图）；</li>
+<li>只需向服务发送一次请求，网页中的背景图像即可全部展示出来；</li>
+</ul>
+</li>
+<li>需要使用CSS的：<ul>
+<li>background-image 设置精灵图；</li>
+<li>background-repeat 不重复；</li>
+<li>background-position 最关键的：属性精确地定位；</li>
+</ul>
+</li>
+<li>CSS精灵技术主要针对于背景图片，放的都是小的装饰性质的背景图片；</li>
+</ul>
+<h2 id="margin-负值"><a href="#margin-负值" class="headerlink" title="margin 负值"></a>margin 负值</h2><p><strong>负边距+定位：水平垂直居中</strong></p>
+<p>咱们前面讲过， 一个绝对定位的盒子， 利用  父级盒子的 50%，  然后 往左(上) 走 自己宽度的一半 ，可以实现盒子水平垂直居中。</p>
+<p><strong>压住盒子相邻边框</strong> </p>
+<h2 id="CSS-三角形"><a href="#CSS-三角形" class="headerlink" title="CSS 三角形"></a>CSS 三角形</h2><p>用 css 边框可以模拟三角效果：</p>
+<ul>
+<li>宽度高度为 0 ；</li>
+<li>我们4个边框都要写， 只保留需要的边框颜色，其余的不能省略，都改为 transparent 透明就好；</li>
+<li>为了照顾兼容性 低版本的浏览器，加上 <code>font-size: 0;  line-height: 0;</code> ；</li>
+</ul>
+<p><img src="http://mdimg.95408.com/202001021546_540.png?null" alt=""></p>
+<pre><code class="css">div {
+     width: 0; 
+    height: 0;
+
+    line-height:0；
+    font-size: 0;
+
+    border-top: 10px solid red;
+    border-right: 10px solid green;
+    border-bottom: 10px solid blue;
+    border-left: 10px solid #000; 
+ }</code></pre>
+<p>以上。</p>
+
+      
+       
+    </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">©2009-2019 半根竹子.</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full"><span class="min "></span></button>
+<button class="post-toc-menu"><span class="post-toc-menu-icons"></span></button>
+<div class="post-toc"><span class="post-toc-title">目录</span>
+    <div class="post-toc-content">
+
+    </div>
+</div>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+<div class="acParent"></div>
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.0.1" ></script>
+
+<script src="/js/script.js?v=1.0.1" ></script>
+<script>
+    var img_resize = 'default';
+    /*作者、标签的自动补全*/
+    $(function () {
+        $('.search').AutoComplete({
+            'data': ['#html+css','#Css','#bootstrap','#js','#Node.js','#markdown','#博客','#hexo','#vue','#vscode','#Css3','#HTML5','#git','#github','#Mongodb',],
+            'itemHeight': 20,
+            'width': 418
+        }).AutoComplete('show');
+    })
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $(".post .pjax table").addClass("green");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+        .nav .hide-list.fullscreen {
+            left: 492px
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #ccc;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
