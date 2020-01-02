@@ -6,21 +6,28 @@
   <meta name="keywords" content=" html+css ">
   <meta name="description" content="html+css（八）CSS高级技术 | 半根竹子">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="显示与隐藏display 显示 display 设置或检索对象是否及如何显示； display: none 隐藏对象； display：block 除了转换为块级元素之外，同时还有显示元素的意思；   特点： 隐藏之后，不再保留位置； 配合 js 做特效，比如下拉菜单，原先没有，鼠标经过，显示下拉菜单， 应用极为广泛；  visibility 可见性 设置或检索是否显示对象； visibility">
+<meta name="description" content="CSS优先级与样式冲突3.3.3 指定样式冲突 所谓的指定样式，指的是指定“当前元素”的样式。当直接指定的样式发生冲突时，样式权值高者获胜。  ! important  在CSS中，我们可以使用！important规则来改变样式的优先级。如果一个样式使用!important来声明，则这个样式会覆盖CSS中任何的其他样式声明。 例子：有人在jQuery插件中写了糟糕的行内样式（行内样式优先级往往是最">
 <meta property="og:type" content="article">
-<meta property="og:title" content="html+css（八）CSS高级技术">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;01&#x2F;02&#x2F;css&#x2F;html+css%EF%BC%88%E5%85%AB%EF%BC%89CSS&#x2F;index.html">
+<meta property="og:title" content="《HTML和CSS进阶教程》笔记（一）">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;01&#x2F;02&#x2F;css&#x2F;HTML%E5%92%8CCSS%E8%BF%9B%E9%98%B6%E6%95%99%E7%A8%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89&#x2F;index.html">
 <meta property="og:site_name" content="半根竹子">
-<meta property="og:description" content="显示与隐藏display 显示 display 设置或检索对象是否及如何显示； display: none 隐藏对象； display：block 除了转换为块级元素之外，同时还有显示元素的意思；   特点： 隐藏之后，不再保留位置； 配合 js 做特效，比如下拉菜单，原先没有，鼠标经过，显示下拉菜单， 应用极为广泛；  visibility 可见性 设置或检索是否显示对象； visibility">
+<meta property="og:description" content="CSS优先级与样式冲突3.3.3 指定样式冲突 所谓的指定样式，指的是指定“当前元素”的样式。当直接指定的样式发生冲突时，样式权值高者获胜。  ! important  在CSS中，我们可以使用！important规则来改变样式的优先级。如果一个样式使用!important来声明，则这个样式会覆盖CSS中任何的其他样式声明。 例子：有人在jQuery插件中写了糟糕的行内样式（行内样式优先级往往是最">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001021530_446.png?null">
-<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001021546_540.png?null">
-<meta property="article:published_time" content="2020-01-02T07:13:11.984Z">
-<meta property="article:modified_time" content="2020-01-02T07:48:47.644Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001022223_461.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001022305_27.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001022326_629.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001022342_442.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001022343_959.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001022343_855.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001022344_497.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001022346_301.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001022347_593.png?null">
+<meta property="article:published_time" content="2020-01-02T14:23:44.708Z">
+<meta property="article:modified_time" content="2020-01-02T15:51:08.844Z">
 <meta property="article:author" content="HalfBamboo">
 <meta property="article:tag" content="html+css">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001021530_446.png?null">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001022223_461.png?null">
 
 
 <link rel="icon" href="http://mdimg.95408.com/20191218121717.png">
@@ -136,6 +143,14 @@
     
         
             
+            <li><div data-rel="css3">css3</div>
+                
+            </li>
+            
+        
+    
+        
+            
             <li><div data-rel="JavaScript">JavaScript</div>
                 
             </li>
@@ -152,14 +167,6 @@
     
         
             
-            <li><div data-rel="工具">工具</div>
-                
-            </li>
-            
-        
-    
-        
-            
             <li><div data-rel="vue">vue</div>
                 
             </li>
@@ -168,7 +175,7 @@
     
         
             
-            <li><div data-rel="css3">css3</div>
+            <li><div data-rel="工具">工具</div>
                 
             </li>
             
@@ -184,7 +191,7 @@
     </div>
     <div></div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="31">
+<input type="hidden" id="yelog_site_posts_number" value="32">
 
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -231,11 +238,23 @@
     </li>
     
     <li class="article-tag-list-item">
+        <a class="color5">Css3</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">HTML5</a>
+    </li>
+    
+    <li class="article-tag-list-item">
         <a class="color3">js</a>
     </li>
     
     <li class="article-tag-list-item">
         <a class="color3">Node.js</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">vue</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -251,19 +270,11 @@
     </li>
     
     <li class="article-tag-list-item">
-        <a class="color4">vue</a>
-    </li>
-    
-    <li class="article-tag-list-item">
         <a class="color2">vscode</a>
     </li>
     
     <li class="article-tag-list-item">
-        <a class="color5">Css3</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color1">HTML5</a>
+        <a class="color3">Mongodb</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -272,10 +283,6 @@
     
     <li class="article-tag-list-item">
         <a class="color2">github</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color3">Mongodb</a>
     </li>
     
     <div class="clearfix"></div>
@@ -289,35 +296,19 @@
     <nav id="title-list-nav">
         
         <a  class="css "
+           href="/2020/01/02/css/HTML%E5%92%8CCSS%E8%BF%9B%E9%98%B6%E6%95%99%E7%A8%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="《HTML和CSS进阶教程》笔记（一）">《HTML和CSS进阶教程》笔记（一）</span>
+            <span class="post-date" title="2020-01-02 22:23:44">2020/01/02</span>
+        </a>
+        
+        <a  class="css "
            href="/2019/12/30/css/html+css%EF%BC%88%E4%B8%80%EF%BC%89html%E6%A0%87%E7%AD%BE/"
            data-tag="html+css"
            data-author="" >
             <span class="post-title" title="html+css（一）html标签">html+css（一）html标签</span>
             <span class="post-date" title="2019-12-30 22:09:33">2019/12/30</span>
-        </a>
-        
-        <a  class="bootstrap "
-           href="/2019/12/30/bootstrap/Bootstrap(%E4%BA%8C)%E8%BD%AE%E6%92%AD%E5%9B%BEcarousel/"
-           data-tag="Css,bootstrap"
-           data-author="" >
-            <span class="post-title" title="Bootstrap(二)轮播图carousel">Bootstrap(二)轮播图carousel</span>
-            <span class="post-date" title="2019-12-30 19:04:11">2019/12/30</span>
-        </a>
-        
-        <a  class="css "
-           href="/2020/01/02/css/html+css%EF%BC%88%E5%85%AB%EF%BC%89CSS/"
-           data-tag="html+css"
-           data-author="" >
-            <span class="post-title" title="html+css（八）CSS高级技术">html+css（八）CSS高级技术</span>
-            <span class="post-date" title="2020-01-02 15:13:11">2020/01/02</span>
-        </a>
-        
-        <a  class="JavaScript "
-           href="/2019/12/23/js/JavaScript%E6%95%B0%E7%BB%84%EF%BC%88%E4%BA%8C%EF%BC%89/"
-           data-tag="js"
-           data-author="" >
-            <span class="post-title" title="JavaScript 数组（二）">JavaScript 数组（二）</span>
-            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
         </a>
         
         <a  class="bootstrap "
@@ -328,12 +319,52 @@
             <span class="post-date" title="2019-12-30 15:19:48">2019/12/30</span>
         </a>
         
-        <a  class="node "
-           href="/2019/12/01/node/Node.js%EF%BC%881%EF%BC%89%E5%9F%BA%E7%A1%80/"
-           data-tag="js,Node.js"
+        <a  class="bootstrap "
+           href="/2019/12/30/bootstrap/Bootstrap(%E4%BA%8C)%E8%BD%AE%E6%92%AD%E5%9B%BEcarousel/"
+           data-tag="Css,bootstrap"
            data-author="" >
-            <span class="post-title" title="Node.js（1）基础">Node.js（1）基础</span>
-            <span class="post-date" title="2019-12-01 00:00:00">2019/12/01</span>
+            <span class="post-title" title="Bootstrap(二)轮播图carousel">Bootstrap(二)轮播图carousel</span>
+            <span class="post-date" title="2019-12-30 19:04:11">2019/12/30</span>
+        </a>
+        
+        <a  class="css3 "
+           href="/2019/12/23/css3/HTML5+Css3%EF%BC%88%E4%B8%80%EF%BC%89%E5%9F%BA%E7%A1%80/"
+           data-tag="Css3,HTML5"
+           data-author="" >
+            <span class="post-title" title="HTML5+Css3（一）基础">HTML5+Css3（一）基础</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="css3 "
+           href="/2019/12/26/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%B8%80%EF%BC%89%E5%9F%BA%E7%A1%80%E3%80%81%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80/"
+           data-tag="Css3"
+           data-author="" >
+            <span class="post-title" title="CSS移动布局（一）基础、流式布局">CSS移动布局（一）基础、流式布局</span>
+            <span class="post-date" title="2019-12-26 19:15:43">2019/12/26</span>
+        </a>
+        
+        <a  class="css3 "
+           href="/2019/12/23/css3/HTML5+Css3%EF%BC%88%E4%BA%8C%EF%BC%89CSS3%E5%8A%A8%E7%94%BB%E3%80%812D%E3%80%813D/"
+           data-tag="Css3,HTML5"
+           data-author="" >
+            <span class="post-title" title="HTML5+Css3（二）CSS3动画、2D、3D">HTML5+Css3（二）CSS3动画、2D、3D</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="JavaScript "
+           href="/2019/12/23/js/JavaScript%E6%95%B0%E7%BB%84%EF%BC%88%E4%B8%80%EF%BC%89/"
+           data-tag="js"
+           data-author="" >
+            <span class="post-title" title="JavaScript 数组（一）">JavaScript 数组（一）</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="css3 "
+           href="/2019/12/27/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%B8%89%EF%BC%89rem%E5%B8%83%E5%B1%80%E5%92%8C%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2/"
+           data-tag="Css3"
+           data-author="" >
+            <span class="post-title" title="CSS移动布局（三）rem布局和媒体查询">CSS移动布局（三）rem布局和媒体查询</span>
+            <span class="post-date" title="2019-12-27 12:48:53">2019/12/27</span>
         </a>
         
         <a  class="node "
@@ -345,11 +376,27 @@
         </a>
         
         <a  class="JavaScript "
-           href="/2019/12/23/js/JavaScript%E6%95%B0%E7%BB%84%EF%BC%88%E4%B8%80%EF%BC%89/"
+           href="/2019/12/23/js/JavaScript%E6%95%B0%E7%BB%84%EF%BC%88%E4%BA%8C%EF%BC%89/"
            data-tag="js"
            data-author="" >
-            <span class="post-title" title="JavaScript 数组（一）">JavaScript 数组（一）</span>
+            <span class="post-title" title="JavaScript 数组（二）">JavaScript 数组（二）</span>
             <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/01/node/Node.js%EF%BC%881%EF%BC%89%E5%9F%BA%E7%A1%80/"
+           data-tag="js,Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（1）基础">Node.js（1）基础</span>
+            <span class="post-date" title="2019-12-01 00:00:00">2019/12/01</span>
+        </a>
+        
+        <a  class="vue "
+           href="/2019/12/23/vue/Vue%E5%9F%BA%E7%A1%80/"
+           data-tag="js,vue"
+           data-author="" >
+            <span class="post-title" title="Vue基础">Vue基础</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
         </a>
         
         <a  class="node "
@@ -369,14 +416,6 @@
         </a>
         
         <a  class="工具 "
-           href="/2019/12/23/tools/Hexo%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95%E6%9B%B4%E6%96%B0/"
-           data-tag="博客,hexo"
-           data-author="" >
-            <span class="post-title" title="Hexo折腾记录更新">Hexo折腾记录更新</span>
-            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
-        </a>
-        
-        <a  class="工具 "
            href="/2019/12/23/tools/hexo%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/"
            data-tag="博客,hexo"
            data-author="" >
@@ -384,11 +423,11 @@
             <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
         </a>
         
-        <a  class="vue "
-           href="/2019/12/23/vue/Vue%E5%9F%BA%E7%A1%80/"
-           data-tag="js,vue"
+        <a  class="工具 "
+           href="/2019/12/23/tools/Hexo%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95%E6%9B%B4%E6%96%B0/"
+           data-tag="博客,hexo"
            data-author="" >
-            <span class="post-title" title="Vue基础">Vue基础</span>
+            <span class="post-title" title="Hexo折腾记录更新">Hexo折腾记录更新</span>
             <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
         </a>
         
@@ -424,6 +463,14 @@
             <span class="post-date" title="2019-12-31 15:06:25">2019/12/31</span>
         </a>
         
+        <a  class="css3 "
+           href="/2019/12/26/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%BA%8C%EF%BC%89flex%E5%B8%83%E5%B1%80%EF%BC%88%E5%9B%BE%E7%A4%BA%EF%BC%89/"
+           data-tag="Css3"
+           data-author="" >
+            <span class="post-title" title="CSS移动布局（二）flex布局（图示）">CSS移动布局（二）flex布局（图示）</span>
+            <span class="post-date" title="2019-12-26 20:56:43">2019/12/26</span>
+        </a>
+        
         <a  class="css "
            href="/2019/12/31/css/html+css%EF%BC%88%E5%9B%9B%EF%BC%89CSS%E6%98%BE%E7%A4%BA%E6%A8%A1%E5%BC%8F%E3%80%81%E8%A1%8C%E9%AB%98%E3%80%81%E8%83%8C%E6%99%AF%E3%80%81%E7%89%B9%E6%80%A7/"
            data-tag="html+css"
@@ -441,27 +488,19 @@
         </a>
         
         <a  class="css3 "
-           href="/2019/12/26/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%B8%80%EF%BC%89%E5%9F%BA%E7%A1%80%E3%80%81%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80/"
-           data-tag="Css3"
+           href="/2019/12/27/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E5%9B%9B%EF%BC%89%E5%93%8D%E5%BA%94%E5%BC%8Fbootstrap/"
+           data-tag="bootstrap"
            data-author="" >
-            <span class="post-title" title="CSS移动布局（一）基础、流式布局">CSS移动布局（一）基础、流式布局</span>
-            <span class="post-date" title="2019-12-26 19:15:43">2019/12/26</span>
+            <span class="post-title" title="CSS移动布局（四）响应式bootstrap">CSS移动布局（四）响应式bootstrap</span>
+            <span class="post-date" title="2019-12-27 23:15:43">2019/12/27</span>
         </a>
         
-        <a  class="css3 "
-           href="/2019/12/27/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%B8%89%EF%BC%89rem%E5%B8%83%E5%B1%80%E5%92%8C%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2/"
-           data-tag="Css3"
+        <a  class="node "
+           href="/2019/12/04/node/Node.js%EF%BC%884%EF%BC%89Mongodb%E6%95%B0%E6%8D%AE%E5%BA%93/"
+           data-tag="Mongodb"
            data-author="" >
-            <span class="post-title" title="CSS移动布局（三）rem布局和媒体查询">CSS移动布局（三）rem布局和媒体查询</span>
-            <span class="post-date" title="2019-12-27 12:48:53">2019/12/27</span>
-        </a>
-        
-        <a  class="css3 "
-           href="/2019/12/23/css3/HTML5+Css3%EF%BC%88%E4%B8%80%EF%BC%89%E5%9F%BA%E7%A1%80/"
-           data-tag="Css3,HTML5"
-           data-author="" >
-            <span class="post-title" title="HTML5+Css3（一）基础">HTML5+Css3（一）基础</span>
-            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+            <span class="post-title" title="Node.js（4）Mongodb数据库">Node.js（4）Mongodb数据库</span>
+            <span class="post-date" title="2019-12-04 00:00:00">2019/12/04</span>
         </a>
         
         <a  class="node "
@@ -480,28 +519,20 @@
             <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
         </a>
         
-        <a  class="css3 "
-           href="/2019/12/23/css3/HTML5+Css3%EF%BC%88%E4%BA%8C%EF%BC%89CSS3%E5%8A%A8%E7%94%BB%E3%80%812D%E3%80%813D/"
-           data-tag="Css3,HTML5"
-           data-author="" >
-            <span class="post-title" title="HTML5+Css3（二）CSS3动画、2D、3D">HTML5+Css3（二）CSS3动画、2D、3D</span>
-            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
-        </a>
-        
-        <a  class="node "
-           href="/2019/12/04/node/Node.js%EF%BC%884%EF%BC%89Mongodb%E6%95%B0%E6%8D%AE%E5%BA%93/"
-           data-tag="Mongodb"
-           data-author="" >
-            <span class="post-title" title="Node.js（4）Mongodb数据库">Node.js（4）Mongodb数据库</span>
-            <span class="post-date" title="2019-12-04 00:00:00">2019/12/04</span>
-        </a>
-        
         <a  class="css "
            href="/2019/12/30/css/html+css%EF%BC%88%E4%BA%8C%EF%BC%89%E8%A1%A8%E6%A0%BC%E3%80%81%E5%88%97%E8%A1%A8%E5%92%8C%E8%A1%A8%E5%8D%95/"
            data-tag="html+css"
            data-author="" >
             <span class="post-title" title="html+css（二）表格、列表和表单">html+css（二）表格、列表和表单</span>
             <span class="post-date" title="2019-12-30 23:09:44">2019/12/30</span>
+        </a>
+        
+        <a  class="css "
+           href="/2020/01/02/css/html+css%EF%BC%88%E5%85%AB%EF%BC%89CSS%E9%AB%98%E7%BA%A7%E6%8A%80%E6%9C%AF/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（八）CSS高级技术">html+css（八）CSS高级技术</span>
+            <span class="post-date" title="2020-01-02 15:13:11">2020/01/02</span>
         </a>
         
         <a  class="node "
@@ -520,22 +551,6 @@
             <span class="post-date" title="2019-12-06 00:00:00">2019/12/06</span>
         </a>
         
-        <a  class="css3 "
-           href="/2019/12/26/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%BA%8C%EF%BC%89flex%E5%B8%83%E5%B1%80%EF%BC%88%E5%9B%BE%E7%A4%BA%EF%BC%89/"
-           data-tag="Css3"
-           data-author="" >
-            <span class="post-title" title="CSS移动布局（二）flex布局（图示）">CSS移动布局（二）flex布局（图示）</span>
-            <span class="post-date" title="2019-12-26 20:56:43">2019/12/26</span>
-        </a>
-        
-        <a  class="css3 "
-           href="/2019/12/27/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E5%9B%9B%EF%BC%89%E5%93%8D%E5%BA%94%E5%BC%8Fbootstrap/"
-           data-tag="bootstrap"
-           data-author="" >
-            <span class="post-title" title="CSS移动布局（四）响应式bootstrap">CSS移动布局（四）响应式bootstrap</span>
-            <span class="post-date" title="2019-12-27 23:15:43">2019/12/27</span>
-        </a>
-        
     </nav>
 </div>
     </div>
@@ -548,7 +563,7 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-css/html+css（八）CSS" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-css/html+css（八）CSS高级技术" class="article article-type-post" itemscope itemprop="blogPost">
     
         <h1 class="article-title">html+css（八）CSS高级技术</h1>
     
@@ -572,7 +587,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-01-02 15:48:47'>2020-01-02 15:13</time>
+        创建时间:<time class="date" title='更新时间: 2020-01-02 22:14:47'>2020-01-02 15:13</time>
         
     </div>
     <div class="article-meta">
@@ -583,7 +598,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#显示与隐藏"><span class="toc-text">显示与隐藏</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#display-显示"><span class="toc-text">display 显示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#visibility-可见性"><span class="toc-text">visibility 可见性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#overflow-溢出"><span class="toc-text">overflow 溢出</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总结"><span class="toc-text">总结</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#用户界面样式"><span class="toc-text">用户界面样式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#鼠标样式-cursor"><span class="toc-text">鼠标样式 cursor</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#轮廓线-outline"><span class="toc-text">轮廓线 outline</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#防止拖拽文本域-resize"><span class="toc-text">防止拖拽文本域 resize</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总结-1"><span class="toc-text">总结</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#vertical-align-垂直对齐"><span class="toc-text">vertical-align 垂直对齐</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#图片、表单和文字对齐"><span class="toc-text">图片、表单和文字对齐</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#去除图片底侧空白缝隙"><span class="toc-text">去除图片底侧空白缝隙</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#溢出的文字省略号显示-text-overflow"><span class="toc-text">溢出的文字省略号显示 text-overflow</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#white-space-一行显示"><span class="toc-text">white-space 一行显示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#text-overflow-文字溢出"><span class="toc-text">text-overflow 文字溢出</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总结三步曲"><span class="toc-text">总结三步曲</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS精灵技术-sprite"><span class="toc-text">CSS精灵技术 sprite</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#margin-负值"><span class="toc-text">margin 负值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS-三角形"><span class="toc-text">CSS 三角形</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS书写顺序"><span class="toc-text">CSS书写顺序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#显示与隐藏"><span class="toc-text">显示与隐藏</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#display-显示"><span class="toc-text">display 显示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#visibility-可见性"><span class="toc-text">visibility 可见性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#overflow-溢出"><span class="toc-text">overflow 溢出</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总结"><span class="toc-text">总结</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#用户界面样式"><span class="toc-text">用户界面样式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#鼠标样式-cursor"><span class="toc-text">鼠标样式 cursor</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#轮廓线-outline"><span class="toc-text">轮廓线 outline</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#防止拖拽文本域-resize"><span class="toc-text">防止拖拽文本域 resize</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总结-1"><span class="toc-text">总结</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#vertical-align-垂直对齐"><span class="toc-text">vertical-align 垂直对齐</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#图片、表单和文字对齐"><span class="toc-text">图片、表单和文字对齐</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#去除图片底侧空白缝隙"><span class="toc-text">去除图片底侧空白缝隙</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#溢出的文字省略号显示-text-overflow"><span class="toc-text">溢出的文字省略号显示 text-overflow</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#white-space-一行显示"><span class="toc-text">white-space 一行显示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#text-overflow-文字溢出"><span class="toc-text">text-overflow 文字溢出</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总结三步曲"><span class="toc-text">总结三步曲</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS精灵技术-sprite"><span class="toc-text">CSS精灵技术 sprite</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#滑动门"><span class="toc-text">滑动门</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#margin-负值使用"><span class="toc-text">margin 负值使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#border-写三角形"><span class="toc-text">border 写三角形</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -599,7 +614,47 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="显示与隐藏"><a href="#显示与隐藏" class="headerlink" title="显示与隐藏"></a>显示与隐藏</h2><h3 id="display-显示"><a href="#display-显示" class="headerlink" title="display 显示"></a>display 显示</h3><ul>
+        <h2 id="CSS书写顺序"><a href="#CSS书写顺序" class="headerlink" title="CSS书写顺序"></a>CSS书写顺序</h2><p>建议遵循以下顺序：</p>
+<ul>
+<li>布局定位属性：<ul>
+<li>display / position / float / clear / visibility / overflow</li>
+<li>建议 display 第一个写，毕竟关系到模式</li>
+</ul>
+</li>
+<li>自身属性：<ul>
+<li>width / height / margin / padding / border / background</li>
+</ul>
+</li>
+<li>文本属性：<ul>
+<li>color / font / text-decoration / text-align / vertical-align / white- space / break-word</li>
+</ul>
+</li>
+<li>其他属性（CSS3）：<ul>
+<li>content / cursor / border-radius / box-shadow / text-shadow / background:linear-gradient …</li>
+</ul>
+</li>
+</ul>
+<pre><code class="css">.bamboo {
+    display: block;
+    position: relative;
+    float: left;
+
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    padding: 20px 0;
+
+    font-family: Arial, &#39;Helvetica Neue&#39;, Helvetica, sans-serif;
+    color: #333;
+    background: rgba(0,0,0,.5);
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+}</code></pre>
+<h2 id="显示与隐藏"><a href="#显示与隐藏" class="headerlink" title="显示与隐藏"></a>显示与隐藏</h2><h3 id="display-显示"><a href="#display-显示" class="headerlink" title="display 显示"></a>display 显示</h3><ul>
 <li>display 设置或检索对象是否及如何显示；<ul>
 <li><code>display: none</code> 隐藏对象；</li>
 <li><code>display：block</code> 除了转换为块级元素之外，同时还有显示元素的意思；</li>
@@ -616,6 +671,40 @@
 </li>
 <li>特点： 隐藏之后，继续保留原有位置；</li>
 </ul>
+<blockquote>
+<p>  左：两个盒子正常流；</p>
+<p>  中：pink色盒子隐藏 <code>display: none</code> ：不占位置；</p>
+<p>  右：pink色盒子隐藏 <code>visibility：hidden;</code> ，占位置；</p>
+</blockquote>
+<p><img src="http://mdimg.95408.com/202001022021_130.png?null" alt=""></p>
+<pre><code class="css">/* 左图 */
+.pink-div {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+}
+/* 中图 */
+.pink-div {
+    /* 这里除了转换为块级元素以外，还可以 显示元素 */
+    /* display: block; */
+
+    /* 隐藏元素 */
+    display: none;
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+}
+/* 右图 */
+.pink-div {
+    /* 默认：显示元素 */
+    /* visibility: visible; */
+
+    /* 隐藏元素 */
+    visibility: hidden;    
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+}</code></pre>
 <h3 id="overflow-溢出"><a href="#overflow-溢出" class="headerlink" title="overflow 溢出"></a>overflow 溢出</h3><ul>
 <li>检索或设置当对象的内容超过其指定高度及宽度时如何管理内容；</li>
 <li>实际开发场景：<ul>
@@ -703,12 +792,13 @@
 </tr>
 </tbody></table>
 <pre><code class="html">&lt;ul&gt;
-  &lt;li style=&quot;cursor:default&quot;&gt;我是小白&lt;/li&gt;
-  &lt;li style=&quot;cursor:pointer&quot;&gt;我是小手&lt;/li&gt;
-  &lt;li style=&quot;cursor:move&quot;&gt;我是移动&lt;/li&gt;
-  &lt;li style=&quot;cursor:text&quot;&gt;我是文本&lt;/li&gt;
-  &lt;li style=&quot;cursor:not-allowed&quot;&gt;我是文本&lt;/li&gt;
+  &lt;li style=&quot;cursor:default&quot;&gt;默认的&lt;/li&gt;
+  &lt;li style=&quot;cursor:pointer&quot;&gt;小手&lt;/li&gt;
+  &lt;li style=&quot;cursor:move&quot;&gt;移动&lt;/li&gt;
+  &lt;li style=&quot;cursor:text&quot;&gt;文本&lt;/li&gt;
+  &lt;li style=&quot;cursor:not-allowed&quot;&gt;禁止&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
+<p><img src="http://mdimg.95408.com/web_2020010202.gif" alt=""></p>
 <h3 id="轮廓线-outline"><a href="#轮廓线-outline" class="headerlink" title="轮廓线 outline"></a>轮廓线 outline</h3><p>绘制于元素周围的一条线，位于边框边缘的外围，可起到突出元素的作用；</p>
 <p>我们写样式时，一般是去除outline：</p>
 <pre><code class="css">input {
@@ -716,6 +806,10 @@
     /* 或者 */
     outline: 0;
 }</code></pre>
+<blockquote>
+<p>  上图：未取消轮廓线，下图：<code>outline: none;</code>：</p>
+</blockquote>
+<p><img src="http://mdimg.95408.com/web_2020010203.gif" alt=""></p>
 <h3 id="防止拖拽文本域-resize"><a href="#防止拖拽文本域-resize" class="headerlink" title="防止拖拽文本域 resize"></a>防止拖拽文本域 resize</h3><ul>
 <li>文件域 <code>textare</code> 可以拖拽右下角，放大缩小；</li>
 <li>实际开发中，我们文本域右下角是不可以拖拽： </li>
@@ -763,7 +857,35 @@
 <li>可以通过vertical-align 控制图片和文字的垂直关系；</li>
 <li>默认的图片会和文字基线对齐；</li>
 </ul>
-<p><img src="http://mdimg.95408.com/202001021530_446.png?null" alt=""></p>
+<blockquote>
+<p>  图片与文字的对齐方式：默认为基线对齐（上）：</p>
+</blockquote>
+<p><img src="http://mdimg.95408.com/202001022046_668.png?null" alt=""></p>
+<pre><code class="html">&lt;style&gt;
+    .one {
+        /* 基线对齐 默认 */
+        vertical-align: baseline;
+    }
+    .two {
+        /* 垂直居中*/
+        /* 让图片的中线 对齐 文字的中线*/
+        vertical-align: middle;
+    }
+    .three {
+        /* 顶部对齐*/
+        /*让图片的顶线 对齐 文字的顶线*/
+        vertical-align: top;
+    }
+&lt;/style&gt;
+&lt;div&gt;
+    &lt;img src=&quot;images/pic.jpg&quot; class=&quot;one&quot;&gt; 你瞅啥 
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;img src=&quot;images/pic.jpg&quot; class=&quot;two&quot;&gt; 你瞅啥 
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;img src=&quot;images/pic.jpg&quot; class=&quot;three&quot;&gt; 你瞅啥 
+&lt;/div&gt;</code></pre>
 <h3 id="去除图片底侧空白缝隙"><a href="#去除图片底侧空白缝隙" class="headerlink" title="去除图片底侧空白缝隙"></a>去除图片底侧空白缝隙</h3><ul>
 <li>一个父盒子由图片撑开时，图片下面会多出缝隙；</li>
 <li>原因：图片或者表单等行内块元素，他的底线会和父级盒子的基线对齐，就是图片底侧会有一个空白缝隙；</li>
@@ -777,6 +899,29 @@
 </ul>
 </li>
 </ul>
+<blockquote>
+<p>  去除图片底侧空白：</p>
+</blockquote>
+<p><img src="http://mdimg.95408.com/202001022055_459.png?null" alt=""></p>
+<pre><code class="html">&lt;style&gt;
+    div {
+        border: 1px solid red;
+    }
+    div img {
+        /* 因为默认的是基线对齐，所有底册有空白缝隙 */
+        /* vertical-align: baseline; */
+
+        /* 只要不是 基线对齐就好了 */        
+        /* vertical-align: bottom; */
+        /* vertical-align: middle; */
+
+        /* 块级元素来说 vertical-align是无效的，就不会有基线对齐的问题了 */
+        /* display: block; */
+    }
+&lt;/style&gt;
+&lt;div&gt;
+    &lt;img src=&quot;./img/pic3.jpg&quot; alt=&quot;&quot;&gt;
+&lt;/div&gt;</code></pre>
 <h2 id="溢出的文字省略号显示-text-overflow"><a href="#溢出的文字省略号显示-text-overflow" class="headerlink" title="溢出的文字省略号显示 text-overflow"></a>溢出的文字省略号显示 text-overflow</h2><h3 id="white-space-一行显示"><a href="#white-space-一行显示" class="headerlink" title="white-space 一行显示"></a>white-space 一行显示</h3><p>white-space设置或检索对象内文本显示方式。通常我们使用于强制一行显示内容 </p>
 <pre><code>white-space:normal ；默认处理方式
 white-space:nowrap ；　强制在同一行内显示所有文本，直到文本结束或者遭遇br标签对象才换行。</code></pre><h3 id="text-overflow-文字溢出"><a href="#text-overflow-文字溢出" class="headerlink" title="text-overflow 文字溢出"></a>text-overflow 文字溢出</h3><p>设置或检索是否使用一个省略标记（…）标示对象内文本的溢出</p>
@@ -788,6 +933,21 @@ white-space: nowrap;
 overflow: hidden;
 /* 3. 文字用省略号替代超出的部分 */
 text-overflow: ellipsis;</code></pre>
+<p><img src="http://mdimg.95408.com/202001022101_63.png?null" alt=""></p>
+<pre><code class="html">&lt;style&gt;
+    div {
+        width: 150px;
+        height: 25px;
+        border: 1px solid pink;
+        /* 当文字显示不开的时候，自动换行 */
+        white-space: nowrap;
+        /* 溢出隐藏 */
+        overflow: hidden;
+        /* 文字溢出 用省略号替代  ellipsis 省略号 */
+        text-overflow: ellipsis;
+    }
+&lt;/style&gt;
+&lt;div&gt;这是一个灰常长灰常常的标题&lt;/div&gt;</code></pre>
 <h2 id="CSS精灵技术-sprite"><a href="#CSS精灵技术-sprite" class="headerlink" title="CSS精灵技术 sprite"></a>CSS精灵技术 sprite</h2><ul>
 <li>为了有效地减少服务器接受和发送请求的次数，提高页面的加载速度；</li>
 <li>出现了CSS精灵技术（也称CSS Sprites、CSS雪碧）；</li>
@@ -804,28 +964,246 @@ text-overflow: ellipsis;</code></pre>
 </li>
 <li>CSS精灵技术主要针对于背景图片，放的都是小的装饰性质的背景图片；</li>
 </ul>
-<h2 id="margin-负值"><a href="#margin-负值" class="headerlink" title="margin 负值"></a>margin 负值</h2><p><strong>负边距+定位：水平垂直居中</strong></p>
+<blockquote>
+<p>  例：</p>
+</blockquote>
+<p><img src="http://mdimg.95408.com/202001022158_564.png?null" alt=""></p>
+<pre><code class="html">&lt;style&gt;
+    .icon1 {
+        width: 20px;
+        height: 20px;
+        /* 使用相同的图片 最重要的是定位每个小图标的位置 */
+        background: url(images/index.png) no-repeat  0 -100px;    }
+    .icon2 {
+        width: 20px;
+        height: 20px;
+        background: url(images/index.png) no-repeat -150px -100px;
+    }
+&lt;/style&gt;
+&lt;div class=&quot;icon1&quot;&gt;&lt;/div&gt;
+---------
+&lt;div class=&quot;icon2&quot;&gt;&lt;/div&gt;</code></pre>
+<blockquote>
+<p>  从精灵图中选择出字母：</p>
+</blockquote>
+<p><img src="http://mdimg.95408.com/202001022154_321.png?null" alt=""></p>
+<pre><code class="html">&lt;style&gt;
+    div {
+        float: left;
+        background: url(images/abcd.jpg) no-repeat;
+    }
+    .p {
+        width: 92px;
+        height: 108px;
+        background-position: -497px -278px;
+    }
+    .i {
+        width: 62px;
+        height: 106px;
+        background-position: -326px -142px;
+    }
+    .n {
+        width: 112px;
+        height: 113px;
+        background-position: -255px -274px;
+    }
+    .k {
+        width: 104px;
+        height: 111px;
+        background-position: -496px -142px;
+    }
+&lt;/style&gt;
+&lt;div class=&quot;p&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;i&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;n&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;k&quot;&gt;&lt;/div&gt;</code></pre>
+<h3 id="滑动门"><a href="#滑动门" class="headerlink" title="滑动门"></a>滑动门</h3><p><img src="http://mdimg.95408.com/202001022205_242.png?null" alt=""></p>
+<pre><code class="html">&lt;style&gt;
+    /* a 是设置左侧背景（左门）*/
+    a {
+        /* 因为我们是滑动门，左右推拉 跟文字内容多少有关系 */
+        /* 此时需要用文字撑开盒子， 就要用到行内块 */
+        display: inline-block;
+        height: 33px;
+        background: url(images/to.png) no-repeat;
+        margin: 100px;
+        padding-left: 15px;
+        color: #fff;
+    }
+    /* span 是设置右侧背景（右门）*/
+    a span {
+        display: inline-block;
+        height: 33px;
+        line-height: 33px;
+        /* 一定注意 span 需要背景图片 右对齐 */
+        background: url(images/to.png) no-repeat right top;
+        padding-right: 15px;
+    }
+    /* 鼠标移动变换样式 */
+    /* 注意是鼠标移动到a上，再变换span，a:hover span*/
+    a:hover,
+    a:hover span {
+        background-image: url(images/ao.png);
+&lt;/style&gt;
+&lt;a href=&quot;#&quot;&gt;
+    &lt;span&gt;公司新闻&lt;/span&gt;
+&lt;/a&gt;</code></pre>
+<h2 id="margin-负值使用"><a href="#margin-负值使用" class="headerlink" title="margin 负值使用"></a>margin 负值使用</h2><p><strong>负边距+定位：水平垂直居中</strong></p>
 <p>咱们前面讲过， 一个绝对定位的盒子， 利用  父级盒子的 50%，  然后 往左(上) 走 自己宽度的一半 ，可以实现盒子水平垂直居中。</p>
+<p><img src="http://mdimg.95408.com/202001021403_744.png?null" alt=""></p>
+<pre><code class="css">div {  
+    position: absolute;
+    /* left 50% 走父亲宽度的一半 */    
+    left: 50%;
+    /* margin-left 左走自己宽度的一半  一定注意是 负值 */
+    margin-left: -100px;
+    width: 200px;
+    height: 200px;
+    background-color: pink;    
+}</code></pre>
+<p><img src="http://mdimg.95408.com/202001022145_306.png?null" alt=""></p>
+<pre><code class="html">&lt;style&gt;
+    .father {
+        /* 相对定位 */
+        position: relative;            
+        width: 400px;
+        height: 400px;
+        margin: 20px auto;
+        border: 1px solid red;
+    }
+    .son {
+        /* 绝对定位 */
+        position: absolute;
+        /* 向下移动50% */
+        top: 50%;
+        /* 向下移动50%是以son盒子顶边为准 */
+        /* 需还往回走son盒子的一半50px */
+        margin-top: -50px;
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+    }
+&lt;/style&gt;
+&lt;div class=&quot;father&quot;&gt;
+    &lt;div class=&quot;son&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 <p><strong>压住盒子相邻边框</strong> </p>
-<h2 id="CSS-三角形"><a href="#CSS-三角形" class="headerlink" title="CSS 三角形"></a>CSS 三角形</h2><p>用 css 边框可以模拟三角效果：</p>
+<blockquote>
+<p>  左图：两个盒子的边框贴一起，成了4px</p>
+<p>  右图：后一个盒子往左走2px，盖住了前一个盒子的2px右边框；下一排盒子往上走2px，盖住了上一排盒子的2px底边框；</p>
+</blockquote>
+<p><img src="http://mdimg.95408.com/202001022119_992.png?null" alt=""></p>
+<pre><code class="html">&lt;style&gt;
+    div {
+        /* 浮动的盒子是紧贴在一起的 */
+        float: left;
+        width: 200px;
+        height: 300px;
+        border: 1px solid #ccc;
+        /* 左图：没有加下面两句，两个盒子的边框贴一起，成了4px */
+        /* 右图：加上下面两句，后一个盒子往左走2px，盖住了前一个盒子的2px */
+        margin-left: -2px;
+        margin-top: -2px;
+    }
+&lt;/style&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;</code></pre>
+<blockquote>
+<p>  上一例，这时如果加hover，前一个边框变色会被后一个盖住：</p>
+</blockquote>
+<p><img src="http://mdimg.95408.com/202001022129_748.png?null" alt=""></p>
+<pre><code class="css">div:hover {
+    border: 2px solid blue;
+}</code></pre>
+<blockquote>
+<p>  改进：</p>
+</blockquote>
+<p><img src="http://mdimg.95408.com/202001022133_286.png?null" alt=""></p>
+<pre><code class="css">/* 方案一 */
+div:hover {
+    border: 1px solid #f40;
+    /* 我要让当前鼠标经过的这个div 升到最高处来就好了 */
+    /* 定位的盒子是最高层的 */
+    /* 我们只要保证当前的这个盒子 是定位 就会压住 标准流和浮动盒子 */
+    /* 我们只能用相对定位 它是占位置的 */
+    position: relative;
+}
+
+/* 方案二 */
+div {
+    position: relative;
+}
+div:hover {
+    border: 1px solid #f40;
+    /* 都是定位的盒子，我们通过z-index 来实现层级关系 */
+    z-index: 1;
+}</code></pre>
+<h2 id="border-写三角形"><a href="#border-写三角形" class="headerlink" title="border 写三角形"></a>border 写三角形</h2><p>用 css 边框可以模拟三角效果：</p>
 <ul>
 <li>宽度高度为 0 ；</li>
 <li>我们4个边框都要写， 只保留需要的边框颜色，其余的不能省略，都改为 transparent 透明就好；</li>
 <li>为了照顾兼容性 低版本的浏览器，加上 <code>font-size: 0;  line-height: 0;</code> ；</li>
 </ul>
-<p><img src="http://mdimg.95408.com/202001021546_540.png?null" alt=""></p>
-<pre><code class="css">div {
-     width: 0; 
+<p><img src="http://mdimg.95408.com/202001022107_171.png?null" alt=""></p>
+<pre><code class="css">&lt;style&gt;
+div {
+    /* 用css边框可以模拟三角效果 */
+    width: 0;
     height: 0;
-
-    line-height:0；
-    font-size: 0;
-
     border-top: 10px solid red;
     border-right: 10px solid green;
     border-bottom: 10px solid blue;
-    border-left: 10px solid #000; 
- }</code></pre>
+    border-left: 10px solid pink;
+    font-size: 0;
+    line-height: 0;
+}
+p {
+    /* 模拟向右三角效果 */
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px;
+    border-color:  transparent transparent transparent red;
+    font-size: 0;
+    line-height: 0;
+}
+&lt;/style&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;</code></pre>
+<p><img src="http://mdimg.95408.com/202001022113_890.png?null" alt=""></p>
+<pre><code class="html">&lt;style&gt;
+    div {
+        position: relative;
+        width: 200px;
+        height: 100px;
+        background-color: pink;
+        margin: 100px auto;
+    }
+    p {
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        margin-left: -20px;
+        /* 三角效果 */
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 20px;
+        border-color: transparent transparent pink transparent;
+        font-size: 0;
+        line-height: 0;
+    }
+&lt;/style&gt;
+&lt;div&gt;
+    &lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;</code></pre>
 <p>以上。</p>
 
       
@@ -871,7 +1249,7 @@ text-overflow: ellipsis;</code></pre>
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#html+css','#Css','#bootstrap','#js','#Node.js','#markdown','#博客','#hexo','#vue','#vscode','#Css3','#HTML5','#git','#github','#Mongodb',],
+            'data': ['#html+css','#Css','#bootstrap','#Css3','#HTML5','#js','#Node.js','#vue','#markdown','#博客','#hexo','#vscode','#Mongodb','#git','#github',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');
