@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript（五）函数、作用域、预解析 | 半根竹子</title>
+  <meta name="keywords" content=" js ">
+  <meta name="description" content="JavaScript（五）函数、作用域、预解析 | 半根竹子">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="对象对象概念 在 JavaScript 中，对象是一组无序的相关属性和方法的集合 所有的事物都是对象，例如字符串、数值、数组、函数等。 对象是由属性和方法组成的。 属性：事物的特征，在对象中用属性来表示（常用名词） 方法：事物的行为，在对象中用方法来表示（常用动词）   为了让更好地存储一组数据，对象应运而生 对象中为每项数据设置了属性名称，可以访问数据更语义化，数据结构清晰，表意明显 JS中的对">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript（六）对象、构造函数、Math、Date">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;01&#x2F;06&#x2F;js&#x2F;JavaScript%EF%BC%88%E5%85%AD%EF%BC%89%E5%AF%B9%E8%B1%A1&#x2F;index.html">
+<meta property="og:site_name" content="半根竹子">
+<meta property="og:description" content="对象对象概念 在 JavaScript 中，对象是一组无序的相关属性和方法的集合 所有的事物都是对象，例如字符串、数值、数组、函数等。 对象是由属性和方法组成的。 属性：事物的特征，在对象中用属性来表示（常用名词） 方法：事物的行为，在对象中用方法来表示（常用动词）   为了让更好地存储一组数据，对象应运而生 对象中为每项数据设置了属性名称，可以访问数据更语义化，数据结构清晰，表意明显 JS中的对">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001060233_997.png?null">
+<meta property="article:published_time" content="2020-01-05T18:05:10.679Z">
+<meta property="article:modified_time" content="2020-01-05T18:40:49.800Z">
+<meta property="article:author" content="HalfBamboo">
+<meta property="article:tag" content="js">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001060233_997.png?null">
+
+
+<link rel="icon" href="http://mdimg.95408.com/20191218121717.png">
+
+<link href="/css/style.css?v=1.0.1" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-dark.css?v=1.0.1" rel="stylesheet">
+
+<link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="/js/jquery.autocomplete.min.js?v=1.0.1" ></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.0.1" ></script>
+
+<meta name="generator" content="Hexo 4.1.1"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="false">
+  <input class="theme_blog_path" value="">
+</div>
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="http://mdimg.95408.com/20191218121717.png" />
+</a>
+<div class="author">
+    <!-- <span>HalfBamboo</span> -->
+    <span>Bamboo</span>
+</div>
+
+<div class="icon">
+    
+        
+    
+        
+        <a title="github" href="https://github.com/yuanshengorg" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active">全部文章</div></li>
+    
+        
+            
+            <li><div data-rel="bootstrap">bootstrap</div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="css">css</div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="css3">css3</div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="JavaScript">JavaScript</div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="node">node</div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="工具">工具</div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="vue">vue</div>
+                
+            </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="37">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="back-title-list"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <form onkeydown="if(event.keyCode==13){return false;}">
+        <input class="search" type="text" placeholder="以 in: 开头进行全文搜索" autocomplete="off"id="local-search-input" >
+        <i class="cross"></i>
+        <span>
+            <label for="tagswitch">Tags:</label>
+            <input id="tagswitch" type="checkbox" style="display: none" />
+            <i id="tagsWitchIcon"></i>
+        </span>
+    </form>
+    <div class="tags-list">
+    
+    <li class="article-tag-list-item">
+        <a class="color4">Css</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">bootstrap</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">html+css</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">Css3</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">js</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">HTML5</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">Node.js</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">博客</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">hexo</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">markdown</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">vue</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">vscode</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">Mongodb</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">git</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">github</a>
+    </li>
+    
+    <div class="clearfix"></div>
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        <a  class="bootstrap "
+           href="/2019/12/30/bootstrap/Bootstrap(%E4%B8%80)%E5%AF%BC%E8%88%AA%E6%A0%8Fnavbar%20/"
+           data-tag="Css,bootstrap"
+           data-author="" >
+            <span class="post-title" title="Bootstrap(一)导航栏navbar">Bootstrap(一)导航栏navbar</span>
+            <span class="post-date" title="2019-12-30 15:19:48">2019/12/30</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/30/css/html+css%EF%BC%88%E4%B8%80%EF%BC%89html%E6%A0%87%E7%AD%BE/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（一）html标签">html+css（一）html标签</span>
+            <span class="post-date" title="2019-12-30 22:09:33">2019/12/30</span>
+        </a>
+        
+        <a  class="css "
+           href="/2020/01/02/css/HTML%E5%92%8CCSS%E8%BF%9B%E9%98%B6%E6%95%99%E7%A8%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="《HTML和CSS进阶教程》笔记（一）">《HTML和CSS进阶教程》笔记（一）</span>
+            <span class="post-date" title="2020-01-02 22:23:44">2020/01/02</span>
+        </a>
+        
+        <a  class="bootstrap "
+           href="/2019/12/30/bootstrap/Bootstrap(%E4%BA%8C)%E8%BD%AE%E6%92%AD%E5%9B%BEcarousel/"
+           data-tag="Css,bootstrap"
+           data-author="" >
+            <span class="post-title" title="Bootstrap(二)轮播图carousel">Bootstrap(二)轮播图carousel</span>
+            <span class="post-date" title="2019-12-30 19:04:11">2019/12/30</span>
+        </a>
+        
+        <a  class="css3 "
+           href="/2019/12/26/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%B8%80%EF%BC%89%E5%9F%BA%E7%A1%80%E3%80%81%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80/"
+           data-tag="Css3"
+           data-author="" >
+            <span class="post-title" title="CSS移动布局（一）基础、流式布局">CSS移动布局（一）基础、流式布局</span>
+            <span class="post-date" title="2019-12-26 19:15:43">2019/12/26</span>
+        </a>
+        
+        <a  class="JavaScript "
+           href="/2019/12/23/js/JavaScript%EF%BC%88%E4%B8%89%EF%BC%89%E6%95%B0%E7%BB%84%E4%B8%80/"
+           data-tag="js"
+           data-author="" >
+            <span class="post-title" title="JavaScript（三）数组一">JavaScript（三）数组一</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="JavaScript "
+           href="/2019/12/23/js/JavaScript%EF%BC%88%E5%9B%9B%EF%BC%89%E6%95%B0%E7%BB%84%E4%BA%8C/"
+           data-tag="js"
+           data-author="" >
+            <span class="post-title" title="JavaScript（四）数组二">JavaScript（四）数组二</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="css3 "
+           href="/2019/12/23/css3/HTML5+Css3%EF%BC%88%E4%BA%8C%EF%BC%89CSS3%E5%8A%A8%E7%94%BB%E3%80%812D%E3%80%813D/"
+           data-tag="Css3,HTML5"
+           data-author="" >
+            <span class="post-title" title="HTML5+Css3（二）CSS3动画、2D、3D">HTML5+Css3（二）CSS3动画、2D、3D</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="css3 "
+           href="/2019/12/23/css3/HTML5+Css3%EF%BC%88%E4%B8%80%EF%BC%89%E5%9F%BA%E7%A1%80/"
+           data-tag="Css3,HTML5"
+           data-author="" >
+            <span class="post-title" title="HTML5+Css3（一）基础">HTML5+Css3（一）基础</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/02/node/Node.js%EF%BC%882%EF%BC%89fs%E3%80%81path%E3%80%81gulp%E6%A8%A1%E5%9D%97/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（2）fs、path、gulp模块">Node.js（2）fs、path、gulp模块</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="css3 "
+           href="/2019/12/27/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%B8%89%EF%BC%89rem%E5%B8%83%E5%B1%80%E5%92%8C%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2/"
+           data-tag="Css3"
+           data-author="" >
+            <span class="post-title" title="CSS移动布局（三）rem布局和媒体查询">CSS移动布局（三）rem布局和媒体查询</span>
+            <span class="post-date" title="2019-12-27 12:48:53">2019/12/27</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/01/node/Node.js%EF%BC%881%EF%BC%89%E5%9F%BA%E7%A1%80/"
+           data-tag="js,Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（1）基础">Node.js（1）基础</span>
+            <span class="post-date" title="2019-12-01 00:00:00">2019/12/01</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/07/node/Untitled/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（7）博客项目">Node.js（7）博客项目</span>
+            <span class="post-date" title="2019-12-07 00:00:00">2019/12/07</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/Hexo%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95%E6%9B%B4%E6%96%B0/"
+           data-tag="博客,hexo"
+           data-author="" >
+            <span class="post-title" title="Hexo折腾记录更新">Hexo折腾记录更新</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/hexo%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/"
+           data-tag="博客,hexo"
+           data-author="" >
+            <span class="post-title" title="hexo创建博客">hexo创建博客</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/Markdown%E8%AF%AD%E6%B3%95CSS%E8%A1%A8%E7%8E%B0%E6%B5%8B%E8%AF%95/"
+           data-tag="markdown"
+           data-author="" >
+            <span class="post-title" title="Markdown语法CSS表现测试">Markdown语法CSS表现测试</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="vue "
+           href="/2019/12/23/vue/Vue%E5%9F%BA%E7%A1%80/"
+           data-tag="js,vue"
+           data-author="" >
+            <span class="post-title" title="Vue基础">Vue基础</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/vscode%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9B%98/"
+           data-tag="vscode"
+           data-author="" >
+            <span class="post-title" title="自定义 vs code 命令快捷键">自定义 vs code 命令快捷键</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="css "
+           href="/2020/01/02/css/html+css%EF%BC%88%E4%B8%83%EF%BC%89CSS%E5%AE%9A%E4%BD%8D/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（七）CSS定位">html+css（七）CSS定位</span>
+            <span class="post-date" title="2020-01-02 12:00:40">2020/01/02</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/31/css/html+css%EF%BC%88%E4%B8%89%EF%BC%89CSS%E9%80%89%E6%8B%A9%E5%99%A8%E3%80%81%E5%AD%97%E4%BD%93%E5%8F%8A%E5%A4%96%E8%A7%82/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（三）CSS选择器、字体及外观">html+css（三）CSS选择器、字体及外观</span>
+            <span class="post-date" title="2019-12-31 12:30:02">2019/12/31</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/31/css/html+css%EF%BC%88%E4%BA%94%EF%BC%89CSS%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（五）CSS盒子模型">html+css（五）CSS盒子模型</span>
+            <span class="post-date" title="2019-12-31 15:06:25">2019/12/31</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/31/css/html+css%EF%BC%88%E5%85%AD%EF%BC%89CSS%E6%B5%AE%E5%8A%A8/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（六）CSS浮动">html+css（六）CSS浮动</span>
+            <span class="post-date" title="2019-12-31 16:40:39">2019/12/31</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/31/css/html+css%EF%BC%88%E5%9B%9B%EF%BC%89CSS%E6%98%BE%E7%A4%BA%E6%A8%A1%E5%BC%8F%E3%80%81%E8%A1%8C%E9%AB%98%E3%80%81%E8%83%8C%E6%99%AF%E3%80%81%E7%89%B9%E6%80%A7/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（四）CSS显示模式、行高、背景、特性">html+css（四）CSS显示模式、行高、背景、特性</span>
+            <span class="post-date" title="2019-12-31 14:24:56">2019/12/31</span>
+        </a>
+        
+        <a  class="css3 "
+           href="/2019/12/27/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E5%9B%9B%EF%BC%89%E5%93%8D%E5%BA%94%E5%BC%8Fbootstrap/"
+           data-tag="bootstrap"
+           data-author="" >
+            <span class="post-title" title="CSS移动布局（四）响应式bootstrap">CSS移动布局（四）响应式bootstrap</span>
+            <span class="post-date" title="2019-12-27 23:15:43">2019/12/27</span>
+        </a>
+        
+        <a  class="css3 "
+           href="/2019/12/26/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%BA%8C%EF%BC%89flex%E5%B8%83%E5%B1%80%EF%BC%88%E5%9B%BE%E7%A4%BA%EF%BC%89/"
+           data-tag="Css3"
+           data-author="" >
+            <span class="post-title" title="CSS移动布局（二）flex布局（图示）">CSS移动布局（二）flex布局（图示）</span>
+            <span class="post-date" title="2019-12-26 20:56:43">2019/12/26</span>
+        </a>
+        
+        <a  class="JavaScript "
+           href="/2020/01/05/js/JavaScript%EF%BC%88%E4%B8%80%EF%BC%89%E5%9F%BA%E7%A1%80%E3%80%81%E5%8F%98%E9%87%8F%E3%80%81%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"
+           data-tag="js"
+           data-author="" >
+            <span class="post-title" title="JavaScript（一）基础、变量、数据类型">JavaScript（一）基础、变量、数据类型</span>
+            <span class="post-date" title="2020-01-05 23:18:15">2020/01/05</span>
+        </a>
+        
+        <a  class="JavaScript "
+           href="/2020/01/06/js/JavaScript%EF%BC%88%E4%BA%94%EF%BC%89%E5%87%BD%E6%95%B0%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%E3%80%81%E9%A2%84%E8%A7%A3%E6%9E%90/"
+           data-tag="js"
+           data-author="" >
+            <span class="post-title" title="JavaScript（五）函数、作用域、预解析">JavaScript（五）函数、作用域、预解析</span>
+            <span class="post-date" title="2020-01-06 01:32:45">2020/01/06</span>
+        </a>
+        
+        <a  class="JavaScript "
+           href="/2020/01/06/js/JavaScript%EF%BC%88%E4%BA%8C%EF%BC%89%E8%BF%90%E7%AE%97%E7%AC%A6%E3%80%81%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/"
+           data-tag="js"
+           data-author="" >
+            <span class="post-title" title="JavaScript（二）运算符、流程控制">JavaScript（二）运算符、流程控制</span>
+            <span class="post-date" title="2020-01-06 00:40:43">2020/01/06</span>
+        </a>
+        
+        <a  class="JavaScript "
+           href="/2020/01/06/js/JavaScript%EF%BC%88%E5%85%AD%EF%BC%89%E5%AF%B9%E8%B1%A1/"
+           data-tag="js"
+           data-author="" >
+            <span class="post-title" title="JavaScript（六）对象、构造函数、Math、Date">JavaScript（六）对象、构造函数、Math、Date</span>
+            <span class="post-date" title="2020-01-06 02:05:10">2020/01/06</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/05/node/Node.js%EF%BC%885%EF%BC%89art-Template%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（5）art-Template模板引擎">Node.js（5）art-Template模板引擎</span>
+            <span class="post-date" title="2019-12-05 00:00:00">2019/12/05</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/04/node/Node.js%EF%BC%884%EF%BC%89Mongodb%E6%95%B0%E6%8D%AE%E5%BA%93/"
+           data-tag="Mongodb"
+           data-author="" >
+            <span class="post-title" title="Node.js（4）Mongodb数据库">Node.js（4）Mongodb数据库</span>
+            <span class="post-date" title="2019-12-04 00:00:00">2019/12/04</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/git%E5%92%8Cgithub/"
+           data-tag="git,github"
+           data-author="" >
+            <span class="post-title" title="git和github">git和github</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="css "
+           href="/2020/01/03/css/html+css%EF%BC%88%E4%B9%9D%EF%BC%89%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（九）代码规范">html+css（九）代码规范</span>
+            <span class="post-date" title="2020-01-03 17:50:20">2020/01/03</span>
+        </a>
+        
+        <a  class="css "
+           href="/2020/01/02/css/html+css%EF%BC%88%E5%85%AB%EF%BC%89CSS%E9%AB%98%E7%BA%A7%E6%8A%80%E6%9C%AF/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（八）CSS高级技术">html+css（八）CSS高级技术</span>
+            <span class="post-date" title="2020-01-02 15:13:11">2020/01/02</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/30/css/html+css%EF%BC%88%E4%BA%8C%EF%BC%89%E8%A1%A8%E6%A0%BC%E3%80%81%E5%88%97%E8%A1%A8%E5%92%8C%E8%A1%A8%E5%8D%95/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（二）表格、列表和表单">html+css（二）表格、列表和表单</span>
+            <span class="post-date" title="2019-12-30 23:09:44">2019/12/30</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/03/node/Node.js%EF%BC%883%EF%BC%89web%E6%9C%8D%E5%8A%A1%E5%99%A8%E3%80%81http%E3%80%81async%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（3）web服务器、http、async异步编程">Node.js（3）web服务器、http、async异步编程</span>
+            <span class="post-date" title="2019-12-03 00:00:00">2019/12/03</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/06/node/Node.js%EF%BC%886%EF%BC%89Express%E6%A1%86%E6%9E%B6/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（6）Express框架">Node.js（6）Express框架</span>
+            <span class="post-date" title="2019-12-06 00:00:00">2019/12/06</span>
+        </a>
+        
+    </nav>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div class="post">
+    <div class="pjax">
+        <article id="post-js/JavaScript（五）函数、作用域、预解析" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">JavaScript（五）函数、作用域、预解析</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            
+                <a  data-rel="JavaScript">JavaScript</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color3">js</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2020-01-06 02:05:03'>2020-01-06 01:32</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#函数"><span class="toc-text">函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#声明函数"><span class="toc-text">声明函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#调用函数"><span class="toc-text">调用函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#函数的参数"><span class="toc-text">函数的参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#函数的返回值"><span class="toc-text">函数的返回值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#break、continue-和-return"><span class="toc-text">break、continue 和 return</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#arguments-不确定参数"><span class="toc-text">arguments 不确定参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#函数内部调用其他函数"><span class="toc-text">函数内部调用其他函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#函数声明方式"><span class="toc-text">函数声明方式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#作用域、预解析"><span class="toc-text">作用域、预解析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#作用域"><span class="toc-text">作用域</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#全局变量和局部变量"><span class="toc-text">全局变量和局部变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#作用域链"><span class="toc-text">作用域链</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#预解析"><span class="toc-text">预解析</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-4 i,
+    .toc-level-4 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><ul>
+<li>函数就是封装了一段可被重复调用执行的代码块；</li>
+<li>通过此代码块可以<strong>实现大量代码的重复使用</strong>；</li>
+</ul>
+<h3 id="声明函数"><a href="#声明函数" class="headerlink" title="声明函数"></a>声明函数</h3><ul>
+<li>function 是声明函数的关键字,必须小写；</li>
+<li>由于函数一般是为了实现某个功能才定义的， 所以通常我们将函数名命名为动词，比如 getSum；</li>
+</ul>
+<pre><code class="js">// 声明函数
+function 函数名() {
+    //函数体代码
+}</code></pre>
+<h3 id="调用函数"><a href="#调用函数" class="headerlink" title="调用函数"></a>调用函数</h3><ul>
+<li>调用时要加小括号；</li>
+<li>口诀：函数不调用，自己不执行；</li>
+<li>声明函数本身并不会执行代码，只有调用函数时才会执行函数体代码；</li>
+</ul>
+<pre><code class="js">// 调用函数
+函数名();  // 通过调用函数名来执行函数体代码</code></pre>
+<p>例子：封装计算1-100累加和</p>
+<pre><code class="js">// 声明函数
+function getSum(){
+    var sumNum = 0; // 准备一个变量，保存数字和
+    for (var i = 1; i &lt;= 100; i++) {
+        sumNum += i; // 把每个数值 都累加 到变量中
+    }
+    alert(sumNum);
+}
+// 调用函数
+getSum();</code></pre>
+<h3 id="函数的参数"><a href="#函数的参数" class="headerlink" title="函数的参数"></a>函数的参数</h3><ul>
+<li>形参：函数定义时设置接收调用时传入；</li>
+<li>实参：函数调用时传入小括号内的真实数据；</li>
+<li>调用的时候实参值是传递给形参的；</li>
+<li>形参简单理解为：不用声明的变量；</li>
+<li>实参和形参的多个参数之间用逗号（ , ）分隔；</li>
+</ul>
+<pre><code class="js">// 带参数的函数声明
+function 函数名(形参1, 形参2 , 形参3...) { // 可以定义任意多的参数，用逗号分隔
+  // 函数体
+}
+// 带参数的函数调用
+函数名(实参1, 实参2, 实参3...); </code></pre>
+<p>函数形参和实参数量不匹配时：</p>
+<ul>
+<li>实参个数 = 形参个数：正确；</li>
+<li>实参个数 &gt; 形参个数：只取到形参的个数；</li>
+<li>实参个数 &lt; 形参个数：多的形参为undefined，结果为NaN；</li>
+<li>在JavaScript中，形参的默认值是undefined；</li>
+</ul>
+<p>小结：</p>
+<ul>
+<li>函数可以带参数也可以不带参数；</li>
+<li>声明函数的时候，函数名括号里面的是形参，形参的默认值为 undefined；</li>
+<li>调用函数的时候，函数名括号里面的是实参；</li>
+<li>多个参数中间用逗号分隔；</li>
+<li>形参的个数可以和实参个数不匹配，但是结果不可预计，我们尽量要匹配；</li>
+</ul>
+<h3 id="函数的返回值"><a href="#函数的返回值" class="headerlink" title="函数的返回值"></a>函数的返回值</h3><p>return 语句</p>
+<ul>
+<li>在使用 return 语句时，函数会停止执行，并返回指定的值；</li>
+<li>如果函数没有 return ，返回的值是 undefined；</li>
+</ul>
+<pre><code class="js">// 声明函数
+function 函数名（）{
+    ...
+    return  需要返回的值；
+}
+// 调用函数
+函数名();    // 此时调用函数就可以得到函数体内return 后面的值</code></pre>
+<h3 id="break、continue-和-return"><a href="#break、continue-和-return" class="headerlink" title="break、continue 和 return"></a>break、continue 和 return</h3><ul>
+<li>break ：结束当前的循环体（如 for、while）；</li>
+<li>continue ：跳出本次循环，继续执行下次循环（如 for、while）；</li>
+<li>return ：不仅可以退出循环，还能够返回 return 语句中的值，同时还可以结束当前的函数体内的代码；</li>
+</ul>
+<h3 id="arguments-不确定参数"><a href="#arguments-不确定参数" class="headerlink" title="arguments 不确定参数"></a>arguments 不确定参数</h3><ul>
+<li>不确定有多少个参数传递的时候，可以用 arguments 来获取；</li>
+<li>JavaScript 中，arguments实际上它是当前函数的一个内置对象；</li>
+<li>所有函数都内置了一个 arguments 对象，arguments 对象中存储了传递的所有实参；</li>
+<li>arguments展示形式是一个伪数组，因此可以进行遍历；</li>
+<li>伪数组具有以下特点：<ul>
+<li>具有 length 属性；</li>
+<li>按索引方式储存数据；</li>
+<li>不具有数组的 push , pop 等方法；</li>
+<li>注意：在函数内部使用该对象，用此对象获取函数调用时传的实参；</li>
+</ul>
+</li>
+</ul>
+<h3 id="函数内部调用其他函数"><a href="#函数内部调用其他函数" class="headerlink" title="函数内部调用其他函数"></a>函数内部调用其他函数</h3><p>函数内部可以调用另一个函数，在同一作用域代码中，函数名即代表封装的操作，使用函数名加括号即可以将封装的操作执行。</p>
+<h3 id="函数声明方式"><a href="#函数声明方式" class="headerlink" title="函数声明方式"></a>函数声明方式</h3><p>自定义函数方式 (<strong>命名函数</strong>)：</p>
+<ul>
+<li>利用函数关键字 function 自定义函数方式；</li>
+<li>因为有名字，所以也被称为命名函数；</li>
+<li>调用函数的代码既可以放到声明函数的前面，也可以放在声明函数的后面；</li>
+</ul>
+<pre><code class="js">// 声明定义方式
+function fn1() {
+    ...
+};
+// 调用  
+fn1();  </code></pre>
+<p>函数表达式方式 (<strong>匿名函数</strong>）：</p>
+<ul>
+<li>因为函数没有名字，所以也被称为匿名函数；</li>
+<li>这个fn 里面存储的是一个函数  ；</li>
+<li>函数表达式方式原理跟声明变量方式是一致的；</li>
+<li>函数调用的代码必须写到函数体后面；</li>
+</ul>
+<pre><code class="js">// 这是函数表达式写法，匿名函数后面跟分号结束
+var fn2 = function( ) {
+    ...
+}；
+// 调用的方式，函数调用必须写到函数体下面
+fn2();</code></pre>
+<h2 id="作用域、预解析"><a href="#作用域、预解析" class="headerlink" title="作用域、预解析"></a>作用域、预解析</h2><h3 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h3><ul>
+<li>全局作用域<ul>
+<li>作用于所有代码执行的环境(整个 script 标签内部)或者一个独立的 js 文件。</li>
+</ul>
+</li>
+<li>局部作用域<ul>
+<li>作用于函数内的代码环境，就是局部作用域。 因为跟函数有关系，所以也称为函数作用域。</li>
+</ul>
+</li>
+<li>JS没有块级作用域<ul>
+<li>块作用域由 { } 包括。</li>
+</ul>
+</li>
+</ul>
+<p>java有块级作用域：</p>
+<pre><code class="java">if (true) {
+  int num = 123;
+  system.out.print(num);  // 123
+}
+system.out.print(num);    // 报错</code></pre>
+<ul>
+<li><p>以上java代码会报错，是因为代码中 { } 即一块作用域，其中声明的变量 num，在 “{ }” 之外不能使用；</p>
+</li>
+<li><p>而与之类似的JavaScript代码，则不会报错：</p>
+</li>
+</ul>
+<p>Js中没有块级作用域（在ES6之前）</p>
+<pre><code class="js">if (true) {
+    var num = 123;
+    console.log(123); //123
+}
+console.log(123);   //123</code></pre>
+<h3 id="全局变量和局部变量"><a href="#全局变量和局部变量" class="headerlink" title="全局变量和局部变量"></a>全局变量和局部变量</h3><ul>
+<li>全局变量<ul>
+<li>在全局作用域下声明的变量叫做全局变量（在函数外部定义的变量）。</li>
+<li>全局变量在代码的任何位置都可以使用</li>
+<li>在全局作用域下 var 声明的变量 是全局变量</li>
+<li>特殊情况下，在函数内不使用 var 声明的变量也是全局变量（不建议使用）</li>
+</ul>
+</li>
+<li>局部变量<ul>
+<li>局部变量只能在该函数内部使用</li>
+<li>在函数内部 var 声明的变量是局部变量</li>
+<li>函数的形参实际上就是局部变量</li>
+</ul>
+</li>
+<li>全局变量和局部变量的区别<ul>
+<li>全局变量：在任何一个地方都可以使用，只有在浏览器关闭时才会被销毁，因此比较占内存</li>
+<li>局部变量：只在函数内部使用，当其所在的代码块被执行时，会被初始化；当代码块运行结束后，就会被销毁，因此更节省内存空间</li>
+</ul>
+</li>
+</ul>
+<h3 id="作用域链"><a href="#作用域链" class="headerlink" title="作用域链"></a>作用域链</h3><ul>
+<li>只要是代码都一个作用域中，写在函数内部的局部作用域，未写在任何函数内部即在全局作用域中；</li>
+<li>如果函数中还有函数，那么在这个作用域中就又可以诞生一个作用域；</li>
+<li>根据在<strong>[内部函数可以访问外部函数变量]</strong>的这种机制，用链式查找决定哪些数据能被内部函数访问，就称作作用域链</li>
+</ul>
+<pre><code class="js">function f1() {
+    var num = 123;
+    function f2() {
+        console.log( num );
+    }
+    f2();
+}
+var num = 456;
+f1();</code></pre>
+<p>作用域链：采取就近原则的方式来查找变量最终的值。</p>
+<pre><code class="js">var a = 1;
+function fn1() {
+    var a = 2;
+    var b = &#39;22&#39;;
+    fn2();
+    function fn2() {
+        var a = 3;
+        fn3();
+        function fn3() {
+            var a = 4;
+            console.log(a); //a的值 ?
+            console.log(b); //b的值 ?
+        }
+    }
+}
+fn1();</code></pre>
+<p><img src="http://mdimg.95408.com/202001060155_624.png?null" alt=""></p>
+<h3 id="预解析"><a href="#预解析" class="headerlink" title="预解析"></a>预解析</h3><ul>
+<li>JavaScript 代码是由浏览器中的 JavaScript 解析器来执行的。JavaScript 解析器在运行 JavaScript 代码的时候分为两步：预解析和代码执行。</li>
+<li>预解析：在当前作用域下, JS 代码执行之前，浏览器会默认把带有 var 和 function 声明的变量在内存中进行提前声明或者定义。</li>
+<li>代码执行： 从上到下执行JS语句。</li>
+<li>预解析会把变量和函数的声明在代码执行之前执行完成。</li>
+</ul>
+<p><strong>变量预解析</strong></p>
+<ul>
+<li>预解析也叫做变量、函数提升。</li>
+<li>变量提升（变量预解析）： 变量的声明会被提升到当前作用域的最上面，变量的赋值不会提升。</li>
+</ul>
+<pre><code class="js">console.log(num);  // 结果是多少？
+var num = 10;      
+// 结果：undefined
+// 相当于：
+// 注意：变量提升只提升声明，不提升赋值
+var num;
+console.log(num); // undefined
+num = 10;</code></pre>
+<p><strong>函数预解析</strong></p>
+<ul>
+<li>函数提升： 函数的声明会被提升到当前作用域的最上面，但是不会调用函数。</li>
+</ul>
+<pre><code class="js">fn();
+function fn() {
+    console.log(&#39;打印&#39;);
+}
+// 结果：输出字符串 --- 打印
+// 相当于：
+// 函数声明代表函数整体
+// 函数提升后，函数名代表整个函数，但函数并没有被调用
+function fn() {
+    console.log(&#39;打印&#39;);
+}
+fn();</code></pre>
+<p><strong>函数表达式声明函数问题</strong></p>
+<ul>
+<li>函数表达式创建函数，会执行变量提升，此时接收函数的变量名无法正确的调用：</li>
+</ul>
+<pre><code class="js">fn();
+var fn = function() {
+    console.log(&#39;想不到吧&#39;);
+}
+// 结果：报错提示 ”fn is not a function&quot;
+// 先做变量声明提升，fn在提升之后的值是undefined；
+// fn调用是在fn被赋值为函数体之前
+// 此时fn的值是undefined，所以无法正确调用
+// 相当于：
+var fn;
+fn();
+fn = function() {
+    console.log(&#39;想不到吧&#39;);
+}</code></pre>
+<p>以上。</p>
+
+      
+       
+    </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">©2009-2019 半根竹子.</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full"><span class="min "></span></button>
+<button class="post-toc-menu"><span class="post-toc-menu-icons"></span></button>
+<div class="post-toc"><span class="post-toc-title">目录</span>
+    <div class="post-toc-content">
+
+    </div>
+</div>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+<div class="acParent"></div>
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.0.1" ></script>
+
+<script src="/js/script.js?v=1.0.1" ></script>
+<script>
+    var img_resize = 'default';
+    /*作者、标签的自动补全*/
+    $(function () {
+        $('.search').AutoComplete({
+            'data': ['#Css','#bootstrap','#html+css','#Css3','#js','#HTML5','#Node.js','#博客','#hexo','#markdown','#vue','#vscode','#Mongodb','#git','#github',],
+            'itemHeight': 20,
+            'width': 418
+        }).AutoComplete('show');
+    })
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $(".post .pjax table").addClass("green");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+        .nav .hide-list.fullscreen {
+            left: 492px
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #ccc;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
