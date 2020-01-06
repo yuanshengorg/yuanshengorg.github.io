@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>JavaScript（三）数组一 | 半根竹子</title>
+  <title>JavaScript（七）WebAPI获取元素、操作元素 | 半根竹子</title>
   <meta name="keywords" content=" js ">
-  <meta name="description" content="JavaScript（三）数组一 | 半根竹子">
+  <meta name="description" content="JavaScript（七）WebAPI获取元素、操作元素 | 半根竹子">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="DOM 文档对象模型（Document Object Model，简称DOM），是 W3C 组织推荐的处理可扩展标记语言（html或者xhtml）的标准编程接口。 W3C 已经定义了一系列的 DOM 接口，通过这些 DOM 接口可以改变网页的内容、结构和样式 DOM是W3C组织制定的一套处理 html和xml文档的规范，所有的浏览器都遵循了这套标准。  DOM树：  DOM树 又称为文档树模型，把">
 <meta property="og:type" content="article">
@@ -624,9 +624,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-js/JavaScript（三）数组一" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-js/JavaScript（七）WebAPI获取元素、操作元素" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">JavaScript（三）数组一</h1>
+        <h1 class="article-title">JavaScript（七）WebAPI获取元素、操作元素</h1>
     
     <div class="article-meta">
         
@@ -648,7 +648,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-01-06 16:41:26'>2019-12-23 12:59</time>
+        创建时间:<time class="date" title='更新时间: 2020-01-06 18:30:32'>2020-01-06 17:44</time>
         
     </div>
     <div class="article-meta">
@@ -659,7 +659,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#数组"><span class="toc-text">数组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、定义数组"><span class="toc-text">1、定义数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、-识别数组"><span class="toc-text">2、 识别数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、访问数组元素"><span class="toc-text">3、访问数组元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4、遍历数据"><span class="toc-text">4、遍历数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5、改变数组元素"><span class="toc-text">5、改变数组元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6、访问完整数组"><span class="toc-text">6、访问完整数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7、例"><span class="toc-text">7、例</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#例：求数组的和以及平均值"><span class="toc-text">例：求数组的和以及平均值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#例：求数组的最大值"><span class="toc-text">例：求数组的最大值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#例：数组转换为字符串"><span class="toc-text">例：数组转换为字符串</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#例：数组里存放10个数"><span class="toc-text">例：数组里存放10个数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#例：筛选数组"><span class="toc-text">例：筛选数组</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#例：数组去重"><span class="toc-text">例：数组去重</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#例：翻转数组"><span class="toc-text">例：翻转数组</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#例：冒泡排序"><span class="toc-text">例：冒泡排序</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数组属性方法"><span class="toc-text">数组属性方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、length-属性"><span class="toc-text">1、length 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、length-访问最后一个元素"><span class="toc-text">2、length 访问最后一个元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、push-、length添加元素"><span class="toc-text">3、push()、length添加元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4、添加元素时的空位"><span class="toc-text">4、添加元素时的空位</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数组方法"><span class="toc-text">数组方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、toString-转为字符串"><span class="toc-text">1、toString() 转为字符串</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、join-转字符串"><span class="toc-text">2、join() 转字符串</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、pop-删除最后元素—"><span class="toc-text">3、pop() 删除最后元素—</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4、push-在最后增加元素—"><span class="toc-text">4、push() 在最后增加元素—</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5、shift-删除第一个元素—"><span class="toc-text">5、shift() 删除第一个元素—</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6、unshift-在最前面增加元素—"><span class="toc-text">6、unshift() 在最前面增加元素—</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7、delete-删除元素"><span class="toc-text">7、delete 删除元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8、splice-向数组添加新项"><span class="toc-text">8、splice() 向数组添加新项</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8、splice-删除元素"><span class="toc-text">8、splice() 删除元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9、concat-合并、连接数组"><span class="toc-text">9、concat() 合并、连接数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10、slice-裁剪新数组"><span class="toc-text">10、slice() 裁剪新数组</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#例"><span class="toc-text">例</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#筛选数组"><span class="toc-text">筛选数组</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数组排序"><span class="toc-text">数组排序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#返回数组元素索引号"><span class="toc-text">返回数组元素索引号</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数组去重"><span class="toc-text">数组去重</span></a></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#DOM"><span class="toc-text">DOM</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#获取元素"><span class="toc-text">获取元素</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#根据id获取"><span class="toc-text">根据id获取</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#根据标签名获取"><span class="toc-text">根据标签名获取</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#H5新增获取方式"><span class="toc-text">H5新增获取方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#获取特殊元素"><span class="toc-text">获取特殊元素</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#事件"><span class="toc-text">事件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#常见鼠标事件"><span class="toc-text">常见鼠标事件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#操作元素"><span class="toc-text">操作元素</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#改变元素内容"><span class="toc-text">改变元素内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常用元素属性操作"><span class="toc-text">常用元素属性操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#表单元素属性操作"><span class="toc-text">表单元素属性操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#样式属性操作"><span class="toc-text">样式属性操作</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -675,269 +675,197 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><ul>
-<li>数组是一种特殊的变量，它能够一次存放一个以上的值。</li>
-<li>数组是一种特殊类型的对象，在 JavaScript 中对数组使用 typeof 运算符会返回 “object”。JavaScript 数组最好以数组来描述。</li>
-<li>数组使用数字来访问其“元素”，对象使用名称来访问其“成员”。数组和对象的区别：数组使用数字索引、象使用命名索引。数组是特殊类型的对象，具有数字索引。<ul>
-<li><code>var person = [&quot;Bill&quot;, &quot;Gates&quot;, 62];</code> 使用： <code>person[0]</code> </li>
-<li><code>var person = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:46};</code> 使用： <code>person.firstName</code> </li>
+        <h2 id="DOM"><a href="#DOM" class="headerlink" title="DOM"></a>DOM</h2><ul>
+<li>文档对象模型（Document Object Model，简称DOM），是 <a href="https://baike.baidu.com/item/W3C" target="_blank" rel="noopener">W3C</a> 组织推荐的处理<a href="https://baike.baidu.com/item/%E5%8F%AF%E6%89%A9%E5%B1%95%E7%BD%AE%E6%A0%87%E8%AF%AD%E8%A8%80" target="_blank" rel="noopener">可扩展标记语言</a>（html或者xhtml）的标准<a href="https://baike.baidu.com/item/%E7%BC%96%E7%A8%8B%E6%8E%A5%E5%8F%A3" target="_blank" rel="noopener">编程接口</a>。</li>
+<li>W3C 已经定义了一系列的 DOM 接口，通过这些 DOM 接口可以改变网页的内容、结构和样式</li>
+<li>DOM是W3C组织制定的一套处理 html和xml文档的规范，所有的浏览器都遵循了这套标准。</li>
 </ul>
+<p>DOM树：</p>
+<ul>
+<li><p>DOM树 又称为文档树模型，把文档映射成树形结构，通过节点对象对其处理，处理的结果可以加入到当前的页面。</p>
 </li>
-<li>如果希望元素名为字符串（文本）则应该使用对象、如果希望元素名为数字则应该使用数组。</li>
-<li>可以在数组保存对象、函数、甚至是数组；<ul>
-<li><code>myArray[0] = Date.now;  myArray[1] = myFunction;  myArray[2] = myCars;</code> </li>
-</ul>
+<li><p>文档：一个页面就是一个文档，DOM中使用document表示</p>
+</li>
+<li><p>节点：网页中的所有内容，在文档树中都是节点（标签、属性、文本、注释等），使用node表示</p>
+</li>
+<li><p>标签节点：网页中的所有标签，通常称为元素节点，又简称为“元素”，使用element表示</p>
 </li>
 </ul>
-<h3 id="1、定义数组"><a href="#1、定义数组" class="headerlink" title="1、定义数组"></a>1、定义数组</h3><pre><code class="js">var cars = [&quot;Saab&quot;, &quot;Volvo&quot;, &quot;BMW&quot;];
-// 以逗号隔开；
-// 最后不要加逗号；
-// var cars = new Array(&quot;Saab&quot;, &quot;Volvo&quot;, &quot;BMW&quot;);
-// 尽量不要使用 new Array() ，执行效率更低；</code></pre>
-<h3 id="2、-识别数组"><a href="#2、-识别数组" class="headerlink" title="2、 识别数组"></a>2、 识别数组</h3><pre><code class="js">typeof cars; // 返回 object
-// typeof 运算符返回 &quot;object&quot;，因为 JavaScript 数组属于对象。
-Array.isArray(cars); // 返回 true
+<h2 id="获取元素"><a href="#获取元素" class="headerlink" title="获取元素"></a>获取元素</h2><h3 id="根据id获取"><a href="#根据id获取" class="headerlink" title="根据id获取"></a>根据id获取</h3><pre><code class="html">&lt;div id=&quot;time&quot;&gt;2020-01-01&lt;/div&gt;
+&lt;script&gt;
+    // 因为我们文档页面从上往下加载，所以先得有标签 所以我们script写到标签的下面
+    var timer = document.getElementById(&#39;time&#39;);
+&lt;/script&gt;</code></pre>
+<h3 id="根据标签名获取"><a href="#根据标签名获取" class="headerlink" title="根据标签名获取"></a>根据标签名获取</h3><pre><code class="html">&lt;ul&gt;
+    &lt;li&gt;知否知否1&lt;/li&gt;
+    &lt;li&gt;知否知否2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script&gt;
+    // 返回的是 获取过来元素对象的集合 以伪数组的形式存储的
+    var lis = document.getElementsByTagName(&#39;li&#39;);
+    // 我们想要依次打印里面的元素对象我们可以采取遍历的方式
+    for (var i = 0; i &lt; lis.length; i++) {
+        console.log(lis[i]);
+    }
+&lt;/script&gt;</code></pre>
+<h3 id="H5新增获取方式"><a href="#H5新增获取方式" class="headerlink" title="H5新增获取方式"></a>H5新增获取方式</h3><pre><code class="html">&lt;div class=&quot;box&quot;&gt;盒子1&lt;/div&gt;
+&lt;div class=&quot;box&quot;&gt;盒子2&lt;/div&gt;
+&lt;div id=&quot;nav&quot;&gt;盒子3&lt;/div&gt;
+&lt;script&gt;
+    // querySelector 返回指定选择器的第一个元素对象 里面的选择器需要加符号 .box  #nav
+    var firstBox = document.querySelector(&#39;.box&#39;);
+    var nav = document.querySelector(&#39;#nav&#39;);
+    var li = document.querySelector(&#39;div&#39;);
+    // querySelectorAll()返回指定选择器的所有元素对象集合
+    var allBox = document.querySelectorAll(&#39;.box&#39;);
+&lt;/script&gt;</code></pre>
+<h3 id="获取特殊元素"><a href="#获取特殊元素" class="headerlink" title="获取特殊元素"></a>获取特殊元素</h3><p>body：<code>document.body</code>；</p>
+<p>html：<code>document.documentElement</code>；</p>
+<h2 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h2><p>事件三要素：</p>
+<ul>
+<li>事件源：点击谁触发事件；</li>
+<li>事件类型：什么样的事件，如click事件等；</li>
+<li>事件处理程序：要做的事件，事件触发后执行的函数；</li>
+</ul>
+<pre><code class="html">&lt;button id=&quot;btn&quot;&gt;唐伯虎&lt;/button&gt;
+&lt;script&gt;
+    // (1) 事件源 事件被触发的对象 btn这个按钮
+    var btn = document.getElementById(&#39;btn&#39;);
+    // (2) 事件类型  鼠标点击(onclick)弹出
+    // (3) 事件处理程序  通过一个函数赋值的方式 完成
+    btn.onclick = function() {
+        alert(&#39;点秋香&#39;);
+    }
+&lt;/script&gt;</code></pre>
+<p>执行事件的三步骤：</p>
+<ul>
+<li>获取事件源；</li>
+<li>注册事件/绑定事件；</li>
+<li>添加事件处理程序（封闭函数）；</li>
+</ul>
+<pre><code class="html">&lt;button id=&quot;btn&quot;&gt;唐伯虎&lt;/button&gt;
+&lt;script&gt;
+    // (1) 获取事件源：获取了btn这个元素
+    var btn = document.getElementById(&#39;btn&#39;);
+    // (2) 绑定事件：绑定一个点击事件 btn.onclick
+    // (3) 添加事件处理程序：封装了函数 在按钮点下的应该做的事
+    btn.onclick = function() {
+        alert(&#39;点秋香&#39;);
+    }
+&lt;/script&gt;</code></pre>
+<h3 id="常见鼠标事件"><a href="#常见鼠标事件" class="headerlink" title="常见鼠标事件"></a>常见鼠标事件</h3><p><img src="http://mdimg.95408.com/202001061829_929.png?null" alt="常见鼠标事件"></p>
+<h2 id="操作元素"><a href="#操作元素" class="headerlink" title="操作元素"></a>操作元素</h2><p><img src="http://mdimg.95408.com/202001061828_600.png?null" alt="操作元素"></p>
+<h3 id="改变元素内容"><a href="#改变元素内容" class="headerlink" title="改变元素内容"></a>改变元素内容</h3><p>element.innerText</p>
+<p>element.innerHTML</p>
+<pre><code class="html">&lt;div&gt;原来的文字&lt;/div&gt;
+&lt;script&gt;
+    var div = document.querySelector(&#39;div&#39;);
+    div.innerHTML = &#39;要替换的文字&#39;;
+&lt;/script&gt;</code></pre>
+<p>区别：</p>
+<ul>
+<li>innerText会去除空格和换行，而innerHTML会保留空格和换行；</li>
+<li>innerText不会识别html，而innerHTML会识别；</li>
+</ul>
+<h3 id="常用元素属性操作"><a href="#常用元素属性操作" class="headerlink" title="常用元素属性操作"></a>常用元素属性操作</h3><p>src</p>
+<p>href</p>
+<p>id</p>
+<p>alt</p>
+<p>title</p>
+<p>例：点击姓名，改变图片</p>
+<p>修改了img标签元素的 src、tltle 属性；</p>
+<pre><code class="html">&lt;button id=&quot;ldh&quot;&gt;刘德华&lt;/button&gt;
+&lt;button id=&quot;zxy&quot;&gt;张学友&lt;/button&gt; &lt;br&gt;
+&lt;img src=&quot;images/ldh.jpg&quot; alt=&quot;&quot; title=&quot;刘德华&quot;&gt;
+&lt;script&gt;
+    // 修改元素属性  src
+    // 1. 获取元素
+    var ldh = document.getElementById(&#39;ldh&#39;);
+    var zxy = document.getElementById(&#39;zxy&#39;);
+    var img = document.querySelector(&#39;img&#39;);
+    // 2. 注册事件  处理程序
+    zxy.onclick = function() {
+        img.src = &#39;images/zxy.jpg&#39;;
+        img.title = &#39;张学友思密达&#39;;
+    }
+    ldh.onclick = function() {
+        img.src = &#39;images/ldh.jpg&#39;;
+        img.title = &#39;刘德华&#39;;
+    }
+&lt;/script&gt;</code></pre>
+<h3 id="表单元素属性操作"><a href="#表单元素属性操作" class="headerlink" title="表单元素属性操作"></a>表单元素属性操作</h3><ul>
+<li>type</li>
+<li>value</li>
+<li>checked</li>
+<li>selected</li>
+<li>disabled</li>
+</ul>
+<p>点击按钮，改变表单值：</p>
+<pre><code class="html">&lt;button&gt;按钮&lt;/button&gt;
+&lt;input type=&quot;text&quot; value=&quot;输入内容&quot;&gt;
+&lt;script&gt;
+    // 1. 获取元素
+    var btn = document.querySelector(&#39;button&#39;);
+    var input = document.querySelector(&#39;input&#39;);
+    // 2. 注册事件 处理程序
+    btn.onclick = function() {
+        // 表单里面的值 文字内容是通过 value 来修改的
+        input.value = &#39;被点击了&#39;;
+        // 如果想要某个表单被禁用 不能再点击 disabled  我们想要这个按钮 button禁用
+        // btn.disabled = true;
+        this.disabled = true;
+        // this 指向的是事件函数的调用者 btn
+    }
+&lt;/script&gt;</code></pre>
+<h3 id="样式属性操作"><a href="#样式属性操作" class="headerlink" title="样式属性操作"></a>样式属性操作</h3><ul>
+<li>行类样式： element.style</li>
+<li>类名样式：element.className</li>
+</ul>
+<p><strong>操作style属性</strong></p>
+<ul>
+<li>JS里样式采用驼峰命名法：fontSize、backgroundColor；</li>
+<li>JS修改 style 样式，产生的是行内样式，权重较高；</li>
+<li>显示隐藏盒子：display:none ； display:block ；</li>
+</ul>
+<p>点击div盒子后，改变盒子的背景色和宽度：</p>
+<pre><code class="html">&lt;div&gt;&lt;/div&gt;
+&lt;script&gt;
+    // 1. 获取元素
+    var div = document.querySelector(&#39;div&#39;);
+    // 2. 注册事件 处理程序
+    div.onclick = function() {
+        // div.style里面的属性 采取驼峰命名法 
+        this.style.backgroundColor = &#39;purple&#39;;
+        this.style.width = &#39;250px&#39;;
+    }
+&lt;/script&gt;</code></pre>
+<p><strong>操作className属性</strong></p>
+<ul>
+<li>class是js关键字，所以使用className；</li>
+<li>修改样式较多时，采用操作类名修改元素样式；</li>
+<li>会覆盖原类名，要保留原类名，可以修改成多类名；</li>
+</ul>
+<p>点击类名为first的例子，为其增加一个change类名：</p>
+<pre><code class="html">&lt;div class=&quot;first&quot;&gt;文本&lt;/div&gt;
+&lt;script&gt;
+    // 使用 element.style 获得修改元素样式
+    // 如果样式比较少 或者 功能简单的情况下使用
+    var test = document.querySelector(&#39;div&#39;);
+    test.onclick = function() {
+        // this.style.backgroundColor = &#39;purple&#39;;
+        // this.style.color = &#39;#fff&#39;;
+        // this.style.fontSize = &#39;25px&#39;;
+        // this.style.marginTop = &#39;100px&#39;;
 
-// instanceof  运算符 它可以用来检测是否为数组
-var arr = [];
-var obj = {};
-console.log(arr instanceof Array);
-console.log(obj instanceof Array);</code></pre>
-<h3 id="3、访问数组元素"><a href="#3、访问数组元素" class="headerlink" title="3、访问数组元素"></a>3、访问数组元素</h3><pre><code class="js">var cars = new Array(&quot;Saab&quot;, &quot;Volvo&quot;, &quot;BMW&quot;);
-console.log(cars[0]); // Saab</code></pre>
-<h3 id="4、遍历数据"><a href="#4、遍历数据" class="headerlink" title="4、遍历数据"></a>4、遍历数据</h3><p>把数组中的每个元素从头到尾都访问一次（类似学生的点名），可以通过 for 循环索引遍历数组中的每一项；</p>
-<pre><code class="js">var arr = [&#39;red&#39;,&#39;green&#39;, &#39;blue&#39;];
-for (var i = 0; i &lt; arr.length; i++) {
-    console.log(arrStus[i]);
-}
-// red
-// green
-// blue</code></pre>
-<h3 id="5、改变数组元素"><a href="#5、改变数组元素" class="headerlink" title="5、改变数组元素"></a>5、改变数组元素</h3><p>通过使用它们的索引号来访问、更改数组元素</p>
-<pre><code class="js">var cars = new Array(&quot;Saab&quot;, &quot;Volvo&quot;, &quot;BMW&quot;);
-cars[0] = &#39;abc&#39;
-console.log(cars[0]); // abc</code></pre>
-<h3 id="6、访问完整数组"><a href="#6、访问完整数组" class="headerlink" title="6、访问完整数组"></a>6、访问完整数组</h3><pre><code class="js">var cars = [&quot;Audi&quot;, &quot;BMW&quot;, &quot;porsche&quot;];
-document.getElementById(&quot;demo&quot;).innerHTML = cars; &lt;
-p id = &quot;demo&quot; &gt; &lt; /p&gt;
-//&lt;p id=&quot;demo&quot;&gt;Audi,BMW,porsche&lt;/p&gt;</code></pre>
-<h3 id="7、例"><a href="#7、例" class="headerlink" title="7、例"></a>7、例</h3><h4 id="例：求数组的和以及平均值"><a href="#例：求数组的和以及平均值" class="headerlink" title="例：求数组的和以及平均值"></a>例：求数组的和以及平均值</h4><pre><code class="js">var arr = [2, 6, 1, 7, 4];
-var sum = 0;
-var average = 0;
-for (var i = 0; i &lt; arr.length; i++) {
-    sum += arr[i]; // 我们加的是数组元素 arr[i] 不是计数器 i
-}
-average = sum / arr.length;
-console.log(sum, average); // 想要输出多个变量，用逗号分隔即可</code></pre>
-<h4 id="例：求数组的最大值"><a href="#例：求数组的最大值" class="headerlink" title="例：求数组的最大值"></a>例：求数组的最大值</h4><pre><code class="js">var arr = [2, 6, 1, 77, 52, 25, 7, 99];
-var max = arr[0];
-for (var i = 1; i &lt; arr.length; i++) {
-    if (arr[i] &gt; max) {
-        max = arr[i];
-    }
-}
-console.log(&#39;该数组里面的最大值是：&#39; + max);</code></pre>
-<h4 id="例：数组转换为字符串"><a href="#例：数组转换为字符串" class="headerlink" title="例：数组转换为字符串"></a>例：数组转换为字符串</h4><pre><code class="js">var arr = [&#39;red&#39;, &#39;green&#39;, &#39;blue&#39;, &#39;pink&#39;];
-var str = &#39;&#39;;
-var sep = &#39;*&#39;;
-for (var i = 0; i &lt; arr.length; i++) {
-    str += arr[i] + sep;
-}
-console.log(str);</code></pre>
-<h4 id="例：数组里存放10个数"><a href="#例：数组里存放10个数" class="headerlink" title="例：数组里存放10个数"></a>例：数组里存放10个数</h4><pre><code class="js">var arr = [];
-for (var i = 0; i &lt; 100; i++) {
-    // arr = i; 不要直接给数组名赋值 否则以前的元素都没了
-    arr[i] = i + 1;
-}
-console.log(arr);</code></pre>
-<h4 id="例：筛选数组"><a href="#例：筛选数组" class="headerlink" title="例：筛选数组"></a>例：筛选数组</h4><pre><code class="js">// 将数组 [2, 0, 6, 1, 77, 0, 52, 0, 25, 7] 中大于等于 10 的元素选出来，放入新数组
-// 方法1
-var arr = [2, 0, 6, 1, 77, 0, 52, 0, 25, 7];
-var newArr = [];
-var j = 0;
-for (var i = 0; i &lt; arr.length; i++) {
-    if (arr[i] &gt;= 10) {
-        // 新数组索引号应该从0开始 依次递增
-        newArr[j] = arr[i];
-        j++;
-    }
-}
-console.log(newArr);
-// 方法2 
-var arr = [2, 0, 6, 1, 77, 0, 52, 0, 25, 7];
-var newArr = [];
-// 刚开始 newArr.length 就是 0
-for (var i = 0; i &lt; arr.length; i++) {
-    if (arr[i] &gt;= 10) {
-        // 新数组索引号应该从0开始 依次递增
-        newArr[newArr.length] = arr[i];
-    }
-}
-console.log(newArr);</code></pre>
-<h4 id="例：数组去重"><a href="#例：数组去重" class="headerlink" title="例：数组去重"></a>例：数组去重</h4><pre><code class="js">// 将数组[2, 0, 6, 1, 77, 0, 52, 0, 25, 7]中的 0 去掉后，形成一个不包含 0 的新数组
-var arr = [2, 0, 6, 1, 77, 0, 52, 0, 25, 7];
-var newArr = [];
-for (var i = 0; i &lt; arr.length; i++) {
-    if (arr[i] != 0) {
-        newArr[newArr.length] = arr[i];
-    }
-}
-console.log(newArr);</code></pre>
-<h4 id="例：翻转数组"><a href="#例：翻转数组" class="headerlink" title="例：翻转数组"></a>例：翻转数组</h4><pre><code class="js">// 将数组 [&#39;red&#39;, &#39;green&#39;, &#39;blue&#39;, &#39;pink&#39;, &#39;purple&#39;] 的内容反过来存放
-var arr = [&#39;red&#39;, &#39;green&#39;, &#39;blue&#39;, &#39;pink&#39;, &#39;purple&#39;, &#39;hotpink&#39;];
-var newArr = [];
-for (var i = arr.length - 1; i &gt;= 0; i--) {
-    newArr[newArr.length] = arr[i]
-}
-console.log(newArr);</code></pre>
-<h4 id="例：冒泡排序"><a href="#例：冒泡排序" class="headerlink" title="例：冒泡排序"></a>例：冒泡排序</h4><pre><code class="js">// var arr = [5, 4, 3, 2, 1] 排序;
-var arr = [4, 1, 2, 3, 5];
-for (var i = 0; i &lt;= arr.length - 1; i++) { // 外层循环管趟数 
-    for (var j = 0; j &lt;= arr.length - i - 1; j++) { // 里面的循环管 每一趟的交换次数
-        // 内部交换2个变量的值 前一个和后面一个数组元素相比较
-        if (arr[j] &lt; arr[j + 1]) {
-            var temp = arr[j];
-            arr[j] = arr[j + 1];
-            arr[j + 1] = temp;
-        }
-    }
-}
-console.log(arr);</code></pre>
-<h2 id="数组属性方法"><a href="#数组属性方法" class="headerlink" title="数组属性方法"></a>数组属性方法</h2><h3 id="1、length-属性"><a href="#1、length-属性" class="headerlink" title="1、length 属性"></a>1、length 属性</h3><p>返回数组的长度</p>
-<pre><code class="js">var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
-fruits.length; // 4</code></pre>
-<h3 id="2、length-访问最后一个元素"><a href="#2、length-访问最后一个元素" class="headerlink" title="2、length 访问最后一个元素"></a>2、length 访问最后一个元素</h3><pre><code class="js">fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
-var first = fruits[0]; // 访问第一个元素
-var last = fruits[fruits.length - 1]; // Mango
-// str.length 为长度4，减1表示是索引3（索引从0开始）</code></pre>
-<h3 id="3、push-、length添加元素"><a href="#3、push-、length添加元素" class="headerlink" title="3、push()、length添加元素"></a>3、push()、length添加元素</h3><pre><code class="js">var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
-fruits.push(&quot;Lemon&quot;); // 向 fruits 添加一个新元素 (Lemon)
+        // 我们可以通过 修改元素的className更改元素的样式
+        // 适合于样式较多或者功能复杂的情况
 
-var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
-fruits[fruits.length] = &quot;Lemon&quot;; // 向 fruits 添加一个新元素 (Lemon)
-// str.length是数组长度，比索引大1（索引从0开始）
-// 等于在原来最大索引+1的位置添加元素</code></pre>
-<h3 id="4、添加元素时的空位"><a href="#4、添加元素时的空位" class="headerlink" title="4、添加元素时的空位"></a>4、添加元素时的空位</h3><pre><code class="js">var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
-fruits[6] = &quot;Lemon&quot;; // 向 fruits 添加一个新元素 (Lemon)
-// Banana
-// Orange
-// Apple
-// Mango
-// undefined 添加最高索引的元素可在数组中创建未定义的“洞”：
-// undefined
-// Lemon</code></pre>
-<h2 id="数组方法"><a href="#数组方法" class="headerlink" title="数组方法"></a>数组方法</h2><h3 id="1、toString-转为字符串"><a href="#1、toString-转为字符串" class="headerlink" title="1、toString() 转为字符串"></a>1、toString() 转为字符串</h3><pre><code class="js">var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
-console.log(fruits.toString()); // Banana,Orange,Apple,Mango
-console.log(fruits); // 也可以直接调用
-// 所有 JavaScript 对象都拥有 toString() 方法。</code></pre>
-<h3 id="2、join-转字符串"><a href="#2、join-转字符串" class="headerlink" title="2、join() 转字符串"></a>2、join() 转字符串</h3><p>类似 toString()，但是您还可以规定分隔符</p>
-<pre><code class="js">var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
-console.log(fruits.join(&#39;*&#39;)); // Banana*Orange*Apple*Mango</code></pre>
-<h3 id="3、pop-删除最后元素—"><a href="#3、pop-删除最后元素—" class="headerlink" title="3、pop() 删除最后元素—"></a>3、pop() 删除最后元素—</h3><p>1、pop() 删除最后元素，返回被删除元素</p>
-<p>2、push() 在最后增加元素，返回数组长度</p>
-<p>3、shift() 删除开始元素，返回被删除元素</p>
-<p>4、unshift() 在开始增加元素，返回数组长度</p>
-<p>返回被删除的值</p>
-<pre><code class="js">var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
-fruits.pop()
-// console.log(fruits.pop()); // Mango
-// console.log(fruits); // Banana,Orange,Apple</code></pre>
-<h3 id="4、push-在最后增加元素—"><a href="#4、push-在最后增加元素—" class="headerlink" title="4、push() 在最后增加元素—"></a>4、push() 在最后增加元素—</h3><p>返回新数组的长度值</p>
-<pre><code class="js">var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
-var f = fruits.push(&#39;Kiwi&#39;);
-// console.log(f); // 5
-// console.log(fruits); // Banana Orange Apple Mango Kiwi</code></pre>
-<h3 id="5、shift-删除第一个元素—"><a href="#5、shift-删除第一个元素—" class="headerlink" title="5、shift() 删除第一个元素—"></a>5、shift() 删除第一个元素—</h3><p>返回被“位移出”的字符串</p>
-<pre><code class="js">var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
-fruits.shift(); // 返回 &quot;Banana&quot;</code></pre>
-<h3 id="6、unshift-在最前面增加元素—"><a href="#6、unshift-在最前面增加元素—" class="headerlink" title="6、unshift() 在最前面增加元素—"></a>6、unshift() 在最前面增加元素—</h3><p>返回新数组的长度</p>
-<pre><code class="js">var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
-fruits.unshift(&quot;Lemon&quot;); // 返回 5</code></pre>
-<h3 id="7、delete-删除元素"><a href="#7、delete-删除元素" class="headerlink" title="7、delete 删除元素"></a>7、delete 删除元素</h3><p>使用 delete 会在数组留下未定义的空洞。请使用 pop() 或 shift() 取而代之。</p>
-<pre><code class="js">var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
-delete fruits[0]; // 把 fruits 中的首个元素改为 undefined</code></pre>
-<h3 id="8、splice-向数组添加新项"><a href="#8、splice-向数组添加新项" class="headerlink" title="8、splice() 向数组添加新项"></a>8、splice() 向数组添加新项</h3><pre><code class="js">var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
-fruits.splice(2, 0, &quot;Lemon&quot;, &quot;Kiwi&quot;);
-// 原数组： Banana,Orange,Apple,Mango
-// 新数组： Banana,Orange,Lemon,Kiwi,Apple,Mango</code></pre>
-<p>第一个参数（2）定义了应添加新元素的位置（拼接）。</p>
-<p>第二个参数（0）定义应删除多少元素。</p>
-<p>其余参数（“Lemon”，“Kiwi”）定义要添加的新元素。</p>
-<p>splice() 方法返回一个包含已删除项的数组：</p>
-<pre><code class="js">var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
-fruits.splice(2, 2, &quot;Lemon&quot;, &quot;Kiwi&quot;);
-// 原数组： Banana,Orange,Apple,Mango
-// 新数组： Banana,Orange,Lemon,Kiwi
-// 已删除项： Apple,Mango</code></pre>
-<h3 id="8、splice-删除元素"><a href="#8、splice-删除元素" class="headerlink" title="8、splice() 删除元素"></a>8、splice() 删除元素</h3><p>第一个参数（0）定义新元素应该被添加（接入）的位置。</p>
-<p>第二个参数（1）定义应该删除多个元素。</p>
-<p>其余参数被省略。没有新元素将被添加。</p>
-<pre><code class="js">var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
-fruits.splice(0, 1); // 删除 fruits 中的第一个元素 Banana
-// 原数组： Banana,Orange,Apple,Mango
-// 新数组： Orange,Apple,Mango
-fruits.splice(1, 2); // Banana,Mango</code></pre>
-<h3 id="9、concat-合并、连接数组"><a href="#9、concat-合并、连接数组" class="headerlink" title="9、concat() 合并、连接数组"></a>9、concat() 合并、连接数组</h3><p>concat() 方法不会更改现有数组。它总是返回一个新数组。</p>
-<p>concat() 方法可以使用任意数量的数组参数：</p>
-<p>concat() 方法也可以将值作为参数：</p>
-<pre><code class="js">var arr1 = [&quot;Cecilie&quot;, &quot;Lone&quot;];
-var arr2 = [&quot;Emil&quot;, &quot;Tobias&quot;, &quot;Linus&quot;];
-var arr3 = [&quot;Robin&quot;, &quot;Morgan&quot;];
-arr1.concat(arr2); // 将arr1 与 arr2 连接在一起
-arr1.concat(arr2, arr3); // 将arr1、arr2 与 arr3 连接在一起
-arr1.concat([&quot;Emil&quot;, &quot;Tobias&quot;, &quot;Linus&quot;]); // 也可以将值作为参数</code></pre>
-<h3 id="10、slice-裁剪新数组"><a href="#10、slice-裁剪新数组" class="headerlink" title="10、slice() 裁剪新数组"></a>10、slice() 裁剪新数组</h3><p>slice() 方法创建新数组。它不会从源数组中删除任何元素。</p>
-<pre><code class="js">var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Lemon&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
-fruits.slice(1); // Orange,Lemon,Apple,Mango
-fruits.slice(3); // Apple,Mango</code></pre>
-<p>slice() 可接受两个参数，从开始参数选取元素，直到结束参数（不包括）为止。</p>
-<p>第2个参数可省略，表示从第1个参数往后所有的元素；</p>
-<pre><code class="js">var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Lemon&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
-var citrus = fruits.slice(1, 3); // Orange,Lemon</code></pre>
-<p><img src="http://mdimg.95408.com/201912130047_162.png?imageView2/2/w/1200/h/1200" alt=""></p>
-<h2 id="例"><a href="#例" class="headerlink" title="例"></a>例</h2><h4 id="筛选数组"><a href="#筛选数组" class="headerlink" title="筛选数组"></a>筛选数组</h4><pre><code class="js">// 有一个包含工资的数组[1500, 1200, 2000, 2100, 1800]
-// 要求把数组中工资超过2000的删除，剩余的放到新数组里面
-var arr = [1500, 1200, 2000, 2100, 1800];
-var newArr = [];
-for (var i = 0; i &lt; arr.length; i++) {
-    if (arr[i] &lt; 2000) {
-        // newArr[newArr.length] = arr[i];
-        newArr.push(arr[i]);
+        // 将原类名first覆盖，使用新类名change
+        this.className = &#39;change&#39;;
+        // 如果想要保留原先的类名，我们可以这么做 多类名选择器
+        this.className = &#39;first change&#39;;
     }
-}
-console.log(newArr);</code></pre>
-<h4 id="数组排序"><a href="#数组排序" class="headerlink" title="数组排序"></a>数组排序</h4><pre><code class="js">// 1. 翻转数组
-var arr = [&#39;pink&#39;, &#39;red&#39;, &#39;blue&#39;];
-arr.reverse();
-console.log(arr);
-
-// 2. 数组排序（冒泡排序）
-var arr1 = [13, 4, 77, 1, 7];
-arr1.sort(function(a, b) {
-    //  return a - b; 升序的顺序排列
-    return b - a; // 降序的顺序排列
-});
-console.log(arr1);</code></pre>
-<h4 id="返回数组元素索引号"><a href="#返回数组元素索引号" class="headerlink" title="返回数组元素索引号"></a>返回数组元素索引号</h4><pre><code class="js">// 它只返回第一个满足条件的索引号 
-// 它如果在该数组里面找不到元素，则返回的是 -1  
-var arr = [&#39;red&#39;, &#39;green&#39;, &#39;blue&#39;, &#39;blue&#39;];
-console.log(arr.indexOf(&#39;blue&#39;)); // 2
-console.log(arr.indexOf(&#39;pink&#39;)) // -1
-// 使用返回 -1 的属性，可以用来做数组去重</code></pre>
-<h4 id="数组去重"><a href="#数组去重" class="headerlink" title="数组去重"></a>数组去重</h4><pre><code class="js">// 数组去重 [&#39;c&#39;, &#39;a&#39;, &#39;z&#39;, &#39;a&#39;, &#39;x&#39;, &#39;a&#39;, &#39;x&#39;, &#39;c&#39;, &#39;b&#39;] 要求去除数组中重复的元素
-function unique(arr) {
-    var newArr = [];
-    for (var i = 0; i &lt; arr.length; i++) {
-        if (newArr.indexOf(arr[i]) === -1) {
-            newArr.push(arr[i]);
-        }
-    }
-    return newArr;
-}
-// var demo = unique([&#39;c&#39;, &#39;a&#39;, &#39;z&#39;, &#39;a&#39;, &#39;x&#39;, &#39;a&#39;, &#39;x&#39;, &#39;c&#39;, &#39;b&#39;])
-var demo = unique([&#39;blue&#39;, &#39;green&#39;, &#39;blue&#39;])
-console.log(demo);</code></pre>
-<p>以上。</p>
+&lt;/script&gt;</code></pre>
 
       
        

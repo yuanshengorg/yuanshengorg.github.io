@@ -6,20 +6,21 @@
   <meta name="keywords" content=" js ">
   <meta name="description" content="JavaScript（二）运算符、流程控制 | 半根竹子">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="对象对象概念 在 JavaScript 中，对象是一组无序的相关属性和方法的集合 所有的事物都是对象，例如字符串、数值、数组、函数等。 对象是由属性和方法组成的。 属性：事物的特征，在对象中用属性来表示（常用名词） 方法：事物的行为，在对象中用方法来表示（常用动词）   为了让更好地存储一组数据，对象应运而生 对象中为每项数据设置了属性名称，可以访问数据更语义化，数据结构清晰，表意明显 JS中的对">
+<meta name="description" content="DOM 文档对象模型（Document Object Model，简称DOM），是 W3C 组织推荐的处理可扩展标记语言（html或者xhtml）的标准编程接口。 W3C 已经定义了一系列的 DOM 接口，通过这些 DOM 接口可以改变网页的内容、结构和样式 DOM是W3C组织制定的一套处理 html和xml文档的规范，所有的浏览器都遵循了这套标准。  DOM树：  DOM树 又称为文档树模型，把">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript（六）对象、构造函数、Math、Date">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;01&#x2F;06&#x2F;js&#x2F;JavaScript%EF%BC%88%E5%85%AD%EF%BC%89%E5%AF%B9%E8%B1%A1&#x2F;index.html">
+<meta property="og:title" content="JavaScript（七）WebAPI获取元素、操作元素">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;01&#x2F;06&#x2F;js&#x2F;JavaScript%EF%BC%88%E4%B8%83%EF%BC%89WebAPI%E8%8E%B7%E5%8F%96%E5%85%83%E7%B4%A0%E3%80%81%E6%93%8D%E4%BD%9C%E5%85%83%E7%B4%A0&#x2F;index.html">
 <meta property="og:site_name" content="半根竹子">
-<meta property="og:description" content="对象对象概念 在 JavaScript 中，对象是一组无序的相关属性和方法的集合 所有的事物都是对象，例如字符串、数值、数组、函数等。 对象是由属性和方法组成的。 属性：事物的特征，在对象中用属性来表示（常用名词） 方法：事物的行为，在对象中用方法来表示（常用动词）   为了让更好地存储一组数据，对象应运而生 对象中为每项数据设置了属性名称，可以访问数据更语义化，数据结构清晰，表意明显 JS中的对">
+<meta property="og:description" content="DOM 文档对象模型（Document Object Model，简称DOM），是 W3C 组织推荐的处理可扩展标记语言（html或者xhtml）的标准编程接口。 W3C 已经定义了一系列的 DOM 接口，通过这些 DOM 接口可以改变网页的内容、结构和样式 DOM是W3C组织制定的一套处理 html和xml文档的规范，所有的浏览器都遵循了这套标准。  DOM树：  DOM树 又称为文档树模型，把">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001060233_997.png?null">
-<meta property="article:published_time" content="2020-01-05T18:05:10.679Z">
-<meta property="article:modified_time" content="2020-01-05T18:40:49.800Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001061829_929.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001061828_600.png?null">
+<meta property="article:published_time" content="2020-01-06T09:44:09.166Z">
+<meta property="article:modified_time" content="2020-01-06T10:30:32.705Z">
 <meta property="article:author" content="HalfBamboo">
 <meta property="article:tag" content="js">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001060233_997.png?null">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001061829_929.png?null">
 
 
 <link rel="icon" href="http://mdimg.95408.com/20191218121717.png">
@@ -143,6 +144,14 @@
     
         
             
+            <li><div data-rel="jquery">jquery</div>
+                
+            </li>
+            
+        
+    
+        
+            
             <li><div data-rel="JavaScript">JavaScript</div>
                 
             </li>
@@ -183,7 +192,7 @@
     </div>
     <div></div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="37">
+<input type="hidden" id="yelog_site_posts_number" value="39">
 
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -234,6 +243,10 @@
     </li>
     
     <li class="article-tag-list-item">
+        <a class="color2">jquery</a>
+    </li>
+    
+    <li class="article-tag-list-item">
         <a class="color3">js</a>
     </li>
     
@@ -254,11 +267,11 @@
     </li>
     
     <li class="article-tag-list-item">
-        <a class="color4">markdown</a>
+        <a class="color4">vue</a>
     </li>
     
     <li class="article-tag-list-item">
-        <a class="color4">vue</a>
+        <a class="color4">markdown</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -327,12 +340,20 @@
             <span class="post-date" title="2019-12-26 19:15:43">2019/12/26</span>
         </a>
         
+        <a  class="jquery "
+           href="/2020/01/06/jquery/jQuery%EF%BC%88%E4%B8%80%EF%BC%89/"
+           data-tag="jquery"
+           data-author="" >
+            <span class="post-title" title="jQuery（一）">jQuery（一）</span>
+            <span class="post-date" title="2020-01-06 17:39:36">2020/01/06</span>
+        </a>
+        
         <a  class="JavaScript "
-           href="/2019/12/23/js/JavaScript%EF%BC%88%E4%B8%89%EF%BC%89%E6%95%B0%E7%BB%84%E4%B8%80/"
+           href="/2020/01/06/js/JavaScript%EF%BC%88%E4%B8%83%EF%BC%89WebAPI%E8%8E%B7%E5%8F%96%E5%85%83%E7%B4%A0%E3%80%81%E6%93%8D%E4%BD%9C%E5%85%83%E7%B4%A0/"
            data-tag="js"
            data-author="" >
-            <span class="post-title" title="JavaScript（三）数组一">JavaScript（三）数组一</span>
-            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+            <span class="post-title" title="JavaScript（七）WebAPI获取元素、操作元素">JavaScript（七）WebAPI获取元素、操作元素</span>
+            <span class="post-date" title="2020-01-06 17:44:09">2020/01/06</span>
         </a>
         
         <a  class="JavaScript "
@@ -359,14 +380,6 @@
             <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
         </a>
         
-        <a  class="node "
-           href="/2019/12/02/node/Node.js%EF%BC%882%EF%BC%89fs%E3%80%81path%E3%80%81gulp%E6%A8%A1%E5%9D%97/"
-           data-tag="Node.js"
-           data-author="" >
-            <span class="post-title" title="Node.js（2）fs、path、gulp模块">Node.js（2）fs、path、gulp模块</span>
-            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
-        </a>
-        
         <a  class="css3 "
            href="/2019/12/27/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%B8%89%EF%BC%89rem%E5%B8%83%E5%B1%80%E5%92%8C%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2/"
            data-tag="Css3"
@@ -376,11 +389,27 @@
         </a>
         
         <a  class="node "
+           href="/2019/12/02/node/Node.js%EF%BC%882%EF%BC%89fs%E3%80%81path%E3%80%81gulp%E6%A8%A1%E5%9D%97/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（2）fs、path、gulp模块">Node.js（2）fs、path、gulp模块</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="node "
            href="/2019/12/01/node/Node.js%EF%BC%881%EF%BC%89%E5%9F%BA%E7%A1%80/"
            data-tag="js,Node.js"
            data-author="" >
             <span class="post-title" title="Node.js（1）基础">Node.js（1）基础</span>
             <span class="post-date" title="2019-12-01 00:00:00">2019/12/01</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/Hexo%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95%E6%9B%B4%E6%96%B0/"
+           data-tag="博客,hexo"
+           data-author="" >
+            <span class="post-title" title="Hexo折腾记录更新">Hexo折腾记录更新</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
         </a>
         
         <a  class="node "
@@ -392,26 +421,10 @@
         </a>
         
         <a  class="工具 "
-           href="/2019/12/23/tools/Hexo%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95%E6%9B%B4%E6%96%B0/"
-           data-tag="博客,hexo"
-           data-author="" >
-            <span class="post-title" title="Hexo折腾记录更新">Hexo折腾记录更新</span>
-            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
-        </a>
-        
-        <a  class="工具 "
            href="/2019/12/23/tools/hexo%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/"
            data-tag="博客,hexo"
            data-author="" >
             <span class="post-title" title="hexo创建博客">hexo创建博客</span>
-            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
-        </a>
-        
-        <a  class="工具 "
-           href="/2019/12/23/tools/Markdown%E8%AF%AD%E6%B3%95CSS%E8%A1%A8%E7%8E%B0%E6%B5%8B%E8%AF%95/"
-           data-tag="markdown"
-           data-author="" >
-            <span class="post-title" title="Markdown语法CSS表现测试">Markdown语法CSS表现测试</span>
             <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
         </a>
         
@@ -420,6 +433,14 @@
            data-tag="js,vue"
            data-author="" >
             <span class="post-title" title="Vue基础">Vue基础</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/Markdown%E8%AF%AD%E6%B3%95CSS%E8%A1%A8%E7%8E%B0%E6%B5%8B%E8%AF%95/"
+           data-tag="markdown"
+           data-author="" >
+            <span class="post-title" title="Markdown语法CSS表现测试">Markdown语法CSS表现测试</span>
             <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
         </a>
         
@@ -472,6 +493,14 @@
         </a>
         
         <a  class="css3 "
+           href="/2019/12/26/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%BA%8C%EF%BC%89flex%E5%B8%83%E5%B1%80%EF%BC%88%E5%9B%BE%E7%A4%BA%EF%BC%89/"
+           data-tag="Css3"
+           data-author="" >
+            <span class="post-title" title="CSS移动布局（二）flex布局（图示）">CSS移动布局（二）flex布局（图示）</span>
+            <span class="post-date" title="2019-12-26 20:56:43">2019/12/26</span>
+        </a>
+        
+        <a  class="css3 "
            href="/2019/12/27/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E5%9B%9B%EF%BC%89%E5%93%8D%E5%BA%94%E5%BC%8Fbootstrap/"
            data-tag="bootstrap"
            data-author="" >
@@ -479,12 +508,60 @@
             <span class="post-date" title="2019-12-27 23:15:43">2019/12/27</span>
         </a>
         
-        <a  class="css3 "
-           href="/2019/12/26/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%BA%8C%EF%BC%89flex%E5%B8%83%E5%B1%80%EF%BC%88%E5%9B%BE%E7%A4%BA%EF%BC%89/"
-           data-tag="Css3"
+        <a  class="JavaScript "
+           href="/2019/12/23/js/JavaScript%EF%BC%88%E4%B8%89%EF%BC%89%E6%95%B0%E7%BB%84%E4%B8%80/"
+           data-tag="js"
            data-author="" >
-            <span class="post-title" title="CSS移动布局（二）flex布局（图示）">CSS移动布局（二）flex布局（图示）</span>
-            <span class="post-date" title="2019-12-26 20:56:43">2019/12/26</span>
+            <span class="post-title" title="JavaScript（三）数组一">JavaScript（三）数组一</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/04/node/Node.js%EF%BC%884%EF%BC%89Mongodb%E6%95%B0%E6%8D%AE%E5%BA%93/"
+           data-tag="Mongodb"
+           data-author="" >
+            <span class="post-title" title="Node.js（4）Mongodb数据库">Node.js（4）Mongodb数据库</span>
+            <span class="post-date" title="2019-12-04 00:00:00">2019/12/04</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/git%E5%92%8Cgithub/"
+           data-tag="git,github"
+           data-author="" >
+            <span class="post-title" title="git和github">git和github</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/05/node/Node.js%EF%BC%885%EF%BC%89art-Template%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（5）art-Template模板引擎">Node.js（5）art-Template模板引擎</span>
+            <span class="post-date" title="2019-12-05 00:00:00">2019/12/05</span>
+        </a>
+        
+        <a  class="css "
+           href="/2020/01/03/css/html+css%EF%BC%88%E4%B9%9D%EF%BC%89%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（九）代码规范">html+css（九）代码规范</span>
+            <span class="post-date" title="2020-01-03 17:50:20">2020/01/03</span>
+        </a>
+        
+        <a  class="css "
+           href="/2020/01/02/css/html+css%EF%BC%88%E5%85%AB%EF%BC%89CSS%E9%AB%98%E7%BA%A7%E6%8A%80%E6%9C%AF/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（八）CSS高级技术">html+css（八）CSS高级技术</span>
+            <span class="post-date" title="2020-01-02 15:13:11">2020/01/02</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/30/css/html+css%EF%BC%88%E4%BA%8C%EF%BC%89%E8%A1%A8%E6%A0%BC%E3%80%81%E5%88%97%E8%A1%A8%E5%92%8C%E8%A1%A8%E5%8D%95/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（二）表格、列表和表单">html+css（二）表格、列表和表单</span>
+            <span class="post-date" title="2019-12-30 23:09:44">2019/12/30</span>
         </a>
         
         <a  class="JavaScript "
@@ -517,54 +594,6 @@
            data-author="" >
             <span class="post-title" title="JavaScript（六）对象、构造函数、Math、Date">JavaScript（六）对象、构造函数、Math、Date</span>
             <span class="post-date" title="2020-01-06 02:05:10">2020/01/06</span>
-        </a>
-        
-        <a  class="node "
-           href="/2019/12/05/node/Node.js%EF%BC%885%EF%BC%89art-Template%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E/"
-           data-tag="Node.js"
-           data-author="" >
-            <span class="post-title" title="Node.js（5）art-Template模板引擎">Node.js（5）art-Template模板引擎</span>
-            <span class="post-date" title="2019-12-05 00:00:00">2019/12/05</span>
-        </a>
-        
-        <a  class="node "
-           href="/2019/12/04/node/Node.js%EF%BC%884%EF%BC%89Mongodb%E6%95%B0%E6%8D%AE%E5%BA%93/"
-           data-tag="Mongodb"
-           data-author="" >
-            <span class="post-title" title="Node.js（4）Mongodb数据库">Node.js（4）Mongodb数据库</span>
-            <span class="post-date" title="2019-12-04 00:00:00">2019/12/04</span>
-        </a>
-        
-        <a  class="工具 "
-           href="/2019/12/23/tools/git%E5%92%8Cgithub/"
-           data-tag="git,github"
-           data-author="" >
-            <span class="post-title" title="git和github">git和github</span>
-            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
-        </a>
-        
-        <a  class="css "
-           href="/2020/01/03/css/html+css%EF%BC%88%E4%B9%9D%EF%BC%89%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"
-           data-tag="html+css"
-           data-author="" >
-            <span class="post-title" title="html+css（九）代码规范">html+css（九）代码规范</span>
-            <span class="post-date" title="2020-01-03 17:50:20">2020/01/03</span>
-        </a>
-        
-        <a  class="css "
-           href="/2020/01/02/css/html+css%EF%BC%88%E5%85%AB%EF%BC%89CSS%E9%AB%98%E7%BA%A7%E6%8A%80%E6%9C%AF/"
-           data-tag="html+css"
-           data-author="" >
-            <span class="post-title" title="html+css（八）CSS高级技术">html+css（八）CSS高级技术</span>
-            <span class="post-date" title="2020-01-02 15:13:11">2020/01/02</span>
-        </a>
-        
-        <a  class="css "
-           href="/2019/12/30/css/html+css%EF%BC%88%E4%BA%8C%EF%BC%89%E8%A1%A8%E6%A0%BC%E3%80%81%E5%88%97%E8%A1%A8%E5%92%8C%E8%A1%A8%E5%8D%95/"
-           data-tag="html+css"
-           data-author="" >
-            <span class="post-title" title="html+css（二）表格、列表和表单">html+css（二）表格、列表和表单</span>
-            <span class="post-date" title="2019-12-30 23:09:44">2019/12/30</span>
         </a>
         
         <a  class="node "
@@ -619,7 +648,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-01-06 01:28:00'>2020-01-06 00:40</time>
+        创建时间:<time class="date" title='更新时间: 2020-01-06 14:13:31'>2020-01-06 00:40</time>
         
     </div>
     <div class="article-meta">
@@ -630,7 +659,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#运算符"><span class="toc-text">运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#运算符分类"><span class="toc-text">运算符分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#算数运算符"><span class="toc-text">算数运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#递增、递减运算符"><span class="toc-text">递增、递减运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#比较运算符"><span class="toc-text">比较运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#逻辑运算符"><span class="toc-text">逻辑运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#赋值运算符"><span class="toc-text">赋值运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#运算符优先级"><span class="toc-text">运算符优先级</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#流程控制"><span class="toc-text">流程控制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#if-else-分支流程"><span class="toc-text">if else 分支流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三元表达式"><span class="toc-text">三元表达式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#switch-分支流程"><span class="toc-text">switch 分支流程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#循环"><span class="toc-text">循环</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#for-循环"><span class="toc-text">for 循环</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#while-循环"><span class="toc-text">while 循环</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#do-while-循环"><span class="toc-text">do-while 循环</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#continue和break"><span class="toc-text">continue和break</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#运算符"><span class="toc-text">运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#运算符分类"><span class="toc-text">运算符分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#算数运算符"><span class="toc-text">算数运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#递增、递减运算符"><span class="toc-text">递增、递减运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#比较运算符"><span class="toc-text">比较运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#逻辑运算符"><span class="toc-text">逻辑运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#赋值运算符"><span class="toc-text">赋值运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#运算符优先级"><span class="toc-text">运算符优先级</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#流程控制"><span class="toc-text">流程控制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#if-else-分支流程"><span class="toc-text">if else 分支流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三元表达式"><span class="toc-text">三元表达式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#switch-分支流程"><span class="toc-text">switch 分支流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#switch-和-if-else"><span class="toc-text">switch 和 if else</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#循环"><span class="toc-text">循环</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#for-循环"><span class="toc-text">for 循环</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#例：求-1-100-之间的整数累加和"><span class="toc-text">例：求 1~100 之间的整数累加和</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#例：求1-100之间所有数的平均值"><span class="toc-text">例：求1-100之间所有数的平均值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#例：求1-100之间所有偶数和奇数的和"><span class="toc-text">例：求1-100之间所有偶数和奇数的和</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#例：求1-100之间所有能被3整除的数字的和"><span class="toc-text">例：求1-100之间所有能被3整除的数字的和</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#双重for循环"><span class="toc-text">双重for循环</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#例：打印1行5列五角星"><span class="toc-text">例：打印1行5列五角星</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#例：打印5行5列五角星"><span class="toc-text">例：打印5行5列五角星</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#例：打印倒三角形"><span class="toc-text">例：打印倒三角形</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#例：九九乘法表"><span class="toc-text">例：九九乘法表</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#while-循环"><span class="toc-text">while 循环</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#例：打印从1到100"><span class="toc-text">例：打印从1到100</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#例：计算-1-100-之间所有整数的和"><span class="toc-text">例：计算 1 ~ 100 之间所有整数的和</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#例：无限弹框直到输入正确"><span class="toc-text">例：无限弹框直到输入正确</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#do-while-循环"><span class="toc-text">do while 循环</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#例：打印从1到100-1"><span class="toc-text">例：打印从1到100</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#例：计算-1-100-之间所有整数的和-1"><span class="toc-text">例：计算 1 ~ 100 之间所有整数的和</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#continue-和-break"><span class="toc-text">continue 和 break</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#例：求1-100之间的和（除了能被7整除之外）"><span class="toc-text">例：求1~100之间的和（除了能被7整除之外）</span></a></li></ol></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -646,28 +675,30 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><h3 id="运算符分类"><a href="#运算符分类" class="headerlink" title="运算符分类"></a>运算符分类</h3><ul>
-<li>运算符（operator）也被称为操作符，是用于实现赋值、比较和执行算数运算等功能的符号</li>
-<li>JavaScript中常用的运算符有：<ul>
-<li>算数运算符</li>
-<li>递增和递减运算符</li>
-<li>比较运算符</li>
-<li>逻辑运算符</li>
-<li>赋值运算符</li>
-</ul>
-</li>
-</ul>
-<h3 id="算数运算符"><a href="#算数运算符" class="headerlink" title="算数运算符"></a>算数运算符</h3><p>浮点数的精度：</p>
+        <h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><h3 id="运算符分类"><a href="#运算符分类" class="headerlink" title="运算符分类"></a>运算符分类</h3><p>运算符（operator）也被称为操作符，是用于实现赋值、比较和执行算数运算等功能的符号；</p>
+<h3 id="算数运算符"><a href="#算数运算符" class="headerlink" title="算数运算符"></a>算数运算符</h3><p><img src="http://mdimg.95408.com/202001060045_820.png?null" alt="算数运算符"></p>
+<pre><code class="js">// 加减乘除 + - * /
+console.log(1 + 1); // 2
+console.log(1 - 1); // 0
+console.log(1 * 1); // 1
+console.log(1 / 1); // 1
+
+// % 取余 （取模）  
+console.log(4 % 2); // 0
+console.log(5 % 3); // 2
+console.log(3 % 5); // 3</code></pre>
 <ul>
 <li>浮点数值的最高精度是 17 位小数，但在进行算术计算时其精确度远远不如整数。</li>
 <li>不要直接判断两个浮点数是否相等 ! </li>
 </ul>
-<p><img src="http://mdimg.95408.com/202001060045_820.png?null" alt="算数运算符"></p>
-<pre><code class="js">// 浮点数的精度
+<pre><code class="js">// 浮点数 算数运算里面会有问题
 var result = 0.1 + 0.2;    // 结果不是 0.3，而是：0.30000000000000004
-console.log(0.07 * 100);   // 结果不是 7，  而是：7.000000000000001</code></pre>
+console.log(0.07 * 100);   // 结果不是 7，  而是：7.000000000000001
+// 我们不能直接拿着浮点数来进行相比较是否相等
+var num = 0.1 + 0.2;
+console.log(num == 0.3); // false</code></pre>
 <h3 id="递增、递减运算符"><a href="#递增、递减运算符" class="headerlink" title="递增、递减运算符"></a>递增、递减运算符</h3><p>如果需要反复给数字变量添加或减去1，可以使用递增（++）和递减（ – ）运算符来完成；</p>
-<p>前置递增运算符：</p>
+<p><strong>前置递增运算符：</strong></p>
 <ul>
 <li><p>++num 前置递增，就是自加1，类似于 num =  num + 1，但是 ++num 写起来更简单</p>
 </li>
@@ -676,7 +707,7 @@ console.log(0.07 * 100);   // 结果不是 7，  而是：7.000000000000001</cod
 </ul>
 <pre><code class="js">var  num = 10;
 alert(++num + 10);   // 21</code></pre>
-<p>后置递增运算符：</p>
+<p><strong>后置递增运算符：</strong></p>
 <ul>
 <li><p>num++ 后置递增，就是自加1，类似于 num =  num + 1 ，但是 num++ 写起来更简单。</p>
 </li>
@@ -685,6 +716,25 @@ alert(++num + 10);   // 21</code></pre>
 </ul>
 <pre><code class="js">var  num = 10;
 alert(10 + num++);  // 20</code></pre>
+<p><strong>++num 和 num++：</strong></p>
+<pre><code class="js">var a = 10;
+++a; // ++a  11    a = 11
+var b = ++a + 2; // a = 12   ++a = 12
+console.log(b); // 14
+
+// --- --- --- --- --- ---
+
+var c = 10;
+c++; // c++ 11  c = 11
+var d = c++ + 2; //  c++  = 11     c = 12
+console.log(d); // 13
+
+// --- --- --- --- --- ---
+
+var e = 10;
+var f = e++ + ++e; // 1. e++ =  10  e = 11  2. e = 12  ++e = 12
+console.log(f); // 22
+// 后置自增  先表达式返回原值 后面变量再自加1</code></pre>
 <h3 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h3><ul>
 <li>比较运算符（关系运算符）是两个数据进行比较时所使用的运算符</li>
 <li>比较运算后，会返回一个布尔值（true / false）作为比较运算的结果</li>
@@ -692,32 +742,57 @@ alert(10 + num++);  // 20</code></pre>
 <p><img src="http://mdimg.95408.com/202001060050_105.png?null" alt="比较运算符"></p>
 <p><strong>等号比较：</strong></p>
 <p><img src="http://mdimg.95408.com/202001060051_754.png?null" alt="等号比较"></p>
-<pre><code class="js">console.log(18 == &#39;18&#39;);   // true
+<pre><code class="js">console.log(3 &gt;= 5); // false
+console.log(2 &lt;= 4); // true
+
+// 等于符号 == 默认转换数据类型 会把字符串型的数据转换为数字型 只要求值相等就可以
+console.log(3 == 5); // false
+console.log(&#39;半竹&#39; == &#39;半竹博客&#39;); // flase
+console.log(18 == 18); // true
+console.log(18 == &#39;18&#39;); // true
+console.log(18 != 18); // false
+
+// 全等 一模一样  要求 两侧的值 还有 数据类型完全一致才可以 true
+console.log(18 == &#39;18&#39;);   // true
 console.log(18 === &#39;18&#39;);    // false</code></pre>
 <h3 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h3><p>逻辑运算符是用来进行布尔值运算的运算符，其返回值也是布尔值；</p>
 <p><img src="http://mdimg.95408.com/202001060052_738.png?null" alt="逻辑运算符"></p>
 <p><strong>逻辑与 &amp;&amp;</strong></p>
 <p>两边都是 true才返回 true，否则返回 false</p>
 <p><strong>逻辑或 ||</strong></p>
-<p>两边都是 true才返回 true，否则返回 false</p>
+<p>两边都是 false 才返回 false，否则返回 true</p>
 <p><strong>逻辑非 ！</strong></p>
 <p>逻辑非（!）也叫作取反符，用来取一个布尔值相反的值，如 true 的相反值是 false</p>
-<pre><code class="js">var isOk = !true;
+<pre><code class="js">// 逻辑与 &amp;&amp;  and
+// 两侧都为true  结果才是 true  只要有一侧为false  结果就为false 
+console.log(3 &gt; 5 &amp;&amp; 3 &gt; 2); // false
+console.log(3 &lt; 5 &amp;&amp; 3 &gt; 2); // true
+// 逻辑或 || or
+// 两侧都为false  结果才是假 false  只要有一侧为true  结果就是true
+console.log(3 &gt; 5 || 3 &gt; 2); // true 
+console.log(3 &gt; 5 || 3 &lt; 2); // false
+// 逻辑非 not ！
+var isOk = !true;
 console.log(isOk);  // false</code></pre>
 <p><strong>短路运算（逻辑中断）</strong></p>
-<p>当有多个表达式（值）时,左边的表达式值可以确定结果时,就不再继续运算右边的表达式的值;</p>
-<p><strong>逻辑与</strong></p>
+<p>当有多个表达式（值）时，左边的表达式值可以确定结果时,就不再继续运算右边的表达式的值;</p>
+<p><strong>短路运算：逻辑与</strong></p>
 <pre><code class="js">// 如果第一个表达式的值为真，则返回表达式2
 // 如果第一个表达式的值为假，则返回表达式1
 console.log( 123 &amp;&amp; 456 );        // 456
 console.log( 0 &amp;&amp; 456 );          // 0
-console.log( 123 &amp;&amp; 456&amp;&amp; 789 );  // 789</code></pre>
-<p><strong>逻辑或</strong></p>
+console.log( 123 &amp;&amp; 456&amp;&amp; 789 );  // 789
+console.log(&#39;&#39; &amp;&amp; 1 + 2 &amp;&amp; 456 * 56789); // &#39;&#39;</code></pre>
+<p><strong>短路运算：逻辑或</strong></p>
 <pre><code class="js">// 如果第一个表达式的值为真，则返回表达式1
 // 如果第一个表达式的值为假，则返回表达式2
 console.log( 123 || 456 );         //  123
 console.log( 0 ||  456 );          //  456
-console.log( 123 || 456 || 789 );  //  123</code></pre>
+console.log( 123 || 456 || 789 );  //  123
+
+var num = 0;
+console.log(123 || num++);
+console.log(num); // 0</code></pre>
 <h3 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h3><p>用来把数据赋值给变量的运算符；</p>
 <p><img src="http://mdimg.95408.com/202001060057_944.png?null" alt="赋值运算符"></p>
 <pre><code class="js">var age = 10;
@@ -729,14 +804,41 @@ age *= 10; // 相当于 age = age * 10;</code></pre>
 <li>一元运算符里面的逻辑非优先级很高</li>
 <li>逻辑与比逻辑或优先级高</li>
 </ul>
-<h2 id="流程控制"><a href="#流程控制" class="headerlink" title="流程控制"></a>流程控制</h2><h3 id="if-else-分支流程"><a href="#if-else-分支流程" class="headerlink" title="if else 分支流程"></a>if else 分支流程</h3><p>if else语句（双分支语句）</p>
+<pre><code class="js">console.log(4 &gt;= 6 || &#39;人&#39; != &#39;阿凡达&#39; &amp;&amp; !(12 * 2 == 144) &amp;&amp; true) 
+// false || true &amp;&amp; true &amp;&amp; true   // false || true
+// true
+
+var num = 10;
+console.log(5 == num / 2 &amp;&amp; (2 + 2 * num).toString() === &#39;22&#39;); 
+// true &amp;&amp; (20+2).toString()===&quot;22&quot;   // true &amp;&amp; true
+// true
+
+var a = 3 &gt; 5 &amp;&amp; 2 &lt; 7 &amp;&amp; 3 == 4; // false &amp;&amp; true &amp;&amp; false
+console.log(a); // false
+
+var b = 3 &lt;= 4 || 3 &lt; 1 || 3 != 2; // true || false || true
+console.log(b); // true
+
+var c = 2 === &quot;2&quot;;
+console.log(c); // false
+
+var d = !c || b &amp;&amp; a; // true || false &amp;&amp; true  // true || false
+console.log(d); // true</code></pre>
+<h2 id="流程控制"><a href="#流程控制" class="headerlink" title="流程控制"></a>流程控制</h2><h3 id="if-else-分支流程"><a href="#if-else-分支流程" class="headerlink" title="if else 分支流程"></a>if else 分支流程</h3><p>if else语句（<strong>双分支语句</strong>）</p>
 <pre><code class="js">// 条件成立  执行 if 里面代码，否则执行else 里面的代码
 if (条件表达式) {
     // [如果] 条件成立执行的代码
 } else {
     // [否则] 执行的代码
 }</code></pre>
-<p>if else if 语句(多分支语句)</p>
+<p>例：判断用户输入是否是闰年</p>
+<pre><code class="js">var year = prompt(&#39;请您输入年份：&#39;);
+if (year % 4 == 0 &amp;&amp; year % 100 != 0 || year % 400 == 0) {
+    alert(&#39;您输入的年份是闰年&#39;);
+} else {
+    alert(&#39;您输入的年份是平年&#39;);
+}</code></pre>
+<p>if else if 语句(<strong>多分支语句</strong>)</p>
 <pre><code class="js">// 适合于检查多重条件。
 if (条件表达式1) {
     语句1；
@@ -747,12 +849,34 @@ if (条件表达式1) {
 } else {
     // 上述条件都不成立执行此处代码
 }</code></pre>
-<h3 id="三元表达式"><a href="#三元表达式" class="headerlink" title="三元表达式"></a>三元表达式</h3><pre><code class="js">表达式1 ? 表达式2 : 表达式3;
-1 &lt; 2 ? &#39;真的&#39; : &#39;假的&#39;; </code></pre>
+<p>例：输入成绩判断是否优秀</p>
+<pre><code class="js">// 按照从大到小判断的思路
+var score = prompt(&#39;请您输入分数:&#39;);
+if (score &gt;= 90) {
+    alert(&#39;你是我的骄傲&#39;);
+} else if (score &gt;= 80) {
+    alert(&#39;你已经很出色了&#39;);
+} else if (score &gt;= 70) {
+    alert(&#39;你要继续加油&#39;);
+} else if (score &gt;= 60) {
+    alert(&#39;你很危险&#39;);
+} else {
+    alert(&#39;我只想用鞭子和你说话&#39;);
+}</code></pre>
+<h3 id="三元表达式"><a href="#三元表达式" class="headerlink" title="三元表达式"></a>三元表达式</h3><pre><code class="js">表达式1 ? 表达式2 : 表达式3;</code></pre>
 <ul>
 <li>如果表达式1为 true ，则返回表达式2的值，如果表达式1为 false，则返回表达式3的值</li>
 <li>简单理解： 就类似于  if  else （双分支） 的简写</li>
 </ul>
+<pre><code class="js">var num = 10;
+var result = num &gt; 5 ? &#39;aaa&#39; : &#39;bbb&#39;;
+console.log(result); // aaa</code></pre>
+<p><strong>例：将少于10的数字补0：</strong></p>
+<p><img src="http://mdimg.95408.com/web_2020010601.gif" alt="数字补0"></p>
+<pre><code class="js">var time = prompt(&#39;请您输入一个 0 ~ 100 之间的一个数字&#39;);
+// 三元表达式   表达式 ？ 表达式1 ：表达式2 
+var result = time &lt; 10 ? &#39;0&#39; + time : time; //   把返回值赋值给一个变量
+alert(result);</code></pre>
 <h3 id="switch-分支流程"><a href="#switch-分支流程" class="headerlink" title="switch 分支流程"></a>switch 分支流程</h3><pre><code class="js">switch( 表达式 ){ 
     case value1:
         // 表达式 等于 value1 时要执行的代码
@@ -762,7 +886,25 @@ if (条件表达式1) {
         break;
     default:
         // 表达式 不等于任何一个 value 时要执行的代码
-}</code></pre>
+}
+
+switch (8) {
+    case 1:
+        console.log(&#39;这是1&#39;);
+        break;
+    case 2:
+        console.log(&#39;这是2&#39;);
+        break;
+    case 3:
+        console.log(&#39;这是3&#39;);
+        break;
+    default:
+        console.log(&#39;没有匹配结果&#39;);
+}
+// 我们num的值和case里面的值相匹配的时候是全等
+// 必须是值和数据类型一致才可以 num === 1
+// break 如果当前的case里面没有break,
+// 则不会退出switch 是继续执行下一个case</code></pre>
 <p><strong>switch 分支流程</strong></p>
 <ul>
 <li><p>switch ：开关 转换  ， case ：小例子   选项</p>
@@ -779,8 +921,19 @@ if (条件表达式1) {
 <p><strong>注意： 执行case 里面的语句时，如果没有break，则继续执行下一个case里面的语句。</strong></p>
 </li>
 </ul>
-<p><strong>switch 语句和 if else if 语句的区别</strong></p>
-<ul>
+<p>例：输入水果查询价格：</p>
+<pre><code class="js">var fruit = prompt(&#39;请您输入查询的水果:&#39;);
+switch (fruit) {
+    case &#39;苹果&#39;:
+        alert(&#39;苹果的价格是 3.5/斤&#39;);
+        break;
+    case &#39;榴莲&#39;:
+        alert(&#39;榴莲的价格是 35/斤&#39;);
+        break;
+    default:
+        alert(&#39;没有此水果&#39;);
+}</code></pre>
+<h3 id="switch-和-if-else"><a href="#switch-和-if-else" class="headerlink" title="switch 和 if else"></a>switch 和 if else</h3><ul>
 <li>一般情况下，它们两个语句可以相互替换</li>
 <li>switch…case 语句通常处理 case为比较确定值的情况， 而 if…else…语句更加灵活，常用于范围判断(大于、等于某个范围)</li>
 <li>switch 语句进行条件判断后直接执行到程序的条件语句，效率更高。而if…else 语句有几种条件，就得判断多少次。</li>
@@ -788,7 +941,7 @@ if (条件表达式1) {
 <li>当分支比较多时，switch语句的执行效率比较高，而且结构更清晰。 </li>
 </ul>
 <h2 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h2><h3 id="for-循环"><a href="#for-循环" class="headerlink" title="for 循环"></a>for 循环</h3><pre><code class="js">for (初始化变量; 条件表达式; 操作表达式 ) {
-    //循环体
+    // 循环体
 }</code></pre>
 <ul>
 <li>初始化变量：通常被用于初始化一个计数器，该表达式可以使用 var 关键字声明新的变量，这个变量帮我们来记录次数</li>
@@ -818,28 +971,126 @@ for (var i = 1; i &lt;= 100; i++) {
   }
 }</code></pre>
 <p>for循环因为有了计数器的存在，还可以重复的执行某些操作，比如做一些算术运算；</p>
-<p>###双重for循环</p>
-<pre><code class="js">for (外循环的初始; 外循环的条件; 外循环的操作表达式) {
+<h4 id="例：求-1-100-之间的整数累加和"><a href="#例：求-1-100-之间的整数累加和" class="headerlink" title="例：求 1~100 之间的整数累加和"></a>例：求 1~100 之间的整数累加和</h4><pre><code class="js">var sum = 0; // 求和 的变量
+for (var i = 1; i &lt;= 100; i++) {
+    sum += i;  // sum = sum + i;
+}
+console.log(sum);</code></pre>
+<h4 id="例：求1-100之间所有数的平均值"><a href="#例：求1-100之间所有数的平均值" class="headerlink" title="例：求1-100之间所有数的平均值"></a>例：求1-100之间所有数的平均值</h4><pre><code class="js">var sum = 0;
+var average = 0;
+for (var i = 1; i &lt;= 100; i++) {
+    sum = sum + i;
+}
+average = sum / 100;
+console.log(average);</code></pre>
+<h4 id="例：求1-100之间所有偶数和奇数的和"><a href="#例：求1-100之间所有偶数和奇数的和" class="headerlink" title="例：求1-100之间所有偶数和奇数的和"></a>例：求1-100之间所有偶数和奇数的和</h4><pre><code class="js">var even = 0;
+var odd = 0;
+for (var i = 1; i &lt;= 100; i++) {
+    if (i % 2 == 0) {
+        even = even + i;
+    } else {
+        odd = odd + i;
+    }
+}
+console.log(&#39;1~100 之间所有的偶数和是&#39; + even);
+console.log(&#39;1~100 之间所有的奇数和是&#39; + odd);</code></pre>
+<h4 id="例：求1-100之间所有能被3整除的数字的和"><a href="#例：求1-100之间所有能被3整除的数字的和" class="headerlink" title="例：求1-100之间所有能被3整除的数字的和"></a>例：求1-100之间所有能被3整除的数字的和</h4><pre><code class="js">var result = 0;
+for (var i = 1; i &lt;= 100; i++) {
+    if (i % 3 == 0) {
+        result += i; // result = result + i;
+    }
+}
+console.log(&#39;1~100之间能够被3整数的数字的和是：&#39; + result);</code></pre>
+<h3 id="双重for循环"><a href="#双重for循环" class="headerlink" title="双重for循环"></a>双重for循环</h3><pre><code class="js">for (外循环的初始; 外循环的条件; 外循环的操作表达式) {
     for (内循环的初始; 内循环的条件; 内循环的操作表达式) {  
        需执行的代码;
    }
-}</code></pre>
+}
+// 我们可以把里面的循环看做是外层循环的语句
+// 外层循环一次，里面的循环执行全部</code></pre>
 <ul>
 <li>内层循环可以看做外层循环的循环体语句</li>
 <li>内层循环执行的顺序也要遵循 for 循环的执行顺序 </li>
 <li>外层循环执行一次，内层循环要执行全部次数</li>
 </ul>
-<p>打印五行五列星星</p>
-<pre><code class="js">var star = &#39;&#39;;
-// 外层循环负责打印五行
-for (var j = 1; j &lt;= 3; j++) {
-    // 内层循环负责一行打印五个星星
-    for (var i = 1; i &lt;= 3; i++) {
-      star += &#39;☆&#39;
+<pre><code class="js">for (var i = 1; i &lt;= 3; i++) {
+    console.log(&#39;外层循环第&#39; + i + &#39;次&#39;);
+    for (var j = 1; j &lt;= 3; j++) {
+        console.log(&#39;--- ---里层的循环第&#39; + j + &#39;次&#39;);
     }
-    star += &#39;\n&#39;; // 每次满 5个星星 就 加一次换行
 }
-console.log(star);</code></pre>
+// 外层循环第1次
+// --- ---里层的循环第1次
+// --- ---里层的循环第2次
+// --- ---里层的循环第3次
+// 外层循环第2次
+// --- ---里层的循环第1次
+// --- ---里层的循环第2次
+// --- ---里层的循环第3次
+// 外层循环第3次
+// --- ---里层的循环第1次
+// --- ---里层的循环第2次
+// --- ---里层的循环第3次</code></pre>
+<h4 id="例：打印1行5列五角星"><a href="#例：打印1行5列五角星" class="headerlink" title="例：打印1行5列五角星"></a>例：打印1行5列五角星</h4><pre><code class="js">var str = &#39;&#39;;
+for (var j = 1; j &lt;= 5; j++) {
+    str = str + &#39;★&#39;
+}
+console.log(str);
+// ★★★★★</code></pre>
+<h4 id="例：打印5行5列五角星"><a href="#例：打印5行5列五角星" class="headerlink" title="例：打印5行5列五角星"></a>例：打印5行5列五角星</h4><pre><code class="js">var rows = 5; // 要打印的行数
+var cols = 5; // 要打印的列数
+
+var str = &#39;&#39;;
+for (var i = 1; i &lt;= rows; i++) { // 外层循环负责打印五行
+    for (var j = 1; j &lt;= cols; j++) { // 里层循环负责一行打印五个星星
+        str = str + &#39;★&#39;;
+    }
+    str = str + &#39;\n&#39;; // 一行打印完毕就另起一行 \n
+}
+
+console.log(str);
+// ★★★★★
+// ★★★★★
+// ★★★★★
+// ★★★★★
+// ★★★★★</code></pre>
+<h4 id="例：打印倒三角形"><a href="#例：打印倒三角形" class="headerlink" title="例：打印倒三角形"></a>例：打印倒三角形</h4><pre><code class="js">var str = &#39;&#39;;
+for (var i = 1; i &lt;= 5; i++) { // 外层循环控制行数
+    for (var j = i; j &lt;= 5; j++) { // 里层循环打印的个数不一样  j = i
+        str = str + &#39;★&#39;;
+    }
+    str += &#39;\n&#39;;
+}
+console.log(str);
+// ★★★★★
+// ★★★★
+// ★★★
+// ★★
+// ★</code></pre>
+<h4 id="例：九九乘法表"><a href="#例：九九乘法表" class="headerlink" title="例：九九乘法表"></a>例：九九乘法表</h4><pre><code class="js">// 一共有9行，但是每行的个数不一样，因此需要用到双重 for 循环
+// 外层的 for 循环控制行数 i ，循环9次 ，可以打印 9 行  
+// 内层的 for 循环控制每行公式的列数  j  
+// 核心算法：每一行 公式的个数正好和行数一致， j &lt;= i;
+// 每行打印完毕，都需要重新换一行
+var str = &#39;&#39;;
+for (var i = 1; i &lt;= 9; i++) { // 外层循环控制行数
+    for (var j = 1; j &lt;= i; j++) { // 里层循环控制每一行的个数  j &lt;= i
+        // 1 × 2 = 2
+        // str = str + &#39;★&#39;;
+        str += j + &#39;×&#39; + i + &#39;=&#39; + i * j + &#39;\t&#39;;
+    }
+    str += &#39;\n&#39;;
+}
+console.log(str);
+// 1×1=1   
+// 1×2=2   2×2=4   
+// 1×3=3   2×3=6   3×3=9   
+// 1×4=4   2×4=8   3×4=12  4×4=16  
+// 1×5=5   2×5=10  3×5=15  4×5=20  5×5=25  
+// 1×6=6   2×6=12  3×6=18  4×6=24  5×6=30  6×6=36  
+// 1×7=7   2×7=14  3×7=21  4×7=28  5×7=35  6×7=42  7×7=49  
+// 1×8=8   2×8=16  3×8=24  4×8=32  5×8=40  6×8=48  7×8=56  8×8=64  
+// 1×9=9   2×9=18  3×9=27  4×9=36  5×9=45  6×9=54  7×9=63  8×9=72  9×9=81</code></pre>
 <p><strong>for 循环小结</strong></p>
 <ul>
 <li>for 循环可以重复执行某些相同代码</li>
@@ -858,7 +1109,31 @@ console.log(star);</code></pre>
 <li>循环体代码执行完毕后，程序会继续判断执行条件表达式，如条件仍为true，则会继续执行循环体，直到循环条件为 false 时，整个循环过程才会结束</li>
 <li>必须要有退出条件，否则会成为死循环</li>
 </ul>
-<h3 id="do-while-循环"><a href="#do-while-循环" class="headerlink" title="do-while 循环"></a>do-while 循环</h3><pre><code class="js">do {
+<pre><code class="js">// while 循环语法结构  while 当...的时候
+// 当条件表达式结果为true 则执行循环体 否则 退出循环
+var num = 1;
+while (num &lt;= 100) {
+    console.log(&#39;好啊有&#39;);
+    num++;
+}</code></pre>
+<h4 id="例：打印从1到100"><a href="#例：打印从1到100" class="headerlink" title="例：打印从1到100"></a>例：打印从1到100</h4><pre><code class="js">var i = 1;
+while (i &lt;= 100) {
+    console.log(&#39;这个人今年&#39; + i + &#39;岁了&#39;);
+    i++;
+}</code></pre>
+<h4 id="例：计算-1-100-之间所有整数的和"><a href="#例：计算-1-100-之间所有整数的和" class="headerlink" title="例：计算 1 ~ 100 之间所有整数的和"></a>例：计算 1 ~ 100 之间所有整数的和</h4><pre><code class="js">var sum = 0;
+var j = 1;
+while (j &lt;= 100) {
+    sum += j;
+    j++
+}
+console.log(sum);</code></pre>
+<h4 id="例：无限弹框直到输入正确"><a href="#例：无限弹框直到输入正确" class="headerlink" title="例：无限弹框直到输入正确"></a>例：无限弹框直到输入正确</h4><pre><code class="js">var message = prompt(&#39;约吗?&#39;);
+while (message !== &#39;约&#39;) {
+    message = prompt(&#39;约吗?&#39;);
+}
+alert(&#39;好！&#39;);</code></pre>
+<h3 id="do-while-循环"><a href="#do-while-循环" class="headerlink" title="do while 循环"></a>do while 循环</h3><pre><code class="js">do {
     // 循环体代码 - 条件表达式为 true 时重复执行循环体代码
 } while (条件表达式) {
     // 循环体代码 
@@ -868,7 +1143,37 @@ console.log(star);</code></pre>
 <li>再执行条件表达式，如果结果为 true，则继续执行循环体代码，如果为 false，则退出循环，继续执行后面代码</li>
 <li>do…while循环语句至少会执行一次循环体代码</li>
 </ul>
-<h3 id="continue和break"><a href="#continue和break" class="headerlink" title="continue和break"></a>continue和break</h3><ul>
+<h4 id="例：打印从1到100-1"><a href="#例：打印从1到100-1" class="headerlink" title="例：打印从1到100"></a>例：打印从1到100</h4><pre><code class="js">// while 循环
+var i = 1;
+while (i &lt;= 100) {
+    console.log(&#39;这个人今年&#39; + i + &#39;岁了&#39;);
+    i++;
+}
+
+// do while 循环
+var i = 1;
+do {
+    console.log(&#39;这个人今年&#39; + i + &#39;岁了&#39;);
+    i++;
+} while (i &lt;= 100)</code></pre>
+<h4 id="例：计算-1-100-之间所有整数的和-1"><a href="#例：计算-1-100-之间所有整数的和-1" class="headerlink" title="例：计算 1 ~ 100 之间所有整数的和"></a>例：计算 1 ~ 100 之间所有整数的和</h4><pre><code class="js">// while 循环
+var sum = 0;
+var j = 1;
+while (j &lt;= 100) {
+    sum += j;
+    j++
+}
+console.log(sum);
+
+// do while 循环
+var sum = 0;
+var j = 1;
+do {
+    sum += j;
+    j++;
+} while (j &lt;= 100)
+console.log(sum);</code></pre>
+<h3 id="continue-和-break"><a href="#continue-和-break" class="headerlink" title="continue 和 break"></a>continue 和 break</h3><ul>
 <li>continue 关键字用于立即跳出本次循环，<strong>继续下一次循环</strong>（本次循环体中 continue 之后的代码就会少执行一次）;</li>
 <li>例如，吃5个包子，第3个有虫子，就扔掉第3个，继续吃第4个第5个包子：</li>
 </ul>
@@ -878,7 +1183,20 @@ console.log(star);</code></pre>
          continue; // 跳出本次循环，跳出的是第3次循环 
       }
       console.log(&#39;我正在吃第&#39; + i + &#39;个包子&#39;);
- }</code></pre>
+ }
+// 我正在吃第1个包子
+// 我正在吃第2个包子
+// 这个包子有虫子，扔掉
+// 我正在吃第4个包子
+// 我正在吃第5个包子</code></pre>
+<h4 id="例：求1-100之间的和（除了能被7整除之外）"><a href="#例：求1-100之间的和（除了能被7整除之外）" class="headerlink" title="例：求1~100之间的和（除了能被7整除之外）"></a>例：求1~100之间的和（除了能被7整除之外）</h4><pre><code class="js">var sum = 0;
+for (var i = 1; i &lt;= 100; i++) {
+    if (i % 7 == 0) {
+        continue;
+    }
+    sum += i;
+}
+console.log(sum);</code></pre>
 <ul>
 <li>break 关键字用于<strong>立即跳出整个循环</strong>（循环结束）；</li>
 <li>例如，吃5个包子，吃到第3个发现里面有半个虫子，其余的不吃了：</li>
@@ -889,7 +1207,10 @@ console.log(star);</code></pre>
          break; // 直接退出整个for 循环，跳到整个for下面的语句
      }
      console.log(&#39;我正在吃第&#39; + i + &#39;个包子&#39;);
-   }</code></pre>
+   }
+// 我正在吃第1个包子
+// 我正在吃第2个包子
+// 发现半个虫子，其余都不吃了</code></pre>
 <p>以上。</p>
 
       
@@ -935,7 +1256,7 @@ console.log(star);</code></pre>
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#Css','#bootstrap','#html+css','#Css3','#js','#HTML5','#Node.js','#博客','#hexo','#markdown','#vue','#vscode','#Mongodb','#git','#github',],
+            'data': ['#Css','#bootstrap','#html+css','#Css3','#jquery','#js','#HTML5','#Node.js','#博客','#hexo','#vue','#markdown','#vscode','#Mongodb','#git','#github',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');

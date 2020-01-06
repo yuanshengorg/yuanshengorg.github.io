@@ -6,20 +6,21 @@
   <meta name="keywords" content=" js ">
   <meta name="description" content="JavaScript（六）对象、构造函数、Math、Date | 半根竹子">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="对象对象概念 在 JavaScript 中，对象是一组无序的相关属性和方法的集合 所有的事物都是对象，例如字符串、数值、数组、函数等。 对象是由属性和方法组成的。 属性：事物的特征，在对象中用属性来表示（常用名词） 方法：事物的行为，在对象中用方法来表示（常用动词）   为了让更好地存储一组数据，对象应运而生 对象中为每项数据设置了属性名称，可以访问数据更语义化，数据结构清晰，表意明显 JS中的对">
+<meta name="description" content="DOM 文档对象模型（Document Object Model，简称DOM），是 W3C 组织推荐的处理可扩展标记语言（html或者xhtml）的标准编程接口。 W3C 已经定义了一系列的 DOM 接口，通过这些 DOM 接口可以改变网页的内容、结构和样式 DOM是W3C组织制定的一套处理 html和xml文档的规范，所有的浏览器都遵循了这套标准。  DOM树：  DOM树 又称为文档树模型，把">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript（六）对象、构造函数、Math、Date">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;01&#x2F;06&#x2F;js&#x2F;JavaScript%EF%BC%88%E5%85%AD%EF%BC%89%E5%AF%B9%E8%B1%A1&#x2F;index.html">
+<meta property="og:title" content="JavaScript（七）WebAPI获取元素、操作元素">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;01&#x2F;06&#x2F;js&#x2F;JavaScript%EF%BC%88%E4%B8%83%EF%BC%89WebAPI%E8%8E%B7%E5%8F%96%E5%85%83%E7%B4%A0%E3%80%81%E6%93%8D%E4%BD%9C%E5%85%83%E7%B4%A0&#x2F;index.html">
 <meta property="og:site_name" content="半根竹子">
-<meta property="og:description" content="对象对象概念 在 JavaScript 中，对象是一组无序的相关属性和方法的集合 所有的事物都是对象，例如字符串、数值、数组、函数等。 对象是由属性和方法组成的。 属性：事物的特征，在对象中用属性来表示（常用名词） 方法：事物的行为，在对象中用方法来表示（常用动词）   为了让更好地存储一组数据，对象应运而生 对象中为每项数据设置了属性名称，可以访问数据更语义化，数据结构清晰，表意明显 JS中的对">
+<meta property="og:description" content="DOM 文档对象模型（Document Object Model，简称DOM），是 W3C 组织推荐的处理可扩展标记语言（html或者xhtml）的标准编程接口。 W3C 已经定义了一系列的 DOM 接口，通过这些 DOM 接口可以改变网页的内容、结构和样式 DOM是W3C组织制定的一套处理 html和xml文档的规范，所有的浏览器都遵循了这套标准。  DOM树：  DOM树 又称为文档树模型，把">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001060233_997.png?null">
-<meta property="article:published_time" content="2020-01-05T18:05:10.679Z">
-<meta property="article:modified_time" content="2020-01-05T18:40:49.800Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001061829_929.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001061828_600.png?null">
+<meta property="article:published_time" content="2020-01-06T09:44:09.166Z">
+<meta property="article:modified_time" content="2020-01-06T10:30:32.705Z">
 <meta property="article:author" content="HalfBamboo">
 <meta property="article:tag" content="js">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001060233_997.png?null">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001061829_929.png?null">
 
 
 <link rel="icon" href="http://mdimg.95408.com/20191218121717.png">
@@ -143,6 +144,14 @@
     
         
             
+            <li><div data-rel="jquery">jquery</div>
+                
+            </li>
+            
+        
+    
+        
+            
             <li><div data-rel="JavaScript">JavaScript</div>
                 
             </li>
@@ -183,7 +192,7 @@
     </div>
     <div></div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="37">
+<input type="hidden" id="yelog_site_posts_number" value="39">
 
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -234,6 +243,10 @@
     </li>
     
     <li class="article-tag-list-item">
+        <a class="color2">jquery</a>
+    </li>
+    
+    <li class="article-tag-list-item">
         <a class="color3">js</a>
     </li>
     
@@ -254,11 +267,11 @@
     </li>
     
     <li class="article-tag-list-item">
-        <a class="color4">markdown</a>
+        <a class="color4">vue</a>
     </li>
     
     <li class="article-tag-list-item">
-        <a class="color4">vue</a>
+        <a class="color4">markdown</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -327,12 +340,20 @@
             <span class="post-date" title="2019-12-26 19:15:43">2019/12/26</span>
         </a>
         
+        <a  class="jquery "
+           href="/2020/01/06/jquery/jQuery%EF%BC%88%E4%B8%80%EF%BC%89/"
+           data-tag="jquery"
+           data-author="" >
+            <span class="post-title" title="jQuery（一）">jQuery（一）</span>
+            <span class="post-date" title="2020-01-06 17:39:36">2020/01/06</span>
+        </a>
+        
         <a  class="JavaScript "
-           href="/2019/12/23/js/JavaScript%EF%BC%88%E4%B8%89%EF%BC%89%E6%95%B0%E7%BB%84%E4%B8%80/"
+           href="/2020/01/06/js/JavaScript%EF%BC%88%E4%B8%83%EF%BC%89WebAPI%E8%8E%B7%E5%8F%96%E5%85%83%E7%B4%A0%E3%80%81%E6%93%8D%E4%BD%9C%E5%85%83%E7%B4%A0/"
            data-tag="js"
            data-author="" >
-            <span class="post-title" title="JavaScript（三）数组一">JavaScript（三）数组一</span>
-            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+            <span class="post-title" title="JavaScript（七）WebAPI获取元素、操作元素">JavaScript（七）WebAPI获取元素、操作元素</span>
+            <span class="post-date" title="2020-01-06 17:44:09">2020/01/06</span>
         </a>
         
         <a  class="JavaScript "
@@ -359,14 +380,6 @@
             <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
         </a>
         
-        <a  class="node "
-           href="/2019/12/02/node/Node.js%EF%BC%882%EF%BC%89fs%E3%80%81path%E3%80%81gulp%E6%A8%A1%E5%9D%97/"
-           data-tag="Node.js"
-           data-author="" >
-            <span class="post-title" title="Node.js（2）fs、path、gulp模块">Node.js（2）fs、path、gulp模块</span>
-            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
-        </a>
-        
         <a  class="css3 "
            href="/2019/12/27/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%B8%89%EF%BC%89rem%E5%B8%83%E5%B1%80%E5%92%8C%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2/"
            data-tag="Css3"
@@ -376,11 +389,27 @@
         </a>
         
         <a  class="node "
+           href="/2019/12/02/node/Node.js%EF%BC%882%EF%BC%89fs%E3%80%81path%E3%80%81gulp%E6%A8%A1%E5%9D%97/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（2）fs、path、gulp模块">Node.js（2）fs、path、gulp模块</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="node "
            href="/2019/12/01/node/Node.js%EF%BC%881%EF%BC%89%E5%9F%BA%E7%A1%80/"
            data-tag="js,Node.js"
            data-author="" >
             <span class="post-title" title="Node.js（1）基础">Node.js（1）基础</span>
             <span class="post-date" title="2019-12-01 00:00:00">2019/12/01</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/Hexo%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95%E6%9B%B4%E6%96%B0/"
+           data-tag="博客,hexo"
+           data-author="" >
+            <span class="post-title" title="Hexo折腾记录更新">Hexo折腾记录更新</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
         </a>
         
         <a  class="node "
@@ -392,26 +421,10 @@
         </a>
         
         <a  class="工具 "
-           href="/2019/12/23/tools/Hexo%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95%E6%9B%B4%E6%96%B0/"
-           data-tag="博客,hexo"
-           data-author="" >
-            <span class="post-title" title="Hexo折腾记录更新">Hexo折腾记录更新</span>
-            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
-        </a>
-        
-        <a  class="工具 "
            href="/2019/12/23/tools/hexo%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/"
            data-tag="博客,hexo"
            data-author="" >
             <span class="post-title" title="hexo创建博客">hexo创建博客</span>
-            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
-        </a>
-        
-        <a  class="工具 "
-           href="/2019/12/23/tools/Markdown%E8%AF%AD%E6%B3%95CSS%E8%A1%A8%E7%8E%B0%E6%B5%8B%E8%AF%95/"
-           data-tag="markdown"
-           data-author="" >
-            <span class="post-title" title="Markdown语法CSS表现测试">Markdown语法CSS表现测试</span>
             <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
         </a>
         
@@ -420,6 +433,14 @@
            data-tag="js,vue"
            data-author="" >
             <span class="post-title" title="Vue基础">Vue基础</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/Markdown%E8%AF%AD%E6%B3%95CSS%E8%A1%A8%E7%8E%B0%E6%B5%8B%E8%AF%95/"
+           data-tag="markdown"
+           data-author="" >
+            <span class="post-title" title="Markdown语法CSS表现测试">Markdown语法CSS表现测试</span>
             <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
         </a>
         
@@ -472,6 +493,14 @@
         </a>
         
         <a  class="css3 "
+           href="/2019/12/26/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%BA%8C%EF%BC%89flex%E5%B8%83%E5%B1%80%EF%BC%88%E5%9B%BE%E7%A4%BA%EF%BC%89/"
+           data-tag="Css3"
+           data-author="" >
+            <span class="post-title" title="CSS移动布局（二）flex布局（图示）">CSS移动布局（二）flex布局（图示）</span>
+            <span class="post-date" title="2019-12-26 20:56:43">2019/12/26</span>
+        </a>
+        
+        <a  class="css3 "
            href="/2019/12/27/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E5%9B%9B%EF%BC%89%E5%93%8D%E5%BA%94%E5%BC%8Fbootstrap/"
            data-tag="bootstrap"
            data-author="" >
@@ -479,12 +508,60 @@
             <span class="post-date" title="2019-12-27 23:15:43">2019/12/27</span>
         </a>
         
-        <a  class="css3 "
-           href="/2019/12/26/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%BA%8C%EF%BC%89flex%E5%B8%83%E5%B1%80%EF%BC%88%E5%9B%BE%E7%A4%BA%EF%BC%89/"
-           data-tag="Css3"
+        <a  class="JavaScript "
+           href="/2019/12/23/js/JavaScript%EF%BC%88%E4%B8%89%EF%BC%89%E6%95%B0%E7%BB%84%E4%B8%80/"
+           data-tag="js"
            data-author="" >
-            <span class="post-title" title="CSS移动布局（二）flex布局（图示）">CSS移动布局（二）flex布局（图示）</span>
-            <span class="post-date" title="2019-12-26 20:56:43">2019/12/26</span>
+            <span class="post-title" title="JavaScript（三）数组一">JavaScript（三）数组一</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/04/node/Node.js%EF%BC%884%EF%BC%89Mongodb%E6%95%B0%E6%8D%AE%E5%BA%93/"
+           data-tag="Mongodb"
+           data-author="" >
+            <span class="post-title" title="Node.js（4）Mongodb数据库">Node.js（4）Mongodb数据库</span>
+            <span class="post-date" title="2019-12-04 00:00:00">2019/12/04</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/git%E5%92%8Cgithub/"
+           data-tag="git,github"
+           data-author="" >
+            <span class="post-title" title="git和github">git和github</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/05/node/Node.js%EF%BC%885%EF%BC%89art-Template%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（5）art-Template模板引擎">Node.js（5）art-Template模板引擎</span>
+            <span class="post-date" title="2019-12-05 00:00:00">2019/12/05</span>
+        </a>
+        
+        <a  class="css "
+           href="/2020/01/03/css/html+css%EF%BC%88%E4%B9%9D%EF%BC%89%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（九）代码规范">html+css（九）代码规范</span>
+            <span class="post-date" title="2020-01-03 17:50:20">2020/01/03</span>
+        </a>
+        
+        <a  class="css "
+           href="/2020/01/02/css/html+css%EF%BC%88%E5%85%AB%EF%BC%89CSS%E9%AB%98%E7%BA%A7%E6%8A%80%E6%9C%AF/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（八）CSS高级技术">html+css（八）CSS高级技术</span>
+            <span class="post-date" title="2020-01-02 15:13:11">2020/01/02</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/30/css/html+css%EF%BC%88%E4%BA%8C%EF%BC%89%E8%A1%A8%E6%A0%BC%E3%80%81%E5%88%97%E8%A1%A8%E5%92%8C%E8%A1%A8%E5%8D%95/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（二）表格、列表和表单">html+css（二）表格、列表和表单</span>
+            <span class="post-date" title="2019-12-30 23:09:44">2019/12/30</span>
         </a>
         
         <a  class="JavaScript "
@@ -517,54 +594,6 @@
            data-author="" >
             <span class="post-title" title="JavaScript（六）对象、构造函数、Math、Date">JavaScript（六）对象、构造函数、Math、Date</span>
             <span class="post-date" title="2020-01-06 02:05:10">2020/01/06</span>
-        </a>
-        
-        <a  class="node "
-           href="/2019/12/05/node/Node.js%EF%BC%885%EF%BC%89art-Template%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E/"
-           data-tag="Node.js"
-           data-author="" >
-            <span class="post-title" title="Node.js（5）art-Template模板引擎">Node.js（5）art-Template模板引擎</span>
-            <span class="post-date" title="2019-12-05 00:00:00">2019/12/05</span>
-        </a>
-        
-        <a  class="node "
-           href="/2019/12/04/node/Node.js%EF%BC%884%EF%BC%89Mongodb%E6%95%B0%E6%8D%AE%E5%BA%93/"
-           data-tag="Mongodb"
-           data-author="" >
-            <span class="post-title" title="Node.js（4）Mongodb数据库">Node.js（4）Mongodb数据库</span>
-            <span class="post-date" title="2019-12-04 00:00:00">2019/12/04</span>
-        </a>
-        
-        <a  class="工具 "
-           href="/2019/12/23/tools/git%E5%92%8Cgithub/"
-           data-tag="git,github"
-           data-author="" >
-            <span class="post-title" title="git和github">git和github</span>
-            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
-        </a>
-        
-        <a  class="css "
-           href="/2020/01/03/css/html+css%EF%BC%88%E4%B9%9D%EF%BC%89%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"
-           data-tag="html+css"
-           data-author="" >
-            <span class="post-title" title="html+css（九）代码规范">html+css（九）代码规范</span>
-            <span class="post-date" title="2020-01-03 17:50:20">2020/01/03</span>
-        </a>
-        
-        <a  class="css "
-           href="/2020/01/02/css/html+css%EF%BC%88%E5%85%AB%EF%BC%89CSS%E9%AB%98%E7%BA%A7%E6%8A%80%E6%9C%AF/"
-           data-tag="html+css"
-           data-author="" >
-            <span class="post-title" title="html+css（八）CSS高级技术">html+css（八）CSS高级技术</span>
-            <span class="post-date" title="2020-01-02 15:13:11">2020/01/02</span>
-        </a>
-        
-        <a  class="css "
-           href="/2019/12/30/css/html+css%EF%BC%88%E4%BA%8C%EF%BC%89%E8%A1%A8%E6%A0%BC%E3%80%81%E5%88%97%E8%A1%A8%E5%92%8C%E8%A1%A8%E5%8D%95/"
-           data-tag="html+css"
-           data-author="" >
-            <span class="post-title" title="html+css（二）表格、列表和表单">html+css（二）表格、列表和表单</span>
-            <span class="post-date" title="2019-12-30 23:09:44">2019/12/30</span>
         </a>
         
         <a  class="node "
@@ -619,7 +648,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-01-06 02:40:49'>2020-01-06 02:05</time>
+        创建时间:<time class="date" title='更新时间: 2020-01-06 16:51:59'>2020-01-06 02:05</time>
         
     </div>
     <div class="article-meta">
@@ -630,7 +659,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#对象"><span class="toc-text">对象</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#对象概念"><span class="toc-text">对象概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#字面量创建对象"><span class="toc-text">字面量创建对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#对象的属性和方法"><span class="toc-text">对象的属性和方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#变量与属性、函数和方法"><span class="toc-text">变量与属性、函数和方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#new-Object-创建对象"><span class="toc-text">new Object 创建对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#构造函数实例化对象"><span class="toc-text">构造函数实例化对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#遍历对象"><span class="toc-text">遍历对象</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#内置对象"><span class="toc-text">内置对象</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Math-对象"><span class="toc-text">Math 对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Date-日期对象"><span class="toc-text">Date 日期对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#String-字符串对象"><span class="toc-text">String 字符串对象</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#对象"><span class="toc-text">对象</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#属性和方法的集合"><span class="toc-text">属性和方法的集合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建对象1：字面量创建对象"><span class="toc-text">创建对象1：字面量创建对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#对象的属性和方法"><span class="toc-text">对象的属性和方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#变量与属性、函数和方法"><span class="toc-text">变量与属性、函数和方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建对象2：new-Object-创建对象"><span class="toc-text">创建对象2：new Object 创建对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建对象3：构造函数实例化对象"><span class="toc-text">创建对象3：构造函数实例化对象</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#例：利用构造函数创建对象"><span class="toc-text">例：利用构造函数创建对象</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#遍历对象"><span class="toc-text">遍历对象</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#内置对象"><span class="toc-text">内置对象</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Math-数学对象"><span class="toc-text">Math 数学对象</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#例：封装自己的Math对象"><span class="toc-text">例：封装自己的Math对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#例：绝对值"><span class="toc-text">例：绝对值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#例：取整方法"><span class="toc-text">例：取整方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#例：0-1之间随机数"><span class="toc-text">例：0-1之间随机数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#例：1-10之间的随机整数"><span class="toc-text">例：1-10之间的随机整数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#例：随机点名"><span class="toc-text">例：随机点名</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#例：猜数字游戏"><span class="toc-text">例：猜数字游戏</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Date-日期对象"><span class="toc-text">Date 日期对象</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#例：格式化日期"><span class="toc-text">例：格式化日期</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#例：格式化时分秒"><span class="toc-text">例：格式化时分秒</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#例：倒计时效果"><span class="toc-text">例：倒计时效果</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#基本包装类型"><span class="toc-text">基本包装类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#String-字符串对象"><span class="toc-text">String 字符串对象</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#查找字符串的位置和次数"><span class="toc-text">查找字符串的位置和次数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#根据位置返回字符"><span class="toc-text">根据位置返回字符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#查找出现最多的字符和次数"><span class="toc-text">查找出现最多的字符和次数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#字符串操作方法"><span class="toc-text">字符串操作方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#字符串替换、分组"><span class="toc-text">字符串替换、分组</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#简单-和-复杂数据类型"><span class="toc-text">简单 和 复杂数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据类型"><span class="toc-text">数据类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#栈和堆"><span class="toc-text">栈和堆</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#传参"><span class="toc-text">传参</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -646,17 +675,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2><h3 id="对象概念"><a href="#对象概念" class="headerlink" title="对象概念"></a>对象概念</h3><ul>
-<li>在 JavaScript 中，对象是一组无序的相关属性和方法的集合</li>
-<li>所有的事物都是对象，例如字符串、数值、数组、函数等。</li>
-<li>对象是由属性和方法组成的。<ul>
-<li>属性：事物的特征，在对象中用属性来表示（常用名词）</li>
-<li>方法：事物的行为，在对象中用方法来表示（常用动词）</li>
+        <h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2><h3 id="属性和方法的集合"><a href="#属性和方法的集合" class="headerlink" title="属性和方法的集合"></a>属性和方法的集合</h3><ul>
+<li>在 JavaScript 中，对象是一组无序的相关属性和方法的集合；</li>
+<li>所有的事物都是对象，例如字符串、数值、数组、函数等；</li>
+<li>对象是由属性和方法组成的；<ul>
+<li>属性：事物的特征，在对象中用属性来表示（常用名词）；</li>
+<li>方法：事物的行为，在对象中用方法来表示（常用动词）；</li>
 </ul>
 </li>
-<li>为了让更好地存储一组数据，对象应运而生<ul>
-<li>对象中为每项数据设置了属性名称，可以访问数据更语义化，数据结构清晰，表意明显</li>
-<li>JS中的对象表达结构更清晰，更强大。</li>
+<li>为了让更好地存储一组数据，对象应运而生；<ul>
+<li>对象中为每项数据设置了属性名称，可以访问数据更语义化，数据结构清晰，表意明显；</li>
+<li>JS中的对象表达结构更清晰，更强大；</li>
 </ul>
 </li>
 </ul>
@@ -666,9 +695,9 @@
     age: 28,
     height: 170
 }</code></pre>
-<h3 id="字面量创建对象"><a href="#字面量创建对象" class="headerlink" title="字面量创建对象"></a>字面量创建对象</h3><ul>
-<li>花括号 { } 里面包含了表达这个具体事物（对象）的属性和方法；</li>
-<li>花括号 { } 里面采取键值对的形式表示；<ul>
+<h3 id="创建对象1：字面量创建对象"><a href="#创建对象1：字面量创建对象" class="headerlink" title="创建对象1：字面量创建对象"></a>创建对象1：字面量创建对象</h3><ul>
+<li>花括号里面包含了表达这个具体事物（对象）的属性和方法；</li>
+<li>采取键值对的形式表示；<ul>
 <li>键：相当于属性名；</li>
 <li>值：相当于属性值，可以是任意类型的值（数字类型、字符串类型、布尔类型，函数类型等）;</li>
 </ul>
@@ -682,52 +711,41 @@
         alert(&#39;大家好啊~&#39;);
     }
 };</code></pre>
-<h3 id="对象的属性和方法"><a href="#对象的属性和方法" class="headerlink" title="对象的属性和方法"></a>对象的属性和方法</h3><ul>
-<li>对象的属性；<ul>
+<h3 id="对象的属性和方法"><a href="#对象的属性和方法" class="headerlink" title="对象的属性和方法"></a>对象的属性和方法</h3><p><strong>对象的属性：</strong></p>
+<ul>
 <li>对象中存储<strong>具体数据</strong>的 “键值对”中的 “键”称为对象的属性，即对象中存储具体数据的项；</li>
 </ul>
-</li>
-<li>对象的方法；<ul>
+<p><strong>对象的方法：</strong></p>
+<ul>
 <li>对象中存储<strong>函数</strong>的 “键值对”中的 “键”称为对象的方法，即对象中存储函数的项；</li>
 </ul>
-</li>
-<li>访问对象的属性；<ul>
+<p><strong>访问对象的属性：</strong></p>
+<ul>
 <li>对象里面的属性调用 : 对象.属性名 ，这个小点 . 就理解为“ 的 ”  ；</li>
 <li>对象里面属性的另一种调用方式 : 对象[‘属性名’]，注意方括号里面的属性必须加引号    ；</li>
 </ul>
-</li>
-<li>调用对象的方法；<ul>
-<li>对象里面的方法调用：对象.方法名() ，注意这个方法名字后面一定加括号 ；</li>
-</ul>
-</li>
-</ul>
-<p>访问对象的属性</p>
 <pre><code class="js">// 访问对象的属性
 console.log(star.name)     // 调用名字属性
 console.log(star[&#39;name&#39;])  // 调用名字属性</code></pre>
-<p>调用对象的方法</p>
+<p><strong>调用对象的方法：</strong></p>
+<ul>
+<li>对象里面的方法调用：对象.方法名() ，注意这个方法名字后面一定加括号 ；</li>
+</ul>
 <pre><code class="js">// 调用对象的方法
 star.sayHi(); // 调用sayHi方法 带后面的括号</code></pre>
-<h3 id="变量与属性、函数和方法"><a href="#变量与属性、函数和方法" class="headerlink" title="变量与属性、函数和方法"></a>变量与属性、函数和方法</h3><ul>
-<li><p>变量、属性总结；</p>
+<h3 id="变量与属性、函数和方法"><a href="#变量与属性、函数和方法" class="headerlink" title="变量与属性、函数和方法"></a>变量与属性、函数和方法</h3><p><strong>变量、属性总结：</strong></p>
 <ul>
 <li>属性是对象的一部分，而变量不是对象的一部分，变量是单独存储数据的容器；</li>
 <li>变量：单独声明赋值，单独存在；</li>
 <li>属性：对象里面的变量称为属性，不需要声明，用来描述该对象的特征；</li>
 </ul>
-</li>
-<li><p>函数、方法总结；</p>
+<p><strong>函数、方法总结：</strong></p>
 <ul>
-<li><p>方法是对象的一部分，函数不是对象的一部分，函数是单独封装操作的容器；</p>
-</li>
-<li><p>函数：单独存在的，通过“函数名()”的方式就可以调用；</p>
-</li>
-<li><p>方法：对象里面的函数称为方法，方法不需要声明，使用“对象.方法名()”的方式就可以调用，方法用来描述该对象的行为和功能；</p>
-</li>
+<li>方法是对象的一部分，函数不是对象的一部分，函数是单独封装操作的容器；</li>
+<li>函数：单独存在的，通过“函数名()”的方式就可以调用；</li>
+<li>方法：对象里面的函数称为方法，方法不需要声明，使用“对象.方法名()”的方式就可以调用，方法用来描述该对象的行为和功能；</li>
 </ul>
-</li>
-</ul>
-<h3 id="new-Object-创建对象"><a href="#new-Object-创建对象" class="headerlink" title="new Object 创建对象"></a>new Object 创建对象</h3><pre><code class="js">var xyz = new Obect();
+<h3 id="创建对象2：new-Object-创建对象"><a href="#创建对象2：new-Object-创建对象" class="headerlink" title="创建对象2：new Object 创建对象"></a>创建对象2：new Object 创建对象</h3><pre><code class="js">var xyz = new Obect();
 xyz.name = &#39;pink&#39;;
 xyz.age = 18;
 xyz.sex = &#39;男&#39;;
@@ -741,7 +759,7 @@ xyz.sayHi = function(){
 <li>new Object() ：需要 new 关键字；</li>
 <li>使用的格式：对象.属性 =  值；</li>
 </ul>
-<h3 id="构造函数实例化对象"><a href="#构造函数实例化对象" class="headerlink" title="构造函数实例化对象"></a>构造函数实例化对象</h3><pre><code class="js">// 构造函数的封装格式
+<h3 id="创建对象3：构造函数实例化对象"><a href="#创建对象3：构造函数实例化对象" class="headerlink" title="创建对象3：构造函数实例化对象"></a>创建对象3：构造函数实例化对象</h3><pre><code class="js">// 构造函数的封装格式
 function 构造函数名(形参1,形参2,形参3) {
      this.属性名1 = 参数1;
      this.属性名2 = 参数2;
@@ -751,47 +769,94 @@ function 构造函数名(形参1,形参2,形参3) {
 // 构造函数的调用格式
 var obj = new 构造函数名(实参1，实参2，实参3)
 // obj即接收到构造函数创建出来的对象</code></pre>
+<p><strong>构造函数：</strong></p>
 <ul>
-<li>构造函数：<ul>
-<li>构造函数是一种特殊的函数，主要用来初始化对象，即为对象成员变量赋初始值，它总与 new 运算符一起使用；</li>
+<li>构造函数是一种特殊的函数，主要用来初始化对象，即为对象成员变量赋初始值；</li>
+<li>它总与 new 运算符一起使用；</li>
 <li>我们可以把对象中一些公共的属性和方法抽取出来，然后封装到这个函数里面；</li>
 </ul>
-</li>
-<li>构造函数注意事项：<ul>
-<li>构造函数约定<strong>首字母大写</strong>；</li>
+<p><strong>构造函数注意事项：</strong></p>
+<ul>
+<li>构造函数约定首字母大写；</li>
 <li>函数内的属性和方法前面需要添加 <strong>this</strong> ，表示当前对象的属性和方法；</li>
-<li>构造函数中<strong>不需要 return 返回结果</strong>；</li>
-<li>当我们创建对象的时候，<strong>必须用 new 来调用构造函数</strong>；</li>
+<li>构造函数中不需要 return 返回结果；</li>
+<li>当我们创建对象的时候，必须用 new 来调用构造函数；</li>
 </ul>
-</li>
-<li>类与实例化对象：<ul>
-<li>构造函数，如 function Stars() {}，抽象了对象的公共部分，封装到了函数里面，它泛指某一大类（class） ；</li>
+<p><strong>类与实例化对象：</strong></p>
+<ul>
+<li>构造函数，如 function Stars() {}，抽象了对象的公共部分，封装到了函数里面，泛指某一大类（class） ；</li>
 <li>创建对象，如 new Stars()，特指某一个，通过 new 关键字创建对象的过程我们也称为对象实例化；</li>
 </ul>
-</li>
-<li>new关键字作用：<ul>
+<p><strong>new关键字作用：</strong></p>
+<ul>
 <li>在构造函数代码开始执行之前，创建一个空对象；</li>
 <li>修改this的指向，把this指向创建出来的空对象；</li>
 <li>执行函数的代码；</li>
 <li>在函数完成之后，返回this—即创建出来的对象；</li>
 </ul>
-</li>
+<h4 id="例：利用构造函数创建对象"><a href="#例：利用构造函数创建对象" class="headerlink" title="例：利用构造函数创建对象"></a>例：利用构造函数创建对象</h4><pre><code class="js">// 利用构造函数创建对象
+// 我们需要创建四大天王的对象  相同的属性： 名字 年龄 性别  相同的方法： 唱歌
+function Star(uname, age, sex) {
+    this.name = uname;
+    this.age = age;
+    this.sex = sex;
+    this.sing = function(sang) {
+        console.log(sang);
+    }
+}
+// new一个刘德华对象
+var ldh = new Star(&#39;刘德华&#39;, 18, &#39;男&#39;); 
+console.log(ldh.name);
+console.log(ldh[&#39;sex&#39;]);
+ldh.sing(&#39;冰雨&#39;);
+// new一个张学友对象
+var zxy = new Star(&#39;张学友&#39;, 19, &#39;男&#39;);
+console.log(zxy.name);
+console.log(zxy.age);
+zxy.sing(&#39;李香兰&#39;)
+
+// 刘德华
+// 男
+// 我会唱:冰雨这首歌哦！
+// 张学友
+// 19
+// 我会唱:李香兰这首歌哦！</code></pre>
+<ul>
+<li>构造函数  Star 泛指的某一大类  它类似于 java 语言里面的  类(class)；</li>
+<li>对象 特指 是一个具体的事物 刘德华 ==  {name: “刘德华”, age: 18, sex: “男”, sing: ƒ}；</li>
+<li>我们利用构造函数创建对象的过程我们也称为<strong>对象的实例化</strong>；</li>
 </ul>
 <h3 id="遍历对象"><a href="#遍历对象" class="headerlink" title="遍历对象"></a>遍历对象</h3><pre><code class="js">for (变量 in 对象名字) {
     // 在此执行代码
 }
+
 // 语法中的变量是自定义的，它需要符合命名规范
 // 通常我们会将这个变量写为 k 或者 key
+var obj = {
+    name: &#39;bloger&#39;,
+    age: 18,
+    sex: &#39;男&#39;,
+    fn1: function() {}
+}
 for (var k in obj) {
-    console.log(k);      // 这里的 k 是属性名
-    console.log(obj[k]); // 这里的 obj[k] 是属性值
+    // console.log(k); // k 变量 输出 得到的是 属性名
+    // console.log(obj[k]); // obj[k] 得到是 属性值
+    console.log(k + &#39;:&#39; + obj[k]);
+    // name:bloger
+    // age:18
+    // sex:男
+    // fn1:function() {}
 }</code></pre>
 <h2 id="内置对象"><a href="#内置对象" class="headerlink" title="内置对象"></a>内置对象</h2><ul>
-<li>JavaScript 中的对象分为3种：自定义对象 、内置对象、 浏览器对象</li>
-<li>前面两种对象属于 ECMAScript；  第三个浏览器对象属于 JS 独有的</li>
-<li>MDN文档: <a href="https://developer.mozilla.org/zh-CN/" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/</a></li>
+<li>JavaScript 中的对象分为3种：自定义对象 、内置对象、 浏览器对象；</li>
+<li>前面两种对象属于 ECMAScript；  第三个浏览器对象属于 JS 独有的；</li>
+<li>MDN文档: <a href="https://developer.mozilla.org/zh-CN；" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN；</a></li>
 </ul>
-<h3 id="Math-对象"><a href="#Math-对象" class="headerlink" title="Math 对象"></a>Math 对象</h3><p>Math 对象不是构造函数，它具有数学常数和函数的属性和方法。跟数学相关的运算（求绝对值，取整、最大值等）可以使用 Math 中的成员。</p>
+<h3 id="Math-数学对象"><a href="#Math-数学对象" class="headerlink" title="Math 数学对象"></a>Math 数学对象</h3><ul>
+<li>Math 对象不是构造函数，它具有数学常数和函数的属性和方法；</li>
+<li>跟数学相关的运算（求绝对值，取整、最大值等）可以使用 Math 中的成员；</li>
+<li>方法使用时必须带括号；</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -828,10 +893,91 @@ for (var k in obj) {
 <td>获取范围在[0,1)内的随机值</td>
 </tr>
 </tbody></table>
-<p>注意：上面的方法使用时必须带括号</p>
 <p><strong>获取指定范围内的随机整数</strong>：</p>
 <pre><code class="js">function getRandom(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min; 
+}</code></pre>
+<h4 id="例：封装自己的Math对象"><a href="#例：封装自己的Math对象" class="headerlink" title="例：封装自己的Math对象"></a>例：封装自己的Math对象</h4><pre><code class="js">// 利用对象封装自己的数学对象  里面有 PI 最大值和最小值
+var myMath = {
+    PI: 3.141592653,
+    max: function() {
+        var max = arguments[0];
+        for (var i = 1; i &lt; arguments.length; i++) {
+            if (arguments[i] &gt; max) {
+                max = arguments[i];
+            }
+        }
+        return max;
+    },
+    min: function() {
+        var min = arguments[0];
+        for (var i = 1; i &lt; arguments.length; i++) {
+            if (arguments[i] &lt; min) {
+                min = arguments[i];
+            }
+        }
+        return min;
+    }
+}
+console.log(myMath.PI);
+console.log(myMath.max(1, 5, 9));
+console.log(myMath.min(1, 5, 9));</code></pre>
+<h4 id="例：绝对值"><a href="#例：绝对值" class="headerlink" title="例：绝对值"></a>例：绝对值</h4><pre><code class="js">// 绝对值方法
+console.log(Math.abs(1)); // 1
+console.log(Math.abs(-1)); // 1
+console.log(Math.abs(&#39;-1&#39;)); // 隐式转换 会把字符串型 -1 转换为数字型
+console.log(Math.abs(&#39;pink&#39;)); // NaN </code></pre>
+<h4 id="例：取整方法"><a href="#例：取整方法" class="headerlink" title="例：取整方法"></a>例：取整方法</h4><pre><code class="js">// 三个取整方法
+// (1) Math.floor()   地板 向下取整  往最小了取值
+console.log(Math.floor(1.1)); // 1
+console.log(Math.floor(1.9)); // 1
+// (2) Math.ceil()   ceil 天花板 向上取整  往最大了取值
+console.log(Math.ceil(1.1)); // 2
+console.log(Math.ceil(1.9)); // 2
+// (3) Math.round()   四舍五入  其他数字都是四舍五入，但是 .5 特殊 它往大了取  
+console.log(Math.round(1.1)); // 1
+console.log(Math.round(1.5)); // 2
+console.log(Math.round(1.9)); // 2
+console.log(Math.round(-1.1)); // -1
+console.log(Math.round(-1.5)); // 这个结果是 -1</code></pre>
+<h4 id="例：0-1之间随机数"><a href="#例：0-1之间随机数" class="headerlink" title="例：0-1之间随机数"></a>例：0-1之间随机数</h4><pre><code class="js">// Math对象随机数方法 random() 返回一个随机的小数
+// 0 =&lt; x &lt; 1
+// 不包含 1
+console.log(Math.random());</code></pre>
+<h4 id="例：1-10之间的随机整数"><a href="#例：1-10之间的随机整数" class="headerlink" title="例：1-10之间的随机整数"></a>例：1-10之间的随机整数</h4><pre><code class="js">// 我们想要得到两个数之间的随机整数 并且 包含1和10
+// Math.floor(Math.random() * (max - min + 1)) + min;
+function getRandom(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+console.log(getRandom(1, 10));</code></pre>
+<h4 id="例：随机点名"><a href="#例：随机点名" class="headerlink" title="例：随机点名"></a>例：随机点名</h4><pre><code class="js">// 将名字用数组组装，实现随机点名
+// 得到两个数之间的随机整数
+function getRandom(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+// 5. 随机点名  
+var arr = [&#39;张三&#39;, &#39;张三丰&#39;, &#39;张三疯子&#39;, &#39;李四&#39;, &#39;李思思&#39;];
+// var name = arr[getRandom(0, 4)]
+var name = arr[getRandom(0, arr.length-1)];
+console.log(name);</code></pre>
+<h4 id="例：猜数字游戏"><a href="#例：猜数字游戏" class="headerlink" title="例：猜数字游戏"></a>例：猜数字游戏</h4><pre><code class="js">// 1.随机生成一个1~10 的整数  我们需要用到 Math.random() 方法。
+// 2.需要一直猜到正确为止，所以需要一直循环。
+// 3.while 循环更简单
+// 4.核心算法：使用 if  else if 多分支语句来判断大于、小于、等于。
+function getRandom(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+var random = getRandom(1, 10);
+while (true) { // 死循环
+    var num = prompt(&#39;你来猜？ 输入1~10之间的一个数字&#39;);
+    if (num &gt; random) {
+        alert(&#39;你猜大了&#39;);
+    } else if (num &lt; random) {
+        alert(&#39;你猜小了&#39;);
+    } else {
+        alert(&#39;你好帅哦，猜对了&#39;);
+        break; // 退出整个循环结束程序
+    }
 }</code></pre>
 <h3 id="Date-日期对象"><a href="#Date-日期对象" class="headerlink" title="Date 日期对象"></a>Date 日期对象</h3><p>Date 对象和 Math 对象不一样，Date是一个构造函数，所以使用时需要实例化后才能使用其中具体方法和属性。Date 实例用来处理日期和时间</p>
 <pre><code class="js">// 获取当前时间实例化
@@ -842,8 +988,8 @@ var future = new Date(&#39;2019/5/1&#39;);</code></pre>
 <li>创建实例时并未传入参数，则得到的日期对象是当前时间对应的日期对象</li>
 </ul>
 <p><img src="http://mdimg.95408.com/202001060233_997.png?null" alt="使用Date实例的方法和属性"></p>
-<p>通过Date实例获取总毫秒数</p>
-<pre><code class="js">// 实例化Date对象
+<p>时间戳：通过Date实例获取总毫秒数</p>
+<pre><code class="js">// 实例化Date日期对象
 var now = new Date();
 // 1. 用于获取对象的原始值
 console.log(date.valueOf())    
@@ -852,17 +998,63 @@ console.log(date.getTime())
 var now = + new Date();            
 // 3. HTML5中提供的方法，有兼容性问题
 var now = Date.now();</code></pre>
-<h3 id="String-字符串对象"><a href="#String-字符串对象" class="headerlink" title="String 字符串对象"></a>String 字符串对象</h3><ul>
-<li>为了方便操作基本数据类型，JavaScript 还提供了三个特殊的引用类型：String、Number和 Boolean</li>
-<li>基本包装类型<ul>
-<li>基本包装类型就是把简单数据类型包装成为复杂数据类型，这样基本数据类型就有了属性和方法</li>
-</ul>
-</li>
-<li>字符串的不可变<ul>
-<li>当重新给字符串变量赋值的时候，变量之前保存的字符串不会被修改，依然在内存中重新给字符串赋值，会重新在内存中开辟空间，这个特点就是字符串的不可变。</li>
-<li>由于字符串的不可变，在<strong>大量拼接字符串</strong>的时候会有效率问题</li>
-</ul>
-</li>
+<h4 id="例：格式化日期"><a href="#例：格式化日期" class="headerlink" title="例：格式化日期"></a>例：格式化日期</h4><pre><code class="js">// 格式化日期 年月日 
+var date = new Date();
+console.log(date.getFullYear()); // 返回当前日期的年  2019
+console.log(date.getMonth() + 1); // 月份 返回的月份小1个月 记得月份 + 1
+console.log(date.getDate()); // 返回的是 几号
+console.log(date.getDay()); // 3  周一返回的是 1 周六返回的是 6 但是 周日返回的是 0
+// 我们写一个 2020年1月6日 星期一
+var year = date.getFullYear();
+var month = date.getMonth() + 1;
+var dates = date.getDate();
+var arr = [&#39;星期日&#39;, &#39;星期一&#39;, &#39;星期二&#39;, &#39;星期三&#39;, &#39;星期四&#39;, &#39;星期五&#39;, &#39;星期六&#39;];
+var day = date.getDay();
+console.log(&#39;今天是：&#39; + year + &#39;年&#39; + month + &#39;月&#39; + dates + &#39;日 &#39; + arr[day]);
+// 输出：
+// 今天是：2020年1月6日 星期一</code></pre>
+<h4 id="例：格式化时分秒"><a href="#例：格式化时分秒" class="headerlink" title="例：格式化时分秒"></a>例：格式化时分秒</h4><pre><code class="js">// 格式化日期 时分秒
+var date = new Date();
+console.log(date.getHours()); // 时
+console.log(date.getMinutes()); // 分
+console.log(date.getSeconds()); // 秒
+// 要求封装一个函数返回当前的时分秒 格式 08:08:08
+function getTimer() {
+    var time = new Date();
+    var h = time.getHours();
+    h = h &lt; 10 ? &#39;0&#39; + h : h;
+    var m = time.getMinutes();
+    m = m &lt; 10 ? &#39;0&#39; + m : m;
+    var s = time.getSeconds();
+    s = s &lt; 10 ? &#39;0&#39; + s : s;
+    return h + &#39;:&#39; + m + &#39;:&#39; + s;
+}
+console.log(getTimer());
+// 输出
+// 16:23:09</code></pre>
+<h4 id="例：倒计时效果"><a href="#例：倒计时效果" class="headerlink" title="例：倒计时效果"></a>例：倒计时效果</h4><pre><code class="js">function countDown(time) {
+    var nowTime = +new Date(); // 返回的是当前时间总的毫秒数
+    var inputTime = +new Date(time); // 返回的是用户输入时间总的毫秒数
+    var times = (inputTime - nowTime) / 1000; // times是剩余时间总的秒数 
+    var d = parseInt(times / 60 / 60 / 24); // 天
+    d = d &lt; 10 ? &#39;0&#39; + d : d;
+    var h = parseInt(times / 60 / 60 % 24); //时
+    h = h &lt; 10 ? &#39;0&#39; + h : h;
+    var m = parseInt(times / 60 % 60); // 分
+    m = m &lt; 10 ? &#39;0&#39; + m : m;
+    var s = parseInt(times % 60); // 当前的秒
+    s = s &lt; 10 ? &#39;0&#39; + s : s;
+    return d + &#39;天&#39; + h + &#39;时&#39; + m + &#39;分&#39; + s + &#39;秒&#39;;
+}
+var a = countDown(&#39;2020-1-6 18:00:00&#39;)
+console.log(a);
+// 输出
+// 00天01时32分40秒</code></pre>
+<h3 id="基本包装类型"><a href="#基本包装类型" class="headerlink" title="基本包装类型"></a>基本包装类型</h3><ul>
+<li>为了方便操作基本数据类型，JavaScript 还提供了三个特殊的引用类型：String、Number和 Boolean；</li>
+<li>按道理基本数据类型是没有属性和方法的，而对象才有属性和方法；</li>
+<li>js 会把基本数据类型包装为复杂数据类型；</li>
+<li><strong>基本包装类型</strong>就是把简单数据类型包装成为复杂数据类型，这样基本数据类型就有了属性和方法；</li>
 </ul>
 <pre><code class="js">// 基本包装类型
 // 下面代码有什么问题？
@@ -877,6 +1069,145 @@ var temp = new String(&#39;andy&#39;);
 str = temp;
 // 3. 销毁临时变量
 temp = null;</code></pre>
+<h3 id="String-字符串对象"><a href="#String-字符串对象" class="headerlink" title="String 字符串对象"></a>String 字符串对象</h3><p>字符串的不可变</p>
+<ul>
+<li>当重新给字符串变量赋值的时候，变量之前保存的字符串不会被修改，依然在内存中重新给字符串赋值，会重新在内存中开辟空间，这个特点就是字符串的不可变。</li>
+<li>由于字符串的不可变，在<strong>大量拼接字符串</strong>的时候会有效率问题</li>
+</ul>
+<h4 id="查找字符串的位置和次数"><a href="#查找字符串的位置和次数" class="headerlink" title="查找字符串的位置和次数"></a>查找字符串的位置和次数</h4><pre><code class="js">// 查找字符串&quot;abcoefoxyozzopp&quot;中所有o出现的位置以及次数
+// 核心算法：先查找第一个o出现的位置
+// 然后 只要indexOf 返回的结果不是 -1 就继续往后查找
+// 因为indexOf 只能查找到第一个，所以后面的查找，一定是当前索引加1，从而继续查找
+var str = &quot;oabcoefoxyozzopp&quot;;
+var index = str.indexOf(&#39;o&#39;);
+var num = 0;
+// console.log(index);
+while (index !== -1) {
+    console.log(index);
+    num++;
+    index = str.indexOf(&#39;o&#39;, index + 1);
+}
+console.log(&#39;o出现的次数是: &#39; + num);</code></pre>
+<h4 id="根据位置返回字符"><a href="#根据位置返回字符" class="headerlink" title="根据位置返回字符"></a>根据位置返回字符</h4><pre><code class="js">// 根据位置返回字符
+// 1. charAt(index) 根据位置返回字符
+var str = &#39;andy&#39;;
+console.log(str.charAt(3));
+// 遍历所有的字符
+for (var i = 0; i &lt; str.length; i++) {
+    console.log(str.charAt(i));
+}
+// 2. charCodeAt(index)  返回相应索引号的字符ASCII值 目的： 判断用户按下了那个键 
+console.log(str.charCodeAt(0)); // 97
+// 3. str[index] H5 新增的
+console.log(str[0]); // a</code></pre>
+<h4 id="查找出现最多的字符和次数"><a href="#查找出现最多的字符和次数" class="headerlink" title="查找出现最多的字符和次数"></a>查找出现最多的字符和次数</h4><pre><code class="js">//  判断一个字符串 &#39;abcoefoxyozzopp&#39; 中出现次数最多的字符，并统计其次数。
+// o.a = 1
+// o.b = 1
+// o.c = 1
+// o.o = 4
+// 核心算法：利用 charAt(） 遍历这个字符串
+// 把每个字符都存储给对象， 如果对象没有该属性，就为1，如果存在了就 +1
+// 遍历对象，得到最大值和该字符
+var str = &#39;abcoefoxyozzopp&#39;;
+var o = {};
+for (var i = 0; i &lt; str.length; i++) {
+    var chars = str.charAt(i); // chars 是 字符串的每一个字符
+    if (o[chars]) { // o[chars] 得到的是属性值
+        o[chars]++;
+    } else {
+        o[chars] = 1;
+    }
+}
+console.log(o);
+// 2. 遍历对象
+var max = 0;
+var ch = &#39;&#39;;
+for (var k in o) {
+    // k 得到是 属性名
+    // o[k] 得到的是属性值
+    if (o[k] &gt; max) {
+        max = o[k];
+        ch = k;
+    }
+}
+console.log(max);
+console.log(&#39;最多的字符是&#39; + ch);</code></pre>
+<h4 id="字符串操作方法"><a href="#字符串操作方法" class="headerlink" title="字符串操作方法"></a>字符串操作方法</h4><pre><code class="js">// 1. concat(&#39;字符串1&#39;,&#39;字符串2&#39;....)
+var str = &#39;andy&#39;;
+console.log(str.concat(&#39;red&#39;));
+
+// 2. substr(&#39;截取的起始位置&#39;, &#39;截取几个字符&#39;);
+var str1 = &#39;改革春风吹满地&#39;;
+console.log(str1.substr(2, 2)); // 第一个2 是索引号的2 从第几个开始  第二个2 是取几个字符</code></pre>
+<h4 id="字符串替换、分组"><a href="#字符串替换、分组" class="headerlink" title="字符串替换、分组"></a>字符串替换、分组</h4><pre><code class="js">// 1. 替换字符 replace(&#39;被替换的字符&#39;, &#39;替换为的字符&#39;)  它只会替换第一个字符
+var str = &#39;andyandy&#39;;
+console.log(str.replace(&#39;a&#39;, &#39;b&#39;));
+// 有一个字符串 &#39;abcoefoxyozzopp&#39;  要求把里面所有的 o 替换为 *
+var str1 = &#39;abcoefoxyozzopp&#39;;
+while (str1.indexOf(&#39;o&#39;) !== -1) {
+    str1 = str1.replace(&#39;o&#39;, &#39;*&#39;);
+}
+console.log(str1);
+
+// 2. 字符转换为数组 split(&#39;分隔符&#39;)    前面我们学过 join 把数组转换为字符串
+var str2 = &#39;red, pink, blue&#39;;
+console.log(str2.split(&#39;,&#39;));
+var str3 = &#39;red&amp;pink&amp;blue&#39;;
+console.log(str3.split(&#39;&amp;&#39;));</code></pre>
+<h2 id="简单-和-复杂数据类型"><a href="#简单-和-复杂数据类型" class="headerlink" title="简单 和 复杂数据类型"></a>简单 和 复杂数据类型</h2><h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p><strong>简单数据类型：</strong></p>
+<ul>
+<li>简单类型（基本数据类型、值类型）：在存储时变量中存储的是值本身，包括string ，number，boolean，undefined，null</li>
+</ul>
+<p><strong>复杂数据类型：</strong></p>
+<ul>
+<li>复杂数据类型（引用类型）：在存储时变量中存储的仅仅是地址（引用），通过 new 关键字创建的对象（系统对象、自定义对象），如 Object、Array、Date等；</li>
+</ul>
+<h3 id="栈和堆"><a href="#栈和堆" class="headerlink" title="栈和堆"></a>栈和堆</h3><p><strong>栈（操作系统）：</strong></p>
+<ul>
+<li>栈（操作系统）：由操作系统自动分配释放存放函数的参数值、局部变量的值等。其操作方式类似于数据结构中的栈；</li>
+<li>简单数据类型（值类型变量的数据）直接存放在变量（栈空间）中；</li>
+</ul>
+<p><strong>堆（操作系统）：</strong></p>
+<ul>
+<li>堆（操作系统）：存储复杂类型(对象)，一般由程序员分配释放，若程序员不释放，由垃圾回收机制回收；</li>
+<li>复杂数据类型（引用类型变量）在（栈空间）存放地址，真正的对象实例存放在（堆空间）中；</li>
+</ul>
+<h3 id="传参"><a href="#传参" class="headerlink" title="传参"></a>传参</h3><p><strong>简单类型传参：</strong></p>
+<ul>
+<li>函数的形参也可以看做是一个变量；</li>
+<li>把一个值类型变量作为参数传给函数的形参时，其实是把<strong>变量在栈空间里的值复制</strong>了一份给形参；</li>
+<li>那么在方法内部对形参做任何修改，都不会影响到的外部变量；</li>
+</ul>
+<pre><code class="js">function fn(a) {
+    a++;
+    console.log(a); 
+}
+var x = 10;
+fn(x);
+console.log(x)；
+// 11
+// 10</code></pre>
+<p><strong>复杂数据类型传参：</strong></p>
+<ul>
+<li>把引用类型变量传给形参时，其实是把<strong>变量在栈空间里保存的堆地址复制</strong>给了形参；</li>
+<li>形参和实参其实保存的是同一个堆地址，所以操作的是同一个对象；</li>
+</ul>
+<pre><code class="JavaScript">function Person(name) {
+    this.name = name;
+}
+function f1(x) { // x = p
+    console.log(x.name); // 2. 这个输出什么 ?    
+    x.name = &quot;张学友&quot;;
+    console.log(x.name); // 3. 这个输出什么 ?    
+}
+var p = new Person(&quot;刘德华&quot;);
+console.log(p.name);    // 1. 这个输出什么 ?   
+f1(p);
+console.log(p.name);    // 4. 这个输出什么 ?  
+// 刘德华
+// 刘德华
+// 张学友
+// 张学友</code></pre>
 <p>以上。</p>
 
       
@@ -922,7 +1253,7 @@ temp = null;</code></pre>
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#Css','#bootstrap','#html+css','#Css3','#js','#HTML5','#Node.js','#博客','#hexo','#markdown','#vue','#vscode','#Mongodb','#git','#github',],
+            'data': ['#Css','#bootstrap','#html+css','#Css3','#jquery','#js','#HTML5','#Node.js','#博客','#hexo','#vue','#markdown','#vscode','#Mongodb','#git','#github',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');

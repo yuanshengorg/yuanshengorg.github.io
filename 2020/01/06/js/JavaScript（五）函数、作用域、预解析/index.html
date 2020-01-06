@@ -6,20 +6,21 @@
   <meta name="keywords" content=" js ">
   <meta name="description" content="JavaScript（五）函数、作用域、预解析 | 半根竹子">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="对象对象概念 在 JavaScript 中，对象是一组无序的相关属性和方法的集合 所有的事物都是对象，例如字符串、数值、数组、函数等。 对象是由属性和方法组成的。 属性：事物的特征，在对象中用属性来表示（常用名词） 方法：事物的行为，在对象中用方法来表示（常用动词）   为了让更好地存储一组数据，对象应运而生 对象中为每项数据设置了属性名称，可以访问数据更语义化，数据结构清晰，表意明显 JS中的对">
+<meta name="description" content="DOM 文档对象模型（Document Object Model，简称DOM），是 W3C 组织推荐的处理可扩展标记语言（html或者xhtml）的标准编程接口。 W3C 已经定义了一系列的 DOM 接口，通过这些 DOM 接口可以改变网页的内容、结构和样式 DOM是W3C组织制定的一套处理 html和xml文档的规范，所有的浏览器都遵循了这套标准。  DOM树：  DOM树 又称为文档树模型，把">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript（六）对象、构造函数、Math、Date">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;01&#x2F;06&#x2F;js&#x2F;JavaScript%EF%BC%88%E5%85%AD%EF%BC%89%E5%AF%B9%E8%B1%A1&#x2F;index.html">
+<meta property="og:title" content="JavaScript（七）WebAPI获取元素、操作元素">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;01&#x2F;06&#x2F;js&#x2F;JavaScript%EF%BC%88%E4%B8%83%EF%BC%89WebAPI%E8%8E%B7%E5%8F%96%E5%85%83%E7%B4%A0%E3%80%81%E6%93%8D%E4%BD%9C%E5%85%83%E7%B4%A0&#x2F;index.html">
 <meta property="og:site_name" content="半根竹子">
-<meta property="og:description" content="对象对象概念 在 JavaScript 中，对象是一组无序的相关属性和方法的集合 所有的事物都是对象，例如字符串、数值、数组、函数等。 对象是由属性和方法组成的。 属性：事物的特征，在对象中用属性来表示（常用名词） 方法：事物的行为，在对象中用方法来表示（常用动词）   为了让更好地存储一组数据，对象应运而生 对象中为每项数据设置了属性名称，可以访问数据更语义化，数据结构清晰，表意明显 JS中的对">
+<meta property="og:description" content="DOM 文档对象模型（Document Object Model，简称DOM），是 W3C 组织推荐的处理可扩展标记语言（html或者xhtml）的标准编程接口。 W3C 已经定义了一系列的 DOM 接口，通过这些 DOM 接口可以改变网页的内容、结构和样式 DOM是W3C组织制定的一套处理 html和xml文档的规范，所有的浏览器都遵循了这套标准。  DOM树：  DOM树 又称为文档树模型，把">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001060233_997.png?null">
-<meta property="article:published_time" content="2020-01-05T18:05:10.679Z">
-<meta property="article:modified_time" content="2020-01-05T18:40:49.800Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001061829_929.png?null">
+<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001061828_600.png?null">
+<meta property="article:published_time" content="2020-01-06T09:44:09.166Z">
+<meta property="article:modified_time" content="2020-01-06T10:30:32.705Z">
 <meta property="article:author" content="HalfBamboo">
 <meta property="article:tag" content="js">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001060233_997.png?null">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001061829_929.png?null">
 
 
 <link rel="icon" href="http://mdimg.95408.com/20191218121717.png">
@@ -143,6 +144,14 @@
     
         
             
+            <li><div data-rel="jquery">jquery</div>
+                
+            </li>
+            
+        
+    
+        
+            
             <li><div data-rel="JavaScript">JavaScript</div>
                 
             </li>
@@ -183,7 +192,7 @@
     </div>
     <div></div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="37">
+<input type="hidden" id="yelog_site_posts_number" value="39">
 
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -234,6 +243,10 @@
     </li>
     
     <li class="article-tag-list-item">
+        <a class="color2">jquery</a>
+    </li>
+    
+    <li class="article-tag-list-item">
         <a class="color3">js</a>
     </li>
     
@@ -254,11 +267,11 @@
     </li>
     
     <li class="article-tag-list-item">
-        <a class="color4">markdown</a>
+        <a class="color4">vue</a>
     </li>
     
     <li class="article-tag-list-item">
-        <a class="color4">vue</a>
+        <a class="color4">markdown</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -327,12 +340,20 @@
             <span class="post-date" title="2019-12-26 19:15:43">2019/12/26</span>
         </a>
         
+        <a  class="jquery "
+           href="/2020/01/06/jquery/jQuery%EF%BC%88%E4%B8%80%EF%BC%89/"
+           data-tag="jquery"
+           data-author="" >
+            <span class="post-title" title="jQuery（一）">jQuery（一）</span>
+            <span class="post-date" title="2020-01-06 17:39:36">2020/01/06</span>
+        </a>
+        
         <a  class="JavaScript "
-           href="/2019/12/23/js/JavaScript%EF%BC%88%E4%B8%89%EF%BC%89%E6%95%B0%E7%BB%84%E4%B8%80/"
+           href="/2020/01/06/js/JavaScript%EF%BC%88%E4%B8%83%EF%BC%89WebAPI%E8%8E%B7%E5%8F%96%E5%85%83%E7%B4%A0%E3%80%81%E6%93%8D%E4%BD%9C%E5%85%83%E7%B4%A0/"
            data-tag="js"
            data-author="" >
-            <span class="post-title" title="JavaScript（三）数组一">JavaScript（三）数组一</span>
-            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+            <span class="post-title" title="JavaScript（七）WebAPI获取元素、操作元素">JavaScript（七）WebAPI获取元素、操作元素</span>
+            <span class="post-date" title="2020-01-06 17:44:09">2020/01/06</span>
         </a>
         
         <a  class="JavaScript "
@@ -359,14 +380,6 @@
             <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
         </a>
         
-        <a  class="node "
-           href="/2019/12/02/node/Node.js%EF%BC%882%EF%BC%89fs%E3%80%81path%E3%80%81gulp%E6%A8%A1%E5%9D%97/"
-           data-tag="Node.js"
-           data-author="" >
-            <span class="post-title" title="Node.js（2）fs、path、gulp模块">Node.js（2）fs、path、gulp模块</span>
-            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
-        </a>
-        
         <a  class="css3 "
            href="/2019/12/27/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%B8%89%EF%BC%89rem%E5%B8%83%E5%B1%80%E5%92%8C%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2/"
            data-tag="Css3"
@@ -376,11 +389,27 @@
         </a>
         
         <a  class="node "
+           href="/2019/12/02/node/Node.js%EF%BC%882%EF%BC%89fs%E3%80%81path%E3%80%81gulp%E6%A8%A1%E5%9D%97/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（2）fs、path、gulp模块">Node.js（2）fs、path、gulp模块</span>
+            <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
+        </a>
+        
+        <a  class="node "
            href="/2019/12/01/node/Node.js%EF%BC%881%EF%BC%89%E5%9F%BA%E7%A1%80/"
            data-tag="js,Node.js"
            data-author="" >
             <span class="post-title" title="Node.js（1）基础">Node.js（1）基础</span>
             <span class="post-date" title="2019-12-01 00:00:00">2019/12/01</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/Hexo%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95%E6%9B%B4%E6%96%B0/"
+           data-tag="博客,hexo"
+           data-author="" >
+            <span class="post-title" title="Hexo折腾记录更新">Hexo折腾记录更新</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
         </a>
         
         <a  class="node "
@@ -392,26 +421,10 @@
         </a>
         
         <a  class="工具 "
-           href="/2019/12/23/tools/Hexo%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95%E6%9B%B4%E6%96%B0/"
-           data-tag="博客,hexo"
-           data-author="" >
-            <span class="post-title" title="Hexo折腾记录更新">Hexo折腾记录更新</span>
-            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
-        </a>
-        
-        <a  class="工具 "
            href="/2019/12/23/tools/hexo%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/"
            data-tag="博客,hexo"
            data-author="" >
             <span class="post-title" title="hexo创建博客">hexo创建博客</span>
-            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
-        </a>
-        
-        <a  class="工具 "
-           href="/2019/12/23/tools/Markdown%E8%AF%AD%E6%B3%95CSS%E8%A1%A8%E7%8E%B0%E6%B5%8B%E8%AF%95/"
-           data-tag="markdown"
-           data-author="" >
-            <span class="post-title" title="Markdown语法CSS表现测试">Markdown语法CSS表现测试</span>
             <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
         </a>
         
@@ -420,6 +433,14 @@
            data-tag="js,vue"
            data-author="" >
             <span class="post-title" title="Vue基础">Vue基础</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/Markdown%E8%AF%AD%E6%B3%95CSS%E8%A1%A8%E7%8E%B0%E6%B5%8B%E8%AF%95/"
+           data-tag="markdown"
+           data-author="" >
+            <span class="post-title" title="Markdown语法CSS表现测试">Markdown语法CSS表现测试</span>
             <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
         </a>
         
@@ -472,6 +493,14 @@
         </a>
         
         <a  class="css3 "
+           href="/2019/12/26/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%BA%8C%EF%BC%89flex%E5%B8%83%E5%B1%80%EF%BC%88%E5%9B%BE%E7%A4%BA%EF%BC%89/"
+           data-tag="Css3"
+           data-author="" >
+            <span class="post-title" title="CSS移动布局（二）flex布局（图示）">CSS移动布局（二）flex布局（图示）</span>
+            <span class="post-date" title="2019-12-26 20:56:43">2019/12/26</span>
+        </a>
+        
+        <a  class="css3 "
            href="/2019/12/27/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E5%9B%9B%EF%BC%89%E5%93%8D%E5%BA%94%E5%BC%8Fbootstrap/"
            data-tag="bootstrap"
            data-author="" >
@@ -479,12 +508,60 @@
             <span class="post-date" title="2019-12-27 23:15:43">2019/12/27</span>
         </a>
         
-        <a  class="css3 "
-           href="/2019/12/26/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%BA%8C%EF%BC%89flex%E5%B8%83%E5%B1%80%EF%BC%88%E5%9B%BE%E7%A4%BA%EF%BC%89/"
-           data-tag="Css3"
+        <a  class="JavaScript "
+           href="/2019/12/23/js/JavaScript%EF%BC%88%E4%B8%89%EF%BC%89%E6%95%B0%E7%BB%84%E4%B8%80/"
+           data-tag="js"
            data-author="" >
-            <span class="post-title" title="CSS移动布局（二）flex布局（图示）">CSS移动布局（二）flex布局（图示）</span>
-            <span class="post-date" title="2019-12-26 20:56:43">2019/12/26</span>
+            <span class="post-title" title="JavaScript（三）数组一">JavaScript（三）数组一</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/04/node/Node.js%EF%BC%884%EF%BC%89Mongodb%E6%95%B0%E6%8D%AE%E5%BA%93/"
+           data-tag="Mongodb"
+           data-author="" >
+            <span class="post-title" title="Node.js（4）Mongodb数据库">Node.js（4）Mongodb数据库</span>
+            <span class="post-date" title="2019-12-04 00:00:00">2019/12/04</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/2019/12/23/tools/git%E5%92%8Cgithub/"
+           data-tag="git,github"
+           data-author="" >
+            <span class="post-title" title="git和github">git和github</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/05/node/Node.js%EF%BC%885%EF%BC%89art-Template%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（5）art-Template模板引擎">Node.js（5）art-Template模板引擎</span>
+            <span class="post-date" title="2019-12-05 00:00:00">2019/12/05</span>
+        </a>
+        
+        <a  class="css "
+           href="/2020/01/03/css/html+css%EF%BC%88%E4%B9%9D%EF%BC%89%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（九）代码规范">html+css（九）代码规范</span>
+            <span class="post-date" title="2020-01-03 17:50:20">2020/01/03</span>
+        </a>
+        
+        <a  class="css "
+           href="/2020/01/02/css/html+css%EF%BC%88%E5%85%AB%EF%BC%89CSS%E9%AB%98%E7%BA%A7%E6%8A%80%E6%9C%AF/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（八）CSS高级技术">html+css（八）CSS高级技术</span>
+            <span class="post-date" title="2020-01-02 15:13:11">2020/01/02</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/30/css/html+css%EF%BC%88%E4%BA%8C%EF%BC%89%E8%A1%A8%E6%A0%BC%E3%80%81%E5%88%97%E8%A1%A8%E5%92%8C%E8%A1%A8%E5%8D%95/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（二）表格、列表和表单">html+css（二）表格、列表和表单</span>
+            <span class="post-date" title="2019-12-30 23:09:44">2019/12/30</span>
         </a>
         
         <a  class="JavaScript "
@@ -517,54 +594,6 @@
            data-author="" >
             <span class="post-title" title="JavaScript（六）对象、构造函数、Math、Date">JavaScript（六）对象、构造函数、Math、Date</span>
             <span class="post-date" title="2020-01-06 02:05:10">2020/01/06</span>
-        </a>
-        
-        <a  class="node "
-           href="/2019/12/05/node/Node.js%EF%BC%885%EF%BC%89art-Template%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E/"
-           data-tag="Node.js"
-           data-author="" >
-            <span class="post-title" title="Node.js（5）art-Template模板引擎">Node.js（5）art-Template模板引擎</span>
-            <span class="post-date" title="2019-12-05 00:00:00">2019/12/05</span>
-        </a>
-        
-        <a  class="node "
-           href="/2019/12/04/node/Node.js%EF%BC%884%EF%BC%89Mongodb%E6%95%B0%E6%8D%AE%E5%BA%93/"
-           data-tag="Mongodb"
-           data-author="" >
-            <span class="post-title" title="Node.js（4）Mongodb数据库">Node.js（4）Mongodb数据库</span>
-            <span class="post-date" title="2019-12-04 00:00:00">2019/12/04</span>
-        </a>
-        
-        <a  class="工具 "
-           href="/2019/12/23/tools/git%E5%92%8Cgithub/"
-           data-tag="git,github"
-           data-author="" >
-            <span class="post-title" title="git和github">git和github</span>
-            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
-        </a>
-        
-        <a  class="css "
-           href="/2020/01/03/css/html+css%EF%BC%88%E4%B9%9D%EF%BC%89%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"
-           data-tag="html+css"
-           data-author="" >
-            <span class="post-title" title="html+css（九）代码规范">html+css（九）代码规范</span>
-            <span class="post-date" title="2020-01-03 17:50:20">2020/01/03</span>
-        </a>
-        
-        <a  class="css "
-           href="/2020/01/02/css/html+css%EF%BC%88%E5%85%AB%EF%BC%89CSS%E9%AB%98%E7%BA%A7%E6%8A%80%E6%9C%AF/"
-           data-tag="html+css"
-           data-author="" >
-            <span class="post-title" title="html+css（八）CSS高级技术">html+css（八）CSS高级技术</span>
-            <span class="post-date" title="2020-01-02 15:13:11">2020/01/02</span>
-        </a>
-        
-        <a  class="css "
-           href="/2019/12/30/css/html+css%EF%BC%88%E4%BA%8C%EF%BC%89%E8%A1%A8%E6%A0%BC%E3%80%81%E5%88%97%E8%A1%A8%E5%92%8C%E8%A1%A8%E5%8D%95/"
-           data-tag="html+css"
-           data-author="" >
-            <span class="post-title" title="html+css（二）表格、列表和表单">html+css（二）表格、列表和表单</span>
-            <span class="post-date" title="2019-12-30 23:09:44">2019/12/30</span>
         </a>
         
         <a  class="node "
@@ -619,7 +648,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-01-06 02:05:03'>2020-01-06 01:32</time>
+        创建时间:<time class="date" title='更新时间: 2020-01-06 15:51:50'>2020-01-06 01:32</time>
         
     </div>
     <div class="article-meta">
@@ -630,7 +659,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#函数"><span class="toc-text">函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#声明函数"><span class="toc-text">声明函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#调用函数"><span class="toc-text">调用函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#函数的参数"><span class="toc-text">函数的参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#函数的返回值"><span class="toc-text">函数的返回值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#break、continue-和-return"><span class="toc-text">break、continue 和 return</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#arguments-不确定参数"><span class="toc-text">arguments 不确定参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#函数内部调用其他函数"><span class="toc-text">函数内部调用其他函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#函数声明方式"><span class="toc-text">函数声明方式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#作用域、预解析"><span class="toc-text">作用域、预解析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#作用域"><span class="toc-text">作用域</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#全局变量和局部变量"><span class="toc-text">全局变量和局部变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#作用域链"><span class="toc-text">作用域链</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#预解析"><span class="toc-text">预解析</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#函数"><span class="toc-text">函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#声明函数"><span class="toc-text">声明函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#调用函数"><span class="toc-text">调用函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#函数的参数"><span class="toc-text">函数的参数</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#例：求任意两个数的和"><span class="toc-text">例：求任意两个数的和</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#例：求任意两个数之间的和"><span class="toc-text">例：求任意两个数之间的和</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#函数的返回值"><span class="toc-text">函数的返回值</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#例：求任意两个数的和-1"><span class="toc-text">例：求任意两个数的和</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#例：求两个数的最大值"><span class="toc-text">例：求两个数的最大值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#例：求数组中的最大值"><span class="toc-text">例：求数组中的最大值</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#break、continue-和-return"><span class="toc-text">break、continue 和 return</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#例：翻转任意数组"><span class="toc-text">例：翻转任意数组</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#例：sort-排序"><span class="toc-text">例：sort 排序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#例：判断闰年"><span class="toc-text">例：判断闰年</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#arguments-不确定参数"><span class="toc-text">arguments 不确定参数</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#例：遍历arguments"><span class="toc-text">例：遍历arguments</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#例：求任意个数的最大值"><span class="toc-text">例：求任意个数的最大值</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#函数内部调用其他函数"><span class="toc-text">函数内部调用其他函数</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#例：输出年份求2月份天数"><span class="toc-text">例：输出年份求2月份天数</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#函数声明方式"><span class="toc-text">函数声明方式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#作用域和预解析"><span class="toc-text">作用域和预解析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#作用域"><span class="toc-text">作用域</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#全局变量和局部变量"><span class="toc-text">全局变量和局部变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#作用域链"><span class="toc-text">作用域链</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#作用域链案例"><span class="toc-text">作用域链案例</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#预解析"><span class="toc-text">预解析</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -689,14 +718,14 @@ function 函数名(形参1, 形参2 , 形参3...) { // 可以定义任意多的�
 }
 // 带参数的函数调用
 函数名(实参1, 实参2, 实参3...); </code></pre>
-<p>函数形参和实参数量不匹配时：</p>
+<p><strong>形参和实参数量不匹配时：</strong></p>
 <ul>
 <li>实参个数 = 形参个数：正确；</li>
 <li>实参个数 &gt; 形参个数：只取到形参的个数；</li>
 <li>实参个数 &lt; 形参个数：多的形参为undefined，结果为NaN；</li>
 <li>在JavaScript中，形参的默认值是undefined；</li>
 </ul>
-<p>小结：</p>
+<p><strong>小结：</strong></p>
 <ul>
 <li>函数可以带参数也可以不带参数；</li>
 <li>声明函数的时候，函数名括号里面的是形参，形参的默认值为 undefined；</li>
@@ -704,9 +733,24 @@ function 函数名(形参1, 形参2 , 形参3...) { // 可以定义任意多的�
 <li>多个参数中间用逗号分隔；</li>
 <li>形参的个数可以和实参个数不匹配，但是结果不可预计，我们尽量要匹配；</li>
 </ul>
-<h3 id="函数的返回值"><a href="#函数的返回值" class="headerlink" title="函数的返回值"></a>函数的返回值</h3><p>return 语句</p>
-<ul>
-<li>在使用 return 语句时，函数会停止执行，并返回指定的值；</li>
+<h4 id="例：求任意两个数的和"><a href="#例：求任意两个数的和" class="headerlink" title="例：求任意两个数的和"></a>例：求任意两个数的和</h4><pre><code class="js">function getSum(num1, num2) {
+    console.log(num1 + num2);
+}
+getSum(1, 3);
+getSum(3, 8);</code></pre>
+<h4 id="例：求任意两个数之间的和"><a href="#例：求任意两个数之间的和" class="headerlink" title="例：求任意两个数之间的和"></a>例：求任意两个数之间的和</h4><pre><code class="js">function getSums(start, end) {
+    var sum = 0;
+    for (var i = start; i &lt;= end; i++) {
+        sum += i;
+    }
+    console.log(sum);
+}
+getSums(1, 100);
+getSums(1, 10);</code></pre>
+<h3 id="函数的返回值"><a href="#函数的返回值" class="headerlink" title="函数的返回值"></a>函数的返回值</h3><ul>
+<li>函数只是实现某种功能，最终的结果需要返回给函数的调用者函数名() 通过return 实现的</li>
+<li>只要函数遇到return 就把后面的结果 返回给函数的调用者  函数名() = return后面的结果</li>
+<li>在使用 <strong>return 语句</strong>时，函数会停止执行，并返回指定的值；</li>
 <li>如果函数没有 return ，返回的值是 undefined；</li>
 </ul>
 <pre><code class="js">// 声明函数
@@ -716,11 +760,104 @@ function 函数名（）{
 }
 // 调用函数
 函数名();    // 此时调用函数就可以得到函数体内return 后面的值</code></pre>
+<p>函数返回值注意事项</p>
+<pre><code class="js">// 1. return 终止函数
+function getSum(num1, num2) {
+    return num1 + num2; // return 后面的代码不会被执行
+    alert(&#39;我是不会被执行的哦！&#39;)
+}
+console.log(getSum(1, 2));
+
+// 2. return 只能返回一个值
+function fn(num1, num2) {
+    return num1, num2; // 返回的结果是最后一个值
+}
+console.log(fn(1, 2));
+
+// 3. 我们求任意两个数的 加减乘数结果 可以返回一个数组
+function getResult(num1, num2) {
+    return [num1 + num2, num1 - num2, num1 * num2, num1 / num2];
+}
+var re = getResult(1, 2); // 返回的是一个数组
+console.log(re);
+
+// 4. 我们的函数如果有return 则返回的是 return 后面的值，如果函数么有 return 则返回undefined
+function fun1() {
+    return 666;
+}
+console.log(fun1()); // 返回 666
+function fun2() {
+}
+console.log(fun2()); // 函数返回的结果是 undefined</code></pre>
+<h4 id="例：求任意两个数的和-1"><a href="#例：求任意两个数的和-1" class="headerlink" title="例：求任意两个数的和"></a>例：求任意两个数的和</h4><pre><code class="js">function getSum(num1, num2) {
+    return num1 + num2;
+}
+console.log(getSum(1, 2));</code></pre>
+<h4 id="例：求两个数的最大值"><a href="#例：求两个数的最大值" class="headerlink" title="例：求两个数的最大值"></a>例：求两个数的最大值</h4><pre><code class="js">function getMax(num1, num2) {
+    // if (num1 &gt; num2) {
+    //     return num1;
+    // } else {
+    //     return num2;
+    // }
+    return num1 &gt; num2 ? num1 : num2;
+}
+console.log(getMax(1, 3));
+console.log(getMax(11, 3));</code></pre>
+<h4 id="例：求数组中的最大值"><a href="#例：求数组中的最大值" class="headerlink" title="例：求数组中的最大值"></a>例：求数组中的最大值</h4><pre><code class="js">function getArrMax(arr) {   // arr 接受一个数组
+    var max = arr[0];
+    for (var i = 1; i &lt;= arr.length; i++) {
+        if (arr[i] &gt; max) {
+            max = arr[i];
+        }
+    }
+    return max;
+}
+var re = getArrMax([3, 77, 44, 99, 143]);
+console.log(re);</code></pre>
 <h3 id="break、continue-和-return"><a href="#break、continue-和-return" class="headerlink" title="break、continue 和 return"></a>break、continue 和 return</h3><ul>
 <li>break ：结束当前的循环体（如 for、while）；</li>
 <li>continue ：跳出本次循环，继续执行下次循环（如 for、while）；</li>
 <li>return ：不仅可以退出循环，还能够返回 return 语句中的值，同时还可以结束当前的函数体内的代码；</li>
 </ul>
+<h4 id="例：翻转任意数组"><a href="#例：翻转任意数组" class="headerlink" title="例：翻转任意数组"></a>例：翻转任意数组</h4><pre><code class="js">// 利用函数翻转任意数组 reverse 翻转
+function reverse(arr) {
+    var newArr = [];
+    for (var i = arr.length - 1; i &gt;= 0; i--) {
+        newArr[newArr.length] = arr[i];
+    }
+    return newArr;
+}
+var arr1 = reverse([1, 3, 4, 6, 9]);
+console.log(arr1);
+var arr2 = reverse([&#39;red&#39;, &#39;pink&#39;, &#39;blue&#39;]);
+console.log(arr2);</code></pre>
+<h4 id="例：sort-排序"><a href="#例：sort-排序" class="headerlink" title="例：sort 排序"></a>例：sort 排序</h4><pre><code class="js">// 利用函数冒泡排序 sort 排序
+function sort(arr) {
+    for (var i = 0; i &lt; arr.length - 1; i++) {
+        for (var j = 0; j &lt; arr.length - i - 1; j++) {
+            if (arr[j] &gt; arr[j + 1]) {
+                var temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+    return arr;
+}
+var arr1 = sort([1, 4, 2, 9]);
+console.log(arr1);
+var arr2 = sort([11, 7, 22, 999]);
+console.log(arr2);</code></pre>
+<h4 id="例：判断闰年"><a href="#例：判断闰年" class="headerlink" title="例：判断闰年"></a>例：判断闰年</h4><pre><code class="js">function isRunYear(year) {
+    // 如果是闰年我们返回 true  否则 返回 false 
+    var flag = false;
+    if (year % 4 == 0 &amp;&amp; year % 100 != 0 || year % 400 == 0) {
+        flag = true;
+    }
+    return flag;
+}
+console.log(isRunYear(2000));
+console.log(isRunYear(1999));</code></pre>
 <h3 id="arguments-不确定参数"><a href="#arguments-不确定参数" class="headerlink" title="arguments 不确定参数"></a>arguments 不确定参数</h3><ul>
 <li>不确定有多少个参数传递的时候，可以用 arguments 来获取；</li>
 <li>JavaScript 中，arguments实际上它是当前函数的一个内置对象；</li>
@@ -730,11 +867,73 @@ function 函数名（）{
 <li>具有 length 属性；</li>
 <li>按索引方式储存数据；</li>
 <li>不具有数组的 push , pop 等方法；</li>
-<li>注意：在函数内部使用该对象，用此对象获取函数调用时传的实参；</li>
+<li>在函数内部使用该对象，用此对象获取函数调用时传的实参；</li>
 </ul>
 </li>
 </ul>
+<h4 id="例：遍历arguments"><a href="#例：遍历arguments" class="headerlink" title="例：遍历arguments"></a>例：遍历arguments</h4><pre><code class="js">function fn() {
+    // 里面存储了所有传递过来的实参
+    console.log(arguments); 
+    // arguments = [1,2,3]
+    console.log(arguments.length); // 3
+    console.log(arguments[2]); // 3
+
+    // 我们可以按照数组的方式遍历arguments
+    for (var i = 0; i &lt; arguments.length; i++) {
+        console.log(arguments[i]);
+    }
+    // 1
+    // 2
+    // 3
+}
+fn(1, 2, 3);</code></pre>
+<h4 id="例：求任意个数的最大值"><a href="#例：求任意个数的最大值" class="headerlink" title="例：求任意个数的最大值"></a>例：求任意个数的最大值</h4><pre><code class="js">function getMax() { // arguments = [1,2,3]
+    var max = arguments[0];
+    for (var i = 1; i &lt; arguments.length; i++) {
+        if (arguments[i] &gt; max) {
+            max = arguments[i];
+        }
+    }
+    return max;
+}
+console.log(getMax(1, 2, 3));
+console.log(getMax(1, 2, 3, 4, 5));</code></pre>
 <h3 id="函数内部调用其他函数"><a href="#函数内部调用其他函数" class="headerlink" title="函数内部调用其他函数"></a>函数内部调用其他函数</h3><p>函数内部可以调用另一个函数，在同一作用域代码中，函数名即代表封装的操作，使用函数名加括号即可以将封装的操作执行。</p>
+<pre><code class="js">function fn1() {
+    console.log(111);
+    fn2();
+    console.log(&#39;fn1&#39;);
+}
+
+function fn2() {
+    console.log(222);
+    console.log(&#39;fn2&#39;);
+}
+fn1();
+// 111
+// 222
+// fn2
+// fn1</code></pre>
+<h4 id="例：输出年份求2月份天数"><a href="#例：输出年份求2月份天数" class="headerlink" title="例：输出年份求2月份天数"></a>例：输出年份求2月份天数</h4><pre><code class="js">// 用户输入年份，得到2月份的天数
+function backDay() {
+    var year = prompt(&#39;请您输入年份:&#39;);
+    if (isRunYear(year)) { // 调用函数需要加小括号
+        alert(&#39;当前年份是闰年2月份有29天&#39;);
+    } else {
+        alert(&#39;当前年份是平年2月份有28天&#39;);
+    }
+}
+backDay();
+
+// 判断是否为闰年的函数
+function isRunYear(year) {
+    // 如果是闰年我们返回 true  否则 返回 false 
+    var flag = false;
+    if (year % 4 == 0 &amp;&amp; year % 100 != 0 || year % 400 == 0) {
+        flag = true;
+    }
+    return flag;
+}</code></pre>
 <h3 id="函数声明方式"><a href="#函数声明方式" class="headerlink" title="函数声明方式"></a>函数声明方式</h3><p>自定义函数方式 (<strong>命名函数</strong>)：</p>
 <ul>
 <li>利用函数关键字 function 自定义函数方式；</li>
@@ -760,73 +959,85 @@ var fn2 = function( ) {
 }；
 // 调用的方式，函数调用必须写到函数体下面
 fn2();</code></pre>
-<h2 id="作用域、预解析"><a href="#作用域、预解析" class="headerlink" title="作用域、预解析"></a>作用域、预解析</h2><h3 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h3><ul>
-<li>全局作用域<ul>
-<li>作用于所有代码执行的环境(整个 script 标签内部)或者一个独立的 js 文件。</li>
+<h2 id="作用域和预解析"><a href="#作用域和预解析" class="headerlink" title="作用域和预解析"></a>作用域和预解析</h2><h3 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h3><p><strong>全局作用域</strong></p>
+<ul>
+<li>作用于所有代码执行的环境(整个 script 标签内部)或者一个独立的 js 文件；</li>
 </ul>
-</li>
-<li>局部作用域<ul>
-<li>作用于函数内的代码环境，就是局部作用域。 因为跟函数有关系，所以也称为函数作用域。</li>
+<p><strong>局部作用域</strong></p>
+<ul>
+<li>作用于函数内的代码环境，就是局部作用域。 因为跟函数有关系，所以也称为函数作用域；</li>
 </ul>
-</li>
-<li>JS没有块级作用域<ul>
-<li>块作用域由 { } 包括。</li>
+<p><strong>JS没有块级作用域</strong></p>
+<ul>
+<li>块作用域由 { } 包括；</li>
+<li>java 有块级作用域；</li>
 </ul>
-</li>
-</ul>
-<p>java有块级作用域：</p>
 <pre><code class="java">if (true) {
   int num = 123;
   system.out.print(num);  // 123
 }
 system.out.print(num);    // 报错</code></pre>
 <ul>
-<li><p>以上java代码会报错，是因为代码中 { } 即一块作用域，其中声明的变量 num，在 “{ }” 之外不能使用；</p>
-</li>
-<li><p>而与之类似的JavaScript代码，则不会报错：</p>
-</li>
+<li>JS 中没有块级作用域（在ES6之前）；</li>
 </ul>
-<p>Js中没有块级作用域（在ES6之前）</p>
 <pre><code class="js">if (true) {
     var num = 123;
     console.log(123); //123
 }
 console.log(123);   //123</code></pre>
-<h3 id="全局变量和局部变量"><a href="#全局变量和局部变量" class="headerlink" title="全局变量和局部变量"></a>全局变量和局部变量</h3><ul>
-<li>全局变量<ul>
+<h3 id="全局变量和局部变量"><a href="#全局变量和局部变量" class="headerlink" title="全局变量和局部变量"></a>全局变量和局部变量</h3><p><strong>全局变量</strong></p>
+<ul>
 <li>在全局作用域下声明的变量叫做全局变量（在函数外部定义的变量）。</li>
 <li>全局变量在代码的任何位置都可以使用</li>
 <li>在全局作用域下 var 声明的变量 是全局变量</li>
 <li>特殊情况下，在函数内不使用 var 声明的变量也是全局变量（不建议使用）</li>
 </ul>
-</li>
-<li>局部变量<ul>
+<pre><code class="js">var num = 10; // num就是一个全局变量
+console.log(num);
+function fn() {
+    console.log(num);
+}
+fn();</code></pre>
+<p><strong>局部变量</strong></p>
+<ul>
 <li>局部变量只能在该函数内部使用</li>
 <li>在函数内部 var 声明的变量是局部变量</li>
 <li>函数的形参实际上就是局部变量</li>
 </ul>
-</li>
-<li>全局变量和局部变量的区别<ul>
+<pre><code class="js">function fun(aru) {
+    var num1 = 10; // num1就是局部变量 只能在函数内部使用
+    num2 = 20;
+}
+fun();</code></pre>
+<p><strong>全局变量和局部变量</strong></p>
+<ul>
 <li>全局变量：在任何一个地方都可以使用，只有在浏览器关闭时才会被销毁，因此比较占内存</li>
 <li>局部变量：只在函数内部使用，当其所在的代码块被执行时，会被初始化；当代码块运行结束后，就会被销毁，因此更节省内存空间</li>
-</ul>
-</li>
 </ul>
 <h3 id="作用域链"><a href="#作用域链" class="headerlink" title="作用域链"></a>作用域链</h3><ul>
 <li>只要是代码都一个作用域中，写在函数内部的局部作用域，未写在任何函数内部即在全局作用域中；</li>
 <li>如果函数中还有函数，那么在这个作用域中就又可以诞生一个作用域；</li>
 <li>根据在<strong>[内部函数可以访问外部函数变量]</strong>的这种机制，用链式查找决定哪些数据能被内部函数访问，就称作作用域链</li>
 </ul>
-<pre><code class="js">function f1() {
+<pre><code class="js">var num = 10;
+function fn() { // 外部函数
+    var num = 20;
+    function fun() { // 内部函数
+        console.log(num);  // 20
+    }
+    fun();
+}
+fn();</code></pre>
+<h4 id="作用域链案例"><a href="#作用域链案例" class="headerlink" title="作用域链案例"></a>作用域链案例</h4><pre><code class="js">function f1() {
     var num = 123;
     function f2() {
-        console.log( num );
+        console.log( num );  // 0
     }
     f2();
 }
 var num = 456;
 f1();</code></pre>
-<p>作用域链：采取就近原则的方式来查找变量最终的值。</p>
+<p>作用域链：采取就近原则的方式来查找变量最终的值</p>
 <pre><code class="js">var a = 1;
 function fn1() {
     var a = 2;
@@ -837,8 +1048,8 @@ function fn1() {
         fn3();
         function fn3() {
             var a = 4;
-            console.log(a); //a的值 ?
-            console.log(b); //b的值 ?
+            console.log(a);   // a的值 4
+            console.log(b);   // b的值 22
         }
     }
 }
@@ -850,6 +1061,32 @@ fn1();</code></pre>
 <li>代码执行： 从上到下执行JS语句。</li>
 <li>预解析会把变量和函数的声明在代码执行之前执行完成。</li>
 </ul>
+<p>案例1</p>
+<pre><code class="js">console.log(num); // undefined
+var num = 10;
+// 相当于执行了以下代码
+    // var num;
+    // console.log(num);
+    // num = 10;</code></pre>
+<p>案例2</p>
+<pre><code class="js">fun(); // 报错
+var fun = function() {
+    console.log(22);
+}
+// 函数表达式 调用必须写在函数表达式的下面
+// 相当于执行了以下代码
+    // var fun;
+    // fun();
+    // fun = function() {
+    //     console.log(22);
+    //  }
+
+// 1. 我们js引擎运行js 分为两步：  预解析  代码执行
+    // (1). 预解析 js引擎会把js 里面所有的 var  还有 function 提升到当前作用域的最前面
+    // (2). 代码执行  按照代码书写的顺序从上往下执行
+// 2. 预解析分为 变量预解析（变量提升） 和 函数预解析（函数提升）
+    // (1) 变量提升 就是把所有的变量声明提升到当前的作用域最前面  不提升赋值操作
+    // (2) 函数提升 就是把所有的函数声明提升到当前作用域的最前面  不调用函数</code></pre>
 <p><strong>变量预解析</strong></p>
 <ul>
 <li>预解析也叫做变量、函数提升。</li>
@@ -897,6 +1134,86 @@ fn();
 fn = function() {
     console.log(&#39;想不到吧&#39;);
 }</code></pre>
+<p>案例1</p>
+<pre><code class="js">var num = 10;
+fun();
+function fun() {
+    console.log(num);  // undefined
+    var num = 20;
+}
+// 相当于执行了以下操作
+    // var num;
+    // function fun() {
+    //     var num;
+    //     console.log(num);
+    //     num = 20;
+    // }
+    // num = 10;
+    // fun();</code></pre>
+<p>案例2</p>
+<pre><code class="js">var num = 10;
+function fn() {
+    console.log(num); // undefined
+    var num = 20;
+    console.log(num); // 20
+}
+fn();
+// 相当于以下代码
+    // var num;
+    // function fn() {
+    //     var num;
+    //     console.log(num);
+    //     num = 20;
+    //     console.log(num);
+    // }
+    // num = 10;
+    // fn();</code></pre>
+<p>案例3</p>
+<pre><code class="js">var a = 18;
+f1();
+function f1() {
+    var b = 9;
+    console.log(a); // undefined
+    console.log(b); // 9
+    var a = &#39;123&#39;;
+}
+// 相当于以下代码
+    // var a;
+    // function f1() {
+    //     var b;
+    //     var a;
+    //     b = 9;
+    //     console.log(a);
+    //     console.log(b);
+    //     a = &#39;123&#39;;
+    // }
+    // a = 18;
+    // f1();</code></pre>
+<p>案例4</p>
+<pre><code class="js">f1();
+console.log(c); // 9
+console.log(b);  // 9
+console.log(a);  // 报错 a是局部变量
+function f1() {
+    var a = b = c = 9;
+    console.log(a);  // 9
+    console.log(b);  // 9
+    console.log(c);  // 9
+}
+// 相当于以下代码
+    // function f1() {
+    //     var a;
+    //     a = b = c = 9;
+    //     相当于 var a=9; b=9; c=9; b和c直接赋值,没有var声明当全局变量看
+    //     集体声明应该是 var a = 9, b = 9, c = 9;
+    //     console.log(a);
+    //     console.log(b);
+    //     console.log(c);
+    // }
+    // f1();
+    // console.log(c);
+    // console.log(b);
+    // console.log(a);</code></pre>
 <p>以上。</p>
 
       
@@ -942,7 +1259,7 @@ fn = function() {
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#Css','#bootstrap','#html+css','#Css3','#js','#HTML5','#Node.js','#博客','#hexo','#markdown','#vue','#vscode','#Mongodb','#git','#github',],
+            'data': ['#Css','#bootstrap','#html+css','#Css3','#jquery','#js','#HTML5','#Node.js','#博客','#hexo','#vue','#markdown','#vscode','#Mongodb','#git','#github',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');
