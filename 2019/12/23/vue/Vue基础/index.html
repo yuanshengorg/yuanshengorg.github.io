@@ -6,21 +6,18 @@
   <meta name="keywords" content=" js , vue ">
   <meta name="description" content="Vue基础 | 半根竹子">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="DOM 文档对象模型（Document Object Model，简称DOM），是 W3C 组织推荐的处理可扩展标记语言（html或者xhtml）的标准编程接口。 W3C 已经定义了一系列的 DOM 接口，通过这些 DOM 接口可以改变网页的内容、结构和样式 DOM是W3C组织制定的一套处理 html和xml文档的规范，所有的浏览器都遵循了这套标准。  DOM树：  DOM树 又称为文档树模型，把">
+<meta name="description" content="元素偏移量 offset offset 翻译过来就是偏移量 使用 offset 系列相关属性可以动态的得到该元素的偏移位置、大小等  offsetTop、offsetLeft： &lt;style&gt;     .father {         position: relative;         width: 200px;         height: 200px;         ba">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript（七）WebAPI获取元素、操作元素">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;01&#x2F;06&#x2F;js&#x2F;JavaScript%EF%BC%88%E4%B8%83%EF%BC%89WebAPI%E8%8E%B7%E5%8F%96%E5%85%83%E7%B4%A0%E3%80%81%E6%93%8D%E4%BD%9C%E5%85%83%E7%B4%A0&#x2F;index.html">
+<meta property="og:title" content="JavaScript（十一）WebAPI">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;01&#x2F;21&#x2F;js&#x2F;JavaScript%EF%BC%88%E5%8D%81%E4%B8%80%EF%BC%89WebAPI&#x2F;index.html">
 <meta property="og:site_name" content="半根竹子">
-<meta property="og:description" content="DOM 文档对象模型（Document Object Model，简称DOM），是 W3C 组织推荐的处理可扩展标记语言（html或者xhtml）的标准编程接口。 W3C 已经定义了一系列的 DOM 接口，通过这些 DOM 接口可以改变网页的内容、结构和样式 DOM是W3C组织制定的一套处理 html和xml文档的规范，所有的浏览器都遵循了这套标准。  DOM树：  DOM树 又称为文档树模型，把">
+<meta property="og:description" content="元素偏移量 offset offset 翻译过来就是偏移量 使用 offset 系列相关属性可以动态的得到该元素的偏移位置、大小等  offsetTop、offsetLeft： &lt;style&gt;     .father {         position: relative;         width: 200px;         height: 200px;         ba">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001061829_929.png?null">
-<meta property="og:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001061828_600.png?null">
-<meta property="article:published_time" content="2020-01-06T09:44:09.166Z">
-<meta property="article:modified_time" content="2020-01-06T10:30:32.705Z">
+<meta property="article:published_time" content="2020-01-21T10:52:19.486Z">
+<meta property="article:modified_time" content="2020-01-21T17:10:05.743Z">
 <meta property="article:author" content="HalfBamboo">
 <meta property="article:tag" content="js">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;mdimg.95408.com&#x2F;202001061829_929.png?null">
 
 
 <link rel="icon" href="http://mdimg.95408.com/20191218121717.png">
@@ -128,31 +125,15 @@
     
         
             
-            <li><div data-rel="css">css</div>
-                
-            </li>
-            
-        
-    
-        
-            
-            <li><div data-rel="css3">css3</div>
-                
-            </li>
-            
-        
-    
-        
-            
-            <li><div data-rel="jquery">jquery</div>
-                
-            </li>
-            
-        
-    
-        
-            
             <li><div data-rel="JavaScript">JavaScript</div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="css">css</div>
                 
             </li>
             
@@ -168,7 +149,23 @@
     
         
             
+            <li><div data-rel="css3">css3</div>
+                
+            </li>
+            
+        
+    
+        
+            
             <li><div data-rel="工具">工具</div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="jquery">jquery</div>
                 
             </li>
             
@@ -192,7 +189,7 @@
     </div>
     <div></div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="39">
+<input type="hidden" id="yelog_site_posts_number" value="44">
 
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -235,7 +232,15 @@
     </li>
     
     <li class="article-tag-list-item">
+        <a class="color3">js</a>
+    </li>
+    
+    <li class="article-tag-list-item">
         <a class="color4">html+css</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">Node.js</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -243,19 +248,7 @@
     </li>
     
     <li class="article-tag-list-item">
-        <a class="color2">jquery</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color3">js</a>
-    </li>
-    
-    <li class="article-tag-list-item">
         <a class="color1">HTML5</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color3">Node.js</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -264,10 +257,6 @@
     
     <li class="article-tag-list-item">
         <a class="color5">hexo</a>
-    </li>
-    
-    <li class="article-tag-list-item">
-        <a class="color4">vue</a>
     </li>
     
     <li class="article-tag-list-item">
@@ -290,6 +279,14 @@
         <a class="color2">github</a>
     </li>
     
+    <li class="article-tag-list-item">
+        <a class="color2">jquery</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">vue</a>
+    </li>
+    
     <div class="clearfix"></div>
 </div>
 
@@ -308,52 +305,12 @@
             <span class="post-date" title="2019-12-30 15:19:48">2019/12/30</span>
         </a>
         
-        <a  class="css "
-           href="/2019/12/30/css/html+css%EF%BC%88%E4%B8%80%EF%BC%89html%E6%A0%87%E7%AD%BE/"
-           data-tag="html+css"
-           data-author="" >
-            <span class="post-title" title="html+css（一）html标签">html+css（一）html标签</span>
-            <span class="post-date" title="2019-12-30 22:09:33">2019/12/30</span>
-        </a>
-        
-        <a  class="css "
-           href="/2020/01/02/css/HTML%E5%92%8CCSS%E8%BF%9B%E9%98%B6%E6%95%99%E7%A8%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/"
-           data-tag="html+css"
-           data-author="" >
-            <span class="post-title" title="《HTML和CSS进阶教程》笔记（一）">《HTML和CSS进阶教程》笔记（一）</span>
-            <span class="post-date" title="2020-01-02 22:23:44">2020/01/02</span>
-        </a>
-        
         <a  class="bootstrap "
            href="/2019/12/30/bootstrap/Bootstrap(%E4%BA%8C)%E8%BD%AE%E6%92%AD%E5%9B%BEcarousel/"
            data-tag="Css,bootstrap"
            data-author="" >
             <span class="post-title" title="Bootstrap(二)轮播图carousel">Bootstrap(二)轮播图carousel</span>
             <span class="post-date" title="2019-12-30 19:04:11">2019/12/30</span>
-        </a>
-        
-        <a  class="css3 "
-           href="/2019/12/26/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%B8%80%EF%BC%89%E5%9F%BA%E7%A1%80%E3%80%81%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80/"
-           data-tag="Css3"
-           data-author="" >
-            <span class="post-title" title="CSS移动布局（一）基础、流式布局">CSS移动布局（一）基础、流式布局</span>
-            <span class="post-date" title="2019-12-26 19:15:43">2019/12/26</span>
-        </a>
-        
-        <a  class="jquery "
-           href="/2020/01/06/jquery/jQuery%EF%BC%88%E4%B8%80%EF%BC%89/"
-           data-tag="jquery"
-           data-author="" >
-            <span class="post-title" title="jQuery（一）">jQuery（一）</span>
-            <span class="post-date" title="2020-01-06 17:39:36">2020/01/06</span>
-        </a>
-        
-        <a  class="JavaScript "
-           href="/2020/01/06/js/JavaScript%EF%BC%88%E4%B8%83%EF%BC%89WebAPI%E8%8E%B7%E5%8F%96%E5%85%83%E7%B4%A0%E3%80%81%E6%93%8D%E4%BD%9C%E5%85%83%E7%B4%A0/"
-           data-tag="js"
-           data-author="" >
-            <span class="post-title" title="JavaScript（七）WebAPI获取元素、操作元素">JavaScript（七）WebAPI获取元素、操作元素</span>
-            <span class="post-date" title="2020-01-06 17:44:09">2020/01/06</span>
         </a>
         
         <a  class="JavaScript "
@@ -364,20 +321,52 @@
             <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
         </a>
         
-        <a  class="css3 "
-           href="/2019/12/23/css3/HTML5+Css3%EF%BC%88%E4%BA%8C%EF%BC%89CSS3%E5%8A%A8%E7%94%BB%E3%80%812D%E3%80%813D/"
-           data-tag="Css3,HTML5"
+        <a  class="css "
+           href="/2020/01/02/css/HTML%E5%92%8CCSS%E8%BF%9B%E9%98%B6%E6%95%99%E7%A8%8B%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/"
+           data-tag="html+css"
            data-author="" >
-            <span class="post-title" title="HTML5+Css3（二）CSS3动画、2D、3D">HTML5+Css3（二）CSS3动画、2D、3D</span>
-            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+            <span class="post-title" title="《HTML和CSS进阶教程》笔记（一）">《HTML和CSS进阶教程》笔记（一）</span>
+            <span class="post-date" title="2020-01-02 22:23:44">2020/01/02</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/30/css/html+css%EF%BC%88%E4%B8%80%EF%BC%89html%E6%A0%87%E7%AD%BE/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（一）html标签">html+css（一）html标签</span>
+            <span class="post-date" title="2019-12-30 22:09:33">2019/12/30</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/01/node/Node.js%EF%BC%881%EF%BC%89%E5%9F%BA%E7%A1%80/"
+           data-tag="js,Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（1）基础">Node.js（1）基础</span>
+            <span class="post-date" title="2019-12-01 00:00:00">2019/12/01</span>
+        </a>
+        
+        <a  class=""
+           href="/2020/01/17/css/%E9%80%9F%E6%9F%A5/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="速查">速查</span>
+            <span class="post-date" title="2020-01-17 20:02:33">2020/01/17</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/07/node/Untitled/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（7）博客项目">Node.js（7）博客项目</span>
+            <span class="post-date" title="2019-12-07 00:00:00">2019/12/07</span>
         </a>
         
         <a  class="css3 "
-           href="/2019/12/23/css3/HTML5+Css3%EF%BC%88%E4%B8%80%EF%BC%89%E5%9F%BA%E7%A1%80/"
-           data-tag="Css3,HTML5"
+           href="/2019/12/26/css3/CSS%E7%A7%BB%E5%8A%A8%E5%B8%83%E5%B1%80%EF%BC%88%E4%B8%80%EF%BC%89%E5%9F%BA%E7%A1%80%E3%80%81%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80/"
+           data-tag="Css3"
            data-author="" >
-            <span class="post-title" title="HTML5+Css3（一）基础">HTML5+Css3（一）基础</span>
-            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+            <span class="post-title" title="CSS移动布局（一）基础、流式布局">CSS移动布局（一）基础、流式布局</span>
+            <span class="post-date" title="2019-12-26 19:15:43">2019/12/26</span>
         </a>
         
         <a  class="css3 "
@@ -396,12 +385,20 @@
             <span class="post-date" title="2019-12-02 00:00:00">2019/12/02</span>
         </a>
         
-        <a  class="node "
-           href="/2019/12/01/node/Node.js%EF%BC%881%EF%BC%89%E5%9F%BA%E7%A1%80/"
-           data-tag="js,Node.js"
+        <a  class="css3 "
+           href="/2019/12/23/css3/HTML5+Css3%EF%BC%88%E4%B8%80%EF%BC%89%E5%9F%BA%E7%A1%80/"
+           data-tag="Css3,HTML5"
            data-author="" >
-            <span class="post-title" title="Node.js（1）基础">Node.js（1）基础</span>
-            <span class="post-date" title="2019-12-01 00:00:00">2019/12/01</span>
+            <span class="post-title" title="HTML5+Css3（一）基础">HTML5+Css3（一）基础</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="css3 "
+           href="/2019/12/23/css3/HTML5+Css3%EF%BC%88%E4%BA%8C%EF%BC%89CSS3%E5%8A%A8%E7%94%BB%E3%80%812D%E3%80%813D/"
+           data-tag="Css3,HTML5"
+           data-author="" >
+            <span class="post-title" title="HTML5+Css3（二）CSS3动画、2D、3D">HTML5+Css3（二）CSS3动画、2D、3D</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
         </a>
         
         <a  class="工具 "
@@ -409,30 +406,6 @@
            data-tag="博客,hexo"
            data-author="" >
             <span class="post-title" title="Hexo折腾记录更新">Hexo折腾记录更新</span>
-            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
-        </a>
-        
-        <a  class="node "
-           href="/2019/12/07/node/Untitled/"
-           data-tag="Node.js"
-           data-author="" >
-            <span class="post-title" title="Node.js（7）博客项目">Node.js（7）博客项目</span>
-            <span class="post-date" title="2019-12-07 00:00:00">2019/12/07</span>
-        </a>
-        
-        <a  class="工具 "
-           href="/2019/12/23/tools/hexo%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/"
-           data-tag="博客,hexo"
-           data-author="" >
-            <span class="post-title" title="hexo创建博客">hexo创建博客</span>
-            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
-        </a>
-        
-        <a  class="vue "
-           href="/2019/12/23/vue/Vue%E5%9F%BA%E7%A1%80/"
-           data-tag="js,vue"
-           data-author="" >
-            <span class="post-title" title="Vue基础">Vue基础</span>
             <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
         </a>
         
@@ -452,12 +425,44 @@
             <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
         </a>
         
-        <a  class="css "
-           href="/2020/01/02/css/html+css%EF%BC%88%E4%B8%83%EF%BC%89CSS%E5%AE%9A%E4%BD%8D/"
-           data-tag="html+css"
+        <a  class="工具 "
+           href="/2019/12/23/tools/hexo%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2/"
+           data-tag="博客,hexo"
            data-author="" >
-            <span class="post-title" title="html+css（七）CSS定位">html+css（七）CSS定位</span>
-            <span class="post-date" title="2020-01-02 12:00:40">2020/01/02</span>
+            <span class="post-title" title="hexo创建博客">hexo创建博客</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
+        </a>
+        
+        <a  class="JavaScript "
+           href="/2020/01/06/js/JavaScript%EF%BC%88%E4%B8%83%EF%BC%89WebAPI%E8%8E%B7%E5%8F%96%E5%85%83%E7%B4%A0%E3%80%81%E6%93%8D%E4%BD%9C%E5%85%83%E7%B4%A0/"
+           data-tag="js"
+           data-author="" >
+            <span class="post-title" title="JavaScript（七）WebAPI获取元素、操作元素">JavaScript（七）WebAPI获取元素、操作元素</span>
+            <span class="post-date" title="2020-01-06 17:44:09">2020/01/06</span>
+        </a>
+        
+        <a  class="JavaScript "
+           href="/2020/01/08/js/JavaScript%EF%BC%88%E4%B9%9D%EF%BC%89WebAPI%E6%B3%A8%E5%86%8C%E4%BA%8B%E4%BB%B6%E3%80%81%E9%BC%A0%E6%A0%87%E9%94%AE%E7%9B%98%E4%BA%8B%E4%BB%B6/"
+           data-tag="js"
+           data-author="" >
+            <span class="post-title" title="JavaScript（九）WebAPI注册事件、鼠标键盘事件">JavaScript（九）WebAPI注册事件、鼠标键盘事件</span>
+            <span class="post-date" title="2020-01-08 15:16:10">2020/01/08</span>
+        </a>
+        
+        <a  class="JavaScript "
+           href="/2019/12/23/js/JavaScript%EF%BC%88%E4%B8%89%EF%BC%89%E6%95%B0%E7%BB%84%E4%B8%80/"
+           data-tag="js"
+           data-author="" >
+            <span class="post-title" title="JavaScript（三）数组一">JavaScript（三）数组一</span>
+            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
+        </a>
+        
+        <a  class="JavaScript "
+           href="/2020/01/08/js/JavaScript%EF%BC%88%E5%8D%81%EF%BC%89WebAPI%E7%9A%84BOM%E3%80%81JS%E6%89%A7%E8%A1%8C%E6%9C%BA%E5%88%B6/"
+           data-tag="js"
+           data-author="" >
+            <span class="post-title" title="JavaScript（十）WebAPI的BOM、JS执行机制">JavaScript（十）WebAPI的BOM、JS执行机制</span>
+            <span class="post-date" title="2020-01-08 16:31:00">2020/01/08</span>
         </a>
         
         <a  class="css "
@@ -476,12 +481,12 @@
             <span class="post-date" title="2019-12-31 15:06:25">2019/12/31</span>
         </a>
         
-        <a  class="css "
-           href="/2019/12/31/css/html+css%EF%BC%88%E5%85%AD%EF%BC%89CSS%E6%B5%AE%E5%8A%A8/"
-           data-tag="html+css"
+        <a  class="JavaScript "
+           href="/2020/01/21/js/JavaScript%EF%BC%88%E5%8D%81%E4%B8%80%EF%BC%89WebAPI/"
+           data-tag="js"
            data-author="" >
-            <span class="post-title" title="html+css（六）CSS浮动">html+css（六）CSS浮动</span>
-            <span class="post-date" title="2019-12-31 16:40:39">2019/12/31</span>
+            <span class="post-title" title="JavaScript（十一）WebAPI">JavaScript（十一）WebAPI</span>
+            <span class="post-date" title="2020-01-21 18:52:19">2020/01/21</span>
         </a>
         
         <a  class="css "
@@ -490,6 +495,38 @@
            data-author="" >
             <span class="post-title" title="html+css（四）CSS显示模式、行高、背景、特性">html+css（四）CSS显示模式、行高、背景、特性</span>
             <span class="post-date" title="2019-12-31 14:24:56">2019/12/31</span>
+        </a>
+        
+        <a  class="css "
+           href="/2020/01/02/css/html+css%EF%BC%88%E4%B8%83%EF%BC%89CSS%E5%AE%9A%E4%BD%8D/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（七）CSS定位">html+css（七）CSS定位</span>
+            <span class="post-date" title="2020-01-02 12:00:40">2020/01/02</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/31/css/html+css%EF%BC%88%E5%85%AD%EF%BC%89CSS%E6%B5%AE%E5%8A%A8/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（六）CSS浮动">html+css（六）CSS浮动</span>
+            <span class="post-date" title="2019-12-31 16:40:39">2019/12/31</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/05/node/Node.js%EF%BC%885%EF%BC%89art-Template%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E/"
+           data-tag="Node.js"
+           data-author="" >
+            <span class="post-title" title="Node.js（5）art-Template模板引擎">Node.js（5）art-Template模板引擎</span>
+            <span class="post-date" title="2019-12-05 00:00:00">2019/12/05</span>
+        </a>
+        
+        <a  class="node "
+           href="/2019/12/04/node/Node.js%EF%BC%884%EF%BC%89Mongodb%E6%95%B0%E6%8D%AE%E5%BA%93/"
+           data-tag="Mongodb"
+           data-author="" >
+            <span class="post-title" title="Node.js（4）Mongodb数据库">Node.js（4）Mongodb数据库</span>
+            <span class="post-date" title="2019-12-04 00:00:00">2019/12/04</span>
         </a>
         
         <a  class="css3 "
@@ -508,22 +545,6 @@
             <span class="post-date" title="2019-12-27 23:15:43">2019/12/27</span>
         </a>
         
-        <a  class="JavaScript "
-           href="/2019/12/23/js/JavaScript%EF%BC%88%E4%B8%89%EF%BC%89%E6%95%B0%E7%BB%84%E4%B8%80/"
-           data-tag="js"
-           data-author="" >
-            <span class="post-title" title="JavaScript（三）数组一">JavaScript（三）数组一</span>
-            <span class="post-date" title="2019-12-23 12:59:32">2019/12/23</span>
-        </a>
-        
-        <a  class="node "
-           href="/2019/12/04/node/Node.js%EF%BC%884%EF%BC%89Mongodb%E6%95%B0%E6%8D%AE%E5%BA%93/"
-           data-tag="Mongodb"
-           data-author="" >
-            <span class="post-title" title="Node.js（4）Mongodb数据库">Node.js（4）Mongodb数据库</span>
-            <span class="post-date" title="2019-12-04 00:00:00">2019/12/04</span>
-        </a>
-        
         <a  class="工具 "
            href="/2019/12/23/tools/git%E5%92%8Cgithub/"
            data-tag="git,github"
@@ -532,36 +553,12 @@
             <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
         </a>
         
-        <a  class="node "
-           href="/2019/12/05/node/Node.js%EF%BC%885%EF%BC%89art-Template%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E/"
-           data-tag="Node.js"
+        <a  class="jquery "
+           href="/2020/01/06/jquery/jQuery%EF%BC%88%E4%B8%80%EF%BC%89/"
+           data-tag="jquery"
            data-author="" >
-            <span class="post-title" title="Node.js（5）art-Template模板引擎">Node.js（5）art-Template模板引擎</span>
-            <span class="post-date" title="2019-12-05 00:00:00">2019/12/05</span>
-        </a>
-        
-        <a  class="css "
-           href="/2020/01/03/css/html+css%EF%BC%88%E4%B9%9D%EF%BC%89%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"
-           data-tag="html+css"
-           data-author="" >
-            <span class="post-title" title="html+css（九）代码规范">html+css（九）代码规范</span>
-            <span class="post-date" title="2020-01-03 17:50:20">2020/01/03</span>
-        </a>
-        
-        <a  class="css "
-           href="/2020/01/02/css/html+css%EF%BC%88%E5%85%AB%EF%BC%89CSS%E9%AB%98%E7%BA%A7%E6%8A%80%E6%9C%AF/"
-           data-tag="html+css"
-           data-author="" >
-            <span class="post-title" title="html+css（八）CSS高级技术">html+css（八）CSS高级技术</span>
-            <span class="post-date" title="2020-01-02 15:13:11">2020/01/02</span>
-        </a>
-        
-        <a  class="css "
-           href="/2019/12/30/css/html+css%EF%BC%88%E4%BA%8C%EF%BC%89%E8%A1%A8%E6%A0%BC%E3%80%81%E5%88%97%E8%A1%A8%E5%92%8C%E8%A1%A8%E5%8D%95/"
-           data-tag="html+css"
-           data-author="" >
-            <span class="post-title" title="html+css（二）表格、列表和表单">html+css（二）表格、列表和表单</span>
-            <span class="post-date" title="2019-12-30 23:09:44">2019/12/30</span>
+            <span class="post-title" title="jQuery（一）">jQuery（一）</span>
+            <span class="post-date" title="2020-01-06 17:39:36">2020/01/06</span>
         </a>
         
         <a  class="JavaScript "
@@ -581,6 +578,22 @@
         </a>
         
         <a  class="JavaScript "
+           href="/2020/01/06/js/JavaScript%EF%BC%88%E5%85%AD%EF%BC%89%E5%AF%B9%E8%B1%A1/"
+           data-tag="js"
+           data-author="" >
+            <span class="post-title" title="JavaScript（六）对象、构造函数、Math、Date">JavaScript（六）对象、构造函数、Math、Date</span>
+            <span class="post-date" title="2020-01-06 02:05:10">2020/01/06</span>
+        </a>
+        
+        <a  class="JavaScript "
+           href="/2020/01/07/js/JavaScript%EF%BC%88%E5%85%AB%EF%BC%89WebAPI%E6%8E%92%E4%BB%96%E6%80%9D%E6%83%B3%E3%80%81%E5%B1%9E%E6%80%A7%E3%80%81%E8%8A%82%E7%82%B9%E6%93%8D%E4%BD%9C/"
+           data-tag="js"
+           data-author="" >
+            <span class="post-title" title="JavaScript（八）WebAPI排他思想、属性、节点操作">JavaScript（八）WebAPI排他思想、属性、节点操作</span>
+            <span class="post-date" title="2020-01-07 00:13:27">2020/01/07</span>
+        </a>
+        
+        <a  class="JavaScript "
            href="/2020/01/06/js/JavaScript%EF%BC%88%E4%BA%8C%EF%BC%89%E8%BF%90%E7%AE%97%E7%AC%A6%E3%80%81%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/"
            data-tag="js"
            data-author="" >
@@ -588,12 +601,28 @@
             <span class="post-date" title="2020-01-06 00:40:43">2020/01/06</span>
         </a>
         
-        <a  class="JavaScript "
-           href="/2020/01/06/js/JavaScript%EF%BC%88%E5%85%AD%EF%BC%89%E5%AF%B9%E8%B1%A1/"
-           data-tag="js"
+        <a  class="css "
+           href="/2020/01/03/css/html+css%EF%BC%88%E4%B9%9D%EF%BC%89%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"
+           data-tag="html+css"
            data-author="" >
-            <span class="post-title" title="JavaScript（六）对象、构造函数、Math、Date">JavaScript（六）对象、构造函数、Math、Date</span>
-            <span class="post-date" title="2020-01-06 02:05:10">2020/01/06</span>
+            <span class="post-title" title="html+css（九）代码规范">html+css（九）代码规范</span>
+            <span class="post-date" title="2020-01-03 17:50:20">2020/01/03</span>
+        </a>
+        
+        <a  class="css "
+           href="/2019/12/30/css/html+css%EF%BC%88%E4%BA%8C%EF%BC%89%E8%A1%A8%E6%A0%BC%E3%80%81%E5%88%97%E8%A1%A8%E5%92%8C%E8%A1%A8%E5%8D%95/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（二）表格、列表和表单">html+css（二）表格、列表和表单</span>
+            <span class="post-date" title="2019-12-30 23:09:44">2019/12/30</span>
+        </a>
+        
+        <a  class="css "
+           href="/2020/01/02/css/html+css%EF%BC%88%E5%85%AB%EF%BC%89CSS%E9%AB%98%E7%BA%A7%E6%8A%80%E6%9C%AF/"
+           data-tag="html+css"
+           data-author="" >
+            <span class="post-title" title="html+css（八）CSS高级技术">html+css（八）CSS高级技术</span>
+            <span class="post-date" title="2020-01-02 15:13:11">2020/01/02</span>
         </a>
         
         <a  class="node "
@@ -610,6 +639,14 @@
            data-author="" >
             <span class="post-title" title="Node.js（6）Express框架">Node.js（6）Express框架</span>
             <span class="post-date" title="2019-12-06 00:00:00">2019/12/06</span>
+        </a>
+        
+        <a  class="vue "
+           href="/2019/12/23/vue/Vue%E5%9F%BA%E7%A1%80/"
+           data-tag="js,vue"
+           data-author="" >
+            <span class="post-title" title="Vue基础">Vue基础</span>
+            <span class="post-date" title="2019-12-23 12:59:30">2019/12/23</span>
         </a>
         
     </nav>
@@ -650,7 +687,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-12-23 13:20:06'>2019-12-23 12:59</time>
+        创建时间:<time class="date" title='更新时间: 2020-01-20 15:54:41'>2019-12-23 12:59</time>
         
     </div>
     <div class="article-meta">
@@ -661,7 +698,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Vue"><span class="toc-text">Vue</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vue-模板语法"><span class="toc-text">Vue 模板语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#差值表达式-v-cloak"><span class="toc-text">差值表达式 v-cloak</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#指令"><span class="toc-text">指令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#更多指令："><span class="toc-text">更多指令：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#v-text"><span class="toc-text">v-text</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#v-html"><span class="toc-text">v-html</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#v-pre"><span class="toc-text">v-pre</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数据响应式-和-v-once"><span class="toc-text">数据响应式 和 v-once</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#v-once"><span class="toc-text">v-once</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#v-model-双向数据绑定"><span class="toc-text">v-model 双向数据绑定</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MVVM-设计思想"><span class="toc-text">MVVM 设计思想</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#事件绑定"><span class="toc-text">事件绑定</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#v-on-处理事件"><span class="toc-text">v-on 处理事件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#事件函数调用"><span class="toc-text">事件函数调用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#事件修饰符-stop-prevent"><span class="toc-text">事件修饰符 stop prevent</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#stop阻止冒泡"><span class="toc-text">.stop阻止冒泡</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#prevent-阻止默认行为"><span class="toc-text">.prevent 阻止默认行为</span></a></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Vue"><span class="toc-text">Vue</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vue-模板语法"><span class="toc-text">Vue 模板语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#差值表达式-v-cloak"><span class="toc-text">差值表达式 v-cloak</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#指令"><span class="toc-text">指令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#v-text"><span class="toc-text">v-text</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#v-html"><span class="toc-text">v-html</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#v-pre"><span class="toc-text">v-pre</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数据响应式"><span class="toc-text">数据响应式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#v-once"><span class="toc-text">v-once</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#v-model"><span class="toc-text">v-model</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MVVM-设计思想"><span class="toc-text">MVVM 设计思想</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#事件绑定"><span class="toc-text">事件绑定</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#v-on-处理事件"><span class="toc-text">v-on 处理事件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#事件函数调用"><span class="toc-text">事件函数调用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#事件修饰符"><span class="toc-text">事件修饰符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#按键修饰符"><span class="toc-text">按键修饰符</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#属性绑定"><span class="toc-text">属性绑定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#class样式绑定"><span class="toc-text">class样式绑定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#style样式绑定"><span class="toc-text">style样式绑定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#循环"><span class="toc-text">循环</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#if循环"><span class="toc-text">if循环</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#v-show"><span class="toc-text">v-show</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#for遍历数组"><span class="toc-text">for遍历数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#for遍历对象"><span class="toc-text">for遍历对象</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -677,7 +714,28 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h2><h2 id="Vue-模板语法"><a href="#Vue-模板语法" class="headerlink" title="Vue 模板语法"></a>Vue 模板语法</h2><ul>
+        <h2 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h2><p>将数据渲染到页面中：</p>
+<pre><code class="html">&lt;div id=&quot;app&quot;&gt;
+    &lt;!-- 把vue提供的数据填充到标签中 --&gt;
+    &lt;!-- 插值表达式 --&gt;
+    {{msg}}
+    {{'youname,' + msg}}
+&lt;/div&gt;
+
+&lt;!-- 引入vue.js库文件 --&gt;
+&lt;script src=&quot;./js/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    // 使用 vue 的语法做功能
+    var vm = new Vue({
+        // 获取元素
+        el: &#39;#app&#39;,
+        // data存放要渲染到页面上的数据
+        data: {
+            msg: &#39;HELLO VUE !&#39;
+        }
+    })
+&lt;/script&gt;</code></pre>
+<h2 id="Vue-模板语法"><a href="#Vue-模板语法" class="headerlink" title="Vue 模板语法"></a>Vue 模板语法</h2><ul>
 <li>原生js拼接字符串</li>
 <li>前端模板引擎（art-template）缺：没有专门提供事件机制</li>
 <li>Vue模板语法</li>
@@ -696,7 +754,8 @@
 &lt;body&gt;
     &lt;div v-cloak&gt; {{msg}} &lt;/div&gt;
 &lt;/body&gt;</code></pre>
-<h3 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h3><h4 id="更多指令："><a href="#更多指令：" class="headerlink" title="更多指令："></a>更多指令：</h4><blockquote>
+<h3 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h3><p>更多指令：</p>
+<blockquote>
 <p>官网：<a href="https://cn.vuejs.org/v2/api/" target="_blank" rel="noopener">vuejs.org</a></p>
 </blockquote>
 <p><strong>数据绑定指令：</strong></p>
@@ -705,22 +764,79 @@
 <pre><code class="html">&lt;div v-text=&#39;msg&#39;&gt;&lt;/div&gt;</code></pre>
 <h4 id="v-html"><a href="#v-html" class="headerlink" title="v-html"></a>v-html</h4><p>永不用在用户提交的内容上，只适合本网站内部数据；</p>
 <pre><code class="html">&lt;div v-html=&#39;msg1&#39;&gt;&lt;/div&gt;</code></pre>
-<h4 id="v-pre"><a href="#v-pre" class="headerlink" title="v-pre"></a>v-pre</h4><p>显示原始信息，路过Vue编译过程</p>
+<h4 id="v-pre"><a href="#v-pre" class="headerlink" title="v-pre"></a>v-pre</h4><p>显示原始信息，略过Vue编译过程</p>
 <pre><code class="html">// 直接显示出{{msg}}这个字符串，而不是msg数据的内容
 &lt;div v-pre&gt;
     {{msg}}
 &lt;/div&gt;</code></pre>
-<h4 id="数据响应式-和-v-once"><a href="#数据响应式-和-v-once" class="headerlink" title="数据响应式 和 v-once"></a>数据响应式 和 v-once</h4><p>数据响应式：数据的变化导致页面内容的变化；</p>
+<p>例：</p>
+<pre><code class="html">&lt;div id=&quot;app&quot; v-cloak&gt;
+    &lt;div&gt;{{msg}}&lt;/div&gt;
+    &lt;div v-text=&#39;msg&#39;&gt;&lt;/div&gt;
+    &lt;div v-html=&#39;msg&#39;&gt;&lt;/div&gt;
+    &lt;div v-pre&gt;{{msg}}&lt;/div&gt;
+&lt;/div&gt;
+&lt;script src=&quot;./js/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    var vm = new Vue({
+        el: &#39;#app&#39;,
+        data: {
+            msg: &#39;&lt;h1&gt;hi,Vue!&lt;/h1&gt;&#39;
+        }
+    })
+&lt;/script&gt;</code></pre>
+<p><img src="http://mdimg.95408.com/202001191744_262.png?null" alt=""></p>
+<h4 id="数据响应式"><a href="#数据响应式" class="headerlink" title="数据响应式"></a>数据响应式</h4><p>数据响应式：数据的变化导致页面内容的变化；</p>
 <p>数据绑定：将数据填充到标签中；</p>
 <p>v-once：只编译一次，显示内容之后不再有响应式的功能；</p>
 <h4 id="v-once"><a href="#v-once" class="headerlink" title="v-once"></a>v-once</h4><p>如果显示的信息后续不需要再修改，可以使用v-once；可以提高性能；</p>
 <pre><code class="html">&lt;div v-once&gt;
     {{info}} // info数据只编译一次，不能再改
 &lt;/div&gt;</code></pre>
-<h4 id="v-model-双向数据绑定"><a href="#v-model-双向数据绑定" class="headerlink" title="v-model 双向数据绑定"></a>v-model 双向数据绑定</h4><p>数据改变，页面内容改变；</p>
+<p>例：</p>
+<pre><code class="html">&lt;div id=&quot;app&quot; v-cloak&gt;
+    &lt;div&gt;{{info}}&lt;/div&gt;
+    &lt;div v-once&gt;{{info}}&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- 引入vue.js库文件 --&gt;
+&lt;script src=&quot;./js/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    // 使用 vue 的语法做功能
+    var vm = new Vue({
+        // 获取元素
+        el: &#39;#app&#39;,
+        // data存放要渲染到页面上的数据
+        data: {
+            info: &#39;原始数值&#39;
+        }
+    })
+&lt;/script&gt;</code></pre>
+<p><img src="http://mdimg.95408.com/202001191752_538.png?null" alt=""></p>
+<h4 id="v-model"><a href="#v-model" class="headerlink" title="v-model"></a>v-model</h4><p>v-model 双向数据绑定</p>
+<p>数据改变，页面内容改变；</p>
 <p>页面内容改变，数据改变；</p>
 <pre><code class="html">&lt;div&gt;{{msg}}&lt;/div&gt;
 &lt;input type=&#39;text&#39; v-model=&#39;msg&#39; /&gt;</code></pre>
+<p>例：</p>
+<pre><code class="html">&lt;div id=&quot;app&quot; v-cloak&gt;
+    &lt;div&gt;{{info}}&lt;/div&gt;
+    &lt;input type=&quot;text&quot; v-model=&#39;info&#39;&gt;
+&lt;/div&gt;
+&lt;!-- 引入vue.js库文件 --&gt;
+&lt;script src=&quot;./js/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    // 使用 vue 的语法做功能
+    var vm = new Vue({
+        // 获取元素
+        el: &#39;#app&#39;,
+        // data存放要渲染到页面上的数据
+        data: {
+            info: &#39;原始数值&#39;
+        }
+    })
+&lt;/script&gt;</code></pre>
+<p> 表单、数据任何一方改变，值都会一起变；</p>
+<p><img src="http://mdimg.95408.com/202001191758_982.png?null" alt=""></p>
 <h3 id="MVVM-设计思想"><a href="#MVVM-设计思想" class="headerlink" title="MVVM 设计思想"></a>MVVM 设计思想</h3><p>M    ——model</p>
 <p>V    ——view</p>
 <p>VM    ——view-model</p>
@@ -729,20 +845,29 @@
 <h3 id="事件绑定"><a href="#事件绑定" class="headerlink" title="事件绑定"></a>事件绑定</h3><h4 id="v-on-处理事件"><a href="#v-on-处理事件" class="headerlink" title="v-on 处理事件"></a>v-on 处理事件</h4><pre><code class="html">v-on:click=&#39;num++&#39;
 @click=&#39;num++&#39;</code></pre>
 <p>点击加1：</p>
-<pre><code class="html">&lt;div id=&#39;app&#39;&gt;
-    &lt;div&gt;{{num}}&lt;/div&gt; // num=1
+<pre><code class="html">&lt;div id=&quot;app&quot; v-cloak&gt;
+    &lt;div&gt;{{num}}&lt;/div&gt;
     &lt;button v-on:click=&#39;num++&#39;&gt;点击加1&lt;/button&gt;
-&lt;/div&gt;</code></pre>
-<h4 id="事件函数调用"><a href="#事件函数调用" class="headerlink" title="事件函数调用"></a>事件函数调用</h4><p>事件绑定-参数传递</p>
-<p>如果事件直接绑定函数名称，默认会传递事件对象作为事件函数的第一个参数；</p>
-<p>如果事件绑定函数调用，那么事件对象必须作为最后一个参数显示传递，名称为：event；</p>
-<pre><code class="html">&lt;div id=&#39;app&#39;&gt;
-    &lt;div&gt;{{num}}&lt;/div&gt; // num=1
-    &lt;button @:click=&#39;handle&#39;&gt;点击加1&lt;/button&gt;
-    &lt;button @:click=&#39;handle(11, 22, $envnt)&#39;&gt;点击加1&lt;/button&gt;
-    // 可以传参数，事件对象放在最后一个
+    &lt;button @click=&#39;num++&#39;&gt;点击加1&lt;/button&gt;
 &lt;/div&gt;
-
+&lt;script src=&quot;./js/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    var vm = new Vue({
+        el: &#39;#app&#39;,
+        data: {
+            num: 0
+        }
+    })
+&lt;/script&gt;</code></pre>
+<p>使用函数的方式：</p>
+<pre><code class="html">&lt;div id=&quot;app&quot; v-cloak&gt;
+    &lt;div&gt;{{num}}&lt;/div&gt;
+    &lt;!-- 直接绑定函数名称 handle --&gt;
+    &lt;button v-on:click=&#39;handle&#39;&gt;点击加1&lt;/button&gt;
+    &lt;!-- 调用函数 handle() --&gt;
+    &lt;button v-on:click=&#39;handle()&#39;&gt;点击加1&lt;/button&gt;
+&lt;/div&gt;
+&lt;script src=&quot;./js/vue.js&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
     var vm = new Vue({
         el: &#39;#app&#39;,
@@ -750,18 +875,608 @@
             num: 0
         },
         methods: {
-            handle: function(a, b.event) {
-                //this是Vue的实例对象
-                console.log(this === vm);
-                console.log(a, b);
-                console.log(event.target.innerHTML)
+            handle: function () {
+                // 这里的this是Vue的实例对象
+                console.log(this === vm)
                 this.num++;
             }
         }
     })
 &lt;/script&gt;</code></pre>
-<h4 id="事件修饰符-stop-prevent"><a href="#事件修饰符-stop-prevent" class="headerlink" title="事件修饰符 stop prevent"></a>事件修饰符 stop prevent</h4><h4 id="stop阻止冒泡"><a href="#stop阻止冒泡" class="headerlink" title=".stop阻止冒泡"></a>.stop阻止冒泡</h4><pre><code class="html">&lt;a v-on:click.stop=&#39;handle&#39;&gt;跳转&lt;/a&gt;</code></pre>
-<h4 id="prevent-阻止默认行为"><a href="#prevent-阻止默认行为" class="headerlink" title=".prevent 阻止默认行为"></a>.prevent 阻止默认行为</h4><pre><code class="html">&lt;a v-on:click.prvevnet=&#39;handle&#39;&gt;跳转&lt;/a&gt;</code></pre>
+<h4 id="事件函数调用"><a href="#事件函数调用" class="headerlink" title="事件函数调用"></a>事件函数调用</h4><p>事件绑定-参数传递</p>
+<p>如果事件直接绑定函数名称，默认会传递事件对象作为事件函数的第一个参数；</p>
+<p>如果事件绑定函数调用，那么事件对象必须作为最后一个参数显示传递，名称为：event；</p>
+<pre><code class="html">&lt;div id=&quot;app&quot; v-cloak&gt;
+    &lt;div&gt;{{num}}&lt;/div&gt;
+    &lt;!-- 如果事件直接绑定函数名handle，默认会传递事件对象作为函数的第一个参数 --&gt;
+    &lt;button v-on:click=&#39;handle1&#39;&gt;点击1&lt;/button&gt;
+    &lt;!-- 如果事件绑定函数调用handle()，那么事件对象必须作为最后一个参数显示传递，并且事件对象的名称必须是固定的$event --&gt;
+    &lt;button v-on:click=&#39;handle2(123, 456, $event)&#39;&gt;点击2&lt;/button&gt;
+&lt;/div&gt;
+&lt;script src=&quot;./js/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    var vm = new Vue({
+        el: &#39;#app&#39;,
+        data: {
+            num: 0
+        },
+        methods: {
+            handle1: function (event) {
+                console.log(event.target.innerHTML);
+            },
+            handle2: function (p1, p2, event) {
+                console.log(p1, p2);
+                console.log(event.target.innerHTML);
+            }
+        }
+    })
+&lt;/script&gt;</code></pre>
+<p><img src="http://mdimg.95408.com/202001191828_499.png?null" alt=""></p>
+<h4 id="事件修饰符"><a href="#事件修饰符" class="headerlink" title="事件修饰符"></a>事件修饰符</h4><p><strong>.stop阻止冒泡</strong></p>
+<pre><code class="html">&lt;a v-on:click.stop=&#39;handle&#39;&gt;跳转&lt;/a&gt;</code></pre>
+<p><strong>.prevent 阻止默认行为</strong></p>
+<pre><code class="html">&lt;a v-on:click.prvevnet=&#39;handle&#39;&gt;跳转&lt;/a&gt;</code></pre>
+<p>例：</p>
+<pre><code class="html">&lt;div id=&quot;app&quot; v-cloak&gt;
+    &lt;div&gt;{{num}}&lt;/div&gt;
+    &lt;div v-on:click=&#39;handle1&#39;&gt;
+        &lt;button v-on:click=&#39;handle2&#39;&gt;点击不加1&lt;/button&gt;
+        &lt;button v-on:click.stop=&#39;handle2&#39;&gt;点击不加1&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;a href=&quot;http://www.halfbamboo.com&quot; v-on:click=&#39;handle3&#39;&gt;不跳转&lt;/a&gt;
+    &lt;a href=&quot;http://www.halfbamboo.com&quot; v-on:click.prevent=&#39;handle3&#39;&gt;不跳转&lt;/a&gt;
+&lt;/div&gt;
+&lt;script src=&quot;./js/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    var vm = new Vue({
+        el: &#39;#app&#39;,
+        data: {
+            num: 0
+        },
+        methods: {
+            handle1: function () {
+                this.num++;
+            },
+            handle2: function (event) {
+                // 使用原生方式阻止冒泡
+                // 点击button，不能让num加1，和.stop一样
+                event.stopPropagation();
+            },
+            handle3: function (envent) {
+                // 使用原生方式阻止默认行为
+                // 阻止跳转，和.prevent一样
+                event.preventDefault();
+            }
+        }
+    })
+&lt;/script&gt;</code></pre>
+<h4 id="按键修饰符"><a href="#按键修饰符" class="headerlink" title="按键修饰符"></a>按键修饰符</h4><p>例：按回车时提交表单 + 按删除/退格时快速删除用户名</p>
+<pre><code class="html">&lt;div id=&quot;app&quot; v-cloak&gt;
+    &lt;div&gt;
+        &lt;!-- 在用户名输入错误时，按del时全部删除 --&gt;
+        用户名：&lt;input type=&quot;text&quot; v-model=&#39;uname&#39; v-on:keyup.delete=&#39;clearContent&#39;&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;!-- 在输入完密码后直接按回车就可以提交 --&gt;
+        密码：&lt;input type=&quot;text&quot; v-model=&#39;pwd&#39; v-on:keyup.enter=&#39;handleSubmit&#39;&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;input type=&quot;button&quot; v-on:click=&#39;handleSubmit&#39; value=&quot;提交&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;script src=&quot;./js/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    var vm = new Vue({
+        el: &#39;#app&#39;,
+        data: {
+            uname: &#39;&#39;,
+            pwd: &#39;&#39;
+        },
+        methods: {
+            handleSubmit: function () {
+                console.log(this.uname);
+                console.log(this.pwd);
+            },
+            clearContent: function () {
+                // 按del时清空用户名
+                this.uname = &#39;&#39;;
+            }
+        }
+    })
+&lt;/script&gt;</code></pre>
+<p><strong>自定义按键</strong></p>
+<p>只有在输入<code>a</code>（即65）的时候起作用：</p>
+<pre><code class="html">&lt;div id=&quot;app&quot;&gt;
+    &lt;input type=&quot;text&quot; v-model=&#39;info&#39; v-on:keyup.65=&#39;handle&#39;&gt;
+    &lt;input type=&quot;text&quot; v-model=&#39;info&#39; v-on:keyup.aaa=&#39;handle&#39;&gt;
+&lt;/div&gt;
+&lt;script src=&quot;./js/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    Vue.config.keyCodes.aaa = 65;
+    var vm = new Vue({
+        el: &#39;#app&#39;,
+        data: {
+            info: &#39;&#39;
+        },
+        methods: {
+            handle: function (event) {
+                console.log(event.keyCode);
+            }
+        }
+    })
+&lt;/script&gt;</code></pre>
+<p>例：简单计算器</p>
+<pre><code class="html">&lt;div id=&quot;app&quot;&gt;
+        &lt;h1&gt;简单计算器&lt;/h1&gt;
+        数值A: &lt;input type=&quot;text&quot; v-model=&#39;a&#39;&gt; &lt;br&gt;
+        数值B: &lt;input type=&quot;text&quot; v-model=&#39;b&#39;&gt; &lt;br&gt;
+        &lt;button v-on:click=&#39;sum&#39;&gt;计算和&lt;/button&gt; &lt;br&gt;
+        结果: &lt;span v-text=&#39;result&#39;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;script src=&quot;./js/vue.js&quot;&gt;&lt;/script&gt;
+    &lt;script&gt;
+        var vm = new Vue({
+            el: &#39;#app&#39;,
+            data: {
+                a: &#39;&#39;,
+                b: &#39;&#39;,
+                result: &#39;&#39;
+            },
+            methods: {
+                sum: function () {
+                    this.result = parseInt(this.a) + parseInt(this.b);
+                }
+            }
+        })
+    &lt;/script&gt;</code></pre>
+<p><img src="http://mdimg.95408.com/202001191942_794.png?null" alt=""></p>
+<h3 id="属性绑定"><a href="#属性绑定" class="headerlink" title="属性绑定"></a>属性绑定</h3><p>v-bind 用来绑定属性，也可以使用缩写形式：</p>
+<pre><code class="html">&lt;div id=&quot;app&quot;&gt;
+    &lt;a v-bind:href=&quot;url&quot;&gt;链接&lt;/a&gt;
+    &lt;!-- 简写形式 :href --&gt;
+    &lt;a :href=&quot;url&quot;&gt;链接&lt;/a&gt;
+    &lt;button v-on:click=&#39;bandle&#39;&gt;点击更换链接url&lt;/button&gt;
+&lt;/div&gt;
+&lt;script src=&quot;./js/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    var vm = new Vue({
+        el: &#39;#app&#39;,
+        data: {
+            url: &#39;http://halfbamboo.com&#39;
+        },
+        methods: {
+            bandle: function () {
+                this.url = &#39;http://www.baidu.com&#39;
+            }
+        }
+    })
+&lt;/script&gt;</code></pre>
+<p>v-model 的底层实现原理：</p>
+<pre><code class="html">&lt;div id=&quot;app&quot;&gt;
+    &lt;div&gt;{{msg}}&lt;/div&gt;
+    &lt;!-- 修改input不会改变div的值 只是将值msg绑定给input的value属性 --&gt;
+    &lt;input type=&quot;text&quot; v-bind:value=&#39;msg&#39;&gt;
+    &lt;!-- 修改input改变div的值 --&gt;
+    &lt;input type=&quot;text&quot; v-bind:value=&#39;msg&#39; v-on:input=&#39;handle&#39;&gt;
+    &lt;!-- 与上面相同，不用函数 --&gt;
+    &lt;input type=&quot;text&quot; v-bind:value=&#39;msg&#39; v-on:input=&#39;msg=$event.target.value&#39;&gt;
+    &lt;!-- 和v-model相同 --&gt;
+    &lt;input type=&quot;text&quot; v-model=&#39;msg&#39;&gt;
+&lt;/div&gt;
+&lt;script src=&quot;./js/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    var vm = new Vue({
+        el: &#39;#app&#39;,
+        data: {
+            msg: &#39;hi, Vue&#39;
+        },
+        methods: {
+            handle: function (event) {
+                // 使用输入域中的最新数据覆盖原来的数据
+                this.msg = event.target.value;
+            }
+        }
+    })
+&lt;/script&gt;</code></pre>
+<h3 id="class样式绑定"><a href="#class样式绑定" class="headerlink" title="class样式绑定"></a>class样式绑定</h3><ul>
+<li><p>对象语法：</p>
+<ul>
+<li><code>v-bink:class=‘{active: isActive}’</code></li>
+</ul>
+</li>
+<li><p>数组语法：</p>
+<ul>
+<li><code>v-bink:class=‘[activeClass, errorClass]’</code></li>
+</ul>
+</li>
+<li><p>对象绑定和数组绑定可以结合使用；</p>
+</li>
+<li><p>class绑定的值可以简化操作</p>
+</li>
+<li><p>默认的class类保留</p>
+</li>
+</ul>
+<p>例：点击按钮取消css样式：</p>
+<p><img src="http://mdimg.95408.com/202001192025_290.png?null" alt=""></p>
+<pre><code class="html">&lt;style&gt;
+    .xyz {
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+    }
+&lt;/style&gt;
+
+&lt;div id=&quot;app&quot;&gt;
+    &lt;div v-bind:class=&#39;{xyz: isActive}&#39;&gt;&lt;/div&gt;
+    &lt;button v-on:click=&#39;handle&#39;&gt;切换显示&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;script src=&quot;./js/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    var vm = new Vue({
+        el: &#39;#app&#39;,
+        data: {
+            isActive: true,
+        },
+        methods: {
+            handle: function () {
+                // this.isActive = false;
+                // 使用取反进行切换
+                this.isActive = !this.isActive;
+            }
+        }
+    })
+&lt;/script&gt;</code></pre>
+<p>例：点击按钮切换css样式</p>
+<pre><code class="html">&lt;style&gt;
+    .xyz {
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+    }
+    .xxx {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+    }
+&lt;/style&gt;
+
+&lt;div id=&quot;app&quot;&gt;
+    &lt;div v-bind:class=&#39;{xyz: xyzIsActive, xxx: xxxIsActive}&#39;&gt;&lt;/div&gt;
+    &lt;button v-on:click=&#39;handle&#39;&gt;切换显示&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;script src=&quot;./js/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    var vm = new Vue({
+        el: &#39;#app&#39;,
+        data: {
+            xyzIsActive: true,
+            xxxIsActive: false
+        },
+        methods: {
+            handle: function () {
+                this.xyzIsActive = !this.xyzIsActive;
+                this.xxxIsActive = !this.xxxIsActive;
+            }
+        }
+    })
+&lt;/script&gt;</code></pre>
+<p>例：数语法的取消css类样式</p>
+<pre><code class="html">&lt;style&gt;
+    .aaa {
+        width: 100px;
+        height: 100px;
+    }
+    .bbb {
+        background-color: red;
+    }
+&lt;/style&gt;
+
+&lt;div id=&quot;app&quot;&gt;
+    &lt;div v-bind:class=&#39;[aaaClass, bbbClass]&#39;&gt;&lt;/div&gt;
+    &lt;button v-on:click=&#39;handle&#39;&gt;切换显示&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;script src=&quot;./js/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    var vm = new Vue({
+        el: &#39;#app&#39;,
+        data: {
+            aaaClass: &#39;aaa&#39;,
+            bbbClass: &#39;bbb&#39;
+        },
+        methods: {
+            handle: function () {
+                this.aaaClass = &#39;&#39;;
+                this.bbbClass = &#39;&#39;;
+            }
+        }
+    })
+&lt;/script&gt;</code></pre>
+<p>例：对象绑定和数组绑定可以结合使用</p>
+<pre><code class="html">&lt;style&gt;
+    .aaa {
+        width: 100px;
+        height: 100px;
+    }
+    .bbb {
+        background-color: red;
+    }
+    .test {
+        color: blue;
+        font-size: 28px;
+    }
+&lt;/style&gt;
+
+&lt;div id=&quot;app&quot;&gt;
+    &lt;div v-bind:class=&#39;[aaaClass, bbbClass, {test: isTest}]&#39;&gt;文字&lt;/div&gt;
+    &lt;button v-on:click=&#39;handle&#39;&gt;更改&lt;/button&gt;
+
+&lt;/div&gt;
+&lt;script src=&quot;./js/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    var vm = new Vue({
+        el: &#39;#app&#39;,
+        data: {
+            aaaClass: &#39;aaa&#39;,
+            bbbClass: &#39;bbb&#39;,
+            isTest: false
+        },
+        methods: {
+            handle: function () {
+                this.bbbClass = &#39;&#39;;
+                this.isTest = true;
+            }
+        }
+    })
+&lt;/script&gt;</code></pre>
+<p>例：class绑定的值可以简化操作</p>
+<pre><code class="html">&lt;style&gt;
+    .aaa {
+        width: 100px;
+        height: 100px;
+    }
+    .bbb {
+        background-color: red;
+    }
+    .test {
+        color: blue;
+        font-size: 28px;
+    }
+&lt;/style&gt;
+
+&lt;div id=&quot;app&quot;&gt;
+    &lt;!-- 数组方式 --&gt;
+    &lt;div v-bind:class=&#39;arrClasses&#39;&gt;arrClasses&lt;/div&gt;
+    &lt;!-- 对象方式 --&gt;
+    &lt;div v-bind:class=&#39;objClasses&#39;&gt;objClasses&lt;/div&gt;
+    &lt;button v-on:click=&#39;handle&#39;&gt;更改&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;script src=&quot;./js/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    var vm = new Vue({
+        el: &#39;#app&#39;,
+        data: {
+            arrClasses: [&#39;aaa&#39;, &#39;bbb&#39;, &#39;test&#39;],
+            objClasses: {
+                aaa: true,
+                bbb: true,
+                test: false
+            }
+        },
+        methods: {
+            handle: function () {
+                this.objClasses.bbb = false;
+                this.objClasses.test = true;
+            }
+        }
+    })
+&lt;/script&gt;</code></pre>
+<p>例：默认类保留</p>
+<pre><code class="html">&lt;div id=&quot;app&quot;&gt;
+    &lt;div class=&quot;base&quot; v-bind:class=&#39;arrClasses&#39;&gt;arrClasses&lt;/div&gt;
+&lt;/div&gt;
+&lt;script src=&quot;./js/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    var vm = new Vue({
+        el: &#39;#app&#39;,
+        data: {
+            arrClasses: [&#39;aaa&#39;, &#39;bbb&#39;]
+        },
+        methods: { }
+    })
+&lt;/script&gt;
+&lt;!-- 输出：&lt;div class=&quot;base aaa bbb&quot;&gt;arrClasses&lt;/div&gt; --&gt;</code></pre>
+<h3 id="style样式绑定"><a href="#style样式绑定" class="headerlink" title="style样式绑定"></a>style样式绑定</h3><ul>
+<li>对象语法：<ul>
+<li><code>v-bink:style=‘{color: colorStyle, font: fontStyle}’</code></li>
+</ul>
+</li>
+<li>数组语法：<ul>
+<li><code>v-bink:style=‘[baseStyle, overridingStyles]’</code></li>
+</ul>
+</li>
+</ul>
+<p>例：对象语法绑定样式并点击修改</p>
+<pre><code class="html">&lt;div id=&quot;app&quot;&gt;
+    &lt;div v-bind:style=&#39;{border: borderStyle, width:widthStyle, height: heightStyle}&#39;&gt;文字&lt;/div&gt;
+    &lt;button v-on:click=handle&gt;改变&lt;/button&gt;
+&lt;/div&gt;
+&lt;script src=&quot;./js/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    var vm = new Vue({
+        el: &#39;#app&#39;,
+        data: {
+            borderStyle: &#39;1px solid red&#39;,
+            widthStyle: &#39;100px&#39;,
+            heightStyle: &#39;100px&#39;
+        },
+        methods: {
+            handle: function() {
+                this.borderStyle = &#39;2px solid blue&#39;;
+            }
+        }
+    })
+&lt;/script&gt;</code></pre>
+<p>例：简化</p>
+<pre><code class="html">&lt;div id=&quot;app&quot;&gt;
+    &lt;div v-bind:style=&#39;objStyles&#39;&gt;文字&lt;/div&gt;
+    &lt;button v-on:click=handle&gt;改变&lt;/button&gt;
+&lt;/div&gt;
+&lt;script src=&quot;./js/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    var vm = new Vue({
+        el: &#39;#app&#39;,
+        data: {
+            objStyles: {
+                border: &#39;1px solid red&#39;,
+                width: &#39;100px&#39;,
+                height: &#39;200px&#39;
+            }
+        },
+        methods: {
+            handle: function() {
+                this.objStyles.border = &#39;2px solid blue&#39;;
+                this.objStyles.height = &#39;100px&#39;;
+            }
+        }
+    })
+&lt;/script&gt;</code></pre>
+<p>例：数组语法绑定样式</p>
+<pre><code class="html">&lt;div id=&quot;app&quot;&gt;
+    &lt;div v-bind:style=&#39;[objStyles, overrideStyles]&#39;&gt;文字&lt;/div&gt;
+    &lt;!-- 输出：&lt;div style=&quot;border: 2px solid blue; width: 100px; height: 100px; background-color: yellow;&quot;&gt;文字&lt;/div&gt; --&gt;
+    &lt;!-- 相同的会覆盖 --&gt;
+    &lt;button v-on:click=handle&gt;改变&lt;/button&gt;
+&lt;/div&gt;
+&lt;script src=&quot;./js/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    var vm = new Vue({
+        el: &#39;#app&#39;,
+        data: {
+            objStyles: {
+                border: &#39;1px solid red&#39;,
+                width: &#39;100px&#39;,
+                height: &#39;100px&#39;
+            },
+            overrideStyles: {
+                border: &#39;2px solid blue&#39;,
+                backgroundColor: &#39;yellow&#39;
+            }
+        }
+    })
+&lt;/script&gt;</code></pre>
+<h3 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h3><h4 id="if循环"><a href="#if循环" class="headerlink" title="if循环"></a>if循环</h4><pre><code class="html">&lt;div id=&quot;app&quot;&gt;
+    &lt;div v-if=&#39;score &gt;= 90&#39;&gt;优秀&lt;/div&gt;
+    &lt;div v-else-if=&#39;score &lt; 90 &amp;&amp; score &gt;= 80&#39;&gt;良好&lt;/div&gt;
+    &lt;div v-else-if=&#39;score &lt; 80 &amp;&amp; score &gt;= 60&#39;&gt;一般&lt;/div&gt;
+    &lt;div v-else&gt;较差&lt;/div&gt;
+&lt;/div&gt;
+&lt;script src=&quot;./js/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    var vm = new Vue({
+        el: &#39;#app&#39;,
+        data: {
+            score: 99
+        }
+    })
+&lt;/script&gt;</code></pre>
+<h4 id="v-show"><a href="#v-show" class="headerlink" title="v-show"></a>v-show</h4><pre><code class="html">&lt;div id=&quot;app&quot;&gt;
+    &lt;div v-show=&#39;flag&#39;&gt;v-show&lt;/div&gt;
+    &lt;button v-on:click=&#39;handle&#39;&gt;点击切换&lt;/button&gt;
+&lt;/div&gt;
+&lt;script src=&quot;./js/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    var vm = new Vue({
+        el: &#39;#app&#39;,
+        data: {
+            flag: false
+        },
+        methods: {
+            handle: function () {
+                this.flag = !this.flag;
+            }
+        }
+    })
+&lt;/script&gt;</code></pre>
+<h3 id="for遍历数组"><a href="#for遍历数组" class="headerlink" title="for遍历数组"></a>for遍历数组</h3><pre><code class="html">&lt;div id=&quot;app&quot;&gt;
+    &lt;div v-for=&#39;item in fruits&#39;&gt;{{item}}&lt;/div&gt;
+    &lt;!-- apple --&gt;
+    &lt;!-- orange --&gt;
+    &lt;!-- banana --&gt;
+    &lt;div v-for=&#39;(item, index) in fruits&#39;&gt;{{index + ' --- ' + item}}&lt;/div&gt;
+    &lt;!-- 0 --- apple --&gt;
+    &lt;!-- 1 --- orange --&gt;
+    &lt;!-- 2 --- banana --&gt;
+&lt;/div&gt;
+&lt;script src=&quot;./js/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    var vm = new Vue({
+        el: &#39;#app&#39;,
+        data: {
+            fruits: [&#39;apple&#39;, &#39;orange&#39;, &#39;banana&#39;]
+        }
+    })
+&lt;/script&gt;</code></pre>
+<p>复杂数组：</p>
+<pre><code class="html">&lt;div id=&quot;app&quot;&gt;
+    &lt;li :key=&#39;item.id&#39; v-for=&#39;(item, index) in fruits&#39;&gt;
+        &lt;a href=&quot;#&quot;&gt;{{item.id + " - " + item.ename + " : " + item.cname}}&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;!-- 1 - apple : 苹果 --&gt;
+    &lt;!-- 2 - orange : 橘子 --&gt;
+    &lt;!-- 3 - banana : 香蕉 --&gt;
+&lt;/div&gt;
+&lt;script src=&quot;./js/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    var vm = new Vue({
+        el: &#39;#app&#39;,
+        data: {
+            fruits: [
+                {
+                    id: 1,
+                    ename: &#39;apple&#39;,
+                    cname: &#39;苹果&#39;
+                }, {
+                    id: 2,
+                    ename: &#39;orange&#39;,
+                    cname: &#39;橘子&#39;
+                },{
+                    id: 3,
+                    ename: &#39;banana&#39;,
+                    cname: &#39;香蕉&#39;
+                }
+            ]
+        }
+    })
+&lt;/script&gt;</code></pre>
+<h3 id="for遍历对象"><a href="#for遍历对象" class="headerlink" title="for遍历对象"></a>for遍历对象</h3><p>遍历对象以及for结合if使用</p>
+<pre><code class="html">&lt;div id=&quot;app&quot;&gt;
+    &lt;div v-for=&#39;(value,key,index) in obj&#39;&gt;{{key + ':' + value + '---' + index}}&lt;/div&gt;
+    &lt;!-- uname:zhangsan---0 --&gt;
+    &lt;!-- age:13---1 --&gt;
+    &lt;!-- gender:female---2 --&gt;
+
+    &lt;div v-if=&#39;value==12&#39; v-for=&#39;(value, key, index) in obj&#39;&gt;{{key + ':' + value + ':' + index}}&lt;/div&gt;
+    &lt;!-- 输出为空 --&gt;
+    &lt;div v-if=&#39;value==13&#39; v-for=&#39;(value, key, index) in obj&#39;&gt;{{key + ':' + value + ':' + index}}&lt;/div&gt;
+    &lt;!-- age:13:1 --&gt;
+&lt;/div&gt;
+&lt;script src=&quot;./js/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    var vm = new Vue({
+        el: &#39;#app&#39;,
+        data: {
+            obj: {
+                uname: &#39;zhangsan&#39;,
+                age: 13,
+                gender: &#39;female&#39;
+            }
+        }
+    })
+&lt;/script&gt;</code></pre>
 
       
        
@@ -806,7 +1521,7 @@
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#Css','#bootstrap','#html+css','#Css3','#jquery','#js','#HTML5','#Node.js','#博客','#hexo','#vue','#markdown','#vscode','#Mongodb','#git','#github',],
+            'data': ['#Css','#bootstrap','#js','#html+css','#Node.js','#Css3','#HTML5','#博客','#hexo','#markdown','#vscode','#Mongodb','#git','#github','#jquery','#vue',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');
